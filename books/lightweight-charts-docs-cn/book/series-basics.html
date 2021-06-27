@@ -1,0 +1,795 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>系列基础 · 轻量图表(TradingView) 中文开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-livere/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="line-series.html" />
+    
+    
+    <link rel="prev" href="home.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"zlq4863947","repo":"lightweight-charts-docs-cn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"lightweight-charts-docs-cn","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="home.html">
+            
+                <a href="home.html">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="series-basics.html">
+            
+                <a href="series-basics.html">
+            
+                    
+                    系列基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="line-series.html">
+            
+                <a href="line-series.html">
+            
+                    
+                    折线图系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="area-series.html">
+            
+                <a href="area-series.html">
+            
+                    
+                    面积图系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="bar-series.html">
+            
+                <a href="bar-series.html">
+            
+                    
+                    美国线图系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="candlestick-series.html">
+            
+                <a href="candlestick-series.html">
+            
+                    
+                    K 线图系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="histogram-series.html">
+            
+                <a href="histogram-series.html">
+            
+                    
+                    直方图系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="customization.html">
+            
+                <a href="customization.html">
+            
+                    
+                    定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="constants.html">
+            
+                <a href="constants.html">
+            
+                    
+                    常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="time.html">
+            
+                <a href="time.html">
+            
+                    
+                    时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="event.html">
+            
+                <a href="event.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="ohlc.html">
+            
+                <a href="ohlc.html">
+            
+                    
+                    OHLC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >系列基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7CFB;&#x5217;&#x57FA;&#x7840;">&#x7CFB;&#x5217;&#x57FA;&#x7840;</h1>
+<p>&#x6BCF;&#x4E2A;&#x7CFB;&#x5217;&#x90FD;&#x6709;&#x4E00;&#x7EC4;&#x5171;&#x540C;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x65E0;&#x8BBA;&#x5176;&#x7C7B;&#x578B;&#x5982;&#x4F55;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x8981;&#x521B;&#x5EFA;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x7CFB;&#x5217;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4F20;&#x9012;<code>title</code>&#x53C2;&#x6570;&#x6765;&#x8BBE;&#x7F6E;&#x7CFB;&#x5217;&#x6807;&#x9898;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x63CF;&#x8FF0;&#x4E86;&#x8FD9;&#x4E9B;<strong>&#x5E38;&#x89C1;</strong>&#x53C2;&#x6570;&#x548C; API&#x3002;&#x5982;&#x679C;&#x60A8;&#x60F3;&#x67E5;&#x770B;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x7CFB;&#x5217;&#x7684; API&#xFF0C;&#x8BF7;&#x53C2;&#x9605;&#x76F8;&#x5173;&#x6587;&#x6863;&#x9875;&#x9762;&#x3002;</p>
+<h2 id="&#x521B;&#x5EFA;&#x7CFB;&#x5217;">&#x521B;&#x5EFA;&#x7CFB;&#x5217;</h2>
+<p>&#x8981;&#x521B;&#x5EFA;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x7CFB;&#x5217;&#xFF0C;&#x60A8;&#x9700;&#x8981;&#x8C03;&#x7528;<code>chart.add &lt;type&gt; Series</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x4E2D;<code>&lt;type&gt;</code>&#x662F;&#x8981;&#x6DFB;&#x52A0;&#x5230;&#x56FE;&#x8868;&#x7684;&#x7CFB;&#x5217;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4F8B;&#x5982;:</p>
+<ul>
+<li><p>&#x521B;&#x5EFA;&#x7EBF;&#x7CFB;&#x5217;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> lineSeries = chart.addLineSeries();
+</code></pre>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x9762;&#x79EF;&#x7CFB;&#x5217;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> areaSeries = chart.addAreaSeries();
+</code></pre>
+</li>
+<li><p>&#x521B;&#x5EFA; K &#x7EBF;&#x7CFB;&#x5217;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> barSeries = chart.addBarSeries();
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2>
+<p>&#x521B;&#x5EFA;&#x7CFB;&#x5217;&#x65F6;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x8981;&#x66F4;&#x6539;&#x7684;&#x7CFB;&#x5217;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x5168;&#x90E8;&#x7CFB;&#x5217;&#x7684;&#x901A;&#x7528;&#x53C2;&#x6570;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>overlay</code></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>&#x7CFB;&#x5217;&#x662F;&#x5426;&#x4E3A; overlay</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td><code>string</code></td>
+<td><code>&apos;&apos;</code></td>
+<td>&#x5C06;&#x56FE;&#x8868;&#x6DFB;&#x52A0;&#x5230;&#x56FE;&#x8868;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x547D;&#x540D;&#x7CFB;&#x5217;&#x3002; &#x6B64;&#x540D;&#x79F0;&#x5C06;&#x663E;&#x793A;&#x5728;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x503C;&#x6807;&#x7B7E;&#x65C1;&#x8FB9;&#x7684;&#x6807;&#x7B7E;&#x4E0A;</td>
+</tr>
+<tr>
+<td><code>scaleMargins</code></td>
+<td><code>{ top, bottom }</code></td>
+<td><code>undefined</code></td>
+<td><em>overlay</em>&#x7684;<a href="#scale-margins">&#x8FB9;&#x8DDD;</a></td>
+</tr>
+</tbody>
+</table>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> lineSeries = chart.addLineSeries({
+  overlay: <span class="hljs-literal">true</span>,
+  title: <span class="hljs-string">&quot;Series title example&quot;</span>,
+  scaleMargins: {
+    top: <span class="hljs-number">0.1</span>,
+    bottom: <span class="hljs-number">0.3</span>
+  }
+});
+</code></pre>
+<h3 id="overlay">Overlay</h3>
+<p>&#x5C06;&#x4EFB;&#x4F55;&#x7CFB;&#x5217;&#x6DFB;&#x52A0;&#x5230;&#x56FE;&#x8868;&#x65F6;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x8981;&#x5C06;&#x76EE;&#x6807;&#x7CFB;&#x5217;&#x9644;&#x52A0;&#x5230;&#x4EF7;&#x683C;&#x8F74;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7CFB;&#x5217;&#x9644;&#x52A0;&#x5230;&#x4EF7;&#x683C;&#x8F74;&#x3002;
+&#x8FD9;&#x610F;&#x5473;&#x7740;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EF7;&#x683C;&#x8F74;&#x6765;&#x7F29;&#x653E;&#x7CFB;&#x5217;&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x4EF7;&#x683C;&#x8F74;&#x53EF;&#x89C1;&#x8303;&#x56F4;&#x53D6;&#x51B3;&#x4E8E;&#x7CFB;&#x5217;&#x503C;&#x3002;
+&#x76F8;&#x6BD4;&#x4E4B;&#x4E0B;&#xFF0C;&#x53E0;&#x52A0;&#x7CFB;&#x5217;&#x53EA;&#x662F;&#x5728;&#x72EC;&#x7ACB;&#x4E8E;&#x4EF7;&#x683C;&#x8F74;&#x7684;&#x56FE;&#x8868;&#x4E0A;&#x7ED8;&#x5236;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> lineSeries = chart.addLineSeries({
+  overlay: <span class="hljs-literal">true</span>
+});
+</code></pre>
+<h3 id="&#x6807;&#x9898;">&#x6807;&#x9898;</h3>
+<p>&#x5C06;&#x4EFB;&#x4F55;&#x7CFB;&#x5217;&#x6DFB;&#x52A0;&#x5230;&#x56FE;&#x8868;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5411;<code>title</code>&#x5C5E;&#x6027;&#x6DFB;&#x52A0;&#x5B57;&#x7B26;&#x4E32;&#x6765;&#x547D;&#x540D;&#x3002;
+&#x6B64;&#x540D;&#x79F0;&#x5C06;&#x663E;&#x793A;&#x5728;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x503C;&#x6807;&#x7B7E;&#x65C1;&#x8FB9;&#x7684;&#x6807;&#x7B7E;&#x4E0A;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> lineSeries = chart.addLineSeries({
+  title: <span class="hljs-string">&quot;Series title example&quot;</span>
+});
+</code></pre>
+<h3 id="&#x523B;&#x5EA6;&#x8FB9;&#x8DDD;">&#x523B;&#x5EA6;&#x8FB9;&#x8DDD;</h3>
+<p>&#x901A;&#x5E38;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x5E0C;&#x671B;&#x7CFB;&#x5217;&#x7ED8;&#x5236;&#x7684;&#x56FE;&#x8868;&#x8FB9;&#x6846;&#x592A;&#x9760;&#x8FD1;&#x3002;&#x5B83;&#x9700;&#x8981;&#x5728;&#x9876;&#x90E8;&#x548C;&#x5E95;&#x90E8;&#x6709;&#x4E00;&#x4E9B;&#x8FB9;&#x8DDD;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E93;&#x5728;&#x6570;&#x636E;&#x4E0B;&#x65B9;&#xFF08;10&#xFF05;&#xFF09;&#x548C;&#x6570;&#x636E;&#x4E0A;&#x65B9;&#xFF08;20&#xFF05;&#xFF09;&#x4FDD;&#x7559;&#x7A7A;&#x767D;&#x533A;&#x57DF;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x56FE;&#x8868;&#x9009;&#x9879;&#x4E3A;&#x53EF;&#x89C1;&#x8F74;&#x8C03;&#x6574;&#x8FD9;&#x4E9B;&#x503C;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; Overlay &#x7CFB;&#x5217;&#x5B9A;&#x4E49;&#x5B83;&#x4EEC;&#x3002;</p>
+<p>&#x8FB9;&#x8DDD;&#x662F;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ul>
+<li><code>top</code></li>
+<li><code>bottom</code></li>
+</ul>
+<p>&#x5BF9;&#x8C61;&#x7684;&#x6BCF;&#x4E2A;&#x503C;&#x90FD;&#x662F; 0&#xFF08;0&#xFF05;&#xFF09;&#x548C; 1&#xFF08;100&#xFF05;&#xFF09;&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x5B57;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> lineSeries = chart.addLineSeries({
+  overlay: <span class="hljs-literal">true</span>,
+  scaleMargins: {
+    top: <span class="hljs-number">0.6</span>,
+    bottom: <span class="hljs-number">0.05</span>
+  }
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5C06;&#x7CFB;&#x5217;&#x653E;&#x5728;&#x56FE;&#x8868;&#x7684;&#x5E95;&#x90E8;&#x3002;</p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>ChartApi.applyOptions</code>&#x4E3A;&#x53EF;&#x89C1;&#x8F74;&#x66F4;&#x6539;&#x8FB9;&#x8DDD;&#xFF1A;</p>
+<pre><code class="lang-javascript">chart.applyOptions({
+  priceScale: {
+    scaleMargins: {
+      top: <span class="hljs-number">0.6</span>,
+      bottom: <span class="hljs-number">0.05</span>
+    }
+  }
+});
+</code></pre>
+<h2 id="&#x6570;&#x636E;">&#x6570;&#x636E;</h2>
+<p>&#x6BCF;&#x4E2A;&#x7CFB;&#x5217;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002; &#x8BF7;&#x53C2;&#x9605;&#x7CFB;&#x5217;&#x9875;&#x9762;&#x4EE5;&#x786E;&#x5B9A;&#x8BE5;&#x7CFB;&#x5217;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+<h2 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h2>
+<h3 id="options">options</h3>
+<p>&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x5E94;&#x7528;&#x7684;&#x5B8C;&#x6574;&#x9009;&#x9879;&#x96C6;&#xFF0C;&#x5305;&#x62EC;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+<h3 id="applyoptions">applyOptions</h3>
+<p>&#x6B64;&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x5C06;&#x65B0;&#x9009;&#x9879;&#x5E94;&#x7528;&#x4E8E;&#x7CFB;&#x5217;&#x3002;</p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x521B;&#x5EFA;&#x7CFB;&#x5217;&#x65F6;&#x521D;&#x59CB;&#x9009;&#x9879;&#x8BBE;&#x7F6E;&#xFF0C;&#x6216;&#x4F7F;&#x7528;&#x7CFB;&#x5217;&#x7684; <code>applyOptions</code> &#x65B9;&#x6CD5;&#x66F4;&#x6539;&#x73B0;&#x6709;&#x9009;&#x9879;&#x3002;</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x60A8;&#x53EA;&#x80FD;&#x4F20;&#x9012;&#x8981;&#x66F4;&#x6539;&#x7684;&#x9009;&#x9879;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x7CFB;&#x5217;&#x7C7B;&#x578B;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x9009;&#x9879;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x6240;&#x6709;&#x7C7B;&#x578B;&#x7684;&#x7CFB;&#x5217;&#x90FD;&#x6709;&#x4E00;&#x4E9B;&#x5171;&#x540C;&#x7684;&#x9009;&#x9879;&#x3002;</p>
+<h4 id="price-line">Price line</h4>
+<p>&#x4EF7;&#x683C;&#x7EBF;&#x662F;&#x5728;&#x6700;&#x540E;&#x4EF7;&#x683C;&#x6C34;&#x5E73;&#x4E0A;&#x7ED8;&#x5236;&#x7684;&#x6C34;&#x5E73;&#x7EBF;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5176;&#x989C;&#x8272;&#x7531;&#x6700;&#x540E;&#x4E00;&#x4E2A; k &#x7EBF;&#x989C;&#x8272;&#xFF08;&#x6216;&#x7EBF;&#x6761;&#x548C;&#x9762;&#x79EF;&#x56FE;&#x4E0A;&#x7684;&#x7EBF;&#x6761;&#x989C;&#x8272;&#xFF09;&#x51B3;&#x5B9A;&#x3002;</p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5B83;&#x7684;&#x5BBD;&#x5EA6;&#xFF0C;&#x6837;&#x5F0F;&#x548C;&#x989C;&#x8272;&#xFF0C;&#x6216;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x9009;&#x9879;&#x5C06;&#x5176;&#x7981;&#x7528;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>priceLineVisible</code></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+<td>&#x5982;&#x679C;&#x4E3A; true&#xFF0C;&#x5219;&#x4F1A;&#x5728;&#x56FE;&#x8868;&#x4E0A;&#x663E;&#x793A;&#x7CFB;&#x5217;&#x7684;&#x4EF7;&#x683C;&#x7EBF;</td>
+</tr>
+<tr>
+<td><code>priceLineWidth</code></td>
+<td><code>number</code></td>
+<td><code>1</code></td>
+<td>&#x4EF7;&#x683C;&#x7EBF;&#x7684;&#x5BBD;&#x5EA6;&#xFF08;&#x4EE5;&#x50CF;&#x7D20;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;</td>
+</tr>
+<tr>
+<td><code>priceLineColor</code></td>
+<td><code>string</code></td>
+<td><code>&apos;&apos;</code></td>
+<td>&#x4EF7;&#x683C;&#x7EBF;&#x7684;&#x989C;&#x8272;</td>
+</tr>
+<tr>
+<td><code>priceLineStyle</code></td>
+<td><a href="constants.html#linestyle">LineStyle</a></td>
+<td><code>LineStyle.Dotted</code></td>
+<td>&#x4EF7;&#x683C;&#x7EBF;&#x7684;&#x6837;&#x5F0F;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-javascript">series.applyOptions({
+  priceLineVisible: <span class="hljs-literal">false</span>,
+  priceLineWidth: <span class="hljs-number">2</span>,
+  priceLineColor: <span class="hljs-string">&quot;#4682B4&quot;</span>,
+  priceLineStyle: <span class="hljs-number">3</span>
+});
+</code></pre>
+<h4 id="price-labels">Price labels</h4>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4EF7;&#x683C;&#x503C;&#x4F5C;&#x4E3A;&#x663E;&#x793A;&#x5728;&#x4EF7;&#x683C;&#x523B;&#x5EA6;&#x7684;&#x76F8;&#x5173;&#x7EA7;&#x522B;&#x7684;&#x6807;&#x7B7E;&#x3002;
+&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x9690;&#x85CF;&#x5B83;&#x7684;&#x9009;&#x9879;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x683C;&#x5F0F;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lastValueVisible</code></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+<td>&#x5982;&#x679C;&#x4E3A; true&#xFF0C;&#x5219;&#x5728;&#x4EF7;&#x683C;&#x6807;&#x5C3A;&#x4E0A;&#x663E;&#x793A;&#x5177;&#x6709;&#x5F53;&#x524D;&#x4EF7;&#x683C;&#x503C;&#x7684;&#x6807;&#x7B7E;</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class="lang-javascript">series.applyOptions({
+  lastValueVisible: <span class="hljs-literal">false</span>
+});
+</code></pre>
+<h4 id="base-line">Base line</h4>
+<p>&#x57FA;&#x51C6;&#x7EBF;&#x662F;&#x5728;<code>percentage</code>&#x548C;<code>indexedTo100</code>&#x6A21;&#x5F0F;&#x4E0B;&#x5728;&#x96F6;&#x7EA7;&#x7ED8;&#x5236;&#x7684;&#x6C34;&#x5E73;&#x7EBF;&#x3002;
+&#x60A8;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6B64;&#x884C;&#x7684;&#x5BBD;&#x5EA6;&#xFF0C;&#x6837;&#x5F0F;&#x548C;&#x989C;&#x8272;&#xFF0C;&#x6216;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x9009;&#x9879;&#x5C06;&#x5176;&#x7981;&#x7528;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>baseLineVisible</code></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+<td>&#x5982;&#x679C;&#x4E3A; true&#xFF0C;&#x5219;&#x5728;&#x56FE;&#x8868;&#x4E0A;&#x663E;&#x793A;&#x7CFB;&#x5217;&#x7684;&#x57FA;&#x51C6;&#x7EBF;</td>
+</tr>
+<tr>
+<td><code>baseLineWidth</code></td>
+<td><code>number</code></td>
+<td><code>1</code></td>
+<td>&#x57FA;&#x51C6;&#x7EBF;&#x7684;&#x5BBD;&#x5EA6;&#xFF08;&#x4EE5;&#x50CF;&#x7D20;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;</td>
+</tr>
+<tr>
+<td><code>baseLineColor</code></td>
+<td><code>string</code></td>
+<td><code>&apos;#B2B5BE&apos;</code></td>
+<td>&#x57FA;&#x51C6;&#x7EBF;&#x7684;&#x989C;&#x8272;</td>
+</tr>
+<tr>
+<td><code>baseLineStyle</code></td>
+<td><a href="constants.html#linestyle">LineStyle</a></td>
+<td><code>LineStyle.Solid</code></td>
+<td>&#x57FA;&#x51C6;&#x7EBF;&#x7684;&#x6837;&#x5F0F;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-javascript">series.applyOptions({
+  baseLineVisible: <span class="hljs-literal">true</span>,
+  baseLineColor: <span class="hljs-string">&quot;#ff0000&quot;</span>,
+  baseLineWidth: <span class="hljs-number">3</span>,
+  baseLineStyle: <span class="hljs-number">1</span>
+});
+</code></pre>
+<h4 id="price-format">Price format</h4>
+<p>&#x63D0;&#x4F9B;&#x56DB;&#x79CD;&#x4EF7;&#x683C;&#x683C;&#x5F0F;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x4EF7;&#x683C;&#x6807;&#x5C3A;&#x4E0A;&#x663E;&#x793A;:</p>
+<ul>
+<li><code>price</code> &#x683C;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#xFF0C;&#x663E;&#x793A;&#x7EDD;&#x5BF9;&#x4EF7;&#x683C;&#x503C;</li>
+<li><code>volume</code> &#x683C;&#x5F0F;&#xFF0C;&#x51CF;&#x5C11;&#x8D85;&#x8FC7; 1000 &#x7684;&#x503C;&#x7684;&#x4F4D;&#x6570;&#xFF0C;&#x7528;&#x5B57;&#x6BCD;&#x66FF;&#x6362;&#x96F6;&#x3002; &#x4F8B;&#x5982;&#xFF0C;<strong>1000</strong>&#x7EDD;&#x5BF9;&#x4EF7;&#x683C;&#x503C;&#x4EE5;&#x683C;&#x5F0F;&#x5316;&#x663E;&#x793A;&#x4E3A;<strong>1K</strong>&#x3002;</li>
+<li><code>percent</code> &#x683C;&#x5F0F;&#xFF0C;&#x7528;&#x767E;&#x5206;&#x6BD4;&#x53D8;&#x5316;&#x66FF;&#x6362;&#x7EDD;&#x5BF9;&#x503C;&#x3002;</li>
+<li><code>custom</code> &#x683C;&#x5F0F;&#xFF0C;&#x4F7F;&#x7528;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x4EF7;&#x683C;&#x683C;&#x5F0F;&#x5316;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#xFF0C;&#x6807;&#x51C6;&#x683C;&#x5F0F;&#x5668;&#x4E0D;&#x5305;&#x62EC;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;</li>
+</ul>
+<p>&#x4EE5;&#x4E0B;&#x9009;&#x9879;&#x53EF;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x7CFB;&#x5217;&#x663E;&#x793A;&#x7684;&#x4EF7;&#x683C;&#x683C;&#x5F0F;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td><code>price</code> | <code>volume</code> | <code>percent</code> | <code>custom</code></td>
+<td><code>price</code></td>
+<td>&#x8BBE;&#x7F6E;&#x6309;&#x7CFB;&#x5217;&#x663E;&#x793A;&#x7684;&#x4EF7;&#x683C;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td><code>precision</code></td>
+<td><code>number</code></td>
+<td><code>2</code></td>
+<td>&#x6307;&#x5B9A;&#x7528;&#x4E8E;&#x663E;&#x793A;&#x4EF7;&#x683C;&#x503C;&#x7684;&#x5C0F;&#x6570;&#x4F4D;&#x6570;</td>
+</tr>
+<tr>
+<td><code>minMove</code></td>
+<td><code>number</code></td>
+<td><code>0.01</code></td>
+<td>&#x8BBE;&#x7F6E;&#x4EF7;&#x683C;&#x503C;&#x79FB;&#x52A8;&#x7684;&#x6700;&#x5C0F;&#x6B65;&#x957F;</td>
+</tr>
+<tr>
+<td><code>formatter</code></td>
+<td><code>function</code> | <code>undefined</code></td>
+<td><code>undefined</code></td>
+<td>&#x8BBE;&#x7F6E;<code>type</code>&#x4E3A;<code>custom</code>&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x51FD;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-javascript">series.applyOptions({
+  priceFormat: {
+    type: <span class="hljs-string">&quot;volume&quot;</span>,
+    precision: <span class="hljs-number">3</span>,
+    minMove: <span class="hljs-number">0.05</span>
+  }
+});
+</code></pre>
+<pre><code class="lang-javascript">series.applyOptions({
+  priceFormat: {
+    type: <span class="hljs-string">&quot;custom&quot;</span>,
+    minMove: <span class="hljs-number">0.02</span>,
+    formatter: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">price</span>) </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;$&quot;</span> + price.toFixed(<span class="hljs-number">2</span>);
+    }
+  }
+});
+</code></pre>
+<h3 id="setdata">setData</h3>
+<p>&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x65B0;&#x6570;&#x636E;&#x8BBE;&#x7F6E;/&#x66FF;&#x6362;&#x6240;&#x6709;&#x73B0;&#x6709;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x4E3A;&#x7CFB;&#x5217;&#x9879;&#x76EE;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-javascript">lineSeries.setData([
+  { time: <span class="hljs-string">&quot;2018-12-12&quot;</span>, value: <span class="hljs-number">24.11</span> },
+  { time: <span class="hljs-string">&quot;2018-12-13&quot;</span>, value: <span class="hljs-number">31.74</span> }
+]);
+</code></pre>
+<pre><code class="lang-javascript">barSeries.setData([
+  {
+    time: <span class="hljs-string">&quot;2018-12-19&quot;</span>,
+    open: <span class="hljs-number">141.77</span>,
+    high: <span class="hljs-number">170.39</span>,
+    low: <span class="hljs-number">120.25</span>,
+    close: <span class="hljs-number">145.72</span>
+  },
+  { time: <span class="hljs-string">&quot;2018-12-20&quot;</span>, open: <span class="hljs-number">145.72</span>, high: <span class="hljs-number">147.99</span>, low: <span class="hljs-number">100.11</span>, close: <span class="hljs-number">108.19</span> }
+]);
+</code></pre>
+<h3 id="updatedata">updateData</h3>
+<p>&#x5C06;&#x65B0;&#x6570;&#x636E;&#x9879;&#x6DFB;&#x52A0;&#x5230;&#x73B0;&#x6709;&#x6570;&#x636E;&#x96C6;&#xFF08;&#x5982;&#x679C;&#x5DF2;&#x901A;&#x8FC7;/&#x6700;&#x65B0;&#x9879;&#x7684;&#x65F6;&#x95F4;&#x76F8;&#x7B49;&#xFF0C;&#x5219;&#x66F4;&#x65B0;&#x6700;&#x65B0;&#x9879;&#xFF09;</p>
+<p>&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x4E3A;&#x7CFB;&#x5217;&#x9879;&#x76EE;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-javascript">lineSeries.updateData({
+  time: <span class="hljs-string">&quot;2018-12-12&quot;</span>,
+  value: <span class="hljs-number">24.11</span>
+});
+</code></pre>
+<pre><code class="lang-javascript">barSeries.updateData({
+  time: <span class="hljs-string">&quot;2018-12-19&quot;</span>,
+  open: <span class="hljs-number">141.77</span>,
+  high: <span class="hljs-number">170.39</span>,
+  low: <span class="hljs-number">120.25</span>,
+  close: <span class="hljs-number">145.72</span>
+});
+</code></pre>
+<h2 id="&#x4E0B;&#x4E00;&#x4E2A;&#x9605;&#x8BFB;">&#x4E0B;&#x4E00;&#x4E2A;&#x9605;&#x8BFB;</h2>
+<ul>
+<li><a href="area-series.html">&#x9762;&#x79EF;&#x56FE;&#x7CFB;&#x5217;</a></li>
+<li><a href="bar-series.html">&#x7F8E;&#x56FD;&#x7EBF;&#x56FE;&#x7CFB;&#x5217;</a></li>
+<li><a href="candlestick-series.html">Candlestick series</a></li>
+<li><a href="histogram-series.html">Histogram series</a></li>
+<li><a href="line-series.html">Line series</a></li>
+<li><a href="customization.html">Customization</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="home.html" class="navigation navigation-prev " aria-label="Previous page: 入门">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="line-series.html" class="navigation navigation-next " aria-label="Next page: 折线图系列">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"系列基础","level":"1.3","depth":1,"next":{"title":"折线图系列","level":"1.4","depth":1,"path":"book/line-series.md","ref":"book/line-series.md","articles":[]},"previous":{"title":"入门","level":"1.2","depth":1,"path":"book/home.md","ref":"book/home.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","github","github-buttons","splitter","sitemap","donate","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/zlq4863947/lightweight-charts-docs-cn"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://b.aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://b.aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"lightweight-charts-docs-cn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"lightweight-charts-docs-cn","type":"fork","size":"small","count":true}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"轻量图表(TradingView) 中文开发文档","language":"zh","gitbook":"*","description":"轻量图表(TradingView) 中文开发文档"},"file":{"path":"book/series-basics.md","mtime":"2019-08-01T13:27:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-04T06:30:17.720Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livere/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

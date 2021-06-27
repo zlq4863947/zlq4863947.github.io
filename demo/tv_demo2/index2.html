@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>TradingView Charting Library demo</title>
+
+		<!-- Fix for iOS Safari zooming bug -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="charting_library/charting_library.min.js"></script>
+		<script type="text/javascript" src="datafeeds/udf/dist/polyfills.js"></script>
+		<script type="text/javascript" src="datafeeds/udf/dist/bundle.js"></script>
+
+		<script type="text/javascript">
+
+			function getParameterByName(name) {
+				name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+				var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+					results = regex.exec(location.search);
+				return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+			}
+
+			function formatDate(date, format) {
+				format = format.replace(/yyyy/g, date.getUTCFullYear());
+				format = format.replace(/MM/g, ('0' + (date.getUTCMonth() + 1)).slice(-2));
+				format = format.replace(/dd/g, ('0' + date.getUTCDate()).slice(-2));
+				format = format.replace(/HH/g, ('0' + date.getUTCHours()).slice(-2));
+				format = format.replace(/mm/g, ('0' + date.getUTCMinutes()).slice(-2));
+				format = format.replace(/ss/g, ('0' + date.getUTCSeconds()).slice(-2));
+				format = format.replace(/SSS/g, ('00' + date.getUTCMilliseconds()).slice(-3));
+				return format;
+			}
+
+			function initOnReady() {
+				var widget = window.tvWidget = new TradingView.widget({
+					debug: true, // uncomment this line to see Library errors and warnings in the console
+					fullscreen: true,
+					symbol: 'usdt_qc',
+					interval: '60',
+					container_id: "tv_chart_container",
+
+					//	BEWARE: no trailing slash is expected in feed URL
+					datafeed: new Datafeeds.UDFCompatibleDatafeed("https://testapiweb.ceohk.bi"),
+					library_path: "charting_library/",
+					locale: getParameterByName('lang') || "zh",
+					timezone: 'Asia/Shanghai',
+					customFormatters: {
+						timeFormatter: {
+							format: (date) => formatDate(date, 'HH:mm:ss'),
+						},
+						dateFormatter: {
+							format: (date) => formatDate(date, 'yyyy-MM-dd'),
+						},
+					},
+
+					disabled_features: [
+						"header_widget",
+						"symbol_search_hot_key",
+						"edit_buttons_in_legend",
+						"volume_force_overlay",
+						// "display_market_status",
+						"timeframes_toolbar",
+						"go_to_date",
+						"countdown",
+						"use_localstorage_for_settings"
+					],
+					enabled_features: [
+						"hide_last_na_study_output",
+						"keep_left_toolbar_visible_on_small_screens",
+						'hide_left_toolbar_by_default',
+						"adaptive_logo"
+					],
+					studies_overrides: {
+						"volume.volume.color.1": "#41b37d",
+						"volume.volume.color.0": "#DF4E4E",
+						"volume.volume.transparency": 50
+					},
+					overrides: {
+						// "paneProperties.background": l,
+						// "paneProperties.vertGridProperties.color": u,
+						// "paneProperties.horzGridProperties.color": u,
+						// "paneProperties.crossHairProperties.color": "#767988",showLegend
+						"paneProperties.legendProperties.showSeriesTitle": false,
+						// "paneProperties.legendProperties.showStudyArguments": false,
+						// "scalesProperties.lineColor": p,
+						// "scalesProperties.textColor": d,
+						volumePaneSize: "medium",
+						'scalesProperties.textColor': '#555',
+						'scalesProperties.lineColor': '#555',
+						'paneProperties.gridProperties.color': '#363c4e',
+						'paneProperties.background': '#ffffff',
+						'paneProperties.vertGridProperties.color': '#ffffff',
+						'paneProperties.horzGridProperties.color': '#ffffff',
+						'mainSeriesProperties.baselineStyle.baselineColor': '#5d606b',
+						'mainSeriesProperties.candleStyle.upColor': '#53b987',
+						'paneProperties.crossHairProperties.color': '#9194A3',
+						'mainSeriesProperties.style': 1,
+						'mainSeriesProperties.candleStyle.downColor': '#D92441',
+						'mainSeriesProperties.candleStyle.drawWick': true,
+						'mainSeriesProperties.candleStyle.drawBorder': false,
+						'mainSeriesProperties.candleStyle.wickUpColor': '#18C066',
+						'mainSeriesProperties.candleStyle.wickDownColor': '#D92441',
+					},
+					theme: getParameterByName('theme'),
+				});
+				tvWidget.onChartReady(() => {
+					tvWidget.chart().createStudy('Moving Average', false, false, [5], null, { 'Plot.color': '#965FC4', 'Plot.linewidth': 2 });
+					tvWidget.chart().createStudy('Moving Average', false, false, [10], null, { 'Plot.color': '#84aad5', 'Plot.linewidth': 2 });
+					tvWidget.chart().createStudy('Moving Average', false, false, [30], null, { 'Plot.color': '#55b263', 'Plot.linewidth': 2 });
+					tvWidget.chart().createStudy('Moving Average', false, false, [60], null, { 'Plot.color': '#b7248a', 'Plot.linewidth': 2 });
+				});
+			}
+			
+			window.addEventListener('DOMContentLoaded', initOnReady, false);
+		</script>
+	</head>
+
+	<body style="margin:0px;">
+		<div id="tv_chart_container"></div>
+	</body>
+
+</html>

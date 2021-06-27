@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<title>TradingView Charting Library demo</title>
+
+	<!-- Fix for iOS Safari zooming bug -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="charting_library/charting_library.min.js"></script>
+	<script type="text/javascript" src="datafeeds/udf/dist/polyfills.js"></script>
+	<script type="text/javascript" src="datafeeds/udf/dist/bundle.js"></script>
+
+	<script type="text/javascript">
+
+		function getParameterByName(name) {
+			name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+			var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+					results = regex.exec(location.search);
+			return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+
+		function formatDate(date, format) {
+			format = format.replace(/yyyy/g, date.getUTCFullYear());
+			format = format.replace(/MM/g, ('0' + (date.getUTCMonth() + 1)).slice(-2));
+			format = format.replace(/dd/g, ('0' + date.getUTCDate()).slice(-2));
+			format = format.replace(/HH/g, ('0' + date.getUTCHours()).slice(-2));
+			format = format.replace(/mm/g, ('0' + date.getUTCMinutes()).slice(-2));
+			format = format.replace(/ss/g, ('0' + date.getUTCSeconds()).slice(-2));
+			format = format.replace(/SSS/g, ('00' + date.getUTCMilliseconds()).slice(-3));
+			return format;
+		}
+
+		function initOnReady() {
+			initActiveEvent();
+			var widget = window.tvWidget = new TradingView.widget({
+				debug: true, // uncomment this line to see Library errors and warnings in the console
+				width: '100%',
+				height: '100%',
+				fullscreen: false,
+				symbol: 'usdt_qc',
+				interval: '60',
+				container_id: "tv_chart_container",
+
+				//	BEWARE: no trailing slash is expected in feed URL
+				datafeed: new Datafeeds.UDFCompatibleDatafeed("https://testapiweb.ceohk.bi"),
+				library_path: "charting_library/",
+				locale: getParameterByName('lang') || "zh",
+				timezone: 'Asia/Shanghai',
+				customFormatters: {
+					timeFormatter: {
+						format: (date) => formatDate(date, 'HH:mm:ss'),
+					},
+					dateFormatter: {
+						format: (date) => formatDate(date, 'yyyy-MM-dd'),
+					},
+				},
+
+				disabled_features: [
+					"header_widget",
+					"symbol_search_hot_key",
+					"edit_buttons_in_legend",
+					"volume_force_overlay",
+					// "display_market_status",
+					"timeframes_toolbar",
+					"go_to_date",
+					"countdown",
+					"use_localstorage_for_settings"
+				],
+				enabled_features: [
+					"hide_last_na_study_output",
+					"keep_left_toolbar_visible_on_small_screens",
+					'hide_left_toolbar_by_default',
+					"adaptive_logo"
+				],
+				studies_overrides: {
+					"volume.volume.color.1": "#41b37d",
+					"volume.volume.color.0": "#DF4E4E",
+					"volume.volume.transparency": 50
+				},
+				overrides: {
+					// "paneProperties.background": l,
+					// "paneProperties.vertGridProperties.color": u,
+					// "paneProperties.horzGridProperties.color": u,
+					// "paneProperties.crossHairProperties.color": "#767988",showLegend
+					"paneProperties.legendProperties.showSeriesTitle": false,
+					// "paneProperties.legendProperties.showStudyArguments": false,
+					// "scalesProperties.lineColor": p,
+					// "scalesProperties.textColor": d,
+					volumePaneSize: "medium",
+					'scalesProperties.textColor': '#555',
+					'scalesProperties.lineColor': '#555',
+				},
+				theme: 'Dark',
+			});
+			tvWidget.onChartReady(() => {
+				tvWidget.chart().createStudy('Moving Average', false, false, [5], null, { 'Plot.color': '#965FC4', 'Plot.linewidth': 2 });
+				tvWidget.chart().createStudy('Moving Average', false, false, [10], null, { 'Plot.color': '#84aad5', 'Plot.linewidth': 2 });
+				tvWidget.chart().createStudy('Moving Average', false, false, [30], null, { 'Plot.color': '#55b263', 'Plot.linewidth': 2 });
+				tvWidget.chart().createStudy('Moving Average', false, false, [60], null, { 'Plot.color': '#b7248a', 'Plot.linewidth': 2 });
+			});
+		}
+
+		window.addEventListener('DOMContentLoaded', initOnReady, false);
+	</script>
+	<style type="text/css">
+		html,body{
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.chart-btn{
+			color: #fff;
+			position: absolute;
+			top: 0.8rem;
+			right: 0.7rem;
+			z-index: 99999999;
+		}
+		.chart-btn img{
+			width: auto;
+			height: 20px;
+			vertical-align: middle;
+			margin-top: -2px;
+			margin-right: 20px;
+		}
+		.chart-btn a{
+			color: #fff;
+			text-decoration: none;
+		}
+		.header-tool{
+			width:100%;
+			height:2.4rem;
+			background: #31435b;
+		}
+		.header-chart-panel-content {
+			color: #fff;
+			height:2.8rem;
+			background: #222;
+			float: left;
+			width: 100%;
+		}
+		.header-chart-panel-content .right {
+			float: right;
+		}
+		.header-chart-panel-content .group {
+			float: left;
+		}
+		.space-single {
+			margin-top: 10px;
+			padding: 0 13px 0;
+			height: 30px;
+			cursor: pointer;
+		}
+
+		.space-single-header {
+			color: skyblue;
+			font-size: 20px;
+			margin-top: 3px;
+		}
+		.space-single-header span{
+			font-size: 14px;
+			font-family: "宋体",serif;
+		}
+
+		.more-resolution {
+			z-index:9999;
+			width: 99%;
+			position: fixed;
+			display: none;
+		}
+
+		.more-indicator {
+			z-index:9999;
+			/* width: 99%;
+            position: fixed; */
+			display: none;
+		}
+
+		.more-indicator-affi {
+			z-index:9998;
+			padding-top: 35px;
+		}
+		.portrait {
+			display:none;
+		}
+		.landscape {
+			display:block;
+		}
+		.left{
+			width: 85%;
+		}
+		.panel-item.active{
+			color: yellow;
+			border-bottom-color: yellow;
+			border-bottom-style: solid;
+		}
+		.panel-select.active{
+			color: yellow;
+			border-bottom-color: yellow;
+			border-bottom-style: solid;
+		}
+
+		.float-panel {
+			display: none;
+			float: right;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 100px;
+			position: relative;
+			background-color: #222;
+		}
+
+		.float-panel a {
+			text-align: center;
+			display: block;
+			color: #fff;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+
+		.float-panel a:hover:not(.active) {
+			background-color: #555;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header-chart-panel-content">
+		<div class="group space-single panel-item">
+			<div class="button" title="1min" onclick="changeResolution('1');">分时</div>
+		</div>
+		<div class="group space-single panel-item">
+			<div class="button" title="5day" onclick="changeResolution('5D');">五日</div>
+		</div>
+		<div class="group space-single panel-item active">
+			<div class="button" title="1day" onclick="changeResolution('D');">日K</div>
+		</div>
+		<div class="group space-single panel-item">
+			<div class="button" title="1week" onclick="changeResolution('W');">周K</div>
+		</div>
+		<div class="group space-single panel-item">
+			<div class="button" title="1month" onclick="changeResolution('M');">月K</div>
+		</div>
+		<div class="group space-single panel-select">
+			<div id="minSelector" class="button" onclick="showSelectMin();">1分钟</div>
+		</div>
+
+		<ul class="float-panel">
+			<li><a onclick="selectItem(1)">1分钟</a></li>
+			<li><a onclick="selectItem(5)">5分钟</a></li>
+			<li><a onclick="selectItem(15)">15分钟</a></li>
+			<li><a onclick="selectItem(30)">30分钟</a></li>
+			<li><a onclick="selectItem(60)">60分钟</a></li>
+		</ul>
+
+		<script type="text/javascript">
+
+			function initActiveEvent() {
+				const items = document.getElementsByClassName("panel-item");
+				for (const item of items) {
+					item.addEventListener("click", function() {
+						const current = document.getElementsByClassName("active");
+
+						// If there's no active class
+						if (current.length > 0) {
+							current[0].className = current[0].className.replace(" active", "");
+						}
+
+						// Add the active class to the current/clicked button
+						this.className += " active";
+						showSelectMin(false)
+					});
+				}
+			}
+			function showSelectMin(isShow) {
+				const floatPanel = document.getElementsByClassName("float-panel")[0];
+				if (floatPanel) {
+					if (isShow === undefined) {
+						if (floatPanel.style.display === "" || floatPanel.style.display === "none") {
+							floatPanel.style.display = "block";
+						} else {
+							floatPanel.style.display = "none";
+						}
+						return;
+					}
+					isShow ? floatPanel.style.display = 'block' : floatPanel.style.display = 'none';
+				}
+			}
+			function selectItem(min) {
+				const selectPanel = document.getElementsByClassName("panel-select")[0];
+				const minSelector = document.getElementById("minSelector");
+
+				if (selectPanel && minSelector) {
+					const current = document.getElementsByClassName("active");
+
+					// If there's no active class
+					if (current.length > 0) {
+						current[0].className = current[0].className.replace(" active", "");
+					}
+					selectPanel.className += " active";
+					minSelector.textContent = `${min}分钟`;
+					showSelectMin(false);
+					changeResolution(min);
+				}
+
+			}
+			function changeResolution(resolution) {
+				const chart = window.tvWidget.chart();
+				if (resolution === 'realtime') {
+					chart.setChartType(2);
+					chart.setResolution(1);
+				} else {
+					chart.setChartType(1);
+					chart.setResolution(resolution);
+				}
+			}
+		</script>
+		<!--div class="group space-single panel-item">
+			<div class="button" title="5min" onclick="changeMoreResolution('5','5分钟');"><span>5分钟</span></div>
+		</div>
+		<div class="group space-single panel-item">
+			<div class="button selected" title="15min" onclick="changeResolution('15');"><span>15分钟</span></div>
+		</div>
+		<div class="group space-single panel-item">
+			<div class="button selected" title="30min" onclick="changeMoreResolution('30','30分钟');"><span>30分钟</span></div>
+		</div>
+		<div class="group space-single panel-item">
+			<div class="button" title="1hour" onclick="changeResolution('60');"><span>1小时</span></div>
+		</div>
+		<div class="group space-single panel-item">
+			<div class="button" title="4hour" onclick="changeResolution('240');"><span>4小时</span></div>
+		</div-->
+	</div>
+	<div id="tv_chart_container" style="height: 600px"></div>
+</body>
+
+</html>
