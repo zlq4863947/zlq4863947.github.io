@@ -1,0 +1,2071 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>绘图覆盖 · TradingView中文开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-livere/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-head-tag/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Studies-Overrides.html" />
+    
+    
+    <link rel="prev" href="Overrides.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CHANGE-LOG.html">
+            
+                <a href="../CHANGE-LOG.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Home.html">
+            
+                <a href="Home.html">
+            
+                    
+                    1、Charting Library 是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2、入门指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="Package-Content.html">
+            
+                <a href="Package-Content.html">
+            
+                    
+                    2-1、图表库内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="Running-Your-Charting-Library.html">
+            
+                <a href="Running-Your-Charting-Library.html">
+            
+                    
+                    2-2、运行图表库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3、数据绑定</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="How-To-Connect-My-Data.html">
+            
+                <a href="How-To-Connect-My-Data.html">
+            
+                    
+                    3-1、如何连接我的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="JS-Api.html">
+            
+                <a href="JS-Api.html">
+            
+                    
+                    3-2、JS Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="UDF.html">
+            
+                <a href="UDF.html">
+            
+                    
+                    3-3、UDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="Symbology.html">
+            
+                <a href="Symbology.html">
+            
+                    
+                    3-4、Symbology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="Trading-Sessions.html">
+            
+                <a href="Trading-Sessions.html">
+            
+                    
+                    3-5、交易时段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="Quotes.html">
+            
+                <a href="Quotes.html">
+            
+                    
+                    3-6、报价
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4、图表定制</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html">
+            
+                    
+                    4-1、定制概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="Widget-Constructor.html">
+            
+                <a href="Widget-Constructor.html">
+            
+                    
+                    4-2、Widget 构造器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Widget-Methods.html">
+            
+                <a href="Widget-Methods.html">
+            
+                    
+                    4-3、Widget 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="Chart-Methods.html">
+            
+                <a href="Chart-Methods.html">
+            
+                    
+                    4-4、图表方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Featuresets.html">
+            
+                <a href="Featuresets.html">
+            
+                    
+                    4-5、功能集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html#通过数据流定制">
+            
+                    
+                    4-6、服务端定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="Customization-Use-Cases.html">
+            
+                <a href="Customization-Use-Cases.html">
+            
+                    
+                    4-7、定制的使用案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">5、交易终端</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="Trading-Terminal.html">
+            
+                <a href="Trading-Terminal.html">
+            
+                    
+                    5-1、交易终端简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="Broker-API.html">
+            
+                <a href="Broker-API.html">
+            
+                    
+                    5-2、经纪商 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="Trading-Host.html">
+            
+                <a href="Trading-Host.html">
+            
+                    
+                    5-3、交易主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="Account-Manager.html">
+            
+                <a href="Account-Manager.html">
+            
+                    
+                    5-4、账户管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="Trading-Objects-and-Constants.html">
+            
+                <a href="Trading-Objects-and-Constants.html">
+            
+                    
+                    5-5、交易对象和常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="Saving-and-Loading-Charts.html">
+            
+                <a href="Saving-and-Loading-Charts.html">
+            
+                    
+                    6、储存和载入图表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="Save-Load-Adapter-Example.html">
+            
+                <a href="Save-Load-Adapter-Example.html">
+            
+                    
+                    6-1、储存和载入的内存示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="Creating-Custom-Studies.html">
+            
+                <a href="Creating-Custom-Studies.html">
+            
+                    
+                    7、创建自定义指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="Best-practices.html">
+            
+                <a href="Best-practices.html">
+            
+                    
+                    8、最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="Frequently-Asked-Questions.html">
+            
+                <a href="Frequently-Asked-Questions.html">
+            
+                    
+                    9、经常被问到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="Breaking-changes.html">
+            
+                <a href="Breaking-changes.html">
+            
+                    
+                    10、版本变更点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="Basic-Compose.html">
+            
+                <a href="Basic-Compose.html">
+            
+                    
+                    图表的主要组成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="Resolution.html">
+            
+                <a href="Resolution.html">
+            
+                    
+                    周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="Time-Frames.html">
+            
+                <a href="Time-Frames.html">
+            
+                    
+                    时间范围
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="Localization.html">
+            
+                <a href="Localization.html">
+            
+                    
+                    本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="Overrides.html">
+            
+                <a href="Overrides.html">
+            
+                    
+                    覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.6" data-path="Drawings-Overrides.html">
+            
+                <a href="Drawings-Overrides.html">
+            
+                    
+                    绘图覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="Studies-Overrides.html">
+            
+                <a href="Studies-Overrides.html">
+            
+                    
+                    指标覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="Shapes-and-Overrides.html">
+            
+                <a href="Shapes-and-Overrides.html">
+            
+                    
+                    形状与覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="Chart-Style-Properties.html">
+            
+                <a href="Chart-Style-Properties.html">
+            
+                    
+                    图表样式属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="Chart.html">
+            
+                <a href="Chart.html">
+            
+                    
+                    图表自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="Toolbars.html">
+            
+                <a href="Toolbars.html">
+            
+                    
+                    工具栏自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="CSS-Color-Themes.html">
+            
+                <a href="CSS-Color-Themes.html">
+            
+                    
+                    CSS主题颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="Subscription.html">
+            
+                <a href="Subscription.html">
+            
+                    
+                    订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="Trading-Primitives.html">
+            
+                <a href="Trading-Primitives.html">
+            
+                    
+                    交易元语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="Marks-On-Bars.html">
+            
+                <a href="Marks-On-Bars.html">
+            
+                    
+                    在 K 线上做标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="Delegate.html">
+            
+                <a href="Delegate.html">
+            
+                    
+                    委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="WatchedValue.html">
+            
+                <a href="WatchedValue.html">
+            
+                    
+                    WatchedValue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.18" data-path="Study-Api.html">
+            
+                <a href="Study-Api.html">
+            
+                    
+                    指标 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="Shape-Api.html">
+            
+                <a href="Shape-Api.html">
+            
+                    
+                    形状 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="Shapes-Group-Api.html">
+            
+                <a href="Shapes-Group-Api.html">
+            
+                    
+                    形状组 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="Selection-Api.html">
+            
+                <a href="Selection-Api.html">
+            
+                    
+                    选择 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.22" data-path="Pane-Api.html">
+            
+                <a href="Pane-Api.html">
+            
+                    
+                    窗格 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.23" data-path="Series-Api.html">
+            
+                <a href="Series-Api.html">
+            
+                    
+                    数据列 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.24" data-path="Price-Scale-Api.html">
+            
+                <a href="Price-Scale-Api.html">
+            
+                    
+                    价格刻度 Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.25" data-path="Panes-And-Scales-Behavior.html">
+            
+                <a href="Panes-And-Scales-Behavior.html">
+            
+                    
+                    窗格和刻度特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.26" data-path="Shortcuts.html">
+            
+                <a href="Shortcuts.html">
+            
+                    
+                    快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >绘图覆盖</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7ED8;&#x56FE;&#x8986;&#x76D6;">&#x7ED8;&#x56FE;&#x8986;&#x76D6;</h1>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x7ED8;&#x56FE;&#x8986;&#x76D6;&#x7684;&#x5168;&#x90E8;&#x5217;&#x8868;&#x53CA;&#x9ED8;&#x8BA4;&#x503C;&#x3002; &#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="Widget-Constructor.html#overrides">Widget&#x6784;&#x9020;&#x51FD;&#x6570;</a>&#x7684;<code>overrides</code>&#x53C2;&#x6570;&#x6765;&#x66F4;&#x6539;&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x5728;&#x5217;&#x8868;&#x7684;&#x5E95;&#x90E8;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x503C;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x5E38;&#x91CF;&#x548C;&#x7F29;&#x5199;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+<pre><code class="lang-javascript">linetoolicon: {
+    singleChartOnly: <span class="hljs-literal">true</span>,
+    color: <span class="hljs-string">&apos;rgba( 61, 133, 198, 1)&apos;</span>,
+    snapTo45Degrees:<span class="hljs-literal">true</span>,
+    size: <span class="hljs-number">40</span>,
+    icon: <span class="hljs-number">0x263A</span>,
+    angle: <span class="hljs-built_in">Math</span>.PI * <span class="hljs-number">0.5</span>,
+    scale: <span class="hljs-number">1.0</span>
+},
+linetoolbezierquadro: {
+    linecolor: <span class="hljs-string">&apos;rgba( 21, 153, 128, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    fillBackground: <span class="hljs-literal">false</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 21, 56, 153, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linestyle: LINESTYLE_SOLID,
+    extendLeft: <span class="hljs-literal">false</span>,
+    extendRight: <span class="hljs-literal">false</span>,
+    leftEnd: LINEEND_NORMAL,
+    rightEnd: LINEEND_NORMAL
+},
+linetoolbeziercubic: {
+    linecolor: <span class="hljs-string">&apos;rgba( 21, 153, 128, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    fillBackground: <span class="hljs-literal">false</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 21, 56, 153, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linestyle: LINESTYLE_SOLID,
+    extendLeft: <span class="hljs-literal">false</span>,
+    extendRight: <span class="hljs-literal">false</span>,
+    leftEnd: LINEEND_NORMAL,
+    rightEnd: LINEEND_NORMAL
+},
+linetooltrendline: {
+    linecolor: <span class="hljs-string">&apos;rgba( 21, 153, 128, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    extendLeft: <span class="hljs-literal">false</span>,
+    extendRight: <span class="hljs-literal">false</span>,
+    leftEnd: LINEEND_NORMAL,
+    rightEnd: LINEEND_NORMAL,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 21, 119, 96, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    snapTo45Degrees:<span class="hljs-literal">true</span>,
+    alwaysShowStats: <span class="hljs-literal">false</span>,
+    showPriceRange: <span class="hljs-literal">false</span>,
+    showBarsRange: <span class="hljs-literal">false</span>,
+    showDateTimeRange: <span class="hljs-literal">false</span>,
+    showDistance:<span class="hljs-literal">false</span>,
+    showAngle: <span class="hljs-literal">false</span>
+},
+linetooltimecycles: {
+    linecolor: <span class="hljs-string">&apos;rgba(21, 153, 128, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba(106, 168, 79, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linestyle: LINESTYLE_SOLID
+},
+linetoolsineline: {
+    linecolor: <span class="hljs-string">&apos;rgba( 21, 153, 128, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID
+},
+linetooltrendangle: {
+    singleChartOnly: <span class="hljs-literal">true</span>,
+    linecolor: <span class="hljs-string">&apos;rgba( 21, 153, 128, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    snapTo45Degrees:<span class="hljs-literal">true</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 21, 119, 96, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">true</span>,
+    italic:<span class="hljs-literal">false</span>,
+    alwaysShowStats: <span class="hljs-literal">false</span>,
+    showPriceRange: <span class="hljs-literal">false</span>,
+    showBarsRange: <span class="hljs-literal">false</span>,
+    extendRight: <span class="hljs-literal">false</span>,
+    extendLeft: <span class="hljs-literal">false</span>
+},
+linetooldisjointangle: {
+    linecolor: <span class="hljs-string">&apos;rgba( 18, 159, 92, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">2.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 106, 168, 79, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    extendLeft: <span class="hljs-literal">false</span>,
+    extendRight: <span class="hljs-literal">false</span>,
+    leftEnd: LINEEND_NORMAL,
+    rightEnd: LINEEND_NORMAL,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 18, 159, 92, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    showPrices: <span class="hljs-literal">false</span>,
+    showPriceRange: <span class="hljs-literal">false</span>,
+    showDateTimeRange: <span class="hljs-literal">false</span>,
+    showBarsRange: <span class="hljs-literal">false</span>
+},
+linetoolflatbottom: {
+    linecolor: <span class="hljs-string">&apos;rgba( 73, 133, 231, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">2.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 21, 56, 153, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    extendLeft: <span class="hljs-literal">false</span>,
+    extendRight: <span class="hljs-literal">false</span>,
+    leftEnd: LINEEND_NORMAL,
+    rightEnd: LINEEND_NORMAL,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 73, 133, 231, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    showPrices: <span class="hljs-literal">false</span>,
+    showPriceRange: <span class="hljs-literal">false</span>,
+    showDateTimeRange: <span class="hljs-literal">false</span>,
+    showBarsRange: <span class="hljs-literal">false</span>
+},
+linetoolfibspiral: {
+    linecolor: <span class="hljs-string">&apos;rgba( 21, 153, 128, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID
+},
+linetooldaterange: {
+    linecolor: <span class="hljs-string">&apos;rgba( 88, 88, 88, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    fillLabelBackground: <span class="hljs-literal">true</span>,
+    labelBackgroundColor: <span class="hljs-string">&apos;rgba( 91, 133, 191, 0.9)&apos;</span>,
+    labelBackgroundTransparency: <span class="hljs-number">30</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 186, 218, 255, 0.4)&apos;</span>,
+    backgroundTransparency: <span class="hljs-number">60</span>,
+    drawBorder: <span class="hljs-literal">false</span>,
+    borderColor: <span class="hljs-string">&apos;rgba( 102, 123, 139, 1)&apos;</span>
+},
+linetoolpricerange: {
+    linecolor: <span class="hljs-string">&apos;rgba( 88, 88, 88, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    fillLabelBackground: <span class="hljs-literal">true</span>,
+    labelBackgroundColor: <span class="hljs-string">&apos;rgba( 91, 133, 191, 0.9)&apos;</span>,
+    labelBackgroundTransparency: <span class="hljs-number">30</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 186, 218, 255, 0.4)&apos;</span>,
+    backgroundTransparency: <span class="hljs-number">60</span>,
+    drawBorder: <span class="hljs-literal">false</span>,
+    borderColor: <span class="hljs-string">&apos;rgba( 102, 123, 139, 1)&apos;</span>
+},
+linetooldateandpricerange: {
+    linecolor: <span class="hljs-string">&apos;rgba( 88, 88, 88, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    fillLabelBackground: <span class="hljs-literal">true</span>,
+    labelBackgroundColor: <span class="hljs-string">&apos;rgba( 91, 133, 191, 0.9)&apos;</span>,
+    labelBackgroundTransparency: <span class="hljs-number">30</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 186, 218, 255, 0.4)&apos;</span>,
+    backgroundTransparency: <span class="hljs-number">60</span>,
+    drawBorder: <span class="hljs-literal">false</span>,
+    borderColor: <span class="hljs-string">&apos;rgba( 102, 123, 139, 1)&apos;</span>
+},
+linetoolriskrewardshort: {
+    linecolor: <span class="hljs-string">&apos;rgba( 88, 88, 88, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba(255, 255, 255, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    fillLabelBackground: <span class="hljs-literal">true</span>,
+    labelBackgroundColor: <span class="hljs-string">&apos;rgba( 88, 88, 88, 1)&apos;</span>,
+    labelBackgroundTransparency: <span class="hljs-number">0</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    stopBackground: <span class="hljs-string">&apos;rgba( 255, 0, 0, 0.2)&apos;</span>,
+    profitBackground: <span class="hljs-string">&apos;rgba( 0, 160, 0, 0.2)&apos;</span>,
+    stopBackgroundTransparency: <span class="hljs-number">80</span>,
+    profitBackgroundTransparency: <span class="hljs-number">80</span>,
+    drawBorder: <span class="hljs-literal">false</span>,
+    borderColor: <span class="hljs-string">&apos;rgba( 102, 123, 139, 1)&apos;</span>
+},
+linetoolriskrewardlong: {
+    linecolor: <span class="hljs-string">&apos;rgba( 88, 88, 88, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba(255, 255, 255, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    fillLabelBackground: <span class="hljs-literal">true</span>,
+    labelBackgroundColor: <span class="hljs-string">&apos;rgba( 88, 88, 88, 1)&apos;</span>,
+    labelBackgroundTransparency: <span class="hljs-number">0</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    stopBackground: <span class="hljs-string">&apos;rgba( 255, 0, 0, 0.2)&apos;</span>,
+    profitBackground: <span class="hljs-string">&apos;rgba( 0, 160, 0, 0.2)&apos;</span>,
+    stopBackgroundTransparency: <span class="hljs-number">80</span>,
+    profitBackgroundTransparency: <span class="hljs-number">80</span>,
+    drawBorder: <span class="hljs-literal">false</span>,
+    borderColor: <span class="hljs-string">&apos;rgba( 102, 123, 139, 1)&apos;</span>
+},
+linetoolarrow: {
+    linecolor: <span class="hljs-string">&apos;rgba( 111, 136, 198, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">2.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    extendLeft: <span class="hljs-literal">false</span>,
+    extendRight: <span class="hljs-literal">false</span>,
+    leftEnd: LINEEND_NORMAL,
+    rightEnd: LINEEND_ARROW,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 21, 119, 96, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    alwaysShowStats: <span class="hljs-literal">false</span>,
+    showPriceRange: <span class="hljs-literal">false</span>,
+    showBarsRange: <span class="hljs-literal">false</span>,
+    showDateTimeRange: <span class="hljs-literal">false</span>,
+    showDistance:<span class="hljs-literal">false</span>,
+    showAngle: <span class="hljs-literal">false</span>
+},
+linetoolray: {
+    linecolor: <span class="hljs-string">&apos;rgba( 21, 153, 128, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    extendLeft: <span class="hljs-literal">false</span>,
+    extendRight: <span class="hljs-literal">true</span>,
+    leftEnd: LINEEND_NORMAL,
+    rightEnd: LINEEND_NORMAL,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 21, 119, 96, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    alwaysShowStats: <span class="hljs-literal">false</span>,
+    showPriceRange: <span class="hljs-literal">false</span>,
+    showBarsRange: <span class="hljs-literal">false</span>,
+    showDateTimeRange: <span class="hljs-literal">false</span>,
+    showDistance:<span class="hljs-literal">false</span>,
+    showAngle: <span class="hljs-literal">false</span>
+},
+linetoolextended: {
+    linecolor: <span class="hljs-string">&apos;rgba( 21, 153, 128, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    extendLeft: <span class="hljs-literal">true</span>,
+    extendRight: <span class="hljs-literal">true</span>,
+    leftEnd: LINEEND_NORMAL,
+    rightEnd: LINEEND_NORMAL,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 21, 119, 96, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    alwaysShowStats: <span class="hljs-literal">false</span>,
+    showPriceRange: <span class="hljs-literal">false</span>,
+    showBarsRange: <span class="hljs-literal">false</span>,
+    showDateTimeRange: <span class="hljs-literal">false</span>,
+    showDistance:<span class="hljs-literal">false</span>,
+    showAngle: <span class="hljs-literal">false</span>
+},
+linetoolhorzline: {
+    linecolor: <span class="hljs-string">&apos;rgba( 128, 204, 219, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    showPrice: <span class="hljs-literal">true</span>,
+    showLabel: <span class="hljs-literal">false</span>,
+    text: <span class="hljs-string">&apos;&apos;</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 21, 119, 96, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    horzLabelsAlign: <span class="hljs-string">&apos;center&apos;</span>,
+    vertLabelsAlign: <span class="hljs-string">&apos;top&apos;</span>
+},
+linetoolhorzray: {
+    linecolor: <span class="hljs-string">&apos;rgba( 128, 204, 219, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    showPrice: <span class="hljs-literal">true</span>,
+    showLabel: <span class="hljs-literal">false</span>,
+    text: <span class="hljs-string">&apos;&apos;</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 21, 119, 96, 1)&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    horzLabelsAlign: <span class="hljs-string">&apos;center&apos;</span>,
+    vertLabelsAlign: <span class="hljs-string">&apos;top&apos;</span>
+},
+linetoolvertline: {
+    linecolor: <span class="hljs-string">&apos;rgba( 128, 204, 219, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    showTime: <span class="hljs-literal">true</span>
+},
+linetoolcirclelines: {
+    trendline: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 128, 128, 128, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_DASHED
+    },
+    linecolor: <span class="hljs-string">&apos;rgba( 128, 204, 219, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID
+},
+linetoolfibtimezone: {
+    horzLabelsAlign: <span class="hljs-string">&apos;right&apos;</span>,
+    vertLabelsAlign: <span class="hljs-string">&apos;bottom&apos;</span>,
+    baselinecolor: <span class="hljs-string">&apos;rgba( 128, 128, 128, 1)&apos;</span>,
+    linecolor: <span class="hljs-string">&apos;rgba( 0, 85, 219, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    showLabels: <span class="hljs-literal">true</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fillBackground:<span class="hljs-literal">false</span>,
+    transparency:<span class="hljs-number">80</span>,
+    trendline: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 128, 128, 128, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_DASHED
+    },
+    level1<span class="hljs-number">-11</span>: LEVELS_TYPE_C
+},
+linetooltext: {
+    color: <span class="hljs-string">&apos;rgba( 102, 123, 139, 1)&apos;</span>,
+    text: $.t(<span class="hljs-string">&apos;Text&apos;</span>),
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fontsize: <span class="hljs-number">20</span>,
+    fillBackground: <span class="hljs-literal">false</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 91, 133, 191, 0.9)&apos;</span>,
+    backgroundTransparency: <span class="hljs-number">70</span>,
+    drawBorder: <span class="hljs-literal">false</span>,
+    borderColor: <span class="hljs-string">&apos;rgba( 102, 123, 139, 1)&apos;</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    locked: <span class="hljs-literal">false</span>,
+    fixedSize: <span class="hljs-literal">true</span>,
+    wordWrap: <span class="hljs-literal">false</span>,
+    wordWrapWidth: <span class="hljs-number">400</span>
+},
+linetooltextabsolute: {
+    singleChartOnly: <span class="hljs-literal">true</span>,
+    color: <span class="hljs-string">&apos;rgba( 102, 123, 139, 1)&apos;</span>,
+    text: $.t(<span class="hljs-string">&apos;Text&apos;</span>),
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fontsize: <span class="hljs-number">20</span>,
+    fillBackground: <span class="hljs-literal">false</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 155, 190, 213, 0.3)&apos;</span>,
+    backgroundTransparency: <span class="hljs-number">70</span>,
+    drawBorder: <span class="hljs-literal">false</span>,
+    borderColor: <span class="hljs-string">&apos;rgba( 102, 123, 139, 1)&apos;</span>,
+    bold: <span class="hljs-literal">false</span>,
+    italic: <span class="hljs-literal">false</span>,
+    locked: <span class="hljs-literal">true</span>,
+    wordWrap: <span class="hljs-literal">false</span>,
+    wordWrapWidth: <span class="hljs-number">400</span>
+},
+linetoolballoon: {
+    color: <span class="hljs-string">&apos;rgba( 102, 123, 139, 1)&apos;</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 255, 254, 206, 0.7)&apos;</span>,
+    borderColor: <span class="hljs-string">&apos;rgba( 140, 140, 140, 1)&apos;</span>,
+    fontWeight: <span class="hljs-string">&apos;bold&apos;</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    font: <span class="hljs-string">&apos;Arial&apos;</span>,
+    transparency: <span class="hljs-number">30</span>,
+    text: $.t(<span class="hljs-string">&apos;Comment&apos;</span>)
+},
+linetoolbrush: {
+    linecolor: <span class="hljs-string">&apos;rgba( 53, 53, 53, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">2.0</span>,
+    smooth:<span class="hljs-number">5</span>,
+    fillBackground: <span class="hljs-literal">false</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 21, 56, 153, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    leftEnd: LINEEND_NORMAL,
+    rightEnd: LINEEND_NORMAL
+},
+linetoolpolyline: {
+    linecolor: <span class="hljs-string">&apos;rgba( 53, 53, 53, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">2.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 21, 56, 153, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    filled: <span class="hljs-literal">false</span>
+},
+linetoolarrowmark: {
+    color: <span class="hljs-string">&apos;rgba( 120, 120, 120, 1)&apos;</span>,
+    text: <span class="hljs-string">&apos;&apos;</span>,
+    fontsize: <span class="hljs-number">20</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>
+},
+linetoolarrowmarkleft: {
+    color: <span class="hljs-string">&apos;rgba( 120, 120, 120, 1)&apos;</span>,
+    text: <span class="hljs-string">&apos;&apos;</span>,
+    fontsize: <span class="hljs-number">20</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>
+},
+linetoolarrowmarkup: {
+    color: <span class="hljs-string">&apos;rgba( 120, 120, 120, 1)&apos;</span>,
+    text: <span class="hljs-string">&apos;&apos;</span>,
+    fontsize: <span class="hljs-number">20</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>
+},
+linetoolarrowmarkright: {
+    color: <span class="hljs-string">&apos;rgba( 120, 120, 120, 1)&apos;</span>,
+    text: <span class="hljs-string">&apos;&apos;</span>,
+    fontsize: <span class="hljs-number">20</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>
+},
+linetoolarrowmarkdown: {
+    color: <span class="hljs-string">&apos;rgba( 120, 120, 120, 1)&apos;</span>,
+    text: <span class="hljs-string">&apos;&apos;</span>,
+    fontsize: <span class="hljs-number">20</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>
+},
+linetoolflagmark: {
+    color: <span class="hljs-string">&apos;rgba( 255, 0, 0, 1)&apos;</span>
+},
+
+linetoolnote: {
+    markerColor: <span class="hljs-string">&apos;rgba( 46, 102, 255, 1)&apos;</span>,
+    textColor: <span class="hljs-string">&apos;rgba( 0, 0, 0, 1)&apos;</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+    backgroundTransparency: <span class="hljs-number">0</span>,
+    text: <span class="hljs-string">&apos;Text&apos;</span>,
+    font: <span class="hljs-string">&apos;Arial&apos;</span>,
+    fontSize: <span class="hljs-number">12</span>,
+    bold: <span class="hljs-literal">false</span>,
+    italic: <span class="hljs-literal">false</span>,
+    locked: <span class="hljs-literal">false</span>,
+    fixedSize: <span class="hljs-literal">true</span>
+},
+
+linetoolnoteabsolute: {
+    singleChartOnly: <span class="hljs-literal">true</span>,
+    markerColor: <span class="hljs-string">&apos;rgba( 46, 102, 255, 1)&apos;</span>,
+    textColor: <span class="hljs-string">&apos;rgba( 0, 0, 0, 1)&apos;</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+    backgroundTransparency: <span class="hljs-number">0</span>,
+    text: <span class="hljs-string">&apos;Text&apos;</span>,
+    font: <span class="hljs-string">&apos;Arial&apos;</span>,
+    fontSize: <span class="hljs-number">12</span>,
+    bold: <span class="hljs-literal">false</span>,
+    italic: <span class="hljs-literal">false</span>,
+    locked: <span class="hljs-literal">true</span>,
+    fixedSize: <span class="hljs-literal">true</span>
+},
+
+linetoolthumbup: {
+    color: <span class="hljs-string">&apos;rgba( 0, 128, 0, 1)&apos;</span>
+},
+linetoolthumbdown: {
+    color: <span class="hljs-string">&apos;rgba( 255, 0, 0, 1)&apos;</span>
+},
+linetoolpricelabel: {
+    color: <span class="hljs-string">&apos;rgba( 102, 123, 139, 1)&apos;</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 0.7)&apos;</span>,
+    borderColor: <span class="hljs-string">&apos;rgba( 140, 140, 140, 1)&apos;</span>,
+    fontWeight: <span class="hljs-string">&apos;bold&apos;</span>,
+    fontsize: <span class="hljs-number">11</span>,
+    font: <span class="hljs-string">&apos;Arial&apos;</span>,
+    transparency: <span class="hljs-number">30</span>
+},
+linetoolrectangle: {
+    color: <span class="hljs-string">&apos;rgba( 21, 56, 153, 1)&apos;</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 21, 56, 153, 0.5)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    snapTo45Degrees:<span class="hljs-literal">true</span>,
+    transparency: <span class="hljs-number">50</span>
+},
+linetoolrotatedrectangle: {
+    color: <span class="hljs-string">&apos;rgba( 152, 0, 255, 1)&apos;</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 142, 124, 195, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    snapTo45Degrees:<span class="hljs-literal">true</span>
+},
+linetoolellipse: {
+    color: <span class="hljs-string">&apos;rgba( 153, 153, 21, 1)&apos;</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 153, 153, 21, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linewidth: <span class="hljs-number">1.0</span>
+},
+linetoolarc: {
+    color: <span class="hljs-string">&apos;rgba( 153, 153, 21, 1)&apos;</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 153, 153, 21, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linewidth: <span class="hljs-number">1.0</span>
+},
+linetoolprediction: {
+    singleChartOnly: <span class="hljs-literal">true</span>,
+    linecolor: <span class="hljs-string">&apos;rgba( 28, 115, 219, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">2.0</span>,
+
+    sourceBackColor: <span class="hljs-string">&apos;rgba( 241, 241, 241, 1)&apos;</span>,
+    sourceTextColor: <span class="hljs-string">&apos;rgba( 110, 110, 110, 1)&apos;</span>,
+    sourceStrokeColor: <span class="hljs-string">&apos;rgba( 110, 110, 110, 1)&apos;</span>,
+
+    targetStrokeColor:<span class="hljs-string">&apos;rgba( 47, 168, 255, 1)&apos;</span>,
+    targetBackColor:<span class="hljs-string">&apos;rgba( 11, 111, 222, 1)&apos;</span>,
+    targetTextColor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+
+    successBackground: <span class="hljs-string">&apos;rgba( 54, 160, 42, 0.9)&apos;</span>,
+    successTextColor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+
+    failureBackground: <span class="hljs-string">&apos;rgba( 231, 69, 69, 0.5)&apos;</span>,
+    failureTextColor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+
+    intermediateBackColor: <span class="hljs-string">&apos;rgba( 234, 210, 137, 1)&apos;</span>,
+    intermediateTextColor: <span class="hljs-string">&apos;rgba( 109, 77, 34, 1)&apos;</span>,
+
+    transparency: <span class="hljs-number">10</span>,
+    centersColor: <span class="hljs-string">&apos;rgba( 32, 32, 32, 1)&apos;</span>
+},
+linetooltriangle: {
+    color: <span class="hljs-string">&apos;rgba( 153, 21, 21, 1)&apos;</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 153, 21, 21, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linewidth: <span class="hljs-number">1.0</span>
+},
+linetoolcallout: {
+    color: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 153, 21, 21, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linewidth: <span class="hljs-number">2.0</span>,
+    fontsize: <span class="hljs-number">12</span>,
+    font:<span class="hljs-string">&apos;Verdana&apos;</span>,
+    text: <span class="hljs-string">&apos;Text&apos;</span>,
+    bordercolor: <span class="hljs-string">&apos;rgba( 153, 21, 21, 1)&apos;</span>,
+    bold: <span class="hljs-literal">false</span>,
+    italic: <span class="hljs-literal">false</span>,
+    wordWrap: <span class="hljs-literal">false</span>,
+    wordWrapWidth: <span class="hljs-number">400</span>
+},
+linetoolparallelchannel: {
+    linecolor: <span class="hljs-string">&apos;rgba( 119, 52, 153, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    extendLeft: <span class="hljs-literal">false</span>,
+    extendRight: <span class="hljs-literal">false</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 180, 167, 214, 0.5)&apos;</span>,
+    transparency: <span class="hljs-number">50</span>,
+    showMidline: <span class="hljs-literal">false</span>,
+    midlinecolor: <span class="hljs-string">&apos;rgba( 119, 52, 153, 1)&apos;</span>,
+    midlinewidth: <span class="hljs-number">1.0</span>,
+    midlinestyle: LINESTYLE_DASHED
+},
+linetoolelliottimpulse: {
+    degree: <span class="hljs-number">7</span>,
+    showWave:<span class="hljs-literal">true</span>,
+    color: <span class="hljs-string">&apos;rgba( 61, 133, 198, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1</span>
+},
+linetoolelliotttriangle: {
+    degree: <span class="hljs-number">7</span>,
+    showWave:<span class="hljs-literal">true</span>,
+    color: <span class="hljs-string">&apos;rgba( 255, 152, 0, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1</span>
+},
+linetoolelliotttriplecombo: {
+    degree: <span class="hljs-number">7</span>,
+    showWave:<span class="hljs-literal">true</span>,
+    color: <span class="hljs-string">&apos;rgba( 106, 168, 79, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1</span>
+},
+linetoolelliottcorrection: {
+    degree: <span class="hljs-number">7</span>,
+    showWave:<span class="hljs-literal">true</span>,
+    color: <span class="hljs-string">&apos;rgba( 61, 133, 198, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1</span>
+},
+linetoolelliottdoublecombo: {
+    degree: <span class="hljs-number">7</span>,
+    showWave:<span class="hljs-literal">true</span>,
+    color: <span class="hljs-string">&apos;rgba( 106, 168, 79, 1)&apos;</span>,
+    linewidth: <span class="hljs-number">1</span>
+},
+linetoolbarspattern: {
+    singleChartOnly: <span class="hljs-literal">true</span>,
+    color:<span class="hljs-string">&apos;rgba( 80, 145, 204, 1)&apos;</span>,
+    mode:BARS_MODE,
+    mirrored:<span class="hljs-literal">false</span>,
+    flipped:<span class="hljs-literal">false</span>
+},
+linetoolghostfeed: {
+    singleChartOnly: <span class="hljs-literal">true</span>,
+    averageHL: <span class="hljs-number">20</span>,
+    variance: <span class="hljs-number">50</span>,
+    candleStyle: {
+        upColor: <span class="hljs-string">&apos;#6ba583&apos;</span>,
+        downColor: <span class="hljs-string">&apos;#d75442&apos;</span>,
+        drawWick: <span class="hljs-literal">true</span>,
+        drawBorder: <span class="hljs-literal">true</span>,
+        borderColor: <span class="hljs-string">&apos;#378658&apos;</span>,
+        borderUpColor: <span class="hljs-string">&apos;#225437&apos;</span>,
+        borderDownColor: <span class="hljs-string">&apos;#5b1a13&apos;</span>,
+        wickColor: <span class="hljs-string">&apos;#737375&apos;</span>
+    },
+    transparency: <span class="hljs-number">50</span>
+},
+linetoolpitchfork: {
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    style:PITCHFORK_STYLE_ORIGINAL,
+    median: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 165, 0, 0, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_SOLID
+    },
+    level0<span class="hljs-number">-8</span>: LEVELS_TYPE_C
+},
+linetoolpitchfan: {
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    median: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 165, 0, 0, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_SOLID
+    },
+    level0<span class="hljs-number">-8</span>: LEVELS_TYPE_C
+},
+linetoolgannfan: {
+    showLabels: <span class="hljs-literal">true</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    level1<span class="hljs-number">-9</span>: LEVELS_TYPE_F
+},
+linetoolganncomplex: {
+    fillBackground:<span class="hljs-literal">false</span>,
+    arcsBackground: {
+        fillBackground: <span class="hljs-literal">true</span>,
+        transparency: <span class="hljs-number">80</span>
+    },
+    levels: [<span class="hljs-comment">/* 6 LEVELS_TYPE_D */</span>],
+    fanlines: [<span class="hljs-comment">/* 11 LEVELS_TYPE_E */</span>],
+    arcs: [<span class="hljs-comment">/* 11 LEVELS_TYPE_E */</span>]
+},
+linetoolgannsquare: {
+    color: <span class="hljs-string">&apos;rgba( 21, 56, 153, 0.8)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    showTopLabels:<span class="hljs-literal">true</span>,
+    showBottomLabels:<span class="hljs-literal">true</span>,
+    showLeftLabels:<span class="hljs-literal">true</span>,
+    showRightLabels:<span class="hljs-literal">true</span>,
+    fillHorzBackground:<span class="hljs-literal">true</span>,
+    horzTransparency:<span class="hljs-number">80</span>,
+    fillVertBackground:<span class="hljs-literal">true</span>,
+    vertTransparency:<span class="hljs-number">80</span>,
+    hlevel1<span class="hljs-number">-7</span>: LEVELS_TYPE_B,
+    vlevel1<span class="hljs-number">-7</span>: LEVELS_TYPE_B
+},
+linetoolfibspeedresistancefan: {
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    grid: {
+        color: <span class="hljs-string">&apos;rgba( 128, 128, 128, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_SOLID,
+        visible:<span class="hljs-literal">true</span>
+    },
+    linewidth: <span class="hljs-number">1.0</span>,
+    linestyle: LINESTYLE_SOLID,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    showTopLabels:<span class="hljs-literal">true</span>,
+    showBottomLabels:<span class="hljs-literal">true</span>,
+    showLeftLabels:<span class="hljs-literal">true</span>,
+    showRightLabels:<span class="hljs-literal">true</span>,
+    snapTo45Degrees:<span class="hljs-literal">true</span>,
+    hlevel1<span class="hljs-number">-7</span>: LEVELS_TYPE_B,
+    vlevel1<span class="hljs-number">-7</span>: LEVELS_TYPE_B
+},
+linetoolfibretracement: {
+    showCoeffs: <span class="hljs-literal">true</span>,
+    showPrices: <span class="hljs-literal">true</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    extendLines:<span class="hljs-literal">false</span>,
+    horzLabelsAlign: <span class="hljs-string">&apos;left&apos;</span>,
+    vertLabelsAlign: <span class="hljs-string">&apos;middle&apos;</span>,
+    reverse:<span class="hljs-literal">false</span>,
+    coeffsAsPercents:<span class="hljs-literal">false</span>,
+    trendline: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 128, 128, 128, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_DASHED
+    },
+    levelsStyle: {
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_SOLID
+    },
+    level1<span class="hljs-number">-24</span>: LEVELS_TYPE_B
+},
+linetoolfibchannel: {
+    showCoeffs: <span class="hljs-literal">true</span>,
+    showPrices: <span class="hljs-literal">true</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    extendLeft:<span class="hljs-literal">false</span>,
+    extendRight:<span class="hljs-literal">false</span>,
+    horzLabelsAlign: <span class="hljs-string">&apos;left&apos;</span>,
+    vertLabelsAlign: <span class="hljs-string">&apos;middle&apos;</span>,
+    coeffsAsPercents:<span class="hljs-literal">false</span>,
+    levelsStyle: {
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_SOLID
+    },
+    level1<span class="hljs-number">-24</span>:  LEVELS_TYPE_B
+},
+linetoolprojection: {
+    showCoeffs: <span class="hljs-literal">true</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    color1: <span class="hljs-string">&apos;rgba( 0, 128, 0, 0.2)&apos;</span>,
+    color2: <span class="hljs-string">&apos;rgba( 255, 0, 0, 0.2)&apos;</span>,
+    linewidth: <span class="hljs-number">1.0</span>,
+    trendline: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 128, 128, 128, 1)&apos;</span>,
+        linestyle: LINESTYLE_SOLID
+    },
+    level1: LEVELS_TYPE_C
+},
+linetool5pointspattern: {
+    color: <span class="hljs-string">&apos;rgba( 204, 40, 149, 1)&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 204, 40, 149, 0.5)&apos;</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fontsize:<span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linewidth: <span class="hljs-number">1.0</span>
+},
+linetoolcypherpattern: {
+    color: <span class="hljs-string">&apos;#CC2895&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;#FFFFFF&apos;</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;#CC2895&apos;</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fontsize:<span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linewidth: <span class="hljs-number">1.0</span>
+},
+linetooltrianglepattern: {
+    color: <span class="hljs-string">&apos;rgba( 149, 40, 255, 1)&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 149, 40, 204, 0.5)&apos;</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fontsize:<span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linewidth: <span class="hljs-number">1.0</span>
+},
+linetoolabcd: {
+    color: <span class="hljs-string">&apos;rgba( 0, 155, 0, 1)&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fontsize:<span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    linewidth: <span class="hljs-number">2.0</span>
+},
+linetoolthreedrivers: {
+    color: <span class="hljs-string">&apos;rgba( 149, 40, 255, 1)&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 149, 40, 204, 0.5)&apos;</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fontsize:<span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linewidth: <span class="hljs-number">2.0</span>
+},
+linetoolheadandshoulders: {
+    color: <span class="hljs-string">&apos;rgba( 69, 104, 47, 1)&apos;</span>,
+    textcolor: <span class="hljs-string">&apos;rgba( 255, 255, 255, 1)&apos;</span>,
+    fillBackground: <span class="hljs-literal">true</span>,
+    backgroundColor: <span class="hljs-string">&apos;rgba( 69, 168, 47, 0.5)&apos;</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fontsize:<span class="hljs-number">12</span>,
+    bold:<span class="hljs-literal">false</span>,
+    italic:<span class="hljs-literal">false</span>,
+    transparency: <span class="hljs-number">50</span>,
+    linewidth: <span class="hljs-number">2.0</span>
+},
+linetoolfibwedge: {
+    singleChartOnly: <span class="hljs-literal">true</span>,
+    showCoeffs: <span class="hljs-literal">true</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    trendline: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 128, 128, 128, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_SOLID
+    },
+    level1<span class="hljs-number">-11</span>: LEVELS_TYPE_C
+},
+linetoolfibcircles: {
+    showCoeffs: <span class="hljs-literal">true</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    snapTo45Degrees:<span class="hljs-literal">true</span>,
+    coeffsAsPercents:<span class="hljs-literal">false</span>,
+    trendline: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 128, 128, 128, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_DASHED
+    },
+    level1<span class="hljs-number">-11</span>: LEVELS_TYPE_C
+},
+linetoolfibspeedresistancearcs: {
+    showCoeffs: <span class="hljs-literal">true</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    fullCircles: <span class="hljs-literal">false</span>,
+    trendline: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 128, 128, 128, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_DASHED
+    },
+    level1<span class="hljs-number">-11</span>: LEVELS_TYPE_C
+},
+linetooltrendbasedfibextension: {
+    showCoeffs: <span class="hljs-literal">true</span>,
+    showPrices: <span class="hljs-literal">true</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    extendLines:<span class="hljs-literal">false</span>,
+    horzLabelsAlign: <span class="hljs-string">&apos;left&apos;</span>,
+    vertLabelsAlign: <span class="hljs-string">&apos;middle&apos;</span>,
+    reverse:<span class="hljs-literal">false</span>,
+    coeffsAsPercents:<span class="hljs-literal">false</span>,
+    trendline: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 128, 128, 128, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_DASHED
+    },
+    levelsStyle: {
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_SOLID
+    },
+    level1<span class="hljs-number">-24</span>: LEVELS_TYPE_B
+},
+linetooltrendbasedfibtime: {
+    showCoeffs: <span class="hljs-literal">true</span>,
+    font: <span class="hljs-string">&apos;Verdana&apos;</span>,
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    horzLabelsAlign: <span class="hljs-string">&apos;right&apos;</span>,
+    vertLabelsAlign: <span class="hljs-string">&apos;bottom&apos;</span>,
+    trendline: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 128, 128, 128, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_DASHED
+    },
+    level1<span class="hljs-number">-11</span>: LEVELS_TYPE_C
+},
+linetoolschiffpitchfork: {
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    style:PITCHFORK_STYLE_SCHIFF,
+    median: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 165, 0, 0, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_SOLID
+    },
+    level0<span class="hljs-number">-8</span>: LEVELS_TYPE_C
+},
+linetoolschiffpitchfork2: {
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    style:PITCHFORK_STYLE_SCHIFF2,
+    median: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 165, 0, 0, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_SOLID
+    },
+    level0<span class="hljs-number">-8</span>: LEVELS_TYPE_C
+},
+linetoolinsidepitchfork: {
+    fillBackground:<span class="hljs-literal">true</span>,
+    transparency:<span class="hljs-number">80</span>,
+    style:PITCHFORK_STYLE_INSIDE,
+    median: {
+        visible: <span class="hljs-literal">true</span>,
+        color: <span class="hljs-string">&apos;rgba( 165, 0, 0, 1)&apos;</span>,
+        linewidth: <span class="hljs-number">1.0</span>,
+        linestyle: LINESTYLE_SOLID
+    },
+    level0<span class="hljs-number">-8</span>: LEVELS_TYPE_C
+},
+linetoolvisibilities: {
+    intervalsVisibilities: {
+        seconds:<span class="hljs-literal">true</span>,
+        secondsFrom:<span class="hljs-number">1</span>,
+        secondsTo:<span class="hljs-number">59</span>,
+        minutes:<span class="hljs-literal">true</span>,
+        minutesFrom:<span class="hljs-number">1</span>,
+        minutesTo:<span class="hljs-number">59</span>,
+        hours:<span class="hljs-literal">true</span>,
+        hoursFrom:<span class="hljs-number">1</span>,
+        hoursTo:<span class="hljs-number">24</span>,
+        days:<span class="hljs-literal">true</span>,
+        daysFrom:<span class="hljs-number">1</span>,
+        daysTo:<span class="hljs-number">366</span>,
+        weeks:<span class="hljs-literal">true</span>,
+        months:<span class="hljs-literal">true</span>
+    }
+}
+</code></pre>
+<h3 id="&#x5E38;&#x91CF;">&#x5E38;&#x91CF;</h3>
+<p>&#x8FD9;&#x4E9B;&#x5E38;&#x91CF;&#x7528;&#x4E8E;&#x7ED8;&#x56FE;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3002; &#x4F60;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x4ED6;&#x4EEC;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x503C;&#x3002;</p>
+<pre><code class="lang-javascript">LINESTYLE_SOLID = <span class="hljs-number">0</span>;
+LINESTYLE_DOTTED = <span class="hljs-number">1</span>;
+LINESTYLE_DASHED = <span class="hljs-number">2</span>;
+LINESTYLE_LARGE_DASHED = <span class="hljs-number">3</span>;
+
+LINEEND_NORMAL = <span class="hljs-number">0</span>;
+LINEEND_ARROW  = <span class="hljs-number">1</span>;
+LINEEND_CIRCLE = <span class="hljs-number">2</span>;
+
+BARS_MODE = <span class="hljs-number">0</span>;
+LINE_MODE = <span class="hljs-number">1</span>;
+OPENCLOSE_MODE = <span class="hljs-number">2</span>;
+LINEOPEN_MODE = <span class="hljs-number">3</span>;
+LINEHIGH_MODE = <span class="hljs-number">4</span>;
+LINELOW_MODE = <span class="hljs-number">5</span>;
+LINEHL2_MODE = <span class="hljs-number">6</span>;
+
+PITCHFORK_STYLE_ORIGINAL = <span class="hljs-number">0</span>;
+PITCHFORK_STYLE_SCHIFF = <span class="hljs-number">1</span>;
+PITCHFORK_STYLE_SCHIFF2 = <span class="hljs-number">2</span>;
+PITCHFORK_STYLE_INSIDE = <span class="hljs-number">3</span>;
+
+LEVELS_TYPE_A = {
+    color: color,
+    visible: visible
+};
+
+LEVELS_TYPE_B = {
+    coeff: coeff,
+    color: color,
+    visible: visible
+};
+
+LEVELS_TYPE_C = {
+    coeff: coeff,
+    color: color,
+    visible: visible,
+    linestyle: linestyle,
+    linewidth: linewidth
+};
+
+LEVELS_TYPE_D = {
+    color: color,
+    width: width,
+    visible: visible
+};
+
+LEVELS_TYPE_E = {
+    color: color,
+    visible: visible,
+    width: width,
+    x: x,
+    y: y
+};
+
+LEVELS_TYPE_F = {
+    coeff1: coeff1,
+    coeff2: coeff2,
+    color: color,
+    visible: visible,
+    linestyle: linestyle,
+    linewidth: linewidth
+};
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Overrides.html" class="navigation navigation-prev " aria-label="Previous page: 覆盖">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Studies-Overrides.html" class="navigation navigation-next " aria-label="Next page: 指标覆盖">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"绘图覆盖","level":"7.6","depth":1,"next":{"title":"指标覆盖","level":"7.7","depth":1,"path":"book/Studies-Overrides.md","ref":"book/Studies-Overrides.md","articles":[]},"previous":{"title":"覆盖","level":"7.5","depth":1,"path":"book/Overrides.md","ref":"book/Overrides.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/Drawings-Overrides.md","mtime":"2019-04-14T15:29:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-27T12:29:05.136Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livere/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-head-tag/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-v3/baidu-tongji.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

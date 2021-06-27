@@ -1,0 +1,1524 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4-2、Widget 构造器 · TradingView中文开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-livere/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-head-tag/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Widget-Methods.html" />
+    
+    
+    <link rel="prev" href="Customization-Overview.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CHANGE-LOG.html">
+            
+                <a href="../CHANGE-LOG.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Home.html">
+            
+                <a href="Home.html">
+            
+                    
+                    1、Charting Library 是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2、入门指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="Package-Content.html">
+            
+                <a href="Package-Content.html">
+            
+                    
+                    2-1、图表库内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="Running-Your-Charting-Library.html">
+            
+                <a href="Running-Your-Charting-Library.html">
+            
+                    
+                    2-2、运行图表库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3、数据绑定</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="How-To-Connect-My-Data.html">
+            
+                <a href="How-To-Connect-My-Data.html">
+            
+                    
+                    3-1、如何连接我的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="JS-Api.html">
+            
+                <a href="JS-Api.html">
+            
+                    
+                    3-2、JS Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="UDF.html">
+            
+                <a href="UDF.html">
+            
+                    
+                    3-3、UDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="Symbology.html">
+            
+                <a href="Symbology.html">
+            
+                    
+                    3-4、Symbology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="Trading-Sessions.html">
+            
+                <a href="Trading-Sessions.html">
+            
+                    
+                    3-5、交易时段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="Quotes.html">
+            
+                <a href="Quotes.html">
+            
+                    
+                    3-6、报价
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4、图表定制</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html">
+            
+                    
+                    4-1、定制概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="Widget-Constructor.html">
+            
+                <a href="Widget-Constructor.html">
+            
+                    
+                    4-2、Widget 构造器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Widget-Methods.html">
+            
+                <a href="Widget-Methods.html">
+            
+                    
+                    4-3、Widget 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="Chart-Methods.html">
+            
+                <a href="Chart-Methods.html">
+            
+                    
+                    4-4、图表方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Featuresets.html">
+            
+                <a href="Featuresets.html">
+            
+                    
+                    4-5、功能集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html#通过数据流定制">
+            
+                    
+                    4-6、服务端定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="Customization-Use-Cases.html">
+            
+                <a href="Customization-Use-Cases.html">
+            
+                    
+                    4-7、定制的使用案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">5、交易终端</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="Trading-Terminal.html">
+            
+                <a href="Trading-Terminal.html">
+            
+                    
+                    5-1、交易终端简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="Broker-API.html">
+            
+                <a href="Broker-API.html">
+            
+                    
+                    5-2、经纪商 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="Trading-Host.html">
+            
+                <a href="Trading-Host.html">
+            
+                    
+                    5-3、交易主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="Account-Manager.html">
+            
+                <a href="Account-Manager.html">
+            
+                    
+                    5-4、账户管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="Trading-Objects-and-Constants.html">
+            
+                <a href="Trading-Objects-and-Constants.html">
+            
+                    
+                    5-5、交易对象和常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="Saving-and-Loading-Charts.html">
+            
+                <a href="Saving-and-Loading-Charts.html">
+            
+                    
+                    6、储存和载入图表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="Save-Load-Adapter-Example.html">
+            
+                <a href="Save-Load-Adapter-Example.html">
+            
+                    
+                    6-1、储存和载入的内存示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="Creating-Custom-Studies.html">
+            
+                <a href="Creating-Custom-Studies.html">
+            
+                    
+                    7、创建自定义指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="Best-practices.html">
+            
+                <a href="Best-practices.html">
+            
+                    
+                    8、最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="Frequently-Asked-Questions.html">
+            
+                <a href="Frequently-Asked-Questions.html">
+            
+                    
+                    9、经常被问到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="Breaking-changes.html">
+            
+                <a href="Breaking-changes.html">
+            
+                    
+                    10、版本变更点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="Basic-Compose.html">
+            
+                <a href="Basic-Compose.html">
+            
+                    
+                    图表的主要组成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="Resolution.html">
+            
+                <a href="Resolution.html">
+            
+                    
+                    周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="Time-Frames.html">
+            
+                <a href="Time-Frames.html">
+            
+                    
+                    时间范围
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="Localization.html">
+            
+                <a href="Localization.html">
+            
+                    
+                    本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="Overrides.html">
+            
+                <a href="Overrides.html">
+            
+                    
+                    覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="Drawings-Overrides.html">
+            
+                <a href="Drawings-Overrides.html">
+            
+                    
+                    绘图覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="Studies-Overrides.html">
+            
+                <a href="Studies-Overrides.html">
+            
+                    
+                    指标覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="Shapes-and-Overrides.html">
+            
+                <a href="Shapes-and-Overrides.html">
+            
+                    
+                    形状与覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="Chart-Style-Properties.html">
+            
+                <a href="Chart-Style-Properties.html">
+            
+                    
+                    图表样式属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="Chart.html">
+            
+                <a href="Chart.html">
+            
+                    
+                    图表自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="Toolbars.html">
+            
+                <a href="Toolbars.html">
+            
+                    
+                    工具栏自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="CSS-Color-Themes.html">
+            
+                <a href="CSS-Color-Themes.html">
+            
+                    
+                    CSS主题颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="Subscription.html">
+            
+                <a href="Subscription.html">
+            
+                    
+                    订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="Trading-Primitives.html">
+            
+                <a href="Trading-Primitives.html">
+            
+                    
+                    交易元语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="Marks-On-Bars.html">
+            
+                <a href="Marks-On-Bars.html">
+            
+                    
+                    在 K 线上做标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="Delegate.html">
+            
+                <a href="Delegate.html">
+            
+                    
+                    委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="WatchedValue.html">
+            
+                <a href="WatchedValue.html">
+            
+                    
+                    WatchedValue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.18" data-path="Study-Api.html">
+            
+                <a href="Study-Api.html">
+            
+                    
+                    指标 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="Shape-Api.html">
+            
+                <a href="Shape-Api.html">
+            
+                    
+                    形状 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="Shapes-Group-Api.html">
+            
+                <a href="Shapes-Group-Api.html">
+            
+                    
+                    形状组 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="Selection-Api.html">
+            
+                <a href="Selection-Api.html">
+            
+                    
+                    选择 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.22" data-path="Pane-Api.html">
+            
+                <a href="Pane-Api.html">
+            
+                    
+                    窗格 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.23" data-path="Series-Api.html">
+            
+                <a href="Series-Api.html">
+            
+                    
+                    数据列 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.24" data-path="Price-Scale-Api.html">
+            
+                <a href="Price-Scale-Api.html">
+            
+                    
+                    价格刻度 Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.25" data-path="Panes-And-Scales-Behavior.html">
+            
+                <a href="Panes-And-Scales-Behavior.html">
+            
+                    
+                    窗格和刻度特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.26" data-path="Shortcuts.html">
+            
+                <a href="Shortcuts.html">
+            
+                    
+                    快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4-2、Widget 构造器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="widget&#x6784;&#x9020;&#x5668;">Widget&#x6784;&#x9020;&#x5668;</h1>
+<hr>
+<p>&#x5F53;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x56FE;&#x8868;&#x5E93;widget&#x7684;&#x53C2;&#x6570;&#x3002;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> TradingView.widget({
+  symbol: <span class="hljs-string">&apos;A&apos;</span>,
+  interval: <span class="hljs-string">&apos;1D&apos;</span>,
+  timezone: <span class="hljs-string">&quot;America/New_York&quot;</span>,
+  container: <span class="hljs-string">&quot;tv_chart_container&quot;</span>,
+  locale: <span class="hljs-string">&quot;ru&quot;</span>,
+  datafeed: <span class="hljs-keyword">new</span> Datafeeds.UDFCompatibleDatafeed(<span class="hljs-string">&quot;https://demo_feed.tradingview.com&quot;</span>),
+  library_path: <span class="hljs-string">&quot;charting_library/&quot;</span>
+});
+</code></pre>
+<p>&#x67E5;&#x770B;&#x4E0B;&#x5217;&#x5B8C;&#x6574;&#x652F;&#x6301;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;&#x3002;&#x8BF7;&#x8BB0;&#x4F4F;&#xFF0C;&#x5728;&#x56FE;&#x8868;&#x521D;&#x59CB;&#x5316;&#x540E;&#x5728;&#x66F4;&#x6539;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x662F;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#x7684;&#x3002;&#x5982;&#x679C;&#x8981;&#x5728;&#x521D;&#x59CB;&#x5316;&#x56FE;&#x8868;&#x4E4B;&#x540E;&#x66F4;&#x6539;&#x56FE;&#x8868;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;<a href="Widget-Methods.html">widget&#x65B9;&#x6CD5;</a>&#x3002;</p>
+<p>&#x5C5E;&#x6027;&#x6807;&#x8BB0;&#x4E3A;<img src="../images/trading.png" alt="">&#x7684;&#x53EA;&#x5728;&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x53EF;&#x7528;&#x3002;</p>
+<h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2>
+<ul>
+<li>&#x56FE;&#x8868;&#x5E93;&#x548C;&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;<ul>
+<li><a href="#symbol-interval">symbol, interval*</a></li>
+<li><a href="#container">container*</a></li>
+<li><a href="#datafeed">datafeed*</a></li>
+<li><a href="#library_path">library_path*</a></li>
+<li><a href="#timeframe">timeframe</a></li>
+<li><a href="#timezone">timezone</a></li>
+<li><a href="#debug">debug</a></li>
+<li><a href="#library_path">library_path</a></li>
+<li><a href="#width-height">width, height</a></li>
+<li><a href="#fullscreen">fullscreen</a></li>
+<li><a href="#autosize">autosize</a></li>
+<li><a href="#symbol_search_request_delay">symbol_search_request_delay</a></li>
+<li><a href="#auto_save_delay">auto_save_delay</a></li>
+<li><a href="#toolbar_bg">toolbar_bg</a></li>
+<li><a href="#study_count_limit">study_count_limit</a></li>
+<li><a href="#studies_access">studies_access</a></li>
+<li><a href="#drawings_access">drawings_access</a></li>
+<li><a href="#saved_data">saved_data</a></li>
+<li><a href="#saved_data_meta_info">saved_data_meta_info</a></li>
+<li><a href="#locale">locale</a></li>
+<li><a href="#numeric_formatting">numeric_formatting</a></li>
+<li><a href="#custom_formatters">custom_formatters</a></li>
+<li><a href="#overrides">overrides</a></li>
+<li><a href="#disabled_features-enabled_features">disabled_features, enabled_features</a></li>
+<li><a href="#snapshot_url">snapshot_url</a></li>
+<li><a href="#custom_indicators_getter">custom_indicators_getter</a></li>
+<li><a href="#preset">preset</a></li>
+<li><a href="#studies_overrides">studies_overrides</a></li>
+<li><a href="#time_frames">time_frames</a></li>
+<li><a href="#charts_storage_url-client_id-user_id">charts_storage_url, client_id, user_id</a></li>
+<li><a href="#charts_storage_api_version">charts_storage_api_version</a></li>
+<li><a href="#load_last_chart">load_last_chart</a></li>
+<li><a href="#theme">theme</a></li>
+<li><a href="#custom_css_url">custom_css_url</a></li>
+<li><a href="#loading_screen">loading_screen</a></li>
+<li><a href="#favorites">favorites</a></li>
+<li><a href="#save_load_adapter">save_load_adapter</a></li>
+<li><a href="#settings_adapter">settings_adapter</a></li>
+<li><a href="#compare_symbols">compare_symbols</a></li>
+</ul>
+</li>
+<li>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;<ul>
+<li><a href="#widgetbar">widgetbar</a></li>
+<li><a href="#rss_news_feed">rss_news_feed</a></li>
+<li><a href="#news_provider">news_provider</a></li>
+<li><a href="#broker_factory">broker_factory</a></li>
+<li><a href="#broker_config">broker_config</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x56FE;&#x8868;&#x5E93;&#x548C;&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;">&#x56FE;&#x8868;&#x5E93;&#x548C;&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;</h2>
+<h4 id="symbol-interval">symbol, interval*</h4>
+<p>&#x60A8;&#x7684;&#x56FE;&#x8868;&#x7684;&#x521D;&#x59CB;&#x5546;&#x54C1;&#x548C;&#x5468;&#x671F;&#x3002;<code>interval</code>&#x7684;&#x683C;&#x5F0F;&#x5728;&#x53E6;&#x4E00;&#x7BC7;<a href="Resolution.html">&#x6587;&#x7AE0;</a>&#x4E2D;&#x8BF4;&#x660E;&#x3002; <em>&#x5FC5;&#x987B;&#x9879;</em></p>
+<pre><code class="lang-javascript">symbol: <span class="hljs-string">&apos;A&apos;</span>,
+interval: <span class="hljs-string">&apos;1D&apos;</span>,
+</code></pre>
+<h3 id="container">container*</h3>
+<p><code>container</code> &#x53EF;&#x4EE5;&#x662F;&#x5BF9; DOM &#x5143;&#x7D20;&#x7684;&#x5C5E;&#x6027;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x5E26;&#x6709;&#x56FE;&#x8868;&#x7684; iframe &#x5C06;&#x88AB;&#x653E;&#x7F6E;&#x5728;&#x5176;&#x4E2D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5BF9; HTMLElement &#x672C;&#x8EAB;&#x7684;&#x5F15;&#x7528;&#x3002;</p>
+<pre><code class="lang-javascript">container: <span class="hljs-string">&quot;tv_chart_container&quot;</span>,
+</code></pre>
+<p>&#x6216;&#x8005;</p>
+<pre><code class="lang-javascript">container: <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;tv_chart_container&quot;</span>),
+</code></pre>
+<h4 id="datafeed">datafeed*</h4>
+<p>&#x5B9E;&#x73B0;&#xFF08;<a href="JS-Api.html">JS API</a>&#xFF09;&#x63A5;&#x53E3;&#x4EE5;&#x5411;&#x56FE;&#x8868;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x7684;JavaScript&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript">datafeed: <span class="hljs-keyword">new</span> Datafeeds.UDFCompatibleDatafeed(<span class="hljs-string">&quot;https://demo_feed.tradingview.com&quot;</span>)
+</code></pre>
+<h4 id="timeframe">timeframe</h4>
+<p>&#x8BBE;&#x7F6E;&#x56FE;&#x8868;&#x7684;&#x521D;&#x59CB;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x3002;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x662F;&#x52A0;&#x8F7D;&#x5E76;&#x663E;&#x793A;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;K&#x7EBF;&#x8303;&#x56F4;&#x3002;&#x6709;&#x6548;&#x7684;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#xFF0C;D&#x4E3A;&#x6570;&#x5929;&#xFF0C;M&#x4E3A;&#x6570;&#x6708;&#x3002;</p>
+<pre><code class="lang-javascript">timeframe: <span class="hljs-string">&apos;3M&apos;</span>,
+</code></pre>
+<h4 id="timezone">timezone</h4>
+<p>&#x56FE;&#x8868;&#x7684;&#x521D;&#x59CB;&#x65F6;&#x533A;&#x3002;&#x65F6;&#x95F4;&#x523B;&#x5EA6;&#x4E0A;&#x7684;&#x6570;&#x5B57;&#x53D6;&#x51B3;&#x4E8E;&#x8FD9;&#x4E2A;&#x65F6;&#x533A;&#x3002;&#x8BF7;&#x53C2;&#x9605;<a href="Symbology.html#timezone">&#x652F;&#x6301;&#x7684;&#x65F6;&#x533A;&#x5217;&#x8868;</a>&#x3002;&#x8BBE;&#x7F6E;&#x4E3A;&#x4EA4;&#x6613;&#x6240;&#x65F6;&#x533A;&#x3002;&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x60A8;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<a href="Widget-Constructor.html#overrides">&#x8986;&#x76D6;&#x7AE0;&#x8282;</a>&#x3002;</p>
+<pre><code class="lang-javascript">timezone: <span class="hljs-string">&quot;America/New_York&quot;</span>,
+</code></pre>
+<h4 id="debug">debug</h4>
+<p>&#x5C06;&#x6B64;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E3A; <code>true</code>&#x65F6;&#xFF0C;&#x53EF;&#x4F7F;&#x56FE;&#x8868;&#x5C06;&#x8BE6;&#x7EC6;&#x7684;API&#x65E5;&#x5FD7;&#x5199;&#x5165;&#x63A7;&#x5236;&#x53F0;&#x3002;&#x4E0E;&#x529F;&#x80FD;&#x96C6;&#x7684;<code>charting_library_debug_mode</code>&#x7528;&#x6CD5;&#x76F8;&#x540C;&#x3002;</p>
+<pre><code class="lang-javascript">debug: <span class="hljs-literal">true</span>,
+</code></pre>
+<h4 id="librarypath">library_path</h4>
+<p><code>static</code>&#x6587;&#x4EF6;&#x5939;&#x7684;&#x8DEF;&#x5F84;</p>
+<pre><code class="lang-javascript">library_path: <span class="hljs-string">&quot;charting_library/&quot;</span>,
+</code></pre>
+<h4 id="width-height">width, height</h4>
+<p>widget&#x7684;&#x5C3A;&#x5BF8;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;widget&#x62E5;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x7A7A;&#x95F4;&#x3002;</p>
+<pre><code class="lang-javascript">width: <span class="hljs-number">300</span>,
+height: <span class="hljs-number">600</span>,
+</code></pre>
+<p><strong>Remark</strong>: &#x5982;&#x679C;&#x60A8;&#x60F3;&#x8BA9;&#x56FE;&#x8868;&#x5360;&#x636E;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x4F7F;&#x7528; <code>100%</code> &#x8FD9;&#x6837;&#x7684;&#x5B57;&#x6BB5;&#x3002;&#x4F7F;&#x7528;<code>fullscreen</code>&#x53C2;&#x6570;&#x6765;&#x4EE3;&#x66FF;&#xFF08;&#x89C1;&#x4E0B;&#x6587;&#xFF09;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;DOM&#x8282;&#x70B9;&#x5728;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6709;&#x8C03;&#x6574;&#x5927;&#x5C0F;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<h4 id="fullscreen">fullscreen</h4>
+<p><em>&#x9ED8;&#x8BA4;&#x503C;:</em> <code>false</code></p>
+<p>&#x5E03;&#x5C14;&#x503C;&#x663E;&#x793A;&#x56FE;&#x8868;&#x662F;&#x5426;&#x5360;&#x7528;&#x7A97;&#x53E3;&#x4E2D;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x7A7A;&#x95F4;&#x3002;</p>
+<pre><code class="lang-javascript">fullscreen: <span class="hljs-literal">true</span>,
+</code></pre>
+<h4 id="autosize">autosize</h4>
+<p><em>&#x9ED8;&#x8BA4;&#x503C;:</em> <code>false</code></p>
+<p>&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x663E;&#x793A;&#x56FE;&#x8868;&#x662F;&#x5426;&#x5E94;&#x4F7F;&#x7528;&#x7A97;&#x683C;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7A7A;&#x95F4;&#xFF0C;&#x5E76;&#x5728;&#x8C03;&#x6574;&#x7A97;&#x683C;&#x672C;&#x8EAB;&#x5927;&#x5C0F;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x6574;&#x5927;&#x5C0F;&#x3002;</p>
+<pre><code class="lang-javascript">autosize: <span class="hljs-literal">true</span>,
+</code></pre>
+<h4 id="symbolsearchrequestdelay">symbol_search_request_delay</h4>
+<p>&#x5EF6;&#x8FDF;&#x9608;&#x503C;&#xFF08;&#x4EE5;&#x6BEB;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x7528;&#x6237;&#x5728;&#x641C;&#x7D22;&#x6846;&#x4E2D;&#x952E;&#x5165;&#x5546;&#x54C1;&#x540D;&#x79F0;&#x65F6;&#x51CF;&#x5C11;&#x5546;&#x54C1;&#x641C;&#x7D22;&#x8BF7;&#x6C42;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+<pre><code class="lang-javascript">symbol_search_request_delay: <span class="hljs-number">1000</span>,
+</code></pre>
+<h4 id="autosavedelay">auto_save_delay</h4>
+<p>&#x5EF6;&#x8FDF;&#x79D2;&#x6570;&#x7B49;&#x5F85; <code>onAutoSaveNeeded</code> &#x53EF;&#x4EE5;&#x88AB;&#x518D;&#x6B21;&#x8C03;&#x7528;&#x3002; &#x8BE5;&#x53C2;&#x6570;&#x4ECB;&#x7ECD;&#x5728;1.5&#x7248;&#x672C;&#x4E2D;&#x3002;</p>
+<pre><code class="lang-javascript">auto_save_delay: <span class="hljs-number">5</span>,
+</code></pre>
+<h4 id="toolbarbg">toolbar_bg</h4>
+<p>&#x5DE5;&#x5177;&#x680F;&#x80CC;&#x666F;&#x989C;&#x8272;</p>
+<pre><code class="lang-javascript">toolbar_bg: <span class="hljs-string">&apos;#f4f7f9&apos;</span>,
+</code></pre>
+<h4 id="studycountlimit">study_count_limit</h4>
+<p><em>&#x81EA;1.5&#x7248;&#x672C;&#x8D77;&#x3002;</em></p>
+<p>&#x591A;&#x56FE;&#x5E03;&#x5C40;&#x56FE;&#x8868;&#x7684;&#x6700;&#x5927;&#x6307;&#x6807;&#x6570;&#x91CF;&#x3002; &#x6700;&#x5C0F;&#x503C;&#x4E3A;2&#x3002;</p>
+<pre><code class="lang-javascript">study_count_limit: <span class="hljs-number">5</span>,
+</code></pre>
+<h4 id="studiesaccess">studies_access</h4>
+<p>&#x7248;&#x672C;&#xFF1A;1.1&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x7ED3;&#x6784;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-js">{
+    type: <span class="hljs-string">&quot;black&quot;</span> | <span class="hljs-string">&quot;white&quot;</span>,
+    tools: [
+        {
+            name: <span class="hljs-string">&quot;&lt;study name&gt;&quot;</span>,
+            grayed: <span class="hljs-literal">true</span>
+        },
+        <span class="xml"><span class="hljs-tag">&lt; <span class="hljs-attr">...</span> &gt;</span>
+    ]
+}
+</span></code></pre>
+<ul>
+<li><code>type</code>&#x662F;&#x5217;&#x8868;&#x7C7B;&#x578B;&#x3002; &#x652F;&#x6301;&#x7684;&#x503C;:<code>black</code>(&#x6240;&#x6709;&#x5217;&#x51FA;&#x7684;&#x9879;&#x76EE;&#x4F1A;&#x88AB;&#x7981;&#x7528;),<code>white</code>(&#x53EA;&#x6709;&#x5217;&#x51FA;&#x7684;&#x9879;&#x76EE;&#x4F1A;&#x88AB;&#x542F;&#x7528;)&#x3002;</li>
+<li><code>tools</code>&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x3002;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#xFF1A;<ul>
+<li><code>name</code>(&#x5F3A;&#x5236;&#x7684;) &#x6307;&#x6807;&#x7684;&#x540D;&#x79F0;&#x3002;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4ED6;&#x4EEC;&#x5728;&#x6307;&#x6807;&#x63A7;&#x4EF6;&#x3002;</li>
+<li><code>grayed</code>&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x8868;&#x660E;&#x8FD9;&#x9879;&#x6307;&#x6807;&#x5C06;&#x53EF;&#x89C1;&#xFF0C;&#x4F46;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;&#x88AB;&#x7981;&#x7528;&#x7684;&#x3002; &#x5982;&#x679C;&#x6307;&#x6807;&#x4E3A;<code>grayed</code>&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x5B83;&#x65F6;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;<code>onGrayedObjectClicked</code>&#x56DE;&#x8C03;&#x65B9;&#x6CD5;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h4 id="drawingsaccess">drawings_access</h4>
+<p>&#x7248;&#x672C;&#xFF1A;1.1 &#x8BE5;&#x5C5E;&#x6027;&#x4E0E;&#x4E0A;&#x8FF0;&#x7684;<code>studies_access</code>&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x7ED3;&#x6784;&#x3002; &#x4F7F;&#x7528;&#x4E0E;&#x60A8;&#x5728;UI&#x4E2D;&#x770B;&#x5230;&#x7684;&#x540D;&#x79F0;&#x76F8;&#x540C;&#x7684;&#x540D;&#x79F0;&#x3002;</p>
+<pre><code class="lang-javascript">drawings_access: {
+    type: <span class="hljs-string">&apos;black&apos;</span>,
+    tools: [
+        {
+            name: <span class="hljs-string">&apos;Trend Line&apos;</span>,
+            grayed: <span class="hljs-literal">true</span>
+        },
+    ]
+},
+</code></pre>
+<p><strong>Remark</strong>: &#x57FA;&#x4E8E;&#x5B57;&#x4F53;&#x7684;&#x7ED8;&#x56FE;&#x6709;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x3002; &#x4F7F;&#x7528;<code>Font Icons</code>&#x7684;&#x540D;&#x5B57;&#x65F6;&#xFF0C; &#x8FD9;&#x4E2A;&#x7EC4;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x4F8B;&#xFF0C;&#x5B83;&#x7684;&#x7ED8;&#x56FE;&#x4E0D;&#x80FD;&#x88AB;&#x542F;&#x7528;&#x6216;&#x7981;&#x7528; - &#x53EF;&#x4EE5;&#x542F;&#x7528;&#x6216;&#x7981;&#x7528;&#x6574;&#x4E2A;&#x7EC4;&#x3002;</p>
+<h4 id="saveddata">saved_data</h4>
+<p>&#x5305;&#x542B;&#x5DF2;&#x4FDD;&#x5B58;&#x56FE;&#x8868;&#x5185;&#x5BB9;&#x7684; JS &#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C;&#x60A8;&#x5DF2;&#x7ECF;&#x4FDD;&#x5B58;&#x4E86;&#x56FE;&#x8868;&#xFF0C;&#x5219;&#x5728;&#x521B;&#x5EFA;widget&#x65F6;&#x4F7F;&#x7528;&#x6B64;&#x53C2;&#x6570;&#x3002;&#x5982;&#x679C;&#x8981;&#x5728;&#x56FE;&#x8868;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x52A0;&#x8F7D;&#x56FE;&#x8868;&#x5185;&#x5BB9;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;widget&#x7684; <a href="Widget-Methods.html#loadstate">load() &#x65B9;&#x6CD5;</a> &#x3002;</p>
+<h4 id="saveddatametainfo">saved_data_meta_info</h4>
+<p>&#x5305;&#x542B;&#x4FDD;&#x5B58;&#x7684;&#x56FE;&#x8868;&#x5185;&#x5BB9;&#x5143;&#x4FE1;&#x606F;&#x7684; JS &#x5BF9;&#x8C61;&#x3002; &#x6B64;&#x5BF9;&#x8C61;&#x5E94;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#xFF1A;</p>
+<ul>
+<li><code>uid</code>&#xFF1A;&#x56FE;&#x8868;&#x7684;&#x552F;&#x4E00;&#x6574;&#x6570;&#x6807;&#x8BC6;&#x7B26;</li>
+<li><code>name</code>&#xFF1A;&#x4FDD;&#x5B58;&#x7684;&#x56FE;&#x8868;&#x540D;&#x79F0;</li>
+<li><code>description</code>&#xFF1A;&#x4FDD;&#x5B58;&#x7684;&#x56FE;&#x8868;&#x63CF;&#x8FF0;</li>
+</ul>
+<h4 id="locale">locale</h4>
+<p>&#x56FE;&#x8868;&#x5E93;&#x7684;&#x672C;&#x5730;&#x5316;&#x5904;&#x7406; &#x3002;&#x8BE6;&#x60C5;&#xFF1A;<a href="Localization.html">&#x672C;&#x5730;&#x5316;</a></p>
+<pre><code class="lang-javascript">locale: <span class="hljs-string">&apos;en&apos;</span>,
+</code></pre>
+<h4 id="numericformatting">numeric_formatting</h4>
+<p>&#x8BE5;&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x6570;&#x5B57;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x9009;&#x9879;&#x3002;&#x76EE;&#x524D;&#x552F;&#x4E00;&#x53EF;&#x80FD;&#x7684;&#x9009;&#x62E9;&#x662F;<code>decimal_sign</code>&#x3002;</p>
+<pre><code class="lang-javascript">numeric_formatting: { decimal_sign: <span class="hljs-string">&quot;,&quot;</span> },
+</code></pre>
+<h4 id="customformatters">customFormatters</h4>
+<p>&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ol>
+<li>timeFormatter</li>
+<li>dateFormatter</li>
+</ol>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x683C;&#x5F0F;&#x5316;&#x65B9;&#x6CD5;&#x81EA;&#x5B9A;&#x4E49;&#x663E;&#x793A;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x7684;&#x503C;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x503C;&#x90FD;&#x662F;&#x5177;&#x6709;&#x65B9;&#x6CD5;<code>format</code>&#x548C;<code>formatLocal</code>&#x7684;&#x5BF9;&#x8C61;:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">format</span>(<span class="hljs-params">date</span>)
+<span class="hljs-title">function</span> <span class="hljs-title">formatLocal</span>(<span class="hljs-params">date</span>)
+</span></code></pre>
+<p>&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x8868;&#x793A;date&#x6216;time&#x7684;&#x6587;&#x672C;&#x3002;<code>formatLocal</code>&#x5C06;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x8F6C;&#x6362;&#x4E3A;&#x672C;&#x5730;&#x65F6;&#x533A;&#x3002;</p>
+<p>&#x4F8B;:</p>
+<pre><code class="lang-js">customFormatters: {
+  timeFormatter: {
+    format: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">date</span>) </span>{ <span class="hljs-keyword">var</span> _format_str = <span class="hljs-string">&apos;%h:%m&apos;</span>; <span class="hljs-keyword">return</span> _format_str.replace(<span class="hljs-string">&apos;%h&apos;</span>, date.getUTCHours(), <span class="hljs-number">2</span>). replace(<span class="hljs-string">&apos;%m&apos;</span>, date.getUTCMinutes(), <span class="hljs-number">2</span>). replace(<span class="hljs-string">&apos;%s&apos;</span>, date.getUTCSeconds(), <span class="hljs-number">2</span>); }
+  },
+  dateFormatter: {
+    format: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">date</span>) </span>{ <span class="hljs-keyword">return</span> date.getUTCFullYear() + <span class="hljs-string">&apos;/&apos;</span> + date.getUTCMonth() + <span class="hljs-string">&apos;/&apos;</span> + date.getUTCDate(); }
+  }
+}
+</code></pre>
+<h4 id="overrides">overrides</h4>
+<p>&#x5BF9;Widget&#x5BF9;&#x8C61;&#x7684;&#x9ED8;&#x8BA4;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x8986;&#x76D6;&#x3002; &#x8986;&#x76D6;&#x5C5E;&#x6027;&#x610F;&#x5473;&#x7740;&#x4E3A;&#x5176;&#x5206;&#x914D;&#x9ED8;&#x8BA4;&#x503C;&#x3002; &#x60A8;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x5927;&#x90E8;&#x5206;&#x56FE;&#x8868;&#x7684;&#x5C5E;&#x6027;&#xFF08;&#x4E5F;&#x53EF;&#x4EE5;&#x7531;&#x7528;&#x6237;&#x901A;&#x8FC7;UI&#x7F16;&#x8F91;&#xFF09;&#x4F7F;&#x7528;<code>overrides</code>&#x53C2;&#x6570;&#x6784;&#x9020;&#x63A7;&#x4EF6; &#x3002;<code>overrides</code>&#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x8303;&#x56F4;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x540D;&#x662F;&#x91CD;&#x5199;&#x5C5E;&#x6027;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5B57;&#x6BB5;&#x503C;&#x662F;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x7684;&#x671F;&#x671B;&#x503C;&#x3002;&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-js">overrides: {
+    <span class="hljs-string">&quot;mainSeriesProperties.style&quot;</span>: <span class="hljs-number">0</span>
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A; <code>override</code>&#x5C06;&#x4F7F;&#x6C34;&#x5370;100&#xFF05;&#x4E0D;&#x900F;&#x660E;&#xFF08;&#x4E0D;&#x53EF;&#x89C1;&#xFF09;&#x3002; &#x6240;&#x6709;&#x53EF;&#x5B9A;&#x5236;&#x7684;&#x5C5E;&#x6027;&#x90FD;&#x5217;&#x5728;<a href="Overrides.html">&#x5355;&#x72EC;&#x7684;&#x6587;&#x7AE0;</a>&#x4E2D;&#x3002; &#x4ECE;1.5&#x5F00;&#x59CB;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7ED8;&#x56FE;&#x8986;&#x76D6;&#x3002;<a href="Drawings-Overrides.html">&#x7ED8;&#x56FE;&#x8986;&#x76D6;</a>.</p>
+<h4 id="disabledfeatures-enabledfeatures">disabled_features, enabled_features</h4>
+<p>&#x5305;&#x542B;&#x529F;&#x80FD;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x542F;&#x7528;/&#x7981;&#x7528;&#x540D;&#x79F0;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x529F;&#x80FD;&#x8868;&#x793A;&#x56FE;&#x8868;&#x529F;&#x80FD;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF08;&#x66F4;&#x662F;UI/UX&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF09;&#x3002; <a href="http://tradingview.gitee.io/featuresets" target="_blank">&#x8FD9;&#x91CC;</a>. &#x6B64;&#x5904;&#x5217;&#x51FA;&#x4E86;&#x652F;&#x6301;&#x7684;&#x529F;&#x80FD;&#x3002; &#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-js">TradingView.onready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)
+</span>{
+    <span class="hljs-keyword">var</span> widget = <span class="hljs-keyword">new</span> TradingView.widget({
+        <span class="hljs-comment">/* .... */</span>
+        disabled_features: [<span class="hljs-string">&quot;header_widget&quot;</span>, <span class="hljs-string">&quot;left_toolbar&quot;</span>],
+        enabled_features: [<span class="hljs-string">&quot;move_logo_to_main_pane&quot;</span>]
+    });
+});
+</code></pre>
+<h4 id="snapshoturl">snapshot_url</h4>
+<p>&#x5F53;&#x7528;&#x6237;&#x6309;&#x5FEB;&#x7167;&#x6309;&#x94AE;&#x65F6;,&#x4F7F;&#x7528;base64&#x7F16;&#x7801;&#x5C06;&#x5F53;&#x524D;&#x56FE;&#x8868;&#x5FEB;&#x7167;&#x4FDD;&#x5B58;&#x5E76;&#x8FD4;&#x56DE;URL&#x3002;&#x8BE5;&#x670D;&#x52A1;&#x8FD4;&#x56DE;&#x5B8C;&#x6574;&#x7684;&#x4FDD;&#x5B58;&#x56FE;&#x50CF;URL&#x3002;</p>
+<pre><code class="lang-javascript">snapshot_url: <span class="hljs-string">&quot;https://myserver.com/snapshot&quot;</span>,
+</code></pre>
+<h4 id="customindicatorsgetter">custom_indicators_getter</h4>
+<p>&#x8FD4;&#x56DE;&#x5E26;&#x6709;&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x6807;&#x6570;&#x7EC4;&#x7684;Promise&#x5BF9;&#x8C61;&#x7684;&#x51FD;&#x6570;&#x3002;
+<code>PineJS</code> &#x53D8;&#x91CF;&#x5C06;&#x4F5C;&#x4E3A;&#x6B64;&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#xFF0C;&#x5E76;&#x53EF;&#x5728;&#x6307;&#x6807;&#x5185;&#x7528;&#x4E8E;&#x8BBF;&#x95EE;&#x5185;&#x90E8;&#x5E2E;&#x52A9;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x67E5;&#x770B;<a href="Creating-Custom-Studies.html">&#x66F4;&#x591A;&#x7EC6;&#x8282;</a>&#x3002;</p>
+<pre><code class="lang-javascript">custom_indicators_getter: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">PineJS</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.resolve([
+        <span class="hljs-comment">// *** your indicator object, created from the template ***</span>
+    ]);
+},
+</code></pre>
+<h4 id="preset">preset</h4>
+<p><code>preset</code>&#x662F;&#x4E00;&#x7EC4;&#x9884;&#x5B9A;&#x4E49;widget&#x8BBE;&#x7F6E;&#x7684;&#x540D;&#x79F0;&#x3002;&#x73B0;&#x5728;&#x9884;&#x8BBE;&#x4E2D;&#x53EA;&#x652F;&#x6301;<code>mobile</code>&#x3002;&#x6B64;&#x9884;&#x8BBE;&#x7684;&#x793A;&#x4F8B;&#x53EF;<a href="https://charting-library.tradingview.com" target="_blank">&#x5728;&#x7EBF;&#x83B7;&#x53D6;</a>&#x3002;</p>
+<pre><code class="lang-javascript">preset: <span class="hljs-string">&quot;mobile&quot;</span>,
+</code></pre>
+<h4 id="studiesoverrides">studies_overrides</h4>
+<p>&#x4F7F;&#x7528;&#x6B64;&#x9009;&#x9879;&#x81EA;&#x5B9A;&#x4E49;&#x9ED8;&#x8BA4;&#x6307;&#x6807;&#x7684;&#x6837;&#x5F0F;&#x53CA;&#x8F93;&#x5165;&#x503C;&#x3002; &#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6B64;&#x53C2;&#x6570;&#x81EA;&#x5B9A;&#x4E49;<code>Compare</code>&#x6570;&#x636E;&#x5217;&#x7684;&#x6837;&#x5F0F;&#x548C;&#x8F93;&#x5165;&#x503C;&#x3002; <a href="Studies-Overrides.html">&#x67E5;&#x770B;&#x66F4;&#x591A;</a></p>
+<pre><code class="lang-javascript">studies_overrides: {
+    <span class="hljs-string">&quot;volume.volume.color.0&quot;</span>: <span class="hljs-string">&quot;#00FFFF&quot;</span>,
+},
+</code></pre>
+<h4 id="timeframes">time_frames</h4>
+<p>&#x53EF;&#x4EE5;&#x5728;&#x56FE;&#x8868;&#x5E95;&#x90E8;&#x9009;&#x62E9;&#x7684;&#x53EF;&#x89C1;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5217;&#x8868;&#x3002;&#x8BF7;&#x53C2;&#x9605;<a href="Time-Frames">&#x672C;&#x4E3B;&#x9898;</a>&#xFF0C;&#x4EE5;&#x4E86;&#x89E3;&#x6709;&#x5173;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ul>
+<li><code>text</code> - &#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF1A; <code>&lt;integer&gt;&lt;y|m|d&gt;</code> ( \d+(y|m|d) as Regex ).&#x3002;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x8303;&#x56F4;&#x3002;</li>
+<li><code>resolution</code> - &#x5177;&#x6709; <a href="Resolution">&#x8FD9;&#x91CC;</a>&#x63CF;&#x8FF0;&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x5206;&#x8FA8;&#x7387;&#x3002;</li>
+<li><code>description</code> (&#x53EF;&#x9009;) - &#x5728;&#x5F39;&#x51FA;&#x83DC;&#x5355;&#x4E2D;&#x663E;&#x793A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#x679C;&#x672A;&#x8BBE;&#x7F6E;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x8BE5; <code>title</code> &#x5C5E;&#x6027;&#x3002;</li>
+<li><code>title</code> (&#x53EF;&#x9009;) - &#x65F6;&#x95F4;&#x8303;&#x56F4;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x3002;&#x5982;&#x679C;&#x672A;&#x8BBE;&#x7F6E;&#xFF0C;&#x5219;&#x6839;&#x636E; <code>text</code> &#x5C5E;&#x6027;&#x751F;&#x6210;&#x6807;&#x9898;&#x3002;</li>
+</ul>
+<p>&#x5728;&#x56FE;&#x8868;&#x5E95;&#x90E8;&#x7684;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x89C1;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5217;&#x8868;&#x3002; &#x4F8B;:</p>
+<pre><code class="lang-js">time_frames: [
+    { text: <span class="hljs-string">&quot;50y&quot;</span>, resolution: <span class="hljs-string">&quot;6M&quot;</span>, description: <span class="hljs-string">&quot;50 Years&quot;</span> },
+    { text: <span class="hljs-string">&quot;3y&quot;</span>, resolution: <span class="hljs-string">&quot;W&quot;</span>, description: <span class="hljs-string">&quot;3 Years&quot;</span>, title: <span class="hljs-string">&quot;3yr&quot;</span> },
+    { text: <span class="hljs-string">&quot;8m&quot;</span>, resolution: <span class="hljs-string">&quot;D&quot;</span>, description: <span class="hljs-string">&quot;8 Month&quot;</span> },
+    { text: <span class="hljs-string">&quot;3d&quot;</span>, resolution: <span class="hljs-string">&quot;5&quot;</span>, description: <span class="hljs-string">&quot;3 Days&quot;</span> },
+    { text: <span class="hljs-string">&quot;1000y&quot;</span>, resolution: <span class="hljs-string">&quot;W&quot;</span>, description: <span class="hljs-string">&quot;All&quot;</span>, title: <span class="hljs-string">&quot;All&quot;</span> },
+]
+</code></pre>
+<h4 id="chartsstorageurl-clientid-userid">charts_storage_url, client_id, user_id</h4>
+<p>&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x4E0E;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;/&#x52A0;&#x8F7D;&#x7684;&#x9AD8;&#x7EA7;API&#x76F8;&#x5173;&#x3002; &#x67E5;&#x770B;<a href="Saving-and-Loading-Charts.html">&#x66F4;&#x591A;&#x7EC6;&#x8282;</a>&#x3002;</p>
+<pre><code class="lang-javascript">charts_storage_url: <span class="hljs-string">&apos;http://storage.yourserver.com&apos;</span>,
+client_id: <span class="hljs-string">&apos;yourserver.com&apos;</span>,
+user_id: <span class="hljs-string">&apos;public_user_id&apos;</span>,
+</code></pre>
+<h4 id="chartsstorageapiversion">charts_storage_api_version</h4>
+<p>&#x60A8;&#x7684;&#x540E;&#x53F0;&#x7248;&#x672C;&#x3002;&#x652F;&#x6301;&#x7684;&#x503C;:<code>&quot;1.0&quot;</code>|<code>&quot;1.1&quot;</code>&#x3002; &#x6307;&#x6807;&#x6A21;&#x677F;&#x4ECE;<code>1.1</code>&#x5F00;&#x59CB;&#x5F97;&#x5230;&#x652F;&#x6301;&#x3002;</p>
+<pre><code class="lang-javascript">charts_storage_api_version: <span class="hljs-string">&quot;1.1&quot;</span>,
+</code></pre>
+<h4 id="loadlastchart">load_last_chart</h4>
+<p>&#x5982;&#x679C;&#x60A8;&#x5E0C;&#x671B;&#x56FE;&#x8868;&#x5E93;&#x4E3A;&#x7528;&#x6237;&#x52A0;&#x8F7D;&#x4E0A;&#x6B21;&#x4FDD;&#x5B58;&#x7684;&#x56FE;&#x8868;&#xFF0C;&#x8BF7;&#x5C06;&#x6B64;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A; <code>true</code> (&#x60A8;&#x5E94;&#x9996;&#x5148;&#x5B9E;&#x73B0;<a href="Saving-and-Loading-Charts.html">save/load</a>&#x4EE5;&#x4F7F;&#x5176;&#x5DE5;&#x4F5C;)&#x3002;</p>
+<pre><code class="lang-javascript">load_last_chart: <span class="hljs-literal">true</span>,
+</code></pre>
+<h4 id="theme">theme</h4>
+<p><em>&#x4ECE;1.13&#x7248;&#x5F00;&#x59CB;&#x652F;&#x6301;&#x3002;</em></p>
+<p>&#x4E3A;&#x56FE;&#x8868;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x4E3B;&#x9898;&#x989C;&#x8272;&#x3002; &#x652F;&#x6301;&#x7684;&#x503C;&#x662F;: <code>&quot;Light&quot;</code> | <code>&quot;Dark&quot;</code>.</p>
+<pre><code class="lang-javascript">theme: <span class="hljs-string">&quot;Light&quot;</span>,
+</code></pre>
+<h4 id="customcssurl">custom_css_url</h4>
+<p><em>&#x4ECE;1.4&#x7248;&#x5F00;&#x59CB;&#x652F;&#x6301;&#x3002;</em></p>
+<p>&#x5C06;&#x60A8;&#x7684;&#x81EA;&#x5B9A;&#x4E49;CSS&#x6DFB;&#x52A0;&#x5230;&#x56FE;&#x8868;&#x4E2D;&#x3002;url&#x5E94;&#x8BE5;&#x662F;&#x5230;<code>static</code>&#x6587;&#x4EF6;&#x5939;&#x7684;&#x7EDD;&#x5BF9;&#x6216;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;</p>
+<pre><code class="lang-javascript">custom_css_url: <span class="hljs-string">&apos;css/style.css&apos;</span>,
+</code></pre>
+<h4 id="loadingscreen">loading_screen</h4>
+<p><em>&#x4ECE;1.12&#x7248;&#x5F00;&#x59CB;&#x652F;&#x6301;&#x3002;</em></p>
+<p>&#x5B9A;&#x5236;&#x52A0;&#x8F7D;&#x8FDB;&#x5EA6;&#x6761;&#x3002;&#x503C;&#x662F;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x53EF;&#x80FD; <code>key</code> &#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<ul>
+<li><code>backgroundColor</code></li>
+<li><code>foregroundColor</code></li>
+</ul>
+<p>&#x4F8B;&#x5982;:</p>
+<pre><code class="lang-javascript">loading_screen: { backgroundColor: <span class="hljs-string">&quot;#000000&quot;</span> }
+</code></pre>
+<h4 id="favorites">favorites</h4>
+<p>&#x9ED8;&#x8BA4;&#x6807;&#x8BB0;&#x4E3A;&#x6536;&#x85CF;&#x7684;&#x9879;&#x76EE;&#x3002;&#x6B64;&#x9009;&#x9879;&#x4F7F;&#x7528;&#x65F6;&#x8981;&#x6C42;&#x7981;&#x7528;localstorage&#xFF08;&#x8BF7;&#x53C2;&#x9605;<a href="Featuresets.html">&#x529F;&#x80FD;&#x96C6;</a>&#x4EE5;&#x4E86;&#x89E3;&#x66F4;&#x591A;)&#x3002;<code>favorites</code> &#x5C5E;&#x6027;&#x4E3A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x62E5;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#xFF1A;</p>
+<ul>
+<li><strong>intervals(&#x5468;&#x671F;)</strong>: &#x6536;&#x85CF;&#x7684;&#x5468;&#x671F;&#x6570;&#x7EC4;&#x3002; &#x4F8B;&#xFF1A;<code>[&quot;D&quot;, &quot;2D&quot;]</code></li>
+<li><strong>chartTypes(&#x56FE;&#x8868;&#x7C7B;&#x578B;)</strong>: &#x6536;&#x85CF;&#x7684;&#x56FE;&#x8868;&#x7C7B;&#x578B;&#x6570;&#x7EC4; &#x3002;&#x56FE;&#x8868;&#x7C7B;&#x578B;&#x540D;&#x79F0;&#x4E0E;&#x56FE;&#x8868;&#x7684;UI&#x4E2D;&#x7684;&#x82F1;&#x6587;&#x7248;&#x672C;&#x76F8;&#x540C;&#x3002; &#x4F8B;:<code>[&quot;Area&quot;, &quot;Candles&quot;]</code></li>
+</ul>
+<pre><code class="lang-javascript">favorites: {
+    intervals: [<span class="hljs-string">&quot;1D&quot;</span>, <span class="hljs-string">&quot;3D&quot;</span>, <span class="hljs-string">&quot;3W&quot;</span>, <span class="hljs-string">&quot;W&quot;</span>, <span class="hljs-string">&quot;M&quot;</span>],
+    chartTypes: [<span class="hljs-string">&quot;Area&quot;</span>, <span class="hljs-string">&quot;Line&quot;</span>]
+},
+</code></pre>
+<h4 id="saveloadadapter">save_load_adapter</h4>
+<p>&#x5305;&#x542B;&#x4FDD;&#x5B58;/&#x52A0;&#x8F7D;&#x529F;&#x80FD;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x5B83;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4FDD;&#x5B58;/&#x52A0;&#x8F7D;&#x529F;&#x80FD;&#x3002;&#x8BF7;&#x5728;<a href="Saving-and-Loading-Charts.html#api-handlers">&#x4FDD;&#x5B58;&#x548C;&#x52A0;&#x8F7D;&#x56FE;&#x8868;</a>&#x9875;&#x9762;&#x4E0A;&#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x548C;&#x793A;&#x4F8B;&#x3002;</p>
+<h4 id="settingsadapter">settings_adapter</h4>
+<p><em>&#x4ECE;1.11&#x7248;&#x5F00;&#x59CB;&#x652F;&#x6301;&#x3002;</em></p>
+<p>&#x5305;&#x542B;&#x8BBE;&#x7F6E;/&#x5220;&#x9664;&#x65B9;&#x6CD5;&#x7684;&#x5BF9;&#x8C61;&#x3002; &#x4F7F;&#x7528;&#x5B83;&#x5C06;&#x56FE;&#x8868;&#x8BBE;&#x7F6E;&#x4FDD;&#x5B58;&#x5230;&#x60A8;&#x60F3;&#x8981;&#x5B58;&#x50A8;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5305;&#x62EC;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x3002; &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;&#xFF0C;&#x5E94;&#x8BE5;&#x6709;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ol>
+<li><p><code>initialSettings: Object</code>
+&#x521D;&#x59CB;&#x5316;&#x8BBE;&#x7F6E;&#x5BF9;&#x8C61;</p>
+</li>
+<li><p><code>setValue(key: string, value: string): void</code>
+&#x8C03;&#x7528;&#x4EE5;&#x5B58;&#x50A8;&#x952E;/&#x503C;&#x5BF9;</p>
+</li>
+<li><p><code>removeValue(key: string): void</code>
+&#x8C03;&#x7528;&#x4EE5;&#x5220;&#x9664;&#x952E;</p>
+</li>
+</ol>
+<h3 id="comparesymbols">compare_symbols</h3>
+<p><em>&#x4ECE;&#x7248;&#x672C;17&#x5F00;&#x59CB;&#x3002;</em></p>
+<p>&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x5B57;&#x6BB5;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x201C;&#x6BD4;&#x8F83;&#x201D;&#x7A97;&#x53E3;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5546;&#x54C1;&#x6570;&#x7EC4;&#x3002;
+&#x6BCF;&#x4E2A;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x5E94;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#xFF1A;</p>
+<ul>
+<li><code>symbol</code> - &#x5B9A;&#x4E49;&#x8981;&#x6BD4;&#x8F83;&#x7684;&#x5546;&#x54C1;id&#x5B57;&#x7B26;&#x4E32;</li>
+<li><code>title</code> - &#xFF0C;&#x5C06;&#x5728;&#x76F8;&#x5E94;&#x590D;&#x9009;&#x6846;&#x9644;&#x8FD1;&#x663E;&#x793A;&#x7684;&#x5546;&#x54C1;&#x540D;&#x79F0;</li>
+</ul>
+<pre><code class="lang-javascript">compare_symbols: [
+    { symbol: <span class="hljs-string">&apos;DAL&apos;</span>, title: <span class="hljs-string">&apos;Delta Air Lines&apos;</span> },
+    { symbol: <span class="hljs-string">&apos;VZ&apos;</span>, title: <span class="hljs-string">&apos;Verizon&apos;</span> },
+    ...
+];
+</code></pre>
+<h2 id="&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x4E13;&#x5C5E;">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x4E13;&#x5C5E;</h2>
+<h4 id="widgetbar">widgetbar</h4>
+<p><img src="../images/trading.png" alt=""> <em>&#x4EC5;&#x9002;&#x7528;&#x4E8E;<a href="Trading-Terminal.html">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;</a></em></p>
+<p>&#x542B;&#x56FE;&#x8868;&#x53F3;&#x4FA7;&#x7A97;&#x53E3;&#x5C0F;&#x90E8;&#x4EF6;&#x9762;&#x677F;&#x8BBE;&#x7F6E;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Widget&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x201C;widgetbar&#x201D;&#x5B57;&#x6BB5;&#x542F;&#x7528;&#x56FE;&#x8868;&#x53F3;&#x4FA7;&#x7684;&#x76D1;&#x89C6;&#x5217;&#x8868;&#xFF0C;&#x65B0;&#x95FB;&#x548C;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x7A97;&#x53E3;&#x5C0F;&#x90E8;&#x4EF6;&#xFF1A;
+&#x5305;&#x542B;&#x56FE;&#x8868;&#x53F3;&#x4FA7;&#x5C0F;&#x90E8;&#x4EF6;&#x9762;&#x677F;&#x8BBE;&#x7F6E;&#x7684;&#x5BF9;&#x8C61;&#x3002; &#x56FE;&#x8868;&#x53F3;&#x4FA7;&#x7684;&#x76D1;&#x89C6;&#x5217;&#x8868;&#x3001;&#x65B0;&#x95FB;&#x3001;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x548C;&#x6570;&#x636E;&#x7A97;&#x53E3;&#x5C0F;&#x90E8;&#x4EF6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5C0F;&#x90E8;&#x4EF6;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x7684; <code>widgetbar</code> &#x5B57;&#x6BB5;&#x542F;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-javascript">widgetbar: {
+  details: <span class="hljs-literal">true</span>,
+    watchlist: <span class="hljs-literal">true</span>,
+    news: <span class="hljs-literal">true</span>,
+    datawindow: <span class="hljs-literal">true</span>,
+    watchlist_settings: {
+    default_symbols: [<span class="hljs-string">&quot;NYSE:AA&quot;</span>, <span class="hljs-string">&quot;NYSE:AAL&quot;</span>, <span class="hljs-string">&quot;NASDAQ:AAPL&quot;</span>],
+    readonly: <span class="hljs-literal">false</span>
+  }
+}
+</code></pre>
+<ul>
+<li><code>details</code> (<em>default:</em> <code>false</code>): &#x5728;&#x53F3;&#x4FA7;&#x7684;&#x5C0F;&#x90E8;&#x4EF6;&#x9762;&#x677F;&#x4E2D;&#x542F;&#x7528;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x5C0F;&#x90E8;&#x4EF6;&#x3002;</li>
+<li><code>watchlist</code> (<em>default:</em> <code>false</code>): &#x5728;&#x53F3;&#x4FA7;&#x7684;&#x5C0F;&#x90E8;&#x4EF6;&#x9762;&#x677F;&#x4E2D;&#x542F;&#x7528;&#x89C2;&#x5BDF;&#x5217;&#x8868;&#x5C0F;&#x90E8;&#x4EF6;&#x3002;</li>
+<li><code>news</code> (<em>default:</em> <code>false</code>): &#x5728;&#x53F3;&#x4FA7;&#x7684;&#x5C0F;&#x90E8;&#x4EF6;&#x9762;&#x677F;&#x4E2D;&#x542F;&#x7528;&#x65B0;&#x95FB;&#x5C0F;&#x90E8;&#x4EF6;&#x3002;</li>
+<li><code>datawindow</code> (<em>default:</em> <code>false</code>): &#xFF1A;&#x5728;&#x53F3;&#x4FA7;&#x7684;&#x5C0F;&#x90E8;&#x4EF6;&#x9762;&#x677F;&#x4E2D;&#x542F;&#x7528;&#x6570;&#x636E;&#x7A97;&#x53E3;&#x5C0F;&#x90E8;&#x4EF6;&#x3002;</li>
+<li><code>watchlist_settings.default_symbols</code> (<em>default:</em> <code>[]</code>): &#x8BBE;&#x7F6E;&#x76D1;&#x89C6;&#x5217;&#x8868;&#x7684;&#x9ED8;&#x8BA4;&#x5546;&#x54C1;&#x5217;&#x8868;&#x3002;</li>
+<li><code>watchlist_settings.readonly</code> (<em>default:</em> <code>false</code>): &#x4E3A;&#x76D1;&#x89C6;&#x5217;&#x8868;&#x542F;&#x7528;&#x53EA;&#x8BFB;&#x6A21;&#x5F0F;&#x3002;</li>
+</ul>
+<h4 id="rssnewsfeed">rss_news_feed</h4>
+<p><img src="../images/trading.png" alt=""> <em>&#x4EC5;&#x9002;&#x7528;&#x4E8E;<a href="Trading-Terminal.html">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;</a></em></p>
+<p>&#x4F7F;&#x7528;&#x6B64;&#x5C5E;&#x6027;&#x66F4;&#x6539;&#x65B0;&#x95FB;&#x7684;RSS&#x6E90;&#x3002; &#x60A8;&#x53EF;&#x4EE5;&#x4E3A;&#x6BCF;&#x4E2A;&#x5546;&#x54C1;&#x7C7B;&#x578B;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;RSS&#x3002;&#x6216;&#x4E3A;&#x6240;&#x4EE5;&#x5546;&#x54C1;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;RSS&#x3002;&#x8BE5;&#x5BF9;&#x8C61;&#x5C06;&#x62E5;&#x6709;<code>default</code>&#x5C5E;&#x6027;&#xFF0C;&#x5176;&#x4ED6;&#x5C5E;&#x6027;&#x662F;&#x53EF;&#x9009;&#x7684;; &#x5C5E;&#x6027;&#x7684;&#x540D;&#x79F0;&#x4E0E;&#x5546;&#x54C1;&#x7C7B;&#x578B;&#x5339;&#x914D;&#x3002;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x90FD;&#x662F;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;(&#x6216;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;):</p>
+<ol>
+<li><code>url</code>&#x8BF7;&#x6C42;&#x7684;URL&#x3002; &#x5B83;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x82B1;&#x62EC;&#x53F7;&#x4E2D;&#x7684;&#x6807;&#x7B7E;(&#x5C06;&#x4F1A;&#x88AB;&#x7EC8;&#x7AEF;&#x6240;&#x66F4;&#x6539;): <code>{SYMBOL}</code>,<code>{TYPE}</code>,<code>{EXCHANGE}&#x3002;</code></li>
+<li><code>name</code> &#x8981;&#x5728;&#x65B0;&#x95FB;&#x4E0B;&#x9762;&#x663E;&#x793A;&#x7684;Feed&#x540D;&#x79F0;&#x3002;</li>
+</ol>
+<p>&#x4F8B;:</p>
+<pre><code class="lang-js">{
+    <span class="hljs-string">&quot;default&quot;</span>: [ {
+        url: <span class="hljs-string">&quot;https://articlefeeds.nasdaq.com/nasdaq/symbols?symbol={SYMBOL}&quot;</span>,
+        name: <span class="hljs-string">&quot;NASDAQ&quot;</span>
+      }, {
+        url: <span class="hljs-string">&quot;http://feeds.finance.yahoo.com/rss/2.0/headline?s={SYMBOL}&amp;region=US&amp;lang=en-US&quot;</span>,
+        name: <span class="hljs-string">&quot;Yahoo Finance&quot;</span>
+      } ]
+}
+</code></pre>
+<p>&#x53E6;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-js">{
+    <span class="hljs-string">&quot;default&quot;</span>: {
+        url: <span class="hljs-string">&quot;https://articlefeeds.nasdaq.com/nasdaq/symbols?symbol={SYMBOL}&quot;</span>,
+        name: <span class="hljs-string">&quot;NASDAQ&quot;</span>
+    }
+}
+</code></pre>
+<p>&#x66F4;&#x591A;&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-js">{
+    <span class="hljs-string">&quot;default&quot;</span>: {
+        url: <span class="hljs-string">&quot;https://articlefeeds.nasdaq.com/nasdaq/symbols?symbol={SYMBOL}&quot;</span>,
+        name: <span class="hljs-string">&quot;NASDAQ&quot;</span>
+     },
+    <span class="hljs-string">&quot;stock&quot;</span>: {
+        url: <span class="hljs-string">&quot;http://feeds.finance.yahoo.com/rss/2.0/headline?s={SYMBOL}&amp;region=US&amp;lang=en-US&quot;</span>,
+        name: <span class="hljs-string">&quot;Yahoo Finance&quot;</span>
+    }
+}
+</code></pre>
+<h4 id="newsprovider">news_provider</h4>
+<p><img src="../images/trading.png" alt=""> <em>&#x4EC5;&#x9002;&#x7528;&#x4E8E;<a href="Trading-Terminal.html">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;</a></em></p>
+<p>&#x6307;&#x5B9A;&#x65B0;&#x95FB;&#x63D0;&#x4F9B;&#x8005;&#x7684;&#x5BF9;&#x8C61;&#x3002; &#x5B83;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#xFF1A;</p>
+<ol>
+<li><p><code>is_news_generic</code>- &#x5982;&#x679C;&#x4E3A;<code>true</code>, &#x5219;&#x65B0;&#x95FB;&#x5C0F;&#x90E8;&#x4EF6;&#x7684;&#x6807;&#x9898;&#x5C06;&#x4E0D;&#x5305;&#x542B;&#x5546;&#x54C1;&#x540D;&#x79F0;&#xFF08;&#x4EC5;&#x5305;&#x542B;&#x201C;&#x6807;&#x9898;&#x201D;&#xFF09;&#x3002; &#x5426;&#x5219;&#x5C06;&#x6DFB;&#x52A0;<code>for SYMBOL_NAME</code>&#x3002;</p>
+</li>
+<li><p><code>get_news</code>- &#x4F7F;&#x7528;&#x6B64;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x81EA;&#x5DF1;&#x7684;&#x65B0;&#x95FB;getter&#x65B9;&#x6CD5;&#x3002; <code>symbol</code>&#x548C;<code>callback</code>&#x90FD;&#x5C06;&#x4F20;&#x9012;&#x7ED9;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x4F1A;&#x4F20;&#x9012;&#x4EE5;&#x4E0B;&#x7ED3;&#x6784;&#x7684;&#x65B0;&#x95FB;&#x5BF9;&#x8C61;:</p>
+<ol>
+<li><code>title</code>(&#x5FC5;&#x987B;) - &#x65B0;&#x95FB;&#x6807;&#x9898;&#x3002;</li>
+<li><code>published</code>(&#x5FC5;&#x987B;) - &#x65B0;&#x95FB;&#x65F6;&#x95F4;&#xFF08;&#x4EE5;&#x6BEB;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#x7684;UTC&#x65F6;&#x95F4;&#xFF09;</li>
+<li><code>source</code>(&#x53EF;&#x9009;) - &#x6807;&#x9898;&#x7684;&#x65B0;&#x95FB;&#x6765;&#x6E90;&#x3002;</li>
+<li><code>shortDescription</code>(&#x53EF;&#x9009;) - &#x5C06;&#x5728;&#x6807;&#x9898;&#x4E0B;&#x663E;&#x793A;&#x7684;&#x65B0;&#x95FB;&#x9879;&#x76EE;&#x7684;&#x7B80;&#x77ED;&#x63CF;&#x8FF0;&#x3002;</li>
+<li><code>link</code>(&#x53EF;&#x9009;) - &#x65B0;&#x95FB;&#x62A5;&#x9053;&#x7684;URL</li>
+<li><code>fullDescription</code>(&#x53EF;&#x9009;) - &#x65B0;&#x95FB;&#x9879;&#x76EE;&#x7684;&#x5B8C;&#x6574;&#x63CF;&#x8FF0;&#xFF08;&#x6B63;&#x6587;&#xFF09;</li>
+</ol>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x53EA;&#x6709; <code>title</code> &#x548C; <code>published</code> &#x662F;&#x5FC5;&#x987B;&#x9879;
+&#x7528;&#x4E8E;&#x6BD4;&#x8F83;&#x5DF2;&#x53D1;&#x5E03;&#x7684;&#x5185;&#x5BB9;&#x548C;&#x65B0;&#x53D1;&#x5E03;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;2&#xFF1A;</strong> &#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x65B0;&#x95FB;&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x5C06;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x5E26;&#x6709; <code>link</code> URL &#x7684;&#x65B0;&#x6807;&#x7B7E;&#x3002; &#x5982;&#x679C;&#x672A;&#x6307;&#x5B9A; <code>link</code>&#xFF0C;&#x5219;&#x4F1A;&#x663E;&#x793A;&#x5E26;&#x6709; <code>fullDescription</code> &#x7684;&#x5F39;&#x51FA;&#x5BF9;&#x8BDD;&#x6846;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;3&#xFF1A;</strong> &#x5982;&#x679C; <code>news_provider</code> &#x548C; <code>rss_news_feed</code> &#x90FD;&#x53EF;&#x7528;&#xFF0C;&#x90A3;&#x4E48; <code>rss_news_feed</code> &#x5C06;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+</li>
+</ol>
+<p>&#x4F8B;:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> dateOfPublication = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().valueOf();
+
+news_provider: {
+  is_news_generic: <span class="hljs-literal">true</span>,
+          get_news: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">symbol, callback</span>) </span>{
+    callback([
+      {
+        title: <span class="hljs-string">&apos;News for symbol &apos;</span> + symbol,
+        shortDescription: <span class="hljs-string">&apos;Short description of the news item&apos;</span>,
+        fullDescription: <span class="hljs-string">&apos;Full description of the news item&apos;</span>,
+        published: dateOfPublication,
+        source: <span class="hljs-string">&apos;My own source of news&apos;</span>,
+        link: <span class="hljs-string">&apos;https://www.tradingview.com/&apos;</span>
+      },
+      {
+        title: <span class="hljs-string">&apos;Another news for symbol &apos;</span> + symbol,
+        shortDescription: <span class="hljs-string">&apos;Short description of the news item&apos;</span>,
+        fullDescription: <span class="hljs-string">&apos;Full description of the news item. Long text here.&apos;</span>,
+        published: dateOfPublication,
+        source: <span class="hljs-string">&apos;My own source of news&apos;</span>,
+      }
+    ]);
+  }
+}
+</code></pre>
+<h4 id="brokerfactory">broker_factory</h4>
+<p><img src="../images/trading.png" alt=""> <em>&#x4EC5;&#x9002;&#x7528;&#x4E8E;<a href="Trading-Terminal.html">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;</a></em></p>
+<p>&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x6765;&#x4F20;&#x9012;&#x6784;&#x9020;<a href="Broker-API.html">&#x7ECF;&#x7EAA;&#x5546;API</a>&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#x3002; 
+&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x63A5;&#x6536;<a href="Trading-Host.html">&#x4EA4;&#x6613;&#x4E3B;&#x673A;</a>&#x5E76;&#x8FD4;&#x56DE;<a href="Broker-API.html">&#x7ECF;&#x7EAA;&#x5546;API</a>&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript">broker_factory: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">host</span>) </span>{ ... }
+</code></pre>
+<h4 id="brokerconfig">broker_config</h4>
+<p><img src="../images/trading.png" alt=""> <em>&#x4EC5;&#x9002;&#x7528;&#x4E8E;<a href="Trading-Terminal.html">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;</a></em></p>
+<p>&#x4F7F;&#x7528;&#x6B64;&#x5B57;&#x6BB5;&#x8BBE;&#x7F6E;&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x7684;&#x914D;&#x7F6E;&#x6807;&#x5FD7;&#x3002; <a href="Trading-Objects-and-Constants.html#configflags-object">&#x4E86;&#x89E3;&#x66F4;&#x591A;</a>&#x3002;</p>
+<pre><code class="lang-javascript">broker_config: {
+    supportReversePosition: <span class="hljs-literal">true</span>,
+    supportPLUpdate: <span class="hljs-literal">true</span>,
+    ...
+},
+</code></pre>
+<h1 id="&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x770B;">&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x770B;</h1>
+<ul>
+<li><a href="Customization-Overview.html">&#x5B9A;&#x5236;&#x6982;&#x8FF0;</a></li>
+<li><a href="Widget-Methods.html">Widget&#x65B9;&#x6CD5;</a></li>
+<li><a href="Featuresets.html">&#x529F;&#x80FD;&#x96C6;</a></li>
+<li><a href="Saving-and-Loading-Charts.html">&#x5B58;&#x50A8;&#x4E8E;&#x52A0;&#x8F7D;&#x56FE;&#x8868;</a></li>
+<li><a href="Studies-Overrides.html">&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x6307;&#x6807;&#x53C2;&#x6570;</a></li>
+<li><a href="Overrides.html">&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x56FE;&#x8868;&#x53C2;&#x6570;</a></li>
+</ul>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTY1NzQwNzIxXX0=
+-->
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Customization-Overview.html" class="navigation navigation-prev " aria-label="Previous page: 4-1、定制概述">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Widget-Methods.html" class="navigation navigation-next " aria-label="Next page: 4-3、Widget 方法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4-2、Widget 构造器","level":"4.2","depth":1,"next":{"title":"4-3、Widget 方法","level":"4.3","depth":1,"path":"book/Widget-Methods.md","ref":"book/Widget-Methods.md","articles":[]},"previous":{"title":"4-1、定制概述","level":"4.1","depth":1,"path":"book/Customization-Overview.md","ref":"book/Customization-Overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/Widget-Constructor.md","mtime":"2021-06-27T10:33:52.758Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-27T12:29:05.136Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livere/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-head-tag/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-v3/baidu-tongji.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

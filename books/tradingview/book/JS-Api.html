@@ -1,0 +1,1344 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3-2、JS Api · TradingView中文开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-livere/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-head-tag/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="UDF.html" />
+    
+    
+    <link rel="prev" href="How-To-Connect-My-Data.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CHANGE-LOG.html">
+            
+                <a href="../CHANGE-LOG.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Home.html">
+            
+                <a href="Home.html">
+            
+                    
+                    1、Charting Library 是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2、入门指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="Package-Content.html">
+            
+                <a href="Package-Content.html">
+            
+                    
+                    2-1、图表库内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="Running-Your-Charting-Library.html">
+            
+                <a href="Running-Your-Charting-Library.html">
+            
+                    
+                    2-2、运行图表库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3、数据绑定</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="How-To-Connect-My-Data.html">
+            
+                <a href="How-To-Connect-My-Data.html">
+            
+                    
+                    3-1、如何连接我的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="JS-Api.html">
+            
+                <a href="JS-Api.html">
+            
+                    
+                    3-2、JS Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="UDF.html">
+            
+                <a href="UDF.html">
+            
+                    
+                    3-3、UDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="Symbology.html">
+            
+                <a href="Symbology.html">
+            
+                    
+                    3-4、Symbology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="Trading-Sessions.html">
+            
+                <a href="Trading-Sessions.html">
+            
+                    
+                    3-5、交易时段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="Quotes.html">
+            
+                <a href="Quotes.html">
+            
+                    
+                    3-6、报价
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4、图表定制</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html">
+            
+                    
+                    4-1、定制概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="Widget-Constructor.html">
+            
+                <a href="Widget-Constructor.html">
+            
+                    
+                    4-2、Widget 构造器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Widget-Methods.html">
+            
+                <a href="Widget-Methods.html">
+            
+                    
+                    4-3、Widget 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="Chart-Methods.html">
+            
+                <a href="Chart-Methods.html">
+            
+                    
+                    4-4、图表方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Featuresets.html">
+            
+                <a href="Featuresets.html">
+            
+                    
+                    4-5、功能集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html#通过数据流定制">
+            
+                    
+                    4-6、服务端定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="Customization-Use-Cases.html">
+            
+                <a href="Customization-Use-Cases.html">
+            
+                    
+                    4-7、定制的使用案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">5、交易终端</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="Trading-Terminal.html">
+            
+                <a href="Trading-Terminal.html">
+            
+                    
+                    5-1、交易终端简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="Broker-API.html">
+            
+                <a href="Broker-API.html">
+            
+                    
+                    5-2、经纪商 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="Trading-Host.html">
+            
+                <a href="Trading-Host.html">
+            
+                    
+                    5-3、交易主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="Account-Manager.html">
+            
+                <a href="Account-Manager.html">
+            
+                    
+                    5-4、账户管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="Trading-Objects-and-Constants.html">
+            
+                <a href="Trading-Objects-and-Constants.html">
+            
+                    
+                    5-5、交易对象和常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="Saving-and-Loading-Charts.html">
+            
+                <a href="Saving-and-Loading-Charts.html">
+            
+                    
+                    6、储存和载入图表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="Save-Load-Adapter-Example.html">
+            
+                <a href="Save-Load-Adapter-Example.html">
+            
+                    
+                    6-1、储存和载入的内存示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="Creating-Custom-Studies.html">
+            
+                <a href="Creating-Custom-Studies.html">
+            
+                    
+                    7、创建自定义指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="Best-practices.html">
+            
+                <a href="Best-practices.html">
+            
+                    
+                    8、最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="Frequently-Asked-Questions.html">
+            
+                <a href="Frequently-Asked-Questions.html">
+            
+                    
+                    9、经常被问到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="Breaking-changes.html">
+            
+                <a href="Breaking-changes.html">
+            
+                    
+                    10、版本变更点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="Basic-Compose.html">
+            
+                <a href="Basic-Compose.html">
+            
+                    
+                    图表的主要组成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="Resolution.html">
+            
+                <a href="Resolution.html">
+            
+                    
+                    周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="Time-Frames.html">
+            
+                <a href="Time-Frames.html">
+            
+                    
+                    时间范围
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="Localization.html">
+            
+                <a href="Localization.html">
+            
+                    
+                    本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="Overrides.html">
+            
+                <a href="Overrides.html">
+            
+                    
+                    覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="Drawings-Overrides.html">
+            
+                <a href="Drawings-Overrides.html">
+            
+                    
+                    绘图覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="Studies-Overrides.html">
+            
+                <a href="Studies-Overrides.html">
+            
+                    
+                    指标覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="Shapes-and-Overrides.html">
+            
+                <a href="Shapes-and-Overrides.html">
+            
+                    
+                    形状与覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="Chart-Style-Properties.html">
+            
+                <a href="Chart-Style-Properties.html">
+            
+                    
+                    图表样式属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="Chart.html">
+            
+                <a href="Chart.html">
+            
+                    
+                    图表自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="Toolbars.html">
+            
+                <a href="Toolbars.html">
+            
+                    
+                    工具栏自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="CSS-Color-Themes.html">
+            
+                <a href="CSS-Color-Themes.html">
+            
+                    
+                    CSS主题颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="Subscription.html">
+            
+                <a href="Subscription.html">
+            
+                    
+                    订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="Trading-Primitives.html">
+            
+                <a href="Trading-Primitives.html">
+            
+                    
+                    交易元语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="Marks-On-Bars.html">
+            
+                <a href="Marks-On-Bars.html">
+            
+                    
+                    在 K 线上做标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="Delegate.html">
+            
+                <a href="Delegate.html">
+            
+                    
+                    委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="WatchedValue.html">
+            
+                <a href="WatchedValue.html">
+            
+                    
+                    WatchedValue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.18" data-path="Study-Api.html">
+            
+                <a href="Study-Api.html">
+            
+                    
+                    指标 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="Shape-Api.html">
+            
+                <a href="Shape-Api.html">
+            
+                    
+                    形状 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="Shapes-Group-Api.html">
+            
+                <a href="Shapes-Group-Api.html">
+            
+                    
+                    形状组 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="Selection-Api.html">
+            
+                <a href="Selection-Api.html">
+            
+                    
+                    选择 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.22" data-path="Pane-Api.html">
+            
+                <a href="Pane-Api.html">
+            
+                    
+                    窗格 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.23" data-path="Series-Api.html">
+            
+                <a href="Series-Api.html">
+            
+                    
+                    数据列 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.24" data-path="Price-Scale-Api.html">
+            
+                <a href="Price-Scale-Api.html">
+            
+                    
+                    价格刻度 Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.25" data-path="Panes-And-Scales-Behavior.html">
+            
+                <a href="Panes-And-Scales-Behavior.html">
+            
+                    
+                    窗格和刻度特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.26" data-path="Shortcuts.html">
+            
+                <a href="Shortcuts.html">
+            
+                    
+                    快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3-2、JS Api</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="js-api"><a href="#js-api">JS Api</a></h1>
+<hr>
+<p><strong>&#x8FD9;&#x662F;&#x5565;?</strong> &#x4E00;&#x5957;JS&#x65B9;&#x6CD5;&#xFF08;&#x4EE5;&#x5B9E;&#x73B0;&#x6307;&#x5B9A;&#x7684;&#x516C;&#x5171;&#x63A5;&#x53E3;&#xFF09;&#x3002;<br><strong>&#x6211;&#x8BE5;&#x600E;&#x4E48;&#x4F7F;&#x7528;&#x5B83;?</strong>: &#x60A8;&#x5E94;&#x8BE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;JS&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x5C06;&#x4EE5;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#x63A5;&#x6536;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x54CD;&#x5E94;&#x56FE;&#x8868;&#x5E93;&#x7684;&#x8BF7;&#x6C42;&#x3002;</p>
+<p>&#x5728;&#x56FE;&#x8868;&#x5E93;&#x4E2D;&#x5B9E;&#x73B0;&#x4E86;&#x6570;&#x636E;&#x7F13;&#x5B58;&#xFF08;&#x5386;&#x53F2;&#x548C;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#xFF09;&#x3002;&#x5F53;&#x60A8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x7684;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x53EA;&#x9700;&#x5C06;&#x5B83;&#x4F20;&#x9012;&#x7ED9;&#x56FE;&#x8868;&#x5E93;<a href="Widget-Constructor.html">Widget&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</a>&#x3002;</p>
+<h1 id="methods"><a href="#methods">Methods</a></h1>
+<ol>
+<li><a href="#onreadycallback">onReady</a></li>
+<li><a href="#searchsymbolsuserinput-exchange-symboltype-onresultreadycallback">searchSymbols</a></li>
+<li><a href="#resolvesymbolsymbolname-onsymbolresolvedcallback-onresolveerrorcallback">resolveSymbol</a></li>
+<li><a href="#getbarssymbolinfo-resolution-periodparams-onhistorycallback-onerrorcallback">getBars</a></li>
+<li><a href="#subscribebarssymbolinfo-resolution-onrealtimecallback-subscriberuid-onresetcacheneededcallback">subscribeBars</a></li>
+<li><a href="#unsubscribebarssubscriberuid">unsubscribeBars</a></li>
+<li><a href="#getmarkssymbolinfo-startdate-enddate-ondatacallback-resolution">getMarks</a></li>
+<li><a href="#gettimescalemarkssymbolinfo-startdate-enddate-ondatacallback-resolution">getTimescaleMarks</a></li>
+<li><a href="#getservertimecallback">getServerTime</a></li>
+<li><a href="#getvolumeprofileresolutionforperiodcurrentresolution-from-to-symbolinfo">getVolumeProfileResolutionForPeriod</a></li>
+</ol>
+<p><img src="../images/trading.png" alt=""><a href="#&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x4E13;&#x5C5E;">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x4E13;&#x5C5E;</a>:</p>
+<ol>
+<li><a href="#getquotessymbols-ondatacallback-onerrorcallback">getQuotes</a></li>
+<li><a href="#subscribequotessymbols-fastsymbols-onrealtimecallback-listenerguid">subscribeQuotes</a></li>
+<li><a href="#unsubscribequoteslistenerguid">unsubscribeQuotes</a></li>
+<li><a href="#subscribedepthsymbolinfo-callback-string">subscribeDepth</a></li>
+<li><a href="#unsubscribedepthsubscriberuid">unsubscribeDepth</a></li>
+</ol>
+<h3 id="onreadycallback"><a href="#onreadycallback">onReady(callback)</a></h3>
+<ol>
+<li><code>callback</code>: function(configurationData)<ol>
+<li><code>configurationData</code>: object (&#x89C1;&#x4E0B;&#x6587;)</li>
+</ol>
+</li>
+</ol>
+<p>&#x6B64;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x56FE;&#x8868;&#x5E93;&#x652F;&#x6301;&#x7684;&#x56FE;&#x8868;&#x914D;&#x7F6E;&#x3002;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x56FE;&#x8868;&#x652F;&#x6301;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x88AB;&#x79F0;&#x4E3A;<a href="Customization-Overview.html#customization-done-through-data-stream">&#x670D;&#x52A1;&#x7AEF;&#x5B9A;&#x5236;</a>&#x3002;</p>
+<p>&#x56FE;&#x8868;&#x5E93;&#x8981;&#x6C42;&#x60A8;&#x4F7F;&#x7528;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6765;&#x4F20;&#x9012;datafeed&#x7684; <code>configurationData</code>&#x53C2;&#x6570;&#x3002;</p>
+<p>configurationData&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x73B0;&#x5728;&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;:</p>
+<h5 id="exchanges"><a href="#exchanges">exchanges</a></h5>
+<p>&#x4EA4;&#x6613;&#x6240;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x3002; &#x4EA4;&#x6613;&#x6240;&#x5BF9;&#x8C61;&#x7684;&#x7ED3;&#x6784;&#x4E3A;: <code>{value, name, desc}</code>&#x3002;</p>
+<p><code>value</code>&#x5C06;&#x88AB;&#x4F5C;&#x4E3A;<code>exchange</code>&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9; <a href="#searchsymbolsuserinput-exchange-symboltype-onresultreadycallback">searchSymbols</a>&#x3002;</p>
+<p><code>exchanges = []</code>&#x4F1A;&#x5BFC;&#x81F4;&#x5546;&#x54C1;&#x67E5;&#x8BE2;&#x5217;&#x8868;&#x4E2D;&#x770B;&#x4E0D;&#x5230;&#x4EA4;&#x6613;&#x6240;&#x8FC7;&#x6EE4;&#x5668;&#x3002;<code>value = &quot;&quot;</code>&#x6765;&#x521B;&#x5EFA;&#x901A;&#x914D;&#x7B26;&#x7B5B;&#x9009;&#x5668;&#xFF08;&#x6240;&#x6709;&#x7684;&#x4EA4;&#x6613;&#x6240;&#xFF09;&#x3002;</p>
+<h5 id="symbolstypes"><a href="#symbolstypes">symbols_types</a></h5>
+<p>&#x5546;&#x54C1;&#x7C7B;&#x578B;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x3002;&#x5546;&#x54C1;&#x7C7B;&#x578B;&#x5BF9;&#x8C61;&#x7684;&#x7ED3;&#x6784;&#x4E3A;: <code>{name, value}</code>&#x3002;<code>value</code>&#x5C06;&#x88AB;&#x4F5C;&#x4E3A;<code>symbolType</code>&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;<a href="#searchsymbolsuserinput-exchange-symboltype-onresultreadycallback">searchSymbols</a>&#x3002;</p>
+<p><code>symbolsTypes</code>= [] &#x4F1A;&#x5BFC;&#x81F4;&#x5546;&#x54C1;&#x67E5;&#x8BE2;&#x5217;&#x8868;&#x4E2D;&#x770B;&#x4E0D;&#x5230;&#x5546;&#x54C1;&#x7C7B;&#x578B;&#x8FC7;&#x6EE4;&#x5668;&#x3002; &#x4F7F;&#x7528;<code>value= &quot;&quot;</code>&#x6765;&#x521B;&#x5EFA;&#x901A;&#x914D;&#x7B26;&#x7B5B;&#x9009;&#x5668;&#xFF08;&#x6240;&#x6709;&#x7684;&#x5546;&#x54C1;&#x7C7B;&#x578B;&#xFF09;&#x3002;</p>
+<h5 id="supportedresolutions"><a href="#supportedresolutions">supported_resolutions</a></h5>
+<p>&#x652F;&#x6301;&#x7684;&#x5468;&#x671F;&#x6570;&#x7EC4;&#xFF0C;&#x5468;&#x671F;&#x53EF;&#x4EE5;&#x662F;&#x6570;&#x5B57;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x3002; &#x5982;&#x679C;&#x5468;&#x671F;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x5B83;&#x88AB;&#x89C6;&#x4E3A;&#x5206;&#x949F;&#x6570;&#x3002; &#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x4EE5;&#x662F;&#x201C;*D&#x201D;&#xFF0C;&#x201C;*W&#x201D;&#xFF0C;&#x201C;_M&#x201D;&#xFF08;_&#x7684;&#x610F;&#x601D;&#x662F;&#x4EFB;&#x4F55;&#x6570;&#x5B57;&#xFF09;&#x3002;&#x683C;&#x5F0F;&#x5316;&#x8BE6;&#x7EC6;&#x53C2;&#x7167;:<a href="Resolution.html">&#x6587;&#x7AE0;</a>&#x3002;</p>
+<p><code>resolutions = undefined</code> &#x6216; <code>resolutions = []</code> &#x65F6;&#xFF0C;&#x5468;&#x671F;&#x62E5;&#x6709;<code>widget</code>&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x4F8B;:<code>[1, 15, 240, &quot;D&quot;, &quot;6M&quot;]</code>&#x60A8;&#x5C06;&#x5728;&#x5468;&#x671F;&#x4E2D;&#x5F97;&#x5230; &quot;1 &#x5206;&#x949F;, 15 &#x5206;&#x949F;, 4 &#x5C0F;&#x65F6;, 1 &#x5929;, 6 &#x4E2A;&#x6708;&quot; &#x3002;</p>
+<h5 id="currencycodes"><a href="#currencycodes">currency_codes</a></h5>
+<p>&#x7528;&#x4E8E;&#x8D27;&#x5E01;&#x8F6C;&#x6362;&#x7684;&#x652F;&#x6301;&#x7684;&#x8D27;&#x5E01;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;[&#x201C;USD&#x201D;&#xFF0C;&#x201C;EUR&#x201D;&#xFF0C;&#x201C;GBP&#x201D;]&#x3002;</p>
+<h4 id="units"><a href="#units">units</a></h4>
+<p>&#x5217;&#x51FA;&#x652F;&#x6301;&#x7684;&#x5355;&#x4F4D;&#x7EC4;&#x7684;&#x5BF9;&#x8C61;&#x3002; &#x6BCF;&#x4E2A;&#x7EC4;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x5355;&#x4F4D;&#x5BF9;&#x8C61;&#x3002; &#x6BCF;&#x4E2A;&#x5355;&#x4F4D;&#x5BF9;&#x8C61;&#x5E94;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#xFF1A;</p>
+<ul>
+<li><code>id</code>: string. &#x552F;&#x4E00;&#x4E3B;&#x952E;</li>
+<li><code>name</code>: string. &#x7F29;&#x7565;&#x540D;</li>
+<li><code>description</code>: string. &#x7B80;&#x4ECB;</li>
+</ul>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-javascript">{
+    weight: [
+        { id: <span class="hljs-string">&apos;kg&apos;</span>, name: <span class="hljs-string">&apos;kg&apos;</span>, description: <span class="hljs-string">&apos;Kilograms&apos;</span> },
+        { id: <span class="hljs-string">&apos;lb&apos;</span>, name: <span class="hljs-string">&apos;lb&apos;</span>, description: <span class="hljs-string">&apos;Pounds&apos;</span>},
+    ]
+}
+</code></pre>
+<h5 id="supportsmarks"><a href="#supportsmarks">supports_marks</a></h5>
+<p>&#x5E03;&#x5C14;&#x503C;&#x6765;&#x6807;&#x8BC6;&#x60A8;&#x7684; datafeed &#x662F;&#x5426;&#x652F;&#x6301;&#x5728;K&#x7EBF;&#x4E0A;&#x663E;&#x793A;&#x6807;&#x8BB0;&#x3002;</p>
+<h5 id="supportstimescalemarks"><a href="#supportstimescalemarks">supports_timescale_marks</a></h5>
+<p>&#x5E03;&#x5C14;&#x503C;&#x6765;&#x6807;&#x8BC6;&#x60A8;&#x7684; datafeed &#x662F;&#x5426;&#x652F;&#x6301;&#x65F6;&#x95F4;&#x523B;&#x5EA6;&#x6807;&#x8BB0;&#x3002;</p>
+<h5 id="supportstime"><a href="#supportstime">supports_time</a></h5>
+<p>&#x5C06;&#x6B64;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x5047;&#x5982;&#x60A8;&#x7684;datafeed&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x95F4;&#xFF08;unix&#x65F6;&#x95F4;&#xFF09;&#x3002; &#x5B83;&#x4EC5;&#x7528;&#x4E8E;&#x5728;&#x4EF7;&#x683C;&#x523B;&#x5EA6;&#x4E0A;&#x663E;&#x793A;&#x5012;&#x8BA1;&#x65F6;&#x3002;</p>
+<h5 id="symbolsgrouping"><a href="#symbolsgrouping">symbols_grouping</a></h5>
+<p>&#x5982;&#x679C;&#x8981;&#x5728;&#x5546;&#x54C1;&#x641C;&#x7D22;&#x4E2D;&#x5BF9;&#x5546;&#x54C1;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#xFF0C;&#x8BF7;&#x8BBE;&#x7F6E;&#x5B83;&#x3002;
+&#x503C;&#x4E3A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x4E2D;&#x952E;&#x662F;&#x5546;&#x54C1;&#x7C7B;&#x578B;&#xFF0C;&#x503C;&#x662F;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;&#x6BCF;&#x4E2A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5E94;&#x8BE5;&#x5C06;&#x4E00;&#x4E2A;&#x671F;&#x8D27;&#x540D;&#x79F0;&#x5206;&#x4E3A;&#x4E24;&#x90E8;&#x5206;&#xFF1A;&#x5408;&#x7EA6;&#x79CD;&#x7C7B;&#x548C;&#x5230;&#x671F;&#x65F6;&#x95F4;&#xFF09;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;:</p>
+<pre><code class="lang-javascript">    {
+      <span class="hljs-string">&quot;futures&quot;</span>: <span class="hljs-string">`/^(.+)([12]!|[FGHJKMNQUVXZ]\d{1,2})$/`</span>,
+      <span class="hljs-string">&quot;stock&quot;</span>: <span class="hljs-string">`/^(.+)([12]!|[FGHJKMNQUVXZ]\d{1,2})$/`</span>,
+    }
+</code></pre>
+<p>&#x5B83;&#x5C06;&#x5E94;&#x7528;&#x4E8E; <code>type</code> &#x4E3A; <code>futures</code> &#x548C; <code>stock</code>&#x7684;&#x5546;&#x54C1;&#x3002;</p>
+<h3 id="searchsymbolsuserinput-exchange-symboltype-onresultreadycallback"><a href="#searchsymbolsuserinput-exchange-symboltype-onresultreadycallback">searchSymbols(userInput, exchange, symbolType, onResultReadyCallback)</a></h3>
+<ol>
+<li><code>userInput</code>: string&#xFF0C;&#x7528;&#x6237;&#x5728;&#x5546;&#x54C1;&#x641C;&#x7D22;&#x6846;&#x4E2D;&#x8F93;&#x5165;&#x7684;&#x6587;&#x5B57;&#x3002;</li>
+<li><code>exchange</code>:string&#xFF0C;&#x8BF7;&#x6C42;&#x7684;&#x4EA4;&#x6613;&#x6240;&#xFF08;&#x7531;&#x7528;&#x6237;&#x9009;&#x62E9;&#xFF09;&#x3002;&#x7A7A;&#x503C;&#x8868;&#x793A;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x3002;</li>
+<li><code>symbolType</code>: string&#xFF0C;&#x8BF7;&#x6C42;&#x7684;&#x5546;&#x54C1;&#x7C7B;&#x578B;&#xFF1A;<code>index</code>&#x3001;<code>stock</code>&#x3001;<code>forex</code>&#x7B49;&#x7B49;&#xFF08;&#x7531;&#x7528;&#x6237;&#x9009;&#x62E9;&#xFF09;&#x3002;&#x7A7A;&#x503C;&#x8868;&#x793A;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x3002;</li>
+<li><code>onResultReadyCallback</code>: function(result)<ol>
+<li><code>result</code>: &#x6570;&#x7EC4; (&#x89C1;&#x4E0B;&#x6587;)</li>
+</ol>
+</li>
+</ol>
+<p>&#x65B9;&#x6CD5;&#x4ECB;&#x7ECD;&#xFF1A;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x7528;&#x6237;&#x641C;&#x7D22;&#x7684;&#x5546;&#x54C1;&#x5217;&#x8868;&#x3002;<code>result</code>&#x4E3A;&#x9884;&#x671F;&#x7684;&#x5546;&#x54C1; &#xFF0C;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;:</p>
+<pre><code class="lang-js">[
+    {
+        <span class="hljs-string">&quot;symbol&quot;</span>: <span class="hljs-string">&quot;&lt;&#x5546;&#x54C1;&#x7F29;&#x5199;&#x540D;&gt;&quot;</span>,
+        <span class="hljs-string">&quot;full_name&quot;</span>: <span class="hljs-string">&quot;&lt;&#x5546;&#x54C1;&#x5168;&#x79F0; -- &#x4F8B;: BTCE:BTCUSD&gt;&quot;</span>,
+        <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;&lt;&#x5546;&#x54C1;&#x63CF;&#x8FF0;&gt;&quot;</span>,
+        <span class="hljs-string">&quot;exchange&quot;</span>: <span class="hljs-string">&quot;&lt;&#x4EA4;&#x6613;&#x6240;&#x540D;&gt;&quot;</span>,
+        <span class="hljs-string">&quot;ticker&quot;</span>: <span class="hljs-string">&quot;&lt;&#x5546;&#x54C1;&#x4EE3;&#x7801;, &#x53EF;&#x9009;&gt;&quot;</span>,
+        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;stock&quot;</span> | <span class="hljs-string">&quot;futures&quot;</span> | <span class="hljs-string">&quot;bitcoin&quot;</span> | <span class="hljs-string">&quot;forex&quot;</span> | <span class="hljs-string">&quot;index&quot;</span>
+    }, {
+        <span class="hljs-comment">//    .....</span>
+    }
+]
+</code></pre>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5546;&#x54C1;&#xFF0C;&#x5219;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x7A7A;&#x6570;&#x7EC4;&#x6765;&#x8C03;&#x7528;&#x56DE;&#x8C03;&#x3002;&#x67E5;&#x770B;&#x66F4;&#x591A;&#x5173;&#x4E8E;<code>ticker</code>&#x7684;&#x7EC6;&#x8282; <a href="Symbology.html#ticker">&#x5728;&#x8FD9;&#x91CC;</a></p>
+<h3 id="resolvesymbolsymbolname-onsymbolresolvedcallback-onresolveerrorcallback"><a href="#resolvesymbolsymbolname-onsymbolresolvedcallback-onresolveerrorcallback">resolveSymbol(symbolName, onSymbolResolvedCallback, onResolveErrorCallback)</a></h3>
+<ol>
+<li><code>symbolName</code>: string&#xFF0C;&#x5546;&#x54C1;&#x540D;&#x79F0; &#x6216;<code>ticker</code></li>
+<li><code>onSymbolResolvedCallback</code>: function(<a href="Symbology.html#&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7ED3;&#x6784;">SymbolInfo</a>)</li>
+<li><code>onResolveErrorCallback</code>: function(reason)</li>
+<li><code>extension</code>: &#x5177;&#x6709;&#x9644;&#x52A0;&#x53C2;&#x6570;&#x7684;&#x53EF;&#x9009;&#x5BF9;&#x8C61;&#x3002; &#x5B83;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#xFF1A;<ol>
+<li><code>currencyCode</code>: string,  &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;currency_codes&#x914D;&#x7F6E;&#x5B57;&#x6BB5;&#x5E76;&#x4E14;&#x5728;&#x539F;&#x59CB;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;currency_code&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x5B83;&#x6765;&#x8868;&#x793A;&#x8981;&#x8F6C;&#x6362;&#x7684;&#x8D27;&#x5E01;&#x3002;</li>
+<li><code>unitId</code>: string. &#x5982;&#x679C; <code>units</code> &#x914D;&#x7F6E;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x63D0;&#x4F9B;&#x6765;&#x6307;&#x793A;&#x8981;&#x8F6C;&#x6362;&#x7684;&#x5355;&#x4F4D;&#x3002;
+&#x8BBE;&#x7F6E;&#x5B57;&#x6BB5;&#x5E76;&#x5728;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x4E2D;&#x63D0;&#x4F9B; <code>unit_id</code> &#x3002;</li>
+</ol>
+</li>
+</ol>
+<p>&#x65B9;&#x6CD5;&#x4ECB;&#x7ECD;&#xFF1A;&#x901A;&#x8FC7;&#x5546;&#x54C1;&#x540D;&#x79F0;&#x89E3;&#x6790;&#x5546;&#x54C1;&#x4FE1;&#x606F;(<a href="Symbology.html#&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7ED3;&#x6784;">SymbolInfo</a>)&#x3002;</p>
+<h3 id="getbarssymbolinfo-resolution-periodparams-onhistorycallback-onerrorcallback"><a href="#getbarssymbolinfo-resolution-periodparams-onhistorycallback-onerrorcallback">getBars(symbolInfo, resolution, periodParams, onHistoryCallback, onErrorCallback)</a></h3>
+<ol>
+<li><code>symbolInfo</code>:<a href="Symbology.html#&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7ED3;&#x6784;">SymbolInfo</a> &#x5546;&#x54C1;&#x4FE1;&#x606F;&#x5BF9;&#x8C61;</li>
+<li><code>resolution</code>: string &#xFF08;&#x5468;&#x671F;&#xFF09;</li>
+<li><code>periodParams</code>: &#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#x7684;&#x5BF9;&#x8C61;:<ol>
+<li><code>from</code> - unix &#x65F6;&#x95F4;&#x6233;, &#x6700;&#x5DE6;&#x8FB9;&#x8BF7;&#x6C42;&#x7684;K&#x7EBF;&#x65F6;&#x95F4;(K&#x7EBF;&#x65F6;&#x95F4; &gt;= from)</li>
+<li><code>countBack</code> - &#x8981;&#x52A0;&#x8F7D;&#x7684;K&#x7EBF;&#x7684;&#x786E;&#x5207;&#x6570;&#x91CF;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x7684;datafeed&#x652F;&#x6301;&#x5B83;&#xFF08;&#x89C1;&#x4E0B;&#x6587;&#xFF09;&#xFF0C;&#x5219;&#x5C06;&#x89C6;&#x4E3A;&#x62E5;&#x6709;&#x6BD4; <code>from</code> &#x66F4;&#x9AD8;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x3002; &#x5982;&#x679C;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#x7279;&#x5B9A;&#x65F6;&#x95F4;&#x6BB5;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4E0D;&#x6307;&#x5B9A;&#x3002;</li>
+<li><code>to</code>: unix &#x65F6;&#x95F4;&#x6233;, &#x6700;&#x53F3;&#x8FB9;&#x8BF7;&#x6C42;&#x7684;K&#x7EBF;&#x65F6;&#x95F4;(K&#x7EBF;&#x65F6;&#x95F4; &lt; to)</li>
+<li><code>firstDataRequest</code>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x4EE5;&#x6807;&#x8BC6;&#x662F;&#x5426;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x6B64;&#x5546;&#x54C1;/&#x5468;&#x671F;&#x7684;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x3002;&#x5F53;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#x65F6;
+&#x4F60;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;<code>to</code>&#x53C2;&#x6570;&#xFF08;&#x8FD9;&#x53D6;&#x51B3;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x7684;<code>Date.now()</code>) &#x5E76;&#x8FD4;&#x56DE;K&#x7EBF;&#x6570;&#x7EC4;&#x76F4;&#x5230;&#x6700;&#x65B0;K&#x7EBF;&#x3002;</li>
+</ol>
+</li>
+<li><code>onHistoryCallback</code>: function(&#x6570;&#x7EC4;<code>bars</code>,<code>meta</code>=<em>{ noData = false }</em>) &#x5386;&#x53F2;&#x6570;&#x636E;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x6BCF;&#x6B21;&#x8BF7;&#x6C42;&#x53EA;&#x5E94;&#x88AB;&#x8C03;&#x7528;&#x4E00;&#x6B21;&#x3002; &#x6B64;&#x51FD;&#x6570;&#x6709;2&#x4E2A;&#x53C2;&#x6570;&#xFF1A;<ol>
+<li><code>bars</code>: Bar&#x5BF9;&#x8C61;&#x6570;&#x7EC4;<code>{time, close, open, high, low, volume}[]</code></li>
+<li><code>meta</code>: object<code>{noData = true | false, nextTime = unix time}</code></li>
+</ol>
+</li>
+<li><code>onErrorCallback</code>: function(reason&#xFF1A;&#x9519;&#x8BEF;&#x539F;&#x56E0;) &#x9519;&#x8BEF;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002; &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x552F;&#x4E00;&#x53C2;&#x6570;&#x662F;&#x6587;&#x672C;&#x9519;&#x8BEF;&#x6D88;&#x606F;&#x3002;&#x8BE5;&#x6D88;&#x606F;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#xFF0C;&#x5E76;&#x4FDD;&#x7559;&#x4EE5;&#x5907;&#x5C06;&#x6765;&#x4F7F;&#x7528;&#x3002;</li>
+</ol>
+<p>&#x65B9;&#x6CD5;&#x4ECB;&#x7ECD;&#xFF1A;&#x5F53;&#x56FE;&#x8868;&#x5E93;&#x9700;&#x8981;&#x7531;&#x65E5;&#x671F;&#x8303;&#x56F4;&#x5B9A;&#x4E49;&#x7684;&#x5386;&#x53F2;K&#x7EBF;&#x7247;&#x6BB5;&#x65F6;&#xFF0C;&#x5C06;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x3002;</p>
+<p><code>Bar</code>&#x662F;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ol>
+<li><code>time</code>: number <strong>UTC</strong> &#x65F6;&#x533A;&#x7684;&#x6BEB;&#x79D2;&#x5355;&#x4F4D;&#x65F6;&#x95F4;&#x6233;&#x3002;<code>time</code>&#x5BF9;&#x4E8E;&#x65E5;K&#x7EBF;&#x7684;&#x65F6;&#x95F4;&#x5E94;&#x4E3A;00:00 UTC(&#x800C;&#x975E;&#x4EA4;&#x6613;&#x65F6;&#x6BB5;&#x7684;&#x5F00;&#x59CB;&#x65F6;&#x95F4;)&#x3002;&#x56FE;&#x8868;&#x5E93;&#x8BB2;&#x6839;&#x636E;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x4E2D;&#x7684;&#x4EA4;&#x6613;&#x65F6;&#x6BB5;&#x8C03;&#x6574;&#x65F6;&#x95F4;&#x3002;&#x6BCF;&#x4E2A;&#x6708;K&#x7EBF;&#x7684;&#x65F6;&#x95F4;&#x662F;&#x8BE5;&#x6708;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x4EA4;&#x6613;&#x65E5;&#xFF0C;&#x4E14;&#x65E0;&#x65F6;&#x95F4;&#x90E8;&#x5206;&#x3002;</li>
+<li><code>open</code>: number K&#x7EBF;&#x5F00;&#x76D8;&#x4EF7;</li>
+<li><code>high</code>: number K&#x7EBF;&#x6700;&#x9AD8;&#x4EF7;</li>
+<li><code>low</code>: number K&#x7EBF;&#x6700;&#x4F4E;&#x4EF7;</li>
+<li><code>close</code>: number K&#x7EBF;&#x6536;&#x76D8;&#x4EF7;</li>
+<li><code>volume</code>: number K&#x7EBF;&#x4EA4;&#x6613;&#x91CF;</li>
+</ol>
+<p><code>meta</code>&#x662F;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ol>
+<li><code>noData</code> &#x5E03;&#x5C14;&#x503C;, &#x53EA;&#x6709;&#x5728;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x95F4;&#x6BB5;&#x5185;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x624D;&#x5E94;&#x8BE5;&#x88AB;&#x8BBE;&#x7F6E;&#x3002;</li>
+<li><code>nextTime</code> unix &#x65F6;&#x95F4;&#x6233;(UTC), &#x5386;&#x53F2;K&#x7EBF;&#x7684;&#x4E0B;&#x4E00;K&#x7EBF;&#x65F6;&#x95F4;&#x3002;&#x53EA;&#x6709;&#x5728;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x95F4;&#x6BB5;&#x5185;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x624D;&#x5E94;&#x8BE5;&#x88AB;&#x8BBE;&#x7F6E;&#x3002;</li>
+</ol>
+<h4 id="&#x5173;&#x4E8E;-periodparams">&#x5173;&#x4E8E; <code>periodParams</code></h4>
+<p>&#x4ECE; 18 &#x7248;&#x672C;&#x5F00;&#x59CB;&#xFF0C;&#x56FE;&#x8868;&#x5E93;&#x63D0;&#x4F9B;&#x4E86; <code>countBack</code> &#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x63D0;&#x9AD8;&#x6570;&#x636E;&#x52A0;&#x8F7D;&#x7684;&#x6027;&#x80FD;&#x3002;</p>
+<p><code>from</code> &#x53C2;&#x6570;&#x8FC7;&#x53BB;&#x5E76;&#x4E14;&#x73B0;&#x5728;&#x4ECD;&#x7136;&#x4E0D;&#x51C6;&#x786E;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x6CA1;&#x6709;&#x5B8C;&#x5168;&#x8003;&#x8651;&#x5230;&#x4EA4;&#x6613;&#x54C1;&#x79CD;&#x7684;&#x4EA4;&#x6613;&#x65F6;&#x6BB5;&#x3002;&#x8BA1;&#x7B97;&#x4E0D;&#x51C6;&#x786E;&#x7684;&#x539F;&#x56E0;&#x662F;&#x901F;&#x5EA6;&#xFF08;&#x51C6;&#x786E;&#x7684;&#x8BA1;&#x7B97;&#x5177;&#x6709;&#x7EBF;&#x6027;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x800C;&#x4E0D;&#x51C6;&#x786E;&#x7684;&#x8BA1;&#x7B97;&#x5177;&#x6709;&#x6052;&#x5B9A;&#x7684;&#x590D;&#x6742;&#x5EA6;&#xFF09;&#x3002;</p>
+<p><code>countBack</code> &#x56FE;&#x8868;&#x9700;&#x8981;&#x7684;&#x6700;&#x5C0F;K&#x7EBF;&#x6570;&#xFF08;&#x5B83;&#x53EF;&#x4EE5;&#x7A0D;&#x5FAE;&#x5927;&#x4E00;&#x4E9B;&#xFF09;&#xFF0C;&#x7528;&#x6765;&#x586B;&#x5145;&#x53EF;&#x89C1;&#x8303;&#x56F4;&#xFF0C;&#x4EE5;&#x53CA; <code>to</code> &#x65E5;&#x671F;&#xFF08;&#x8FD9;&#x662F;&#x6700;&#x540E;&#x52A0;&#x8F7D;&#x7684;K&#x7EBF;&#x7684;&#x65E5;&#x671F;&#xFF09; &#xFF0C;&#x60A8;&#x53EA;&#x9700;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5373;&#x53EF;&#x8F7B;&#x677E;&#x83B7;&#x53D6;&#x6240;&#x9700;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x5EFA;&#x8BAE;&#x8003;&#x8651;<code>countBack</code>&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#x4E8E;<code>from</code>&#x7684;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x5373;&#x5FC5;&#x987B;&#x8FD4;&#x56DE;<code>[from, to)</code>&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F46;K&#x7EBF;&#x6570;&#x4E0D;&#x5E94;&#x5C0F;&#x4E8E;<code>countBack</code>&#x3002;&#x5982;&#x679C;K&#x7EBF;&#x7684;&#x6570;&#x91CF;&#x5C11;&#x4E8E; <code>countBack</code>&#xFF0C;&#x56FE;&#x8868;&#x5E93;&#x5C06;&#x518D;&#x6B21;&#x8C03;&#x7528; <code>getBars</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60A8;&#x7684;&#x6570;&#x636E;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x51C6;&#x786E;&#x7684;K&#x7EBF;&#x6570;&#xFF0C;&#x6700;&#x597D;&#x5728;&#x4F7F;&#x7528;<code>from</code>&#x65E5;&#x671F;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x518D;&#x4F7F;&#x7528;<code>countBack</code>&#x4EE5;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#xFF1A;</p>
+<ul>
+<li><p>&#x793A;&#x4F8B; 1&#xFF1A;&#x5047;&#x8BBE;&#x56FE;&#x8868;&#x5728;&#x8BF7;&#x6C42;&#x4E2D;&#x8BF7;&#x6C42; 300 &#x6839;K&#x7EBF;&#xFF0C;&#x8303;&#x56F4;&#x4E3A; <code>[2019-06-01T00:00:00..2020-01-01T00:00:00]</code>&#x3002;
+&#x5982;&#x679C;&#x60A8;&#x5728;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x95F4;&#x6BB5; (<code>[2019-06-01T00:00:00..2020-01-01T00:00:00]</code>) &#x4E2D;&#x53EA;&#x6709; 250 &#x6839;K&#x7EBF;&#x5E76;&#x4E14;&#x60A8;&#x8FD4;&#x56DE;&#x8FD9; 250 &#x6839;K&#x7EBF;&#xFF0C;&#x5219;&#x56FE;&#x8868;&#x5C06;&#x518D;&#x6B21;&#x8BF7;&#x6C42;&#x5728;<code>2019-06-01T00:00:00</code>&#x65E5;&#x671F;&#x4E4B;&#x524D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4EE5;&#x5728;&#x52A0;&#x8F7D; 50 &#x6839;K&#x7EBF;&#x3002;</p>
+</li>
+<li><p>&#x793A;&#x4F8B; 2&#xFF1A;&#x5047;&#x8BBE;&#x56FE;&#x8868;&#x5728;&#x8BF7;&#x6C42;&#x4E2D;&#x8BF7;&#x6C42; 300 &#x6839;K&#x7EBF;&#xFF0C;&#x8303;&#x56F4;&#x4E3A; <code>[2019-06-01T00:00:00..2020-01-01T00:00:00]</code>&#x3002;
+&#x5982;&#x679C;&#x60A8;&#x5728;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x95F4;&#x6BB5;&#x5185;&#x6CA1;&#x6709;K&#x7EBF;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0D;&#x9700;&#x8FD4;&#x56DE; {<code>noData: true</code>&#xFF0C;&#x548C;&#x7B49;&#x4E8E;&#x4E0B;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x6570;&#x636E;&#x7684;&#x65F6;&#x95F4;&#x7684;<code>nextTime</code>}&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5730;&#x8FD4;&#x56DE; <code>2020-01-01T00:00:00</code> &#x4E4B;&#x524D;&#x7684; 300 &#x6839;K&#x7EBF;&#xFF0C;&#x5373;&#x4F7F;&#x8BE5;&#x6570;&#x636E;&#x65E9;&#x4E8E; <code>from</code> &#x65E5;&#x671F;&#x3002;</p>
+</li>
+</ul>
+<h3 id="subscribebarssymbolinfo-resolution-onrealtimecallback-subscriberuid-onresetcacheneededcallback"><a href="#subscribebarssymbolinfo-resolution-onrealtimecallback-subscriberuid-onresetcacheneededcallback">subscribeBars(symbolInfo, resolution, onRealtimeCallback, subscriberUID, onResetCacheNeededCallback)</a></h3>
+<ol>
+<li><code>symbolInfo</code>:object <a href="Symbology.html#&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7ED3;&#x6784;">SymbolInfo</a></li>
+<li><code>resolution</code>: string &#x5468;&#x671F;</li>
+<li><code>onRealtimeCallback</code>: function(bar)<ol>
+<li><code>bar</code>: object<code>{time, close, open, high, low, volume}</code></li>
+</ol>
+</li>
+<li><code>subscriberUID</code>: object</li>
+<li><code>onResetCacheNeededCallback</code>(&#x4ECE;1.7&#x5F00;&#x59CB;): function()&#x5C06;&#x5728;bars&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x6267;&#x884C;</li>
+</ol>
+<p>&#x65B9;&#x6CD5;&#x4ECB;&#x7ECD;&#xFF1A;&#x8BA2;&#x9605;K&#x7EBF;&#x6570;&#x636E;&#x3002;&#x56FE;&#x8868;&#x5E93;&#x5C06;&#x8C03;&#x7528;<code>onRealtimeCallback</code>&#x65B9;&#x6CD5;&#x4EE5;&#x66F4;&#x65B0;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x3002;</p>
+<p><strong>Remark</strong>: &#x5F53;&#x60A8;&#x8C03;&#x7528;<code>onRealtimeCallback</code>&#x4E14;K&#x7EBF;&#x65F6;&#x95F4;&#x7B49;&#x4E8E;&#x6700;&#x65B0;K&#x7EBF;&#x65F6;&#x95F4;&#x65F6;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x6761;&#x6700;&#x65B0;K&#x7EBF;&#x5C06;&#x88AB;&#x60A8;&#x4F20;&#x5165;&#x7684;K&#x7EBF;&#x6240;&#x66FF;&#x6362;&#x3002; &#x4F8B;:</p>
+<ol>
+<li>&#x6700;&#x8FD1;&#x4E00;&#x6761;K&#x7EBF;&#x4E3A; <code>{1419411578413, 10, 12, 9, 11}</code></li>
+<li>&#x8C03;&#x7528; <code>onRealtimeCallback({1419411578413, 10, 14, 9, 14})</code></li>
+<li>&#x56FE;&#x8868;&#x5E93;&#x901A;&#x8FC7;&#x65F6;&#x95F4;<code>1419411578413</code>&#x627E;&#x51FA;K&#x7EBF;&#xFF0C;&#x5DF2;&#x5B58;&#x5728;&#x5E76;&#x4E14;&#x662F;&#x6700;&#x8FD1;&#x7684;&#x90A3;&#x4E00;&#x4E2A;</li>
+<li>&#x56FE;&#x8868;&#x5E93;&#x66FF;&#x6362;K&#x7EBF;&#xFF0C;&#x56E0;&#x6B64;&#x73B0;&#x5728;&#x6700;&#x8FD1;&#x4E00;&#x6761;K&#x7EBF;&#x4E3A; <code>{1419411578413, 10, 14, 9, 14}</code></li>
+</ol>
+<p><strong>Remark 2</strong>: &#x662F;&#x5426;&#x53EF;&#x4EE5;&#x66F4;&#x65B0;&#x6700;&#x8FD1;&#x7684;K&#x7EBF;&#x6216;&#x8FFD;&#x52A0;&#x4E00;&#x6761;&#x65B0;&#x7684;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;<code>onRealtimeCallback</code>&#x3002; &#x5982;&#x679C;&#x60A8;&#x8C03;&#x7528;&#x6B64;&#x529F;&#x80FD;&#x5C1D;&#x8BD5;&#x66F4;&#x65B0;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;K&#x7EBF;&#x65F6;&#xFF0C;&#x5219;&#x4F1A;&#x6536;&#x5230;&#x9519;&#x8BEF;&#x6D88;&#x606F;&#x3002;</p>
+<p><strong>Remark 3</strong>: &#x73B0;&#x5728;&#xFF0C;&#x5728;&#x56FE;&#x8868;&#x63A5;&#x6536;&#x5230;&#x6570;&#x636E;&#x540E;&#xFF0C;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x6539;&#x53D8;&#x5386;&#x53F2;&#x4E0A;&#x7684;K&#x7EBF;&#x3002;</p>
+<h3 id="unsubscribebarssubscriberuid"><a href="#unsubscribebarssubscriberuid">unsubscribeBars(subscriberUID)</a></h3>
+<ol>
+<li><code>subscriberUID</code>:object</li>
+</ol>
+<p>&#x65B9;&#x6CD5;&#x4ECB;&#x7ECD;&#xFF1A;&#x53D6;&#x6D88;&#x8BA2;&#x9605;K&#x7EBF;&#x6570;&#x636E;&#x3002;&#x5728;&#x8C03;&#x7528;<code>subscribeBars</code>&#x65B9;&#x6CD5;&#x65F6;,&#x56FE;&#x8868;&#x5E93;&#x5C06;&#x8DF3;&#x8FC7;&#x4E0E;<code>subscriberUID</code>&#x76F8;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<h3 id="getmarkssymbolinfo-startdate-enddate-ondatacallback-resolution"><a href="#getmarkssymbolinfo-startdate-enddate-ondatacallback-resolution">getMarks(symbolInfo, startDate, endDate, onDataCallback, resolution)</a></h3>
+<ol>
+<li><code>symbolInfo</code>:<a href="Symbology.html#&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7ED3;&#x6784;">SymbolInfo</a> &#x5546;&#x54C1;&#x4FE1;&#x606F;&#x5BF9;&#x8C61;</li>
+<li><code>startDate</code>:  unix &#x65F6;&#x95F4;&#x6233;, &#x6700;&#x5DE6;&#x8FB9;&#x8BF7;&#x6C42;&#x7684;K&#x7EBF;&#x65F6;&#x95F4;</li>
+<li><code>endDate</code>: unix &#x65F6;&#x95F4;&#x6233;, &#x6700;&#x53F3;&#x8FB9;&#x8BF7;&#x6C42;&#x7684;K&#x7EBF;&#x65F6;&#x95F4;</li>
+<li><code>onDataCallback</code>: function(&#x6807;&#x8BB0;&#x6570;&#x5B57;<code>marks</code>)</li>
+<li><code>resolution</code>: string</li>
+</ol>
+<p>&#x65B9;&#x6CD5;&#x4ECB;&#x7ECD;&#xFF1A;&#x56FE;&#x8868;&#x5E93;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x83B7;&#x5F97;&#x53EF;&#x89C1;&#x7684;K&#x7EBF;&#x8303;&#x56F4;&#x7684;&#x6807;&#x8BB0;&#x3002; &#x56FE;&#x8868;&#x9884;&#x671F;&#x6BCF;&#x8C03;&#x7528;&#x4E00;&#x6B21;<code>getMarks</code>&#x5C31;&#x4F1A;&#x8C03;&#x7528;&#x4E00;&#x6B21;<code>onDataCallback</code>&#x3002;</p>
+<p><code>mark</code>&#x4E3A;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;:</p>
+<ul>
+<li><strong>id</strong>: &#x552F;&#x4E00;&#x6807;&#x8BC6;id &#x3002;&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x6807;&#x8BB0;&#x65F6;&#xFF0C;&#x5C06;&#x4F20;&#x9012;&#x7ED9;&#x76F8;&#x5E94;&#x7684;&#x56DE;&#x8C03;:<a href="Widget-Methods.html#onbarmarkclickedcallback">respective callback</a> </li>
+<li><strong>time</strong>: unix time, UTC</li>
+<li><strong>color</strong>:<code>red</code>|<code>green</code>|<code>blue</code>|<code>yellow</code>|<code>{ border: &apos;#ff0000&apos;, background: &apos;#00ff00&apos; }</code></li>
+<li><strong>text</strong>: &#x6807;&#x8BB0;&#x5F39;&#x51FA;&#x5F0F;&#x6587;&#x5B57;&#x3002; &#x652F;&#x6301;HTML</li>
+<li><strong>label</strong>: &#x5370;&#x5728;&#x6807;&#x8BB0;&#x4E0A;&#x7684;&#x6587;&#x5B57;&#x3002;&#x5355;&#x5B57;&#x7B26;</li>
+<li><strong>labelFontColor</strong>: label&#x7684;&#x6587;&#x5B57;&#x989C;&#x8272;</li>
+<li><strong>minSize</strong>: &#x6807;&#x8BB0;&#x7684;&#x6700;&#x5C0F;&#x5C3A;&#x5BF8; (diameter, pixels)</li>
+</ul>
+<p>&#x6BCF;&#x4E2A;K&#x7EBF;&#x5141;&#x8BB8;&#x51E0;&#x4E2A;&#x6807;&#x8BB0;&#xFF08;&#x73B0;&#x5728;&#x6700;&#x591A;&#x4E3A;10&#x4E2A;&#xFF09;&#x3002;&#x4E0D;&#x5141;&#x8BB8;&#x6807;&#x8BB0;&#x8131;&#x79BB;K&#x7EBF;&#x3002;</p>
+<p><strong>Remark</strong>: &#x53EA;&#x6709;&#x5F53;&#x60A8;&#x58F0;&#x660E;&#x60A8;&#x7684;&#x540E;&#x7AEF;&#x662F;&#x652F;&#x6301;&#x6807;&#x8BB0;&#x65F6;&#x624D;&#x4F1A;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;<a href="JS-Api.html#supports_marks">supporting marks</a>.</p>
+<h3 id="gettimescalemarkssymbolinfo-startdate-enddate-ondatacallback-resolution"><a href="#gettimescalemarkssymbolinfo-startdate-enddate-ondatacallback-resolution">getTimescaleMarks(symbolInfo, startDate, endDate, onDataCallback, resolution)</a></h3>
+<ol>
+<li><code>symbolInfo</code>:<a href="Symbology.html#&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7ED3;&#x6784;">SymbolInfo</a> object</li>
+<li><code>startDate</code>: unix&#x65F6;&#x95F4;&#x6233; (UTC). Leftmost visible bar&apos;s time.</li>
+<li><code>endDate</code>: unix&#x65F6;&#x95F4;&#x6233; (UTC). Rightmost visible bar&apos;s time.</li>
+<li><code>onDataCallback</code>: function(array of<code>mark</code>s)</li>
+<li><code>resolution</code>: string</li>
+</ol>
+<p>&#x56FE;&#x8868;&#x5E93;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x83B7;&#x53D6;&#x53EF;&#x89C1;K&#x7EBF;&#x8303;&#x56F4;&#x7684;&#x65F6;&#x95F4;&#x523B;&#x5EA6;&#x6807;&#x8BB0;&#x3002;&#x56FE;&#x8868;&#x9884;&#x671F;&#x60A8;&#x6BCF;&#x4E2A;&#x8C03;&#x7528;getTimescaleMarks&#x4F1A;&#x8C03;&#x7528;&#x4E00;&#x6B21;onDataCallback&#x3002;</p>
+<p>mark&#x4E3A;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;:</p>
+<ul>
+<li><strong>id</strong>: &#x552F;&#x4E00;&#x6807;&#x8BC6;id &#x3002;&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x6807;&#x8BB0;&#x65F6;&#xFF0C;&#x5C06;&#x4F20;&#x9012;&#x7ED9;&#x76F8;&#x5E94;&#x7684;&#x56DE;&#x8C03;:<a href="Widget-Methods.html#onbarmarkclickedcallback">respective callback</a> </li>
+<li><strong>time</strong>: unix time, UTC</li>
+<li><strong>color</strong>:<code>red</code>|<code>green</code>|<code>blue</code>|<code>yellow</code>| ... | #000000</li>
+<li><strong>label</strong>: &#x5370;&#x5728;&#x6807;&#x8BB0;&#x4E0A;&#x7684;&#x6587;&#x5B57;&#x3002;&#x5355;&#x5B57;&#x7B26;</li>
+<li><strong>tooltip</strong>: &#x5B57;&#x7B26;&#x4E32;&#x4E32;&#x6570;&#x7EC4;&#x3002;&#x6570;&#x7EC4;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x7684;&#x5355;&#x72EC;&#x884C;&#x5185;&#x5BB9;&#x3002;</li>
+</ul>
+<p>&#x6BCF;&#x4E2A;K&#x7EBF;&#x53EA;&#x5141;&#x8BB8;&#x4E00;&#x4E2A;&#x6807;&#x8BB0;&#x3002; &#x4E0D;&#x5141;&#x8BB8;&#x6807;&#x8BB0;&#x8131;&#x79BB;K&#x7EBF;&#x3002;</p>
+<p><strong>Remark</strong>: &#x53EA;&#x6709;&#x5F53;&#x60A8;&#x58F0;&#x660E;&#x60A8;&#x7684;&#x540E;&#x7AEF;&#x662F;&#x652F;&#x6301;&#x6807;&#x8BB0;&#x65F6;&#x624D;&#x4F1A;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;<a href="JS-Api.html#supports_timescale_marks">upporting marks</a>.</p>
+<h3 id="getservertimecallback"><a href="#getservertimecallback">getServerTime(callback)</a></h3>
+<ol>
+<li><code>callback</code>: function(unixTime)</li>
+</ol>
+<p>&#x5F53;&#x56FE;&#x8868;&#x9700;&#x8981;&#x77E5;&#x9053;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x95F4;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x914D;&#x7F6E;&#x6807;&#x5FD7;<code>supports_time</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#xFF0C;&#x5219;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x3002;&#x56FE;&#x8868;&#x5E93;&#x9884;&#x671F;&#x53EA;&#x8C03;&#x7528;&#x4E00;&#x6B21;&#x56DE;&#x8C03;&#x3002;&#x6240;&#x63D0;&#x4F9B;&#x7684;&#x65F6;&#x95F4;&#x6CA1;&#x6709;&#x6BEB;&#x79D2;&#x3002;&#x4F8B;&#x5B50;&#xFF1A;1445324591&#x3002;&#x5B83;&#x662F;&#x7528;&#x6765;&#x663E;&#x793A;&#x5012;&#x6570;&#x7684;&#x4EF7;&#x683C;&#x8303;&#x56F4;&#x3002;</p>
+<h3 id="getvolumeprofileresolutionforperiodcurrentresolution-from-to-symbolinfo"><a href="#getvolumeprofileresolutionforperiodcurrentresolution-from-to-symbolinfo">getVolumeProfileResolutionForPeriod(currentResolution, from, to, symbolInfo)</a></h3>
+<p><em>&#x53EF;&#x9009;&#x7684;</em></p>
+<ol>
+<li><code>currentResolution</code>&#xFF1A;&#x5B57;&#x7B26;&#x4E32;&#x3002; &#x56FE;&#x8868;&#x4E0A;&#x5F53;&#x524D;&#x9009;&#x62E9;&#x7684;&#x5206;&#x8FA8;&#x7387;
+1.<code>from</code>&#xFF1A;unix&#x65F6;&#x95F4;&#x6233;&#xFF08;UTC&#xFF09;&#x3002; &#x6700;&#x5DE6;&#x8FB9;&#x53EF;&#x89C1;K&#x7EBF;&#x7684;&#x65F6;&#x95F4;</li>
+<li><code>to</code>&#xFF1A;unix &#x65F6;&#x95F4;&#x6233;&#xFF08;UTC&#xFF09;&#x3002; &#x6700;&#x53F3;&#x4FA7;&#x53EF;&#x89C1;K&#x7EBF;&#x7684;&#x65F6;&#x95F4;</li>
+<li><code>symbolInfo</code>: <a href="Symbology.html#symbolinfo-structure">SymbolInfo</a> &#x5BF9;&#x8C61;</li>
+</ol>
+<p>&#x56FE;&#x8868;&#x5E93;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x6765;&#x83B7;&#x53D6;&#x5C06;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x6210;&#x4EA4;&#x91CF;&#x5206;&#x5E03;&#x56FE;&#x6307;&#x6807;&#x7684;&#x5206;&#x8FA8;&#x7387;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x60A8;&#x53EF;&#x80FD;&#x5E0C;&#x671B;&#x5B9E;&#x73B0;&#x6B64;&#x65B9;&#x6CD5;&#x4EE5;&#x66F4;&#x51C6;&#x786E;&#x5730;&#x8BA1;&#x7B97;&#x6307;&#x6807;&#x3002;&#x5B9E;&#x73B0;&#x5B9E;&#x9645;&#x4E0A;&#x53D6;&#x51B3;&#x4E8E;&#x60A8;&#x53EF;&#x4EE5;&#x4F20;&#x8F93;&#x5230;&#x56FE;&#x8868;&#x5E93;&#x7684;&#x6210;&#x4EA4;&#x91CF;&#x4EE5;&#x53CA;datafeed&#x4E2D;&#x7684;&#x6570;&#x636E;&#x6DF1;&#x5EA6;&#x3002;</p>
+<p><strong>&#x5907;&#x6CE8;</strong>&#xFF1A;&#x5982;&#x679C;&#x672A;&#x63D0;&#x4F9B;&#x6B64;&#x529F;&#x80FD;&#xFF0C;&#x5219;&#x56FE;&#x8868;&#x5E93;&#x4F7F;&#x7528; <code>currentResolution</code>&#x3002;</p>
+<h2 id="&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x4E13;&#x5C5E;"><img src="../images/trading.png" alt=""><a href="#&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x4E13;&#x5C5E;">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x4E13;&#x5C5E;</a></h2>
+<h3 id="getquotessymbols-ondatacallback-onerrorcallback"><img src="../images/trading.png" alt=""><a href="#getquotessymbols-ondatacallback-onerrorcallback">getQuotes(symbols, onDataCallback, onErrorCallback)</a></h3>
+<ol>
+<li><code>symbols</code>: &#x5546;&#x54C1;&#x540D;&#x79F0;&#x6570;&#x7EC4;</li>
+<li><code>onDataCallback</code>: function(array of<code>data</code>)<ol>
+<li><code>data</code>:<a href="Quotes.html#symbol-quote-data">&#x5546;&#x54C1;&#x62A5;&#x4EF7;&#x6570;&#x636E;</a></li>
+</ol>
+</li>
+<li><code>onErrorCallback</code>: function(reason)</li>
+</ol>
+<p>&#x5F53;&#x56FE;&#x8868;&#x9700;&#x8981;&#x62A5;&#x4EF7;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x5C06;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x3002;&#x56FE;&#x8868;&#x5E93;&#x9884;&#x671F;&#x5728;&#x6536;&#x5230;&#x6240;&#x6709;&#x8BF7;&#x6C42;&#x6570;&#x636E;&#x65F6;&#x8C03;&#x7528;onDataCallback&#x3002;</p>
+<h3 id="subscribequotessymbols-fastsymbols-onrealtimecallback-listenerguid"><img src="../images/trading.png" alt=""><a href="#subscribequotessymbols-fastsymbols-onrealtimecallback-listenerguid">subscribeQuotes(symbols, fastSymbols, onRealtimeCallback, listenerGUID)</a></h3>
+<ol>
+<li><code>symbols</code>: &#x5F88;&#x5C11;&#x66F4;&#x65B0;&#x7684;&#x5546;&#x54C1;&#x6570;&#x7EC4;&#xFF08;&#x5EFA;&#x8BAE;&#x9891;&#x7387;&#x4E3A;&#x6BCF;&#x5206;&#x949F;&#x4E00;&#x6B21;&#xFF09;&#x3002;&#x8FD9;&#x4E9B;&#x5546;&#x54C1;&#x5728;&#x89C2;&#x5BDF;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x76EE;&#x524D;&#x4E0D;&#x53EF;&#x89C1;&#x3002;</li>
+<li><code>fastSymbols</code>: &#x9891;&#x7E41;&#x66F4;&#x65B0;&#x7684;&#x5546;&#x54C1;&#x6570;&#x7EC4;&#xFF08;&#x4E00;&#x6B21;&#x5728;10&#x79D2;&#x6216;&#x66F4;&#x5FEB;&#xFF09;</li>
+<li><code>onRealtimeCallback</code>: function(array of<code>data</code>)<ol>
+<li><code>data</code>:<a href="Quotes.html#symbol-quote-data">&#x5546;&#x54C1;&#x62A5;&#x4EF7;&#x6570;&#x636E;</a></li>
+</ol>
+</li>
+<li><code>listenerGUID</code>: &#x76D1;&#x542C;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;</li>
+</ol>
+<p>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x5F53;&#x9700;&#x8981;&#x63A5;&#x6536;&#x5546;&#x54C1;&#x7684;&#x5B9E;&#x65F6;&#x62A5;&#x4EF7;&#x65F6;&#x8C03;&#x7528;&#x6B64;&#x529F;&#x80FD;&#x3002;&#x56FE;&#x8868;&#x9884;&#x671F;&#x60A8;&#x6BCF;&#x6B21;&#x8981;&#x66F4;&#x65B0;&#x62A5;&#x4EF7;&#x65F6;&#x90FD;&#x4F1A;&#x8C03;&#x7528;<code>onRealtimeCallback</code>&#x3002;</p>
+<h3 id="unsubscribequoteslistenerguid"><img src="../images/trading.png" alt=""><a href="#unsubscribequoteslistenerguid">unsubscribeQuotes(listenerGUID)</a></h3>
+<ol>
+<li><code>listenerGUID</code>: &#x76D1;&#x542C;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;</li>
+</ol>
+<p>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x5F53;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x63A5;&#x6536;&#x5546;&#x54C1;&#x7684;&#x5B9E;&#x65F6;&#x62A5;&#x4EF7;&#x65F6;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x3002;&#x5F53;&#x56FE;&#x8868;&#x5E93;&#x9047;&#x5230;<code>listenerGUID</code>&#x76F8;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#x4F1A;&#x8DF3;&#x8FC7;<code>subscribeQuotes</code>&#x65B9;&#x6CD5;&#x3002;</p>
+<h3 id="subscribedepthsymbolinfo-callback-string"><img src="../images/trading.png" alt=""><a href="#subscribedepthsymbolinfo-callback-string">subscribeDepth(symbolInfo, callback): String</a></h3>
+<ol>
+<li><code>symbolInfo</code>:<a href="Symbology.html#&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7ED3;&#x6784;">SymbolInfo</a> object</li>
+<li><code>callback</code>: function(depth)<ol>
+<li><code>depth</code>: object<code>{snapshot, asks, bids}</code><ol>
+<li><code>snapshot</code>: Boolean - &#x5982;&#x679C;<code>true</code>&#x65F6;<code>asks</code>&#x548C;<code>bids</code>&#x5177;&#x6709;&#x5168;&#x90E8;&#x6DF1;&#x5EA6;&#xFF0C;&#x5426;&#x5219;&#x53EA;&#x5305;&#x542B;&#x66F4;&#x65B0;&#x7684;&#x7EA7;&#x522B;&#x3002;</li>
+<li><code>asks</code>: &#x4E70;&#x76D8;&#x6570;&#x7EC4;<code>{price, volume}</code></li>
+<li><code>bids</code>: &#x5356;&#x76D8;&#x6570;&#x7EC4;<code>{price, volume}</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x5F53;&#x8981;&#x63A5;&#x6536;&#x5546;&#x54C1;&#x7684;&#x5B9E;&#x65F6;level 2 &#x4FE1;&#x606F;&#xFF08;DOM&#xFF09;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x3002; &#x56FE;&#x8868;&#x9884;&#x671F;&#x60A8;&#x6BCF;&#x6B21;&#x8981;&#x66F4;&#x65B0;&#x6DF1;&#x5EA6;&#x6570;&#x636E;&#x65F6;&#x90FD;&#x4F1A;&#x8C03;&#x7528;&#x56DE;&#x8C03;&#x3002;</p>
+<p>&#x6B64;&#x65B9;&#x6CD5;&#x5E94;&#x8FD4;&#x56DE;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#xFF08;subscriberUID&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x6570;&#x636E;&#x3002;</p>
+<h3 id="unsubscribedepthsubscriberuid"><img src="../images/trading.png" alt=""><a href="#unsubscribedepthsubscriberuid">unsubscribeDepth(subscriberUID)</a></h3>
+<ol>
+<li><code>subscriberUID</code>: String</li>
+</ol>
+<p>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x5F53;&#x4E0D;&#x5E0C;&#x671B;&#x63A5;&#x6536;&#x6B64;&#x76D1;&#x542C;&#x65F6;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x3002;</p>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTc2NDg3ODgxMV19
+-->
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="How-To-Connect-My-Data.html" class="navigation navigation-prev " aria-label="Previous page: 3-1、如何连接我的数据">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="UDF.html" class="navigation navigation-next " aria-label="Next page: 3-3、UDF">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3-2、JS Api","level":"3.2","depth":1,"next":{"title":"3-3、UDF","level":"3.3","depth":1,"path":"book/UDF.md","ref":"book/UDF.md","articles":[]},"previous":{"title":"3-1、如何连接我的数据","level":"3.1","depth":1,"path":"book/How-To-Connect-My-Data.md","ref":"book/How-To-Connect-My-Data.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/JS-Api.md","mtime":"2021-06-27T10:33:52.753Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-27T12:29:05.136Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livere/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-head-tag/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-v3/baidu-tongji.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1221 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5-2、经纪商 API · TradingView中文开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-livere/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-head-tag/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Trading-Host.html" />
+    
+    
+    <link rel="prev" href="Trading-Terminal.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CHANGE-LOG.html">
+            
+                <a href="../CHANGE-LOG.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Home.html">
+            
+                <a href="Home.html">
+            
+                    
+                    1、Charting Library 是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2、入门指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="Package-Content.html">
+            
+                <a href="Package-Content.html">
+            
+                    
+                    2-1、图表库内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="Running-Your-Charting-Library.html">
+            
+                <a href="Running-Your-Charting-Library.html">
+            
+                    
+                    2-2、运行图表库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3、数据绑定</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="How-To-Connect-My-Data.html">
+            
+                <a href="How-To-Connect-My-Data.html">
+            
+                    
+                    3-1、如何连接我的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="JS-Api.html">
+            
+                <a href="JS-Api.html">
+            
+                    
+                    3-2、JS Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="UDF.html">
+            
+                <a href="UDF.html">
+            
+                    
+                    3-3、UDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="Symbology.html">
+            
+                <a href="Symbology.html">
+            
+                    
+                    3-4、Symbology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="Trading-Sessions.html">
+            
+                <a href="Trading-Sessions.html">
+            
+                    
+                    3-5、交易时段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="Quotes.html">
+            
+                <a href="Quotes.html">
+            
+                    
+                    3-6、报价
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4、图表定制</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html">
+            
+                    
+                    4-1、定制概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="Widget-Constructor.html">
+            
+                <a href="Widget-Constructor.html">
+            
+                    
+                    4-2、Widget 构造器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Widget-Methods.html">
+            
+                <a href="Widget-Methods.html">
+            
+                    
+                    4-3、Widget 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="Chart-Methods.html">
+            
+                <a href="Chart-Methods.html">
+            
+                    
+                    4-4、图表方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Featuresets.html">
+            
+                <a href="Featuresets.html">
+            
+                    
+                    4-5、功能集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html#通过数据流定制">
+            
+                    
+                    4-6、服务端定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="Customization-Use-Cases.html">
+            
+                <a href="Customization-Use-Cases.html">
+            
+                    
+                    4-7、定制的使用案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">5、交易终端</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="Trading-Terminal.html">
+            
+                <a href="Trading-Terminal.html">
+            
+                    
+                    5-1、交易终端简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.2" data-path="Broker-API.html">
+            
+                <a href="Broker-API.html">
+            
+                    
+                    5-2、经纪商 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="Trading-Host.html">
+            
+                <a href="Trading-Host.html">
+            
+                    
+                    5-3、交易主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="Account-Manager.html">
+            
+                <a href="Account-Manager.html">
+            
+                    
+                    5-4、账户管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="Trading-Objects-and-Constants.html">
+            
+                <a href="Trading-Objects-and-Constants.html">
+            
+                    
+                    5-5、交易对象和常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="Saving-and-Loading-Charts.html">
+            
+                <a href="Saving-and-Loading-Charts.html">
+            
+                    
+                    6、储存和载入图表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="Save-Load-Adapter-Example.html">
+            
+                <a href="Save-Load-Adapter-Example.html">
+            
+                    
+                    6-1、储存和载入的内存示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="Creating-Custom-Studies.html">
+            
+                <a href="Creating-Custom-Studies.html">
+            
+                    
+                    7、创建自定义指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="Best-practices.html">
+            
+                <a href="Best-practices.html">
+            
+                    
+                    8、最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="Frequently-Asked-Questions.html">
+            
+                <a href="Frequently-Asked-Questions.html">
+            
+                    
+                    9、经常被问到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="Breaking-changes.html">
+            
+                <a href="Breaking-changes.html">
+            
+                    
+                    10、版本变更点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="Basic-Compose.html">
+            
+                <a href="Basic-Compose.html">
+            
+                    
+                    图表的主要组成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="Resolution.html">
+            
+                <a href="Resolution.html">
+            
+                    
+                    周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="Time-Frames.html">
+            
+                <a href="Time-Frames.html">
+            
+                    
+                    时间范围
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="Localization.html">
+            
+                <a href="Localization.html">
+            
+                    
+                    本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="Overrides.html">
+            
+                <a href="Overrides.html">
+            
+                    
+                    覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="Drawings-Overrides.html">
+            
+                <a href="Drawings-Overrides.html">
+            
+                    
+                    绘图覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="Studies-Overrides.html">
+            
+                <a href="Studies-Overrides.html">
+            
+                    
+                    指标覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="Shapes-and-Overrides.html">
+            
+                <a href="Shapes-and-Overrides.html">
+            
+                    
+                    形状与覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="Chart-Style-Properties.html">
+            
+                <a href="Chart-Style-Properties.html">
+            
+                    
+                    图表样式属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="Chart.html">
+            
+                <a href="Chart.html">
+            
+                    
+                    图表自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="Toolbars.html">
+            
+                <a href="Toolbars.html">
+            
+                    
+                    工具栏自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="CSS-Color-Themes.html">
+            
+                <a href="CSS-Color-Themes.html">
+            
+                    
+                    CSS主题颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="Subscription.html">
+            
+                <a href="Subscription.html">
+            
+                    
+                    订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="Trading-Primitives.html">
+            
+                <a href="Trading-Primitives.html">
+            
+                    
+                    交易元语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="Marks-On-Bars.html">
+            
+                <a href="Marks-On-Bars.html">
+            
+                    
+                    在 K 线上做标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="Delegate.html">
+            
+                <a href="Delegate.html">
+            
+                    
+                    委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="WatchedValue.html">
+            
+                <a href="WatchedValue.html">
+            
+                    
+                    WatchedValue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.18" data-path="Study-Api.html">
+            
+                <a href="Study-Api.html">
+            
+                    
+                    指标 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="Shape-Api.html">
+            
+                <a href="Shape-Api.html">
+            
+                    
+                    形状 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="Shapes-Group-Api.html">
+            
+                <a href="Shapes-Group-Api.html">
+            
+                    
+                    形状组 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="Selection-Api.html">
+            
+                <a href="Selection-Api.html">
+            
+                    
+                    选择 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.22" data-path="Pane-Api.html">
+            
+                <a href="Pane-Api.html">
+            
+                    
+                    窗格 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.23" data-path="Series-Api.html">
+            
+                <a href="Series-Api.html">
+            
+                    
+                    数据列 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.24" data-path="Price-Scale-Api.html">
+            
+                <a href="Price-Scale-Api.html">
+            
+                    
+                    价格刻度 Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.25" data-path="Panes-And-Scales-Behavior.html">
+            
+                <a href="Panes-And-Scales-Behavior.html">
+            
+                    
+                    窗格和刻度特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.26" data-path="Shortcuts.html">
+            
+                <a href="Shortcuts.html">
+            
+                    
+                    快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >5-2、经纪商 API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7ECF;&#x7EAA;&#x5546;-api">&#x7ECF;&#x7EAA;&#x5546; API</h1>
+<p><img src="../images/trading.png" alt=""> &#x6B64;&#x9875;&#x9762;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x4EC5;&#x4E0E;&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x76F8;&#x5173;&#x3002;</p>
+<p>&#x7ECF;&#x7EAA;&#x5546; API &#x662F;&#x652F;&#x6301;&#x5B9E;&#x65F6;&#x4EA4;&#x6613;&#x7684;&#x5173;&#x952E;&#x7EC4;&#x4EF6;&#x3002;&#x5176;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x5C06;&#x56FE;&#x8868;&#x5E93;&#x4E0E;&#x60A8;&#x7684;&#x4EA4;&#x6613;&#x903B;&#x8F91;&#x8054;&#x7CFB;&#x8D77;&#x6765;&#x3002;
+&#x5BF9;<code>JS</code>&#x800C;&#x8A00;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x9884;&#x671F;&#x66B4;&#x9732;&#x7279;&#x5B9A;&#x63A5;&#x53E3;&#x7684;<code>&#x5BF9;&#x8C61;</code>&#x3002;&#x4E0B;&#x9762;&#x662F;&#x7ECF;&#x7EAA;&#x5546; API &#x7684;<strong>&#x65B9;&#x6CD5;</strong>&#x5217;&#x8868;&#x3002;</p>
+<h2 id="&#x5FC5;&#x8981;&#x7684;&#x65B9;&#x6CD5;">&#x5FC5;&#x8981;&#x7684;&#x65B9;&#x6CD5;</h2>
+<h3 id="constructorhost">constructor(host)</h3>
+<p>&#x7ECF;&#x7EAA;&#x5546; API &#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x901A;&#x5E38;&#x9700;&#x8981;<a href="Trading-Host.html">&#x4EA4;&#x6613;&#x4E3B;&#x673A;</a>&#x3002;</p>
+<h3 id="positions-promiseposition">positions: <code>Promise&lt;Position[]&gt;</code></h3>
+<p>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x6765;&#x8BF7;&#x6C42;<a href="Trading-Objects-and-Constants.html#position">&#x4ED3;&#x4F4D;</a>&#x3002;</p>
+<h3 id="orders-promiseorder">orders: <code>Promise&lt;Order[]&gt;</code></h3>
+<p>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x6765;&#x8BF7;&#x6C42;<a href="Trading-Objects-and-Constants.html#order">&#x8BA2;&#x5355;</a>&#x3002;</p>
+<h3 id="executionssymbol-promiseexecution">executions(symbol): <code>Promise&lt;Execution[]&gt;</code></h3>
+<p>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x6765;&#x8BF7;&#x6C42;<a href="Trading-Objects-and-Constants.html#execution">&#x6267;&#x884C;</a>&#x3002;</p>
+<h3 id="trades-promisetrade">trades: <code>Promise&lt;Trade[]&gt;</code></h3>
+<p>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x6765;&#x8BF7;&#x6C42;<a href="Trading-Objects-and-Constants.html#trade">&#x4EA4;&#x6613;</a>&#xFF08;&#x4E2A;&#x522B;&#x4ED3;&#x4F4D;&#xFF09;&#x3002;</p>
+<h3 id="chartcontextmenuactionse">chartContextMenuActions(e)</h3>
+<p><code>e</code> &#x662F;&#x6D4F;&#x89C8;&#x5668;&#x4F20;&#x9012;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;</p>
+<p>&#x56FE;&#x8868;&#x53EF;&#x4EE5;&#x5728;&#x83DC;&#x5355;&#x4E2D;&#x62E5;&#x6709;<code>&#x4EA4;&#x6613;</code>&#x5B50;&#x83DC;&#x5355;&#x3002; &#x6B64;&#x65B9;&#x6CD5;&#x5E94;&#x8FD4;&#x56DE;&#x4E00;&#x7EC4; <a href="Trading-Objects-and-Constants.html#actionmetainfo">ActionMetaInfo</a> &#x5143;&#x7D20;&#xFF0C;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x83DC;&#x5355;&#x9879;&#x3002;</p>
+<h3 id="connectionstatus">connectionStatus()</h3>
+<p>&#x901A;&#x5E38;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x8FD4;&#x56DE;<code>1</code>&#x4EE5;&#x5916;&#x7684;&#x503C;&#xFF0C;&#x56E0;&#x4E3A;&#x5F53;&#x4F60;&#x521B;&#x5EFA; widget &#x65F6;&#x7ECF;&#x7EAA;&#x5546;&#x5DF2;&#x7ECF;&#x8FDE;&#x63A5;&#x3002;&#x5982;&#x679C;&#x8981;&#x5728;&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x65F6;&#x5728;&#x5E95;&#x90E8;&#x9762;&#x677F;&#x4E2D;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x5FAE;&#x8C03;&#x63A7;&#x5236;&#x5668;(spinner)&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x3002;
+&#x53EF;&#x80FD;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-javascript">ConnectionStatus.Connected = <span class="hljs-number">1</span>;
+ConnectionStatus.Connecting = <span class="hljs-number">2</span>;
+ConnectionStatus.Disconnected = <span class="hljs-number">3</span>;
+ConnectionStatus.Error = <span class="hljs-number">4</span>;
+</code></pre>
+<h3 id="istradablesymbol-promise">isTradable(symbol): Promise\<boolean |="" istradableresult=""></boolean></h3>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x662F;&#x6D6E;&#x52A8;&#x4EA4;&#x6613;&#x9762;&#x677F;&#x6240;&#x5FC5;&#x9700;&#x7684;&#x3002;&#x901A;&#x8FC7;&#x9762;&#x677F;&#x8FDB;&#x884C;&#x4EA4;&#x6613;&#x7684;&#x80FD;&#x529B;&#x53D6;&#x51B3;&#x4E8E;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#xFF1A;<code>true</code>&#x8FD8;&#x662F;<code>false</code>&#x3002; &#x5982;&#x679C;&#x6240;&#x6709;&#x5546;&#x54C1;&#x90FD;&#x53EF;&#x4EE5;&#x4EA4;&#x6613;&#xFF0C;&#x5219;&#x4E0D;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x663E;&#x793A;&#x81EA;&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x663E;&#x793A;&#x65E0;&#x6CD5;&#x4EA4;&#x6613;&#x5546;&#x54C1;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;<code>IsTradableResult</code>&#x3002; &#x5B83;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x952E;&#xFF1A;tradable&#xFF08;<code>true</code>&#x6216;<code>false</code>&#xFF09;&#x3001;solutions&#xFF08;<code>TradableSolutions</code>&#xFF09;&#x3001;reason&#xFF08;<code>string</code>&#xFF09;&#x548C;shortReason&#xFF08;<code>string</code>&#xFF09;&#x3002; Reason &#x663E;&#x793A;&#x5728; Order &#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#xFF0C;&#x800C; shortReason &#x663E;&#x793A;&#x5728;&#x56FE;&#x4F8B;&#x4E2D;&#x3002;</p>
+<h3 id="accountmanagerinfo">accountManagerInfo()</h3>
+<p>&#x6B64;&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x8FD4;&#x56DE;&#x8D26;&#x6237;&#x7BA1;&#x7406;&#x5668;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x8BF7;&#x53C2;&#x9605;<a href="Account-Manager.html">&#x8D26;&#x6237;&#x7BA1;&#x7406;&#x5668;</a>&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="placeorderorder-confirmid">placeOrder(<a href="Trading-Objects-and-Constants.html#order">order</a>, confirmId)</h3>
+<p>&#x65B9;&#x6CD5;&#x5728;&#x7528;&#x6237;&#x60F3;&#x8981;&#x4E0B;&#x8BA2;&#x5355;&#x65F6;&#x8C03;&#x7528;&#x3002;&#x8BA2;&#x5355;&#x9884;&#x5148;&#x586B;&#x5199;&#x4E86;&#x90E8;&#x5206;&#x6216;&#x5168;&#x90E8;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x5982;&#x679C; <code>supportPlaceOrderPreview</code> &#x914D;&#x7F6E;&#x6807;&#x5FD7;&#x6253;&#x5F00;&#xFF0C;&#x5219;&#x4F20;&#x9012; <code>confirmId</code>&#x3002;</p>
+<h3 id="previeworderorder">previewOrder(<a href="Trading-Objects-and-Constants.html#order">order</a>)</h3>
+<p>&#x8FD4;&#x56DE;&#x8BA2;&#x5355;&#x7684;&#x4F30;&#x8BA1;&#x4F63;&#x91D1;&#x3001;&#x8D39;&#x7528;&#x3001;&#x4FDD;&#x8BC1;&#x91D1;&#x548C;&#x5176;&#x4ED6;&#x4FE1;&#x606F;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x5B9E;&#x9645;&#x4E0B;&#x8BA2;&#x5355;&#x3002; &#x5982;&#x679C; <code>supportPlaceOrderPreview</code> &#x914D;&#x7F6E;&#x6807;&#x5FD7;&#x6253;&#x5F00;&#xFF0C;&#x5219;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;
+&#x7ED3;&#x679C;&#x5C06;&#x662F;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<p><code>OrderPreviewResult</code> - &#x63CF;&#x8FF0;&#x8BA2;&#x5355;&#x9884;&#x89C8;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<ul>
+<li><code>sections</code>&#xFF1A;&#x8BA2;&#x5355;&#x9884;&#x89C8;&#x90E8;&#x5206;&#x6570;&#x7EC4;&#xFF0C;<a href="Trading-Objects-and-Constants.html#OrderPreviewSection">OrderPreviewSection</a>[]&#x3002;</li>
+<li><code>confirmId</code> : &#x5E94;&#x8BE5;&#x4F20;&#x9012;&#x7ED9; <code>placeOrder</code> &#x65B9;&#x6CD5;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;</li>
+<li><code>warnings</code> : &#x53EF;&#x9009;&#x7684;&#x6587;&#x672C;&#x8B66;&#x544A;&#x6570;&#x7EC4;</li>
+<li><code>errors</code> : &#x53EF;&#x9009;&#x7684;&#x6587;&#x672C;&#x9519;&#x8BEF;&#x6570;&#x7EC4;</li>
+</ul>
+<h3 id="modifyorderorder-confirmid">modifyOrder(<a href="Trading-Objects-and-Constants.html#order">order</a>, confirmId)</h3>
+<ol>
+<li><code>order</code> &#x662F;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x8BA2;&#x5355;&#x5BF9;&#x8C61;</li>
+</ol>
+<p>&#x65B9;&#x6CD5;&#x5728;&#x7528;&#x6237;&#x60F3;&#x8981;&#x4FEE;&#x6539;&#x73B0;&#x6709;&#x8BA2;&#x5355;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x5982;&#x679C; <code>supportModifyOrderPreview</code> &#x914D;&#x7F6E;&#x6807;&#x5FD7;&#x6253;&#x5F00;&#xFF0C;&#x5219;&#x4F20;&#x9012; <code>confirmId</code>&#x3002;</p>
+<h3 id="cancelorderorderid-silently">cancelOrder(orderId, silently)</h3>
+<p>&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x6765;&#x53D6;&#x6D88;<code>id</code>&#x7684;&#x8BA2;&#x5355;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>silently</code>&#x662F;<code>true</code>&#xFF0C;&#x5219;&#x4E0D;&#x663E;&#x793A;&#x4EFB;&#x4F55;&#x5BF9;&#x8BDD;&#x6846;&#x3002;</p>
+<h3 id="cancelorderssymbol-side-ordersids-silently">cancelOrders(symbol, side, ordersIds, silently)</h3>
+<ol>
+<li><code>symbol</code> - symbol string</li>
+<li><code>side</code>: <a href="Trading-Objects-and-Constants.html#side">Side</a> &#x6216; <code>undefined</code></li>
+<li><code>ordersIds</code> - <code>symbol</code>&#x548C;<code>side</code>&#x6536;&#x96C6;&#x7684; ids&#x3002;&#x5982;&#x679C;<code>silently</code>&#x662F;<code>true</code>&#xFF0C;&#x5219;&#x4E0D;&#x663E;&#x793A;&#x4EFB;&#x4F55;&#x5BF9;&#x8BDD;&#x6846;&#x3002;</li>
+</ol>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#x6765;&#x53D6;&#x6D88;<code>symbol</code>&#x548C;<code>side</code>&#x7684;&#x591A;&#x4E2A;&#x8BA2;&#x5355;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>silently</code>&#x662F;<code>true</code>&#xFF0C;&#x5219;&#x4E0D;&#x663E;&#x793A;&#x4EFB;&#x4F55;&#x5BF9;&#x8BDD;&#x6846;&#x3002;</p>
+<h3 id="editpositionbracketspositionid-brackets">editPositionBrackets(positionId, <a href="Trading-Objects-and-Constants#brackets.md">brackets</a>)</h3>
+<ol>
+<li><code>positionId</code> &#x8981;&#x4FEE;&#x6539;&#x7684;&#x73B0;&#x6709;&#x4ED3;&#x4F4D; ID</li>
+<li><code>brackets</code> - &#x65B0;&#x7684;<a href="Trading-Objects-and-Constants.html#brackets">&#x5305;&#x56F4;&#x5355;</a> (&#x53EF;&#x9009;).</li>
+</ol>
+<p>&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;<code>supportPositionBrackets</code>&#x914D;&#x7F6E;&#x6807;&#x5FD7;&#xFF0C;&#x5219;&#x8BF7;&#x6C42;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x7F16;&#x8F91;&#x6B62;&#x76C8;&#x548C;&#x6B62;&#x635F;&#x7684;&#x5BF9;&#x8BDD;&#x6846;&#x3002;</p>
+<h3 id="closepositionpositionid">closePosition(positionId)</h3>
+<p>&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;<code>supportClosePosition</code>&#x914D;&#x7F6E;&#x6807;&#x5FD7;&#xFF0C;&#x5219;&#x8BF7;&#x6C42;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x4ED3;&#x4F4D; id &#x5E73;&#x4ED3;&#x3002;</p>
+<h3 id="reversepositionpositionid">reversePosition(positionId)</h3>
+<p>&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;<code>supportReversePosition</code>&#x914D;&#x7F6E;&#x6807;&#x5FD7;&#xFF0C;&#x5219;&#x8BF7;&#x6C42;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x4ED3;&#x4F4D; id &#x53CD;&#x8F6C;&#x4ED3;&#x4F4D;&#x3002;</p>
+<h3 id="edittradebracketstradeid-brackets">editTradeBrackets(tradeId, <a href="Trading-Objects-and-Constants#brackets">brackets</a>)</h3>
+<ol>
+<li><code>tradeId</code>&#x662F;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x4EA4;&#x6613; id</li>
+<li><code>brackets</code> - &#x65B0;&#x7684;<a href="Trading-Objects-and-Constants.html#brackets">&#x5305;&#x56F4;&#x5355;</a> (&#x53EF;&#x9009;).</li>
+</ol>
+<p>&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;<code>supportTradeBrackets</code>&#x914D;&#x7F6E;&#x6807;&#x5FD7;&#xFF0C;&#x5219;&#x8BF7;&#x6C42;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x5E94;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x7F16;&#x8F91;&#x6B62;&#x76C8;&#x548C;&#x6B62;&#x635F;&#x7684;&#x5BF9;&#x8BDD;&#x6846;&#x3002;</p>
+<h3 id="closetradetradeid">closeTrade(tradeId)</h3>
+<p>&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;<code>supportCloseTrade</code>&#x914D;&#x7F6E;&#x6807;&#x5FD7;&#xFF0C;&#x5219;&#x8BF7;&#x6C42;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x4EA4;&#x6613; id &#x5173;&#x95ED;&#x4EA4;&#x6613;&#x3002;</p>
+<h3 id="symbolinfosymbol-deferred-&#x6216;-promise">symbolInfo(symbol): Deferred (&#x6216; Promise)</h3>
+<ol>
+<li><code>symbol</code> - symbol string</li>
+</ol>
+<p>&#x6B64;&#x65B9;&#x6CD5;&#x901A;&#x8FC7;&#x5185;&#x90E8;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x8C03;&#x7528;&#x3002;DOM &#x9762;&#x677F;&#x548C;&#x6D6E;&#x52A8;&#x4EA4;&#x6613;&#x9762;&#x677F;&#x8BF7;&#x6C42;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x83B7;&#x53D6;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;:</p>
+<ul>
+<li><code>qty</code> - &#x5BF9;&#x8C61;&#x62E5;&#x6709;&#x8FD9; 3 &#x4E2A;&#x5C5E;&#x6027;&#xFF1A;<code>min</code>&#x3001;<code>max</code>&#x3001;<code>step</code>&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x6570;&#x91CF;&#x3001;<code>step</code>&#x548C;&#x8FB9;&#x754C;&#x3002;</li>
+<li><code>pipSize</code> - &#x70B9;&#x7684;&#x5927;&#x5C0F;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;EURUSD &#x4E3A;<code>0.0001</code>&#xFF09;</li>
+<li><code>pipValue</code> - &#x5BF9;&#x4E8E;&#x5408;&#x7EA6;&#x8D26;&#x6237;&#x5E01;&#x79CD;&#x7684;&#x6BCF;<code>1pip</code>&#x7684;&#x503C;</li>
+<li><code>minTick</code> - &#x6700;&#x5C0F;&#x4EF7;&#x683C;&#x53D8;&#x52A8;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;EURUSD &#x4E3A;<code>0.00001</code>&#xFF09;&#x3002;&#x7528;&#x4E8E;&#x4EF7;&#x683C;&#x5B57;&#x6BB5;&#x3002;</li>
+<li><code>description</code> - &#x8981;&#x5728;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x663E;&#x793A;&#x7684;&#x63CF;&#x8FF0;</li>
+<li><code>type</code> - &#x5408;&#x7EA6;&#x7C7B;&#x578B;, &#x53EA;&#x6709; <code>forex</code> &#x6BD4;&#x8F83;&#x7279;&#x6B8A; - &#x5B83;&#x5141;&#x8BB8;&#x5728;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x5B9E;&#x73B0;&#x8D1F;&#x7684;&#x70B9;&#x6570;&#x3002;</li>
+<li><code>domVolumePrecision</code> - DOM <code>&#x5356;&#x51FA;/&#x4E70;&#x5165;</code> &#x6570;&#x91CF;&#x7684;&#x5C0F;&#x6570;&#x4F4D;&#x6570;&#xFF08;&#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 0&#xFF09;</li>
+<li><code>marginRate</code> - &#x5408;&#x7EA6;&#x7684;&#x4FDD;&#x8BC1;&#x91D1;&#x8981;&#x6C42;&#x3002;<code>3%</code>&#x7684;&#x4FDD;&#x8BC1;&#x91D1;&#x7387;&#x5E94;&#x8868;&#x793A;&#x4E3A;<code>0.03</code></li>
+<li><code>stopPriceStep</code> - &#x6B62;&#x635F;&#x548C;&#x6B62;&#x635F;&#x9650;&#x4EF7;&#x8BA2;&#x5355;&#x7684;&#x6B62;&#x635F;&#x4EF7;&#x683C;&#x5B57;&#x6BB5;&#x7684;&#x6700;&#x5C0F;&#x4EF7;&#x683C;&#x53D8;&#x5316;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#xFF0C;&#x5B83;&#x5C06;&#x8986;&#x76D6; minTick &#x503C;&#x3002;</li>
+<li><code>limitPriceStep</code> - &#x9650;&#x4EF7;&#x548C;&#x6B62;&#x635F;&#x9650;&#x4EF7;&#x8BA2;&#x5355;&#x7684;&#x9650;&#x4EF7;&#x5B57;&#x6BB5;&#x7684;&#x6700;&#x5C0F;&#x4EF7;&#x683C;&#x53D8;&#x5316;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#xFF0C;&#x5B83;&#x5C06;&#x8986;&#x76D6; minTick &#x503C;&#x3002;</li>
+<li><code>allowedDurations</code> - &#x5177;&#x6709;&#x6709;&#x6548;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#x503C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#x3002; &#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x8FDB;&#x884C;&#x68C0;&#x67E5;&#x3002;</li>
+<li><code>currency</code> - &#x5728;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x663E;&#x793A;&#x7684;&#x5DE5;&#x5177;&#x8D27;&#x5E01;</li>
+<li><code>baseCurrency</code> - &#x8D27;&#x5E01;&#x5BF9;&#x4E2D;&#x62A5;&#x4EF7;&#x7684;&#x7B2C;&#x4E00;&#x79CD;&#x8D27;&#x5E01;&#x3002; &#x4EC5;&#x7528;&#x4E8E;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x3002;</li>
+<li><code>quoteCurrency</code> - &#x8D27;&#x5E01;&#x5BF9;&#x4E2D;&#x62A5;&#x4EF7;&#x7684;&#x7B2C;&#x4E8C;&#x79CD;&#x8D27;&#x5E01;&#x3002; &#x4EC5;&#x7528;&#x4E8E;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x3002;</li>
+</ul>
+<h3 id="accountinfo-deferred-&#x6216;-promise">accountInfo(): Deferred (&#x6216; Promise)</h3>
+<p>&#x6B64;&#x65B9;&#x6CD5;&#x901A;&#x8FC7;&#x5185;&#x90E8;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x8C03;&#x7528;&#xFF0C;&#x4EE5;&#x83B7;&#x53D6;&#x8D26;&#x6237;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x53EA;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1A;</p>
+<ol>
+<li>currencySign&#xFF1A;&#x5B57;&#x7B26;&#x4E32; - &#x8FD9;&#x662F;&#x8D26;&#x6237;&#x8D27;&#x5E01;&#x7684;&#x6807;&#x5FD7;</li>
+</ol>
+<p>&#x4E00;&#x65E6;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x7ECF;&#x7EAA;&#x5546;&#x5E94;&#x505C;&#x6B62;&#x63D0;&#x4F9B;&#x76C8;&#x5229;/&#x4E8F;&#x635F;&#x3002;</p>
+<h3 id="subscribeequity">subscribeEquity()</h3>
+<p>&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x5E76;&#x652F;&#x6301;&#x6B62;&#x635F;&#xFF0C;&#x5219;&#x5E94;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;<code>Equity</code> &#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x98CE;&#x9669;&#x767E;&#x5206;&#x6BD4;&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x7ECF;&#x7EAA;&#x5546;&#x5E94;&#x901A;&#x8FC7;<a href="Trading-Host.html#equityupdateequity">equityUpdate</a>&#x65B9;&#x6CD5;&#xFF0C;&#x63D0;&#x4F9B; <code>equity(&#x4F59;&#x989D;+P/L)</code> &#x7684;&#x66F4;&#x65B0;&#x8BA2;&#x9605;&#x3002;</p>
+<h3 id="unsubscribeequity">unsubscribeEquity()</h3>
+<p>&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x5E76;&#x652F;&#x6301;&#x6B62;&#x635F;&#xFF0C;&#x5219;&#x5E94;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x7ECF;&#x7EAA;&#x5546;&#x5E94;&#x505C;&#x6B62;&#x63D0;&#x4F9B; <code>Equity</code> &#x7684;&#x66F4;&#x65B0;&#x3002;</p>
+<h3 id="subscribemarginavailable">subscribeMarginAvailable()</h3>
+<p>&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x5E76;&#x60F3;&#x8981;&#x663E;&#x793A;&#x53EF;&#x7528;&#x4FDD;&#x8BC1;&#x91D1;&#xFF0C;&#x5219;&#x5E94;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x7ECF;&#x7EAA;&#x5546;&#x5E94;&#x901A;&#x8FC7;<a href="Trading-Host.html#marginavailableupdatemarginavailable">marginAvailableUpdate</a>&#x65B9;&#x6CD5;&#xFF0C;&#x63D0;&#x4F9B;&#x53EF;&#x7528;&#x4FDD;&#x8BC1;&#x91D1;&#x7684;&#x66F4;&#x65B0;&#x3002;</p>
+<h3 id="unsubscribemarginavailable">unsubscribeMarginAvailable()</h3>
+<p>&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x5E76;&#x60F3;&#x8981;&#x663E;&#x793A;&#x53EF;&#x7528;&#x4FDD;&#x8BC1;&#x91D1;&#xFF0C;&#x5219;&#x5E94;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x7ECF;&#x7EAA;&#x5546;&#x5E94;&#x505C;&#x6B62;&#x63D0;&#x4F9B;&#x53EF;&#x7528;&#x4FDD;&#x8BC1;&#x91D1;&#x7684;&#x66F4;&#x65B0;&#x3002;</p>
+<h3 id="subscribepipvalue">subscribePipValue()</h3>
+<p>&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#xFF0C;&#x5219;&#x5E94;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;<code>pipValues</code>&#x663E;&#x793A;&#x5728;&#x8BA2;&#x5355;&#x4FE1;&#x606F;&#x4E2D;&#xFF0C;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x4EA4;&#x6613;&#x4EF7;&#x503C;&#x548C;&#x98CE;&#x9669;&#x3002;
+&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x5728;&#x8BA2;&#x5355;&#x9762;&#x677F;/&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x4F7F;&#x7528;<code>symbolInfo</code>&#x4E2D;&#x7684;<code>pipValue</code>&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x7ECF;&#x7EAA;&#x5546;&#x5E94;&#x901A;&#x8FC7;<a href="Trading-Host.html#pipvalueupdatesymbol-pipValues">pipValueUpdate</a>&#x65B9;&#x6CD5;&#xFF0C;&#x63D0;&#x4F9B;<code>pipValue</code>&#x7684;&#x66F4;&#x65B0;&#x3002;</p>
+<h3 id="unsubscribepipvalue">unsubscribePipValue()</h3>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x5E76;&#x5B9E;&#x73B0;<code>subscribePipValue</code>&#xFF0C;&#x5219;&#x5E94;&#x5B9E;&#x73B0;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x540E;&#xFF0C;&#x7ECF;&#x7EAA;&#x5546;&#x5E94;&#x505C;&#x6B62;&#x63D0;&#x4F9B;<code>pipValue</code>&#x7684;&#x66F4;&#x65B0;&#x3002;</p>
+<h2 id="&#x53EF;&#x9009;&#x65B9;&#x6CD5;">&#x53EF;&#x9009;&#x65B9;&#x6CD5;</h2>
+<h3 id="getorderdialogoptionssymbol-promise">getOrderDialogOptions(symbol): Promise\<orderdialogoptions |未定义=""></orderdialogoptions></h3>
+<ol>
+<li><code>symbol</code> - &#x5546;&#x54C1;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+</ol>
+<p>&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x5E76;&#x5E0C;&#x671B;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4F7F;&#x7528; <code>symbol</code> &#x53C2;&#x6570;&#x8FD4;&#x56DE;&#x7279;&#x5B9A;&#x5546;&#x54C1;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x9009;&#x9879;&#x3002;</p>
+<p>&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x5E26;&#x6709; Order &#x5BF9;&#x8BDD;&#x6846;&#x9009;&#x9879;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ul>
+<li><p><code>showTotal</code>&#xFF1A;&#x5E03;&#x5C14;&#x503C;</p>
+<p>&#x4F7F;&#x7528;&#x6B64;&#x6807;&#x5FD7;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x201C;&#x8BA2;&#x5355;&#x201D;&#x5BF9;&#x8BDD;&#x6846;&#x7684;&#x201C;&#x8BA2;&#x5355;&#x4FE1;&#x606F;&#x201D;&#x90E8;&#x5206;&#x5C06;&#x201C;&#x4EA4;&#x6613;&#x4EF7;&#x503C;&#x201D;&#x66F4;&#x6539;&#x4E3A;&#x201C;&#x603B;&#x8BA1;&#x201D;&#x3002;</p>
+</li>
+<li><p><code>customFields</code>: (TextWithCheckboxFieldMetaInfo | CustomComboBoxMetaInfo)[];</p>
+<p>&#x4F7F;&#x7528;customFields`&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5411;&#x201C;&#x8BA2;&#x5355;&#x201D;&#x5BF9;&#x8BDD;&#x6846;&#x6DFB;&#x52A0;&#x5176;&#x4ED6;&#x8F93;&#x5165;&#x5B57;&#x6BB5;&#x3002;</p>
+</li>
+</ul>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-javascript">customFields: [
+    {
+        inputType: <span class="hljs-string">&apos;TextWithCheckBox&apos;</span>,
+        id: <span class="hljs-string">&apos;2410&apos;</span>,
+        title: <span class="hljs-string">&apos;Digital Signature&apos;</span>,
+        placeHolder: <span class="hljs-string">&apos;Enter your personal digital signature&apos;</span>,
+        value: {
+            text: <span class="hljs-string">&apos;&apos;</span>,
+            checked: <span class="hljs-literal">false</span>,
+        },
+        customInfo: {
+            asterix: <span class="hljs-literal">true</span>,
+            checkboxTitle: <span class="hljs-string">&apos;Save&apos;</span>,
+        },
+    }
+]
+</code></pre>
+<h3 id="getpositiondialogoptions-positiondialogoptions">getPositionDialogOptions(): PositionDialogOptions</h3>
+<p>&#x5982;&#x679C;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x4F4D;&#x7F6E;&#x5BF9;&#x8BDD;&#x6846;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x4F4D;&#x7F6E;&#x5BF9;&#x8BDD;&#x6846;&#x9009;&#x9879;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<ul>
+<li><p><code>customFields</code>: (TextWithCheckboxFieldMetaInfo | CustomComboBoxMetaInfo)[];</p>
+<p>  &#x4F7F;&#x7528; <code>customFields</code> &#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5411;&#x4F4D;&#x7F6E;&#x5BF9;&#x8BDD;&#x6846;&#x6DFB;&#x52A0;&#x989D;&#x5916;&#x7684;&#x8F93;&#x5165;&#x5B57;&#x6BB5;&#x3002;</p>
+</li>
+</ul>
+<h1 id="&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x770B;">&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x770B;</h1>
+<ul>
+<li><a href="Widget-Constructor.html#brokerfactory">&#x5982;&#x4F55;&#x8FDE;&#x63A5;</a>&#x4F60;&#x7684;&#x4EA4;&#x6613;&#x63A7;&#x5236;&#x5668;&#x5230;&#x56FE;&#x8868;</li>
+<li><a href="Trading-Host.html">&#x4EA4;&#x6613;&#x4E3B;&#x673A;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Trading-Terminal.html" class="navigation navigation-prev " aria-label="Previous page: 5-1、交易终端简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Trading-Host.html" class="navigation navigation-next " aria-label="Next page: 5-3、交易主机">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5-2、经纪商 API","level":"5.2","depth":1,"next":{"title":"5-3、交易主机","level":"5.3","depth":1,"path":"book/Trading-Host.md","ref":"book/Trading-Host.md","articles":[]},"previous":{"title":"5-1、交易终端简介","level":"5.1","depth":1,"path":"book/Trading-Terminal.md","ref":"book/Trading-Terminal.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/Broker-API.md","mtime":"2021-06-27T10:33:52.750Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-27T12:29:05.136Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livere/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-head-tag/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-v3/baidu-tongji.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

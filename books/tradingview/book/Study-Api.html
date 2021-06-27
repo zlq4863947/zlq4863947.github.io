@@ -1,0 +1,1116 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>指标 API · TradingView中文开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-livere/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-head-tag/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Shape-Api.html" />
+    
+    
+    <link rel="prev" href="WatchedValue.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CHANGE-LOG.html">
+            
+                <a href="../CHANGE-LOG.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Home.html">
+            
+                <a href="Home.html">
+            
+                    
+                    1、Charting Library 是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2、入门指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="Package-Content.html">
+            
+                <a href="Package-Content.html">
+            
+                    
+                    2-1、图表库内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="Running-Your-Charting-Library.html">
+            
+                <a href="Running-Your-Charting-Library.html">
+            
+                    
+                    2-2、运行图表库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3、数据绑定</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="How-To-Connect-My-Data.html">
+            
+                <a href="How-To-Connect-My-Data.html">
+            
+                    
+                    3-1、如何连接我的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="JS-Api.html">
+            
+                <a href="JS-Api.html">
+            
+                    
+                    3-2、JS Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="UDF.html">
+            
+                <a href="UDF.html">
+            
+                    
+                    3-3、UDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="Symbology.html">
+            
+                <a href="Symbology.html">
+            
+                    
+                    3-4、Symbology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="Trading-Sessions.html">
+            
+                <a href="Trading-Sessions.html">
+            
+                    
+                    3-5、交易时段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="Quotes.html">
+            
+                <a href="Quotes.html">
+            
+                    
+                    3-6、报价
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4、图表定制</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html">
+            
+                    
+                    4-1、定制概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="Widget-Constructor.html">
+            
+                <a href="Widget-Constructor.html">
+            
+                    
+                    4-2、Widget 构造器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Widget-Methods.html">
+            
+                <a href="Widget-Methods.html">
+            
+                    
+                    4-3、Widget 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="Chart-Methods.html">
+            
+                <a href="Chart-Methods.html">
+            
+                    
+                    4-4、图表方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Featuresets.html">
+            
+                <a href="Featuresets.html">
+            
+                    
+                    4-5、功能集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html#通过数据流定制">
+            
+                    
+                    4-6、服务端定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="Customization-Use-Cases.html">
+            
+                <a href="Customization-Use-Cases.html">
+            
+                    
+                    4-7、定制的使用案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">5、交易终端</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="Trading-Terminal.html">
+            
+                <a href="Trading-Terminal.html">
+            
+                    
+                    5-1、交易终端简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="Broker-API.html">
+            
+                <a href="Broker-API.html">
+            
+                    
+                    5-2、经纪商 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="Trading-Host.html">
+            
+                <a href="Trading-Host.html">
+            
+                    
+                    5-3、交易主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="Account-Manager.html">
+            
+                <a href="Account-Manager.html">
+            
+                    
+                    5-4、账户管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="Trading-Objects-and-Constants.html">
+            
+                <a href="Trading-Objects-and-Constants.html">
+            
+                    
+                    5-5、交易对象和常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="Saving-and-Loading-Charts.html">
+            
+                <a href="Saving-and-Loading-Charts.html">
+            
+                    
+                    6、储存和载入图表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="Save-Load-Adapter-Example.html">
+            
+                <a href="Save-Load-Adapter-Example.html">
+            
+                    
+                    6-1、储存和载入的内存示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="Creating-Custom-Studies.html">
+            
+                <a href="Creating-Custom-Studies.html">
+            
+                    
+                    7、创建自定义指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="Best-practices.html">
+            
+                <a href="Best-practices.html">
+            
+                    
+                    8、最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="Frequently-Asked-Questions.html">
+            
+                <a href="Frequently-Asked-Questions.html">
+            
+                    
+                    9、经常被问到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="Breaking-changes.html">
+            
+                <a href="Breaking-changes.html">
+            
+                    
+                    10、版本变更点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="Basic-Compose.html">
+            
+                <a href="Basic-Compose.html">
+            
+                    
+                    图表的主要组成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="Resolution.html">
+            
+                <a href="Resolution.html">
+            
+                    
+                    周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="Time-Frames.html">
+            
+                <a href="Time-Frames.html">
+            
+                    
+                    时间范围
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="Localization.html">
+            
+                <a href="Localization.html">
+            
+                    
+                    本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="Overrides.html">
+            
+                <a href="Overrides.html">
+            
+                    
+                    覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="Drawings-Overrides.html">
+            
+                <a href="Drawings-Overrides.html">
+            
+                    
+                    绘图覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="Studies-Overrides.html">
+            
+                <a href="Studies-Overrides.html">
+            
+                    
+                    指标覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="Shapes-and-Overrides.html">
+            
+                <a href="Shapes-and-Overrides.html">
+            
+                    
+                    形状与覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="Chart-Style-Properties.html">
+            
+                <a href="Chart-Style-Properties.html">
+            
+                    
+                    图表样式属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="Chart.html">
+            
+                <a href="Chart.html">
+            
+                    
+                    图表自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="Toolbars.html">
+            
+                <a href="Toolbars.html">
+            
+                    
+                    工具栏自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="CSS-Color-Themes.html">
+            
+                <a href="CSS-Color-Themes.html">
+            
+                    
+                    CSS主题颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="Subscription.html">
+            
+                <a href="Subscription.html">
+            
+                    
+                    订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="Trading-Primitives.html">
+            
+                <a href="Trading-Primitives.html">
+            
+                    
+                    交易元语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="Marks-On-Bars.html">
+            
+                <a href="Marks-On-Bars.html">
+            
+                    
+                    在 K 线上做标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="Delegate.html">
+            
+                <a href="Delegate.html">
+            
+                    
+                    委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="WatchedValue.html">
+            
+                <a href="WatchedValue.html">
+            
+                    
+                    WatchedValue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.18" data-path="Study-Api.html">
+            
+                <a href="Study-Api.html">
+            
+                    
+                    指标 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="Shape-Api.html">
+            
+                <a href="Shape-Api.html">
+            
+                    
+                    形状 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="Shapes-Group-Api.html">
+            
+                <a href="Shapes-Group-Api.html">
+            
+                    
+                    形状组 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="Selection-Api.html">
+            
+                <a href="Selection-Api.html">
+            
+                    
+                    选择 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.22" data-path="Pane-Api.html">
+            
+                <a href="Pane-Api.html">
+            
+                    
+                    窗格 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.23" data-path="Series-Api.html">
+            
+                <a href="Series-Api.html">
+            
+                    
+                    数据列 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.24" data-path="Price-Scale-Api.html">
+            
+                <a href="Price-Scale-Api.html">
+            
+                    
+                    价格刻度 Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.25" data-path="Panes-And-Scales-Behavior.html">
+            
+                <a href="Panes-And-Scales-Behavior.html">
+            
+                    
+                    窗格和刻度特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.26" data-path="Shortcuts.html">
+            
+                <a href="Shortcuts.html">
+            
+                    
+                    快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >指标 API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x6307;&#x6807;api">&#x6307;&#x6807;API</h2>
+<h3 id="isusereditenabled">isUserEditEnabled()</h3>
+<p>&#x5982;&#x679C;&#x7528;&#x6237;&#x80FD;&#x591F;<code>&#x5220;&#x9664;/&#x66F4;&#x6539;/&#x9690;&#x85CF;</code>&#x6307;&#x6807;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#x3002;</p>
+<h3 id="setusereditenabledenabled">setUserEditEnabled(enabled)</h3>
+<ol>
+<li><code>enabled</code> - <code>true</code> or <code>false</code></li>
+</ol>
+<p>&#x542F;&#x7528;&#x6216;&#x7981;&#x7528;&#x7528;&#x6237;&#x7684;<code>&#x5220;&#x9664;/&#x66F4;&#x6539;/&#x9690;&#x85CF;</code>&#x6307;&#x6807;&#x3002;</p>
+<h3 id="getinputsinfo">getInputsInfo()</h3>
+<p>&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x8F93;&#x5165;&#x7684;&#x4FE1;&#x606F; - <a href="#studyinputinfo">StudyInputInfo</a>&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#x3002;</p>
+<h3 id="getinputvalues">getInputValues()</h3>
+<p>&#x8FD4;&#x56DE;&#x6307;&#x6807;&#x8F93;&#x5165;&#x7684;&#x503C; - <a href="#studyinputvalueitem">StudyInputValueItem</a>&#x5BF9;&#x8C61;&#x3002;</p>
+<h3 id="setinputvaluesinputs">setInputValues(inputs)</h3>
+<ol>
+<li><code>inputs</code> &#x5E94;&#x8BE5;&#x662F;<a href="#studyinputvalueitem">StudyInputValueItem</a>&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x3002;</li>
+</ol>
+<p>&#x8BBE;&#x7F6E;&#x6307;&#x6807;&#x7684;&#x8F93;&#x5165;&#x503C;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x53EA;&#x5305;&#x542B;&#x60A8;&#x5E0C;&#x671B;&#x66F4;&#x6539;&#x7684;&#x8F93;&#x5165;&#x3002;</p>
+<h3 id="mergeup">mergeUp()</h3>
+<p>&#x6307;&#x6807;&#x5411;&#x4E0A;&#x5408;&#x5E76;&#xFF08;&#x5982;&#x679C;&#x53EF;&#x80FD;&#xFF09;</p>
+<h3 id="mergedown">mergeDown()</h3>
+<p>&#x6307;&#x6807;&#x5411;&#x4E0B;&#x5408;&#x5E76;&#xFF08;&#x5982;&#x679C;&#x53EF;&#x80FD;&#xFF09;</p>
+<h3 id="unmergeup">unmergeUp()</h3>
+<p>&#x53D6;&#x6D88;&#x6307;&#x6807;&#x5411;&#x4E0A;&#x5408;&#x5E76;&#xFF08;&#x5982;&#x679C;&#x53EF;&#x80FD;&#xFF09;</p>
+<h3 id="unmergedown">unmergeDown()</h3>
+<p>&#x53D6;&#x6D88;&#x6307;&#x6807;&#x5411;&#x4E0B;&#x5408;&#x5E76;&#xFF08;&#x5982;&#x679C;&#x53EF;&#x80FD;&#xFF09;</p>
+<h3 id="changepricescalepricescale">changePriceScale(priceScale)</h3>
+<ol>
+<li><code>priceScale</code> &#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x4E0B;&#x503C;&#x4E4B;&#x4E00;&#x7684;&#x5B57;&#x7B26;&#x4E32;:<ul>
+<li><code>left</code> - &#x5C06;&#x6307;&#x6807;&#x9644;&#x52A0;&#x5230;&#x5DE6;&#x8FB9;&#x7684;&#x4EF7;&#x683C;&#x523B;&#x5EA6;</li>
+<li><code>right</code> - &#x5C06;&#x6307;&#x6807;&#x9644;&#x52A0;&#x5230;&#x53F3;&#x8FB9;&#x7684;&#x4EF7;&#x683C;&#x523B;&#x5EA6;</li>
+<li><code>no-scale</code> - &#x4E0D;&#x8981;&#x5C06;&#x6307;&#x6807;&#x7EB3;&#x5165;&#x4EFB;&#x4F55;&#x4EF7;&#x683C;&#x523B;&#x5EA6;&#x3002;&#x8BE5;&#x6307;&#x6807;&#x5C06;&#x4EE5;&apos;No Scale&apos;&#x6A21;&#x5F0F;&#x6DFB;&#x52A0;</li>
+<li><code>as-series</code> - &#x5C06;&#x6307;&#x6807;&#x9644;&#x52A0;&#x5230;&#x4F4F;&#x7CFB;&#x5217;&#x7684;&#x4EF7;&#x683C;&#x523B;&#x5EA6;&#xFF08;&#x4EC5;&#x5F53;&#x6307;&#x6807;&#x548C;&#x4E3B;&#x7CFB;&#x5217;&#x4F4D;&#x4E8E;&#x540C;&#x4E00;&#x7A97;&#x683C;&#x65F6;&#x624D;&#x9002;&#x7528;&#xFF09;</li>
+</ul>
+</li>
+</ol>
+<p>&#x6539;&#x53D8;&#x6307;&#x6807;&#x7684;&#x4EF7;&#x683C;&#x523B;&#x5EA6;</p>
+<h3 id="isvisible">isVisible()</h3>
+<p>&#x5982;&#x679C;&#x6307;&#x6807;&#x53EF;&#x89C1;&#xFF0C;&#x5C06;&#x8FD4;&#x56DE;<code>true</code></p>
+<h3 id="setvisiblevalue">setVisible(value)</h3>
+<ol>
+<li><code>value</code> - <code>true</code> &#x6216; <code>false</code></li>
+</ol>
+<p>&#x663E;&#x793A;/&#x9690;&#x85CF;&#x6307;&#x6807;</p>
+<h3 id="bringtofront">bringToFront()</h3>
+<p>&#x5C06;&#x6307;&#x6807;&#x7F6E;&#x4E8E;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x56FE;&#x8868;&#x5BF9;&#x8C61;&#x4E4B;&#x4E0A;&#x3002;</p>
+<h3 id="sendtoback">sendToBack()</h3>
+<p>&#x5C06;&#x6307;&#x6807;&#x653E;&#x5728;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x56FE;&#x8868;&#x5BF9;&#x8C61;&#x540E;&#x9762;&#x3002;</p>
+<h3 id="applyoverridesoverrides">applyOverrides(overrides)</h3>
+<ol>
+<li><code>overrides</code> - &#x6307;&#x6807;&#x7684;&#x65B0;<a href="Studies-Overrides.html">overrides</a></li>
+</ol>
+<p>&#x5C06; <code>overrides</code> &#x5E94;&#x7528;&#x4E8E;&#x6307;&#x6807;&#x3002;</p>
+<p>&#x6CE8;&#x610F;: <code>overrides</code> &#x5BF9;&#x8C61;key&#x4E0D;&#x9700;&#x8981;&#x4EE5;&#x6307;&#x6807;&#x540D;&#x79F0;&#x5F00;&#x5934;&#x3002;key&#x5E94;&#x7528;&#x4E8E;&#x7279;&#x5B9A;&#x7684;&#x6307;&#x6807;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x60A8;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<code>style</code>&#x800C;&#x4E0D;&#x662F;<code>Overlay.style</code>&#x6765;&#x8986;&#x76D6;Overlay&#x6307;&#x6807;&#x7684;&#x5F53;&#x524D;&#x6837;&#x5F0F;&#x3002;</p>
+<h2 id="primitive-types">Primitive types</h2>
+<h3 id="studyinputinfo">StudyInputInfo</h3>
+<p>&#x5177;&#x6709;&#x4EE5;&#x4E0B;key&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ul>
+<li><code>id</code> - &#x6307;&#x6807;&#x7684;&#x8F93;&#x5165;id</li>
+<li><code>name</code> - &#x8F93;&#x5165;&#x7684;&#x540D;&#x79F0;</li>
+<li><code>type</code> - &#x8F93;&#x5165;&#x7684;&#x7C7B;&#x578B;</li>
+<li><code>localizedName</code> - &#x7FFB;&#x8BD1;&#x4E3A;&#x5F53;&#x524D;&#x8BED;&#x8A00;&#x7684;&#x8F93;&#x5165;&#x540D;&#x79F0;</li>
+</ul>
+<h3 id="studyinputvalueitem">StudyInputValueItem</h3>
+<p>&#x5177;&#x6709;&#x4EE5;&#x4E0B;key&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<ul>
+<li><code>id</code> - &#x6307;&#x6807;&#x7684;&#x8F93;&#x5165;id</li>
+<li><code>value</code> - &#x8F93;&#x5165;&#x7684;&#x503C;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="WatchedValue.html" class="navigation navigation-prev " aria-label="Previous page: WatchedValue">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Shape-Api.html" class="navigation navigation-next " aria-label="Next page: 形状 API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"指标 API","level":"7.18","depth":1,"next":{"title":"形状 API","level":"7.19","depth":1,"path":"book/Shape-Api.md","ref":"book/Shape-Api.md","articles":[]},"previous":{"title":"WatchedValue","level":"7.17","depth":1,"path":"book/WatchedValue.md","ref":"book/WatchedValue.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/Study-Api.md","mtime":"2019-08-01T05:23:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-27T12:29:05.136Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livere/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-head-tag/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-v3/baidu-tongji.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
