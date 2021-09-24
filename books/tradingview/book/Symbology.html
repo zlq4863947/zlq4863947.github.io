@@ -1,0 +1,1263 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3-4、Symbology · TradingView中文开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-livere/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-head-tag/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Trading-Sessions.html" />
+    
+    
+    <link rel="prev" href="UDF.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CHANGE-LOG.html">
+            
+                <a href="../CHANGE-LOG.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Home.html">
+            
+                <a href="Home.html">
+            
+                    
+                    1、Charting Library 是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2、入门指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="Package-Content.html">
+            
+                <a href="Package-Content.html">
+            
+                    
+                    2-1、图表库内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="Running-Your-Charting-Library.html">
+            
+                <a href="Running-Your-Charting-Library.html">
+            
+                    
+                    2-2、运行图表库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3、数据绑定</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="How-To-Connect-My-Data.html">
+            
+                <a href="How-To-Connect-My-Data.html">
+            
+                    
+                    3-1、如何连接我的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="JS-Api.html">
+            
+                <a href="JS-Api.html">
+            
+                    
+                    3-2、JS Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="UDF.html">
+            
+                <a href="UDF.html">
+            
+                    
+                    3-3、UDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="Symbology.html">
+            
+                <a href="Symbology.html">
+            
+                    
+                    3-4、Symbology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="Trading-Sessions.html">
+            
+                <a href="Trading-Sessions.html">
+            
+                    
+                    3-5、交易时段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="Quotes.html">
+            
+                <a href="Quotes.html">
+            
+                    
+                    3-6、报价
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4、图表定制</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html">
+            
+                    
+                    4-1、定制概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="Widget-Constructor.html">
+            
+                <a href="Widget-Constructor.html">
+            
+                    
+                    4-2、Widget 构造器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Widget-Methods.html">
+            
+                <a href="Widget-Methods.html">
+            
+                    
+                    4-3、Widget 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="Chart-Methods.html">
+            
+                <a href="Chart-Methods.html">
+            
+                    
+                    4-4、图表方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Featuresets.html">
+            
+                <a href="Featuresets.html">
+            
+                    
+                    4-5、功能集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="Customization-Overview.html">
+            
+                <a href="Customization-Overview.html#通过数据流定制">
+            
+                    
+                    4-6、服务端定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="Customization-Use-Cases.html">
+            
+                <a href="Customization-Use-Cases.html">
+            
+                    
+                    4-7、定制的使用案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">5、交易终端</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="Trading-Terminal.html">
+            
+                <a href="Trading-Terminal.html">
+            
+                    
+                    5-1、交易终端简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="Broker-API.html">
+            
+                <a href="Broker-API.html">
+            
+                    
+                    5-2、经纪商 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="Trading-Host.html">
+            
+                <a href="Trading-Host.html">
+            
+                    
+                    5-3、交易主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="Account-Manager.html">
+            
+                <a href="Account-Manager.html">
+            
+                    
+                    5-4、账户管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="Trading-Objects-and-Constants.html">
+            
+                <a href="Trading-Objects-and-Constants.html">
+            
+                    
+                    5-5、交易对象和常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="Saving-and-Loading-Charts.html">
+            
+                <a href="Saving-and-Loading-Charts.html">
+            
+                    
+                    6、储存和载入图表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="Save-Load-Adapter-Example.html">
+            
+                <a href="Save-Load-Adapter-Example.html">
+            
+                    
+                    6-1、储存和载入的内存示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="Creating-Custom-Studies.html">
+            
+                <a href="Creating-Custom-Studies.html">
+            
+                    
+                    7、创建自定义指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="Best-practices.html">
+            
+                <a href="Best-practices.html">
+            
+                    
+                    8、最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="Frequently-Asked-Questions.html">
+            
+                <a href="Frequently-Asked-Questions.html">
+            
+                    
+                    9、经常被问到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="Breaking-changes.html">
+            
+                <a href="Breaking-changes.html">
+            
+                    
+                    10、版本变更点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="Basic-Compose.html">
+            
+                <a href="Basic-Compose.html">
+            
+                    
+                    图表的主要组成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="Resolution.html">
+            
+                <a href="Resolution.html">
+            
+                    
+                    周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="Time-Frames.html">
+            
+                <a href="Time-Frames.html">
+            
+                    
+                    时间范围
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="Localization.html">
+            
+                <a href="Localization.html">
+            
+                    
+                    本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="Overrides.html">
+            
+                <a href="Overrides.html">
+            
+                    
+                    覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="Drawings-Overrides.html">
+            
+                <a href="Drawings-Overrides.html">
+            
+                    
+                    绘图覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="Studies-Overrides.html">
+            
+                <a href="Studies-Overrides.html">
+            
+                    
+                    指标覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="Shapes-and-Overrides.html">
+            
+                <a href="Shapes-and-Overrides.html">
+            
+                    
+                    形状与覆盖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="Chart-Style-Properties.html">
+            
+                <a href="Chart-Style-Properties.html">
+            
+                    
+                    图表样式属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="Chart.html">
+            
+                <a href="Chart.html">
+            
+                    
+                    图表自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="Toolbars.html">
+            
+                <a href="Toolbars.html">
+            
+                    
+                    工具栏自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="CSS-Color-Themes.html">
+            
+                <a href="CSS-Color-Themes.html">
+            
+                    
+                    CSS主题颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="Subscription.html">
+            
+                <a href="Subscription.html">
+            
+                    
+                    订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="Trading-Primitives.html">
+            
+                <a href="Trading-Primitives.html">
+            
+                    
+                    交易元语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="Marks-On-Bars.html">
+            
+                <a href="Marks-On-Bars.html">
+            
+                    
+                    在 K 线上做标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="Delegate.html">
+            
+                <a href="Delegate.html">
+            
+                    
+                    委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="WatchedValue.html">
+            
+                <a href="WatchedValue.html">
+            
+                    
+                    WatchedValue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.18" data-path="Study-Api.html">
+            
+                <a href="Study-Api.html">
+            
+                    
+                    指标 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="Shape-Api.html">
+            
+                <a href="Shape-Api.html">
+            
+                    
+                    形状 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="Shapes-Group-Api.html">
+            
+                <a href="Shapes-Group-Api.html">
+            
+                    
+                    形状组 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="Selection-Api.html">
+            
+                <a href="Selection-Api.html">
+            
+                    
+                    选择 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.22" data-path="Pane-Api.html">
+            
+                <a href="Pane-Api.html">
+            
+                    
+                    窗格 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.23" data-path="Series-Api.html">
+            
+                <a href="Series-Api.html">
+            
+                    
+                    数据列 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.24" data-path="Price-Scale-Api.html">
+            
+                <a href="Price-Scale-Api.html">
+            
+                    
+                    价格刻度 Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.25" data-path="Panes-And-Scales-Behavior.html">
+            
+                <a href="Panes-And-Scales-Behavior.html">
+            
+                    
+                    窗格和刻度特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.26" data-path="Shortcuts.html">
+            
+                <a href="Shortcuts.html">
+            
+                    
+                    快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3-4、Symbology</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="symbology&#xFF08;&#x5546;&#x54C1;&#x4F53;&#x7CFB;&#xFF09;">Symbology&#xFF08;&#x5546;&#x54C1;&#x4F53;&#x7CFB;&#xFF09;</h1>
+<hr>
+<p>&#x56FE;&#x8868;&#x5E93;&#x4F7F;&#x7528;&#x60A8;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x60A8;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x5546;&#x54C1;&#x4F53;&#x7CFB;&#x3002; &#x60A8;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x547D;&#x540D;&#x5546;&#x54C1;&#x3002;</p>
+<p>&#x4F46;&#x6709;&#x4E9B;&#x7EC6;&#x8282;&#x4F60;&#x5E94;&#x8BE5;&#x77E5;&#x9053;:</p>
+<ol>
+<li>&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#x5546;&#x54C1;&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x4E3A;&#x6B64;&#x683C;&#x5F0F;&#xFF1A;<code>EXCHANGE:SYMBOL</code>&#x3002; &#x56FE;&#x8868;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x6B64;&#x683C;&#x5F0F;</li>
+<li>&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x6709;&#x6216;&#x8005;&#x8003;&#x8651;&#x533A;&#x522B;&#x4E0D;&#x540C;&#x7684;&#x5546;&#x54C1;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>ticker</code>&#x5B57;&#x6BB5;&#x3002;
+<code>ticker</code> &#x4E3A;&#x5546;&#x54C1;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x53EA;&#x7528;&#x4E8E;&#x56FE;&#x8868;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x60A8;&#x7684;&#x7528;&#x6237;&#x5C06;&#x4E0D;&#x4F1A;&#x770B;&#x5230;&#x5B83;&#x3002;
+<code>ticker</code>&#x4E3A; <strong>&#x4EC5;&#x5728;</strong> &#x56FE;&#x8868;&#x5E93;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x7684;&#x5546;&#x54C1;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#x3002; &#x60A8;&#x7684;&#x7528;&#x6237;&#x5C06;&#x6C38;&#x8FDC;&#x65E0;&#x6CD5;&#x770B;&#x5230;&#x5B83;&#x3002;
+ &#x53EA;&#x9700;&#x5728;&#x6240;&#x6709;SymbolInfo&#x5BF9;&#x8C61;&#x548C;&#x5546;&#x54C1;&#x641C;&#x7D22;&#x7ED3;&#x679C;&#x4E2D;&#x8F93;&#x5165;<code>ticker</code>&#x503C;&#xFF0C;&#x56FE;&#x8868;&#x5E93;&#x5C06;&#x6839;&#x636E;&#x8FD9;&#x4E9B;&#x503C;&#x8BF7;&#x6C42;&#x6570;&#x636E;&#x3002;</li>
+</ol>
+<h2 id="&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7ED3;&#x6784;"><a href="#&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7ED3;&#x6784;">&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7ED3;&#x6784;</a></h2>
+<p>&#x8FD9;&#x4E00;&#x8282;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002; &#x56FE;&#x8868;&#x5E93;&#x7528;&#x6237;&#x9047;&#x5230;&#x7684;72.2&#xFF05;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x90FD;&#x662F;&#x7531;&#x4E8E;&#x9519;&#x8BEF;&#x7684;/&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#x7684;SymbolInfo&#x6570;&#x636E;&#x5F15;&#x8D77;&#x7684;&#x3002;</p>
+<p>SymbolInfo&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5546;&#x54C1;metadata&#x7684;&#x5BF9;&#x8C61;&#x3002; &#x8BE5;&#x5BF9;&#x8C61;&#x662F;&#x89E3;&#x6790;&#x5546;&#x54C1;&#x7684;&#x7ED3;&#x679C;&#x3002; SymbolInfo&#x6709;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#xFF1A;</p>
+<h5 id="name"><a href="#name">name</a></h5>
+<p>&#x5546;&#x54C1;&#x540D;&#x79F0;&#x3002;&#x60A8;&#x7684;&#x7528;&#x6237;&#x5C06;&#x770B;&#x5230;&#x5B83;(&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;)&#x3002; &#x6B64;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x4E0D;&#x4F7F;&#x7528;<code>tickers</code>&#xFF0C;&#x5B83;&#x5C06;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x8BF7;&#x6C42;&#x3002;</p>
+<h5 id="ticker"><a href="#ticker">ticker</a></h5>
+<p>&#x5B83;&#x662F;&#x60A8;&#x7684;&#x5546;&#x54C1;&#x4F53;&#x7CFB;&#x4E2D;&#x6B64;&#x5546;&#x54C1;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#x3002;&#x5982;&#x679C;&#x60A8;&#x6307;&#x5B9A;&#x6B64;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x5176;&#x503C;&#x5C06;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x6570;&#x636E;&#x8BF7;&#x6C42;&#xFF0C;<code>ticker</code>&#x5982;&#x679C;&#x672A;&#x660E;&#x786E;&#x6307;&#x5B9A;&#xFF0C;&#x5219;&#x88AB;&#x89C6;&#x4E3A;&#x7B49;&#x4E8E;<code>symbol</code>&#x3002;(&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x8BF7;&#x4E00;&#x5B9A;&#x6307;&#x5B9A;<code>ticker</code>&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;<code>ticker</code>&#x53EF;&#x4EE5;&#x5C06;<code>symbol</code>&#x8D4B;&#x503C;&#x7ED9;<code>ticker</code>&#xFF0C;&#x672A;&#x6307;&#x5B9A;<code>ticker</code>&#x65F6;&#x4F1A;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x3002;)</p>
+<h5 id="description"><a href="#description">description</a></h5>
+<p>&#x5546;&#x54C1;&#x8BF4;&#x660E;&#x3002;&#x8FD9;&#x4E2A;&#x5546;&#x54C1;&#x8BF4;&#x660E;&#x5C06;&#x88AB;&#x6253;&#x5370;&#x5728;&#x56FE;&#x8868;&#x7684;&#x6807;&#x9898;&#x680F;&#x4E2D;&#x3002;</p>
+<h5 id="type"><a href="#type">type</a></h5>
+<p>&#x4EEA;&#x8868;&#x7684;&#x53EF;&#x9009;&#x7C7B;&#x578B;&#x3002; </p>
+<p><em>&#x53EF;&#x80FD;&#x7684;&#x7C7B;&#x578B;&#x662F;:</em></p>
+<ul>
+<li><code>stock</code></li>
+<li><code>index</code></li>
+<li><code>forex</code></li>
+<li><code>futures</code></li>
+<li><code>bitcoin</code></li>
+<li><code>expression</code></li>
+<li><code>spread</code></li>
+<li><code>cfd</code></li>
+<li>&#x6216;&#x5176;&#x4ED6;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+</ul>
+<h5 id="session"><a href="#session">session</a></h5>
+<p>&#x5546;&#x54C1;&#x4EA4;&#x6613;&#x65F6;&#x95F4;&#x3002;&#x8BF7;&#x53C2;&#x9605;&#x4EA4;&#x6613;&#x65E5;&#x7EC6;&#x8282;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x8BE6;&#x60C5;&#x3002;<a href="Trading-Sessions.html">&#x4EA4;&#x6613;&#x65F6;&#x6BB5;</a></p>
+<h5 id="holidays"><a href="#holidays">holidays</a></h5>
+<p>&#x6B64;&#x5546;&#x54C1;&#x7684;&#x5047;&#x671F;&#x5217;&#x8868;&#x3002;&#x8FD9;&#x4E9B;&#x65E5;&#x671F;&#x5C06;&#x4E0D;&#x663E;&#x793A;&#x5728;&#x56FE;&#x8868;&#x4E0A;&#x3002;
+&#x5B83;&#x662F;&#x4EE5;&#x4E0B;&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;</p>
+<p><code>YYYYMMDD[,YYYYMMDD]</code>&#x3002;</p>
+<p>&#x793A;&#x4F8B;: <code>20181105,20181107,20181112</code>&#x3002;</p>
+<h5 id="corrections"><a href="#corrections">corrections</a></h5>
+<p>&#x6B64;&#x5546;&#x54C1;&#x7684;&#x66F4;&#x6B63;&#x5217;&#x8868;&#x3002;&#x66F4;&#x6B63;&#x662F;&#x6307;&#x5177;&#x6709;&#x7279;&#x5B9A;&#x4EA4;&#x6613;&#x65F6;&#x6BB5;&#x7684;&#x65E5;&#x5B50;&#x3002;&#x5B83;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x4E8E;&#x5047;&#x671F;&#x3002;
+&#x5B83;&#x662F;&#x4EE5;&#x4E0B;&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;</p>
+<p><code>SESSION:YYYYMMDD[,YYYYMMDD][;SESSION:YYYYMMDD[,YYYYMMDD]]</code>&#x3002;</p>
+<p>&#x5176;&#x4E2D; <code>SESSION</code> &#x5177;&#x6709;&#x4E0E; <a href="Trading-Sessions.html">&#x4EA4;&#x6613;&#x65F6;&#x6BB5;</a> &#x76F8;&#x540C;&#x7684;&#x683C;&#x5F0F;&#x3002;</p>
+<p>&#x793A;&#x4F8B;: <code>1900F4-2350F4,1000-1845:20181113;1000-1400:20181114</code>.</p>
+<h5 id="exchange-listedexchange"><a href="#exchange-listedexchange">exchange, listed_exchange</a></h5>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;&#x90FD;&#x4E3A;&#x67D0;&#x4E2A;&#x4EA4;&#x6613;&#x6240;&#x7684;&#x7565;&#x79F0;&#x3002;&#x5C06;&#x88AB;&#x663E;&#x793A;&#x5728;&#x56FE;&#x8868;&#x7684;&#x56FE;&#x4F8B;&#x4E2D;&#xFF0C;&#x4EE5;&#x8868;&#x793A;&#x6B64;&#x5546;&#x54C1;&#x3002;&#x76EE;&#x524D;&#x6B64;&#x5B57;&#x6BB5;&#x4E0D;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x76EE;&#x7684;&#x3002;</p>
+<h5 id="timezone"><a href="#timezone">timezone</a></h5>
+<p>&#x8FD9;&#x4E2A;&#x5546;&#x54C1;&#x7684;&#x4EA4;&#x6613;&#x6240;&#x65F6;&#x533A;&#x3002;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x4EE5;olsondb&#x683C;&#x5F0F;&#x83B7;&#x53D6;&#x65F6;&#x533A;&#x7684;&#x540D;&#x79F0;&#x3002;</p>
+<p><em>&#x652F;&#x6301;&#x7684;&#x65F6;&#x533A;&#x4E3A;:</em></p>
+<ul>
+<li><code>Etc/UTC</code></li>
+<li><code>Africa/Cairo</code></li>
+<li><code>Africa/Johannesburg</code></li>
+<li><code>Africa/Lagos</code></li>
+<li><code>America/Argentina/Buenos_Aires</code></li>
+<li><code>America/Bogota</code></li>
+<li><code>America/Caracas</code></li>
+<li><code>America/Chicago</code></li>
+<li><code>America/El_Salvador</code></li>
+<li><code>America/Juneau</code></li>
+<li><code>America/Lima</code></li>
+<li><code>America/Los_Angeles</code></li>
+<li><code>America/Mexico_City</code></li>
+<li><code>America/New_York</code></li>
+<li><code>America/Phoenix</code></li>
+<li><code>America/Santiago</code></li>
+<li><code>America/Sao_Paulo</code></li>
+<li><code>America/Toronto</code></li>
+<li><code>America/Vancouver</code></li>
+<li><code>Asia/Almaty</code></li>
+<li><code>Asia/Ashkhabad</code></li>
+<li><code>Asia/Bahrain</code></li>
+<li><code>Asia/Bangkok</code></li>
+<li><code>Asia/Chongqing</code></li>
+<li><code>Asia/Dubai</code></li>
+<li><code>Asia/Ho_Chi_Minh</code></li>
+<li><code>Asia/Hong_Kong</code></li>
+<li><code>Asia/Jakarta</code></li>
+<li><code>Asia/Jerusalem</code></li>
+<li><code>Asia/Kathmandu</code></li>
+<li><code>Asia/Kolkata</code></li>
+<li><code>Asia/Kuwait</code></li>
+<li><code>Asia/Muscat</code></li>
+<li><code>Asia/Qatar</code></li>
+<li><code>Asia/Riyadh</code></li>
+<li><code>Asia/Seoul</code></li>
+<li><code>Asia/Shanghai</code></li>
+<li><code>Asia/Singapore</code></li>
+<li><code>Asia/Taipei</code></li>
+<li><code>Asia/Tehran</code></li>
+<li><code>Asia/Tokyo</code></li>
+<li><code>Atlantic/Reykjavik</code></li>
+<li><code>Australia/ACT</code></li>
+<li><code>Australia/Adelaide</code></li>
+<li><code>Australia/Brisbane</code></li>
+<li><code>Australia/Sydney</code></li>
+<li><code>Europe/Athens</code></li>
+<li><code>Europe/Belgrade</code></li>
+<li><code>Europe/Berlin</code></li>
+<li><code>Europe/Copenhagen</code></li>
+<li><code>Europe/Helsinki</code></li>
+<li><code>Europe/Istanbul</code></li>
+<li><code>Europe/London</code></li>
+<li><code>Europe/Luxembourg</code></li>
+<li><code>Europe/Madrid</code></li>
+<li><code>Europe/Moscow</code></li>
+<li><code>Europe/Paris</code></li>
+<li><code>Europe/Riga</code></li>
+<li><code>Europe/Rome</code></li>
+<li><code>Europe/Stockholm</code></li>
+<li><code>Europe/Tallinn</code></li>
+<li><code>Europe/Vilnius</code></li>
+<li><code>Europe/Warsaw</code></li>
+<li><code>Europe/Zurich</code></li>
+<li><code>Pacific/Auckland</code></li>
+<li><code>Pacific/Chatham</code></li>
+<li><code>Pacific/Fakaofo</code></li>
+<li><code>Pacific/Honolulu</code></li>
+<li><code>Pacific/Norfolk</code></li>
+<li><code>US/Mountain</code></li>
+</ul>
+<h5 id="format">format</h5>
+<p>&#x5728;&#x4EF7;&#x683C;&#x523B;&#x5EA6;&#x4E0A;&#x663E;&#x793A;&#x6807;&#x7B7E;&#x7684;&#x683C;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><code>price</code> - &#x6839;&#x636E; <code>minmov</code>, <code>pricescale</code>, <code>minmove2</code> &#x548C; <code>fractional</code> &#x7684;&#x503C;&#xFF0C;&#x683C;&#x5F0F;&#x5316;&#x4EF7;&#x683C;&#x7684;&#x5C0F;&#x6570;&#x6216;&#x5206;&#x6570;</li>
+<li><code>volume</code> - &#x5C06;&#x5341;&#x8FDB;&#x5236;&#x6570;&#x5B57;&#x683C;&#x5F0F;&#x5316;&#x4E3A;&#x5343;&#xFF0C;&#x767E;&#x4E07;&#x6216;&#x5341;&#x4EBF;</li>
+</ul>
+<h5 id="minmov&#x6700;&#x5C0F;&#x6CE2;&#x52A8;-pricescale&#x4EF7;&#x683C;&#x7CBE;&#x5EA6;-minmove2-fractional&#x5206;&#x6570;"><a href="#minmov&#x6700;&#x5C0F;&#x6CE2;&#x52A8;-pricescale&#x4EF7;&#x683C;&#x7CBE;&#x5EA6;-minmove2-fractional&#x5206;&#x6570;">minmov(&#x6700;&#x5C0F;&#x6CE2;&#x52A8;), pricescale(&#x4EF7;&#x683C;&#x7CBE;&#x5EA6;), minmove2, fractional(&#x5206;&#x6570;)</a></h5>
+<ol>
+<li>&#x6700;&#x5C0F;&#x7684;&#x4EF7;&#x683C;&#x53D8;&#x5316;&#x662F;&#x7531;&#x8FD9;&#x4E9B;&#x503C;&#x51B3;&#x5B9A;&#x7684;&#x3002;</li>
+<li>PriceScale &#x53C2;&#x6570;&#x786E;&#x5B9A;&#x4E86;&#x56FE;&#x8868;&#x4EF7;&#x683C;&#x91CF;&#x8868;&#x4E0A;&#x7684;&#x4EF7;&#x683C;&#x7EBF;&#x4E4B;&#x95F4;&#x7684;&#x5468;&#x671F;&#x3002;</li>
+</ol>
+<p>&#x8FD9;&#x4E09;&#x4E2A;&#x952E;&#x6709;&#x4E0D;&#x540C;&#x610F;&#x4E49;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x901A;&#x5E38;&#x4EF7;&#x683C;&#x548C;&#x5206;&#x6570;&#x4EF7;&#x683C;&#x3002;</p>
+<h5 id="&#x901A;&#x5E38;&#x4EF7;&#x683C;"><a href="#&#x901A;&#x5E38;&#x4EF7;&#x683C;">&#x901A;&#x5E38;&#x4EF7;&#x683C;</a></h5>
+<pre><code>MinimalPossiblePriceChange&#xFF08;&#x6700;&#x5C0F;&#x53EF;&#x80FD;&#x4EF7;&#x683C;&#x53D8;&#x52A8;&#xFF09; = minmov / pricescale
+</code></pre><p><code>minmov</code>&#x6570;&#x5B57;&#x578B;&#x5355;&#x4F4D;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;tick&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x7F8E;&#x56FD;&#x80A1;&#x7968;&#x4EF7;&#x683C;&#x548C;tick&#x6709;&#x5C0F;&#x6570;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x4E0A;&#x4E0B;&#x6D6E;&#x52A8;+/- 0.01&#x3002;</p>
+<h5 id="&#x5206;&#x6570;&#x4EF7;&#x683C;"><a href="#&#x5206;&#x6570;&#x4EF7;&#x683C;">&#x5206;&#x6570;&#x4EF7;&#x683C;</a></h5>
+<p>&#x5206;&#x6570;&#x663E;&#x793A;&#x4EF7;&#x683C;,1 - xx&apos;yy&#xFF08;&#x4F8B;&#x5982;&#xFF0C;133&apos;21)&#x6216; 2 - xx&apos;yy&apos;zz &#xFF08;&#x4F8B;&#x5982;&#xFF0C;133&apos;21&apos;5&#xFF09;&#x3002;</p>
+<h5 id="minmove20"><a href="#minmove20">minmove2&lt;0&gt;</a></h5>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x795E;&#x5947;&#x7684;&#x6570;&#x5B57;&#x6765;&#x683C;&#x5F0F;&#x5316;&#x590D;&#x6742;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x4EF7;&#x683C;&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;:</p>
+<pre><code>&#x5178;&#x578B;&#x7684;&#x80A1;&#x7968;&#x4EE5;0.01&#x4EF7;&#x683C;&#x589E;&#x91CF;&#xFF1A;minmov = 1&#xFF0C;pricecale = 100&#xFF0C;minmove2 = 0
+ZBM2014&#xFF08;&#x56FD;&#x503A;&#xFF09;&#xFF0C;1/32&#xFF1A;minmov = 1&#xFF0C;pricecale = 32&#xFF0C;minmove2 = 0
+ZCM2014&#xFF08;&#x7389;&#x7C73;&#xFF09;&#xFF0C;2/8&#xFF1A;minmov = 2&#xFF0C;pricecale = 8&#xFF0C;minmove2 = 0
+ZFM2014&#xFF08;5&#x5E74;&#x671F;&#x56FD;&#x503A;&#xFF09;&#xFF0C;1/32&#x7684;1/4&#xFF1A;minmov = 1&#xFF0C;pricecale = 128&#xFF0C;minmove2 = 4
+</code></pre><h5 id="hasintraday"><a href="#hasintraday">has_intraday</a></h5>
+<p>&#x5E03;&#x5C14;&#x503C;&#x663E;&#x793A;&#x5546;&#x54C1;&#x662F;&#x5426;&#x5177;&#x6709;&#x65E5;&#x5185;&#xFF08;&#x5206;&#x949F;&#xFF09;&#x5386;&#x53F2;&#x6570;&#x636E;&#x3002; &#x5982;&#x679C;&#x5B83;&#x4E3A;<code>false</code>&#xFF0C;&#x5219;&#x5F53;&#x56FE;&#x8868;&#x4E2D;&#x7684;&#x8BE5;&#x5546;&#x54C1;&#x5904;&#x4E8E;&#x6D3B;&#x52A8;&#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x65E5;&#x5185;&#x5468;&#x671F;&#x7684;&#x6240;&#x6709;&#x6309;&#x94AE;&#x5C06;&#x88AB;&#x7981;&#x7528;&#x3002; &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#xFF0C;&#x5219;&#x7531;datafeed&#x76F4;&#x63A5;&#x63D0;&#x4F9B;&#x7684;&#x6240;&#x6709;&#x5468;&#x671F;&#x5FC5;&#x987B;&#x5728;intraday_multipliers&#x6570;&#x7EC4;&#x4E2D;&#x8BBE;&#x5B9A;&#x3002;</p>
+<h5 id="supportedresolutions"><a href="#supportedresolutions">supported_resolutions</a></h5>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x5546;&#x54C1;&#x7684;&#x5468;&#x671F;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x542F;&#x7528;&#x4E00;&#x4E2A;&#x5468;&#x671F;&#x6570;&#x7EC4;&#x3002; &#x6570;&#x7EC4;&#x7684;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x90FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#x88AB;datafeed&#x652F;&#x6301;&#xFF08;&#x89C1;datafeed&#x914D;&#x7F6E;&#x6570;&#x636E;&#xFF09;&#x4F46;&#x4E0D;&#x53D7;&#x5F53;&#x524D;&#x5546;&#x54C1;&#x652F;&#x6301;&#x7684;&#x5468;&#x671F;,&#x5C06;&#x5728;&#x5468;&#x671F;&#x9009;&#x62E9;&#x5668;&#x90E8;&#x4EF6;&#x4E2D;&#x7981;&#x7528;&#x3002; &#x5982;&#x679C;&#x66F4;&#x6539;&#x5546;&#x54C1;&#xFF0C;&#x65B0;&#x5546;&#x54C1;&#x4E0D;&#x652F;&#x6301;&#x9009;&#x5B9A;&#x7684;&#x5468;&#x671F;&#xFF0C;&#x5219;&#x5468;&#x671F;&#x5C06;&#x5207;&#x6362;&#x5230;&#x652F;&#x6301;&#x7684;&#x5468;&#x671F;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x9879;&#x3002; &#x5468;&#x671F;&#x53EF;&#x7528;&#x6027;&#x903B;&#x8F91;&#xFF08;&#x4F2A;&#x4EE3;&#x7801;&#xFF09;:</p>
+<pre><code class="lang-js">resolutionAvailable  =
+    resolution.isIntraday ?
+       symbol.has_intraday &amp;&amp; symbol.supports_resoluiton(resolution) :
+    symbol.supports_resoluiton(resolution);
+</code></pre>
+<p>&#x5982;&#x679C;&#x5728;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x4E2D;&#x6CA1;&#x6709;supported_resolutionsin&#xFF0C;&#x5219;&#x6240;&#x6709;DWM(daily, weekly, monthly)&#x5468;&#x671F;&#x90FD;&#x53EF;&#x7528;&#x3002; &#x5982;&#x679C;has_intraday&#x4E3A;true&#xFF0C;&#x5219;&#x65E5;&#x5185;&#x5468;&#x671F;&#x53EF;&#x7528;&#x3002;</p>
+<p>&#x652F;&#x6301;&#x7684;&#x5468;&#x671F;&#x4E5F;&#x4F1A;&#x5F71;&#x54CD;&#x53EF;&#x7528;&#x7684;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x3002; &#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x5468;&#x671F;&#xFF0C;&#x5219;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5C06;&#x4E0D;&#x53EF;&#x7528;&#x3002;</p>
+<h5 id="intradaymultipliers-"><a href="#intradaymultipliers-">intraday_multipliers &lt;[]&gt;</a></h5>
+<p><em>Default:</em> <code>[]</code></p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x65E5;&#x5185;&#x5468;&#x671F;(&#x5206;&#x949F;&#x5355;&#x4F4D;)&#x7684;&#x6570;&#x7EC4;&#xFF0C;datafeed&#x5C06;&#x4F1A;&#x81EA;&#x884C;&#x6784;&#x5EFA;&#x5B83;&#x3002;</p>
+<p>&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF1A;&#x5982;&#x679C;datafeed&#x62A5;&#x544A;&#x8BF4;&#x5B83;&#x652F;&#x6301; [&quot;1&quot;, &quot;5&quot;, &quot;15&quot;]&#xFF0C;&#x4F46;&#x4E8B;&#x5B9E;&#x4E0A;&#x80A1;&#x7968;X&#x53EA;&#x6709;1&#x5206;&#x949F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x80A1;&#x7968;X&#x5C06;&#x8BBE;&#x5B9A; intraday_multipliers = [1]&#xFF0C;&#x90A3;&#x4E48;Charting Library&#x5C06;&#x81EA;&#x884C;&#x6784;&#x5EFA;5&#x5206;&#x949F;&#x548C;15&#x5206;&#x949F;&#x7684;&#x5468;&#x671F;&#x3002;</p>
+<h5 id="hasseconds"><a href="#hasseconds">has_seconds</a></h5>
+<p><em>Default:</em> <code>false</code></p>
+<p>&#x5E03;&#x5C14;&#x503C;&#x663E;&#x793A;&#x5546;&#x54C1;&#x662F;&#x5426;&#x5177;&#x6709;&#x4EE5;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#x7684;&#x5386;&#x53F2;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4E3A;<code>false</code>&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x56FE;&#x8868;&#x4E2D;&#x6B64;&#x5546;&#x54C1;&#x5904;&#x4E8E;&#x6D3B;&#x52A8;&#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x79D2;&#x7684;&#x5468;&#x671F;&#x7684;&#x6309;&#x94AE;&#x5C06;&#x88AB;&#x7981;&#x7528;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4E3A;<code>true</code>&#xFF0C;&#x5219;&#x7531;datafeed&#x76F4;&#x63A5;&#x63D0;&#x4F9B;&#x7684;&#x6240;&#x6709;&#x5468;&#x671F;&#x5FC5;&#x987B;&#x5728;<code>seconds_multipliers</code>&#x6570;&#x7EC4;&#x4E2D;&#x8BBE;&#x5B9A;&#x3002;</p>
+<h5 id="secondsmultipliers-"><a href="#secondsmultipliers-">seconds_multipliers &lt;[]&gt;</a></h5>
+<p><em>Default:</em> <code>[]</code></p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x79D2;&#x5468;&#x671F;(&#x4EE5;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#xFF0C;&#x65E0;&#x5C0F;&#x6570;) &#xFF0C;datafeed&#x5C06;&#x4F1A;&#x81EA;&#x884C;&#x6784;&#x5EFA;&#x5B83;&#x3002;<br>&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF1A;&#x5982;&#x679C;datafeed&#x62A5;&#x544A;&#x8BF4;&#x5B83;&#x652F;&#x6301; [&quot;1S&quot;, &quot;5S&quot;, &quot;15S&quot;]&#xFF0C;&#x4F46;&#x4E8B;&#x5B9E;&#x4E0A;&#x80A1;&#x7968;X&#x53EA;&#x6709;1&#x79D2;&#x949F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x80A1;&#x7968;X&#x5C06;&#x8BBE;&#x5B9A; seconds_multipliers = [1]&#xFF0C;&#x90A3;&#x4E48;Charting Library&#x5C06;&#x81EA;&#x884C;&#x6784;&#x5EFA;5S&#x548C;15S&#x7684;&#x5468;&#x671F;&#x3002;</p>
+<h5 id="hasdaily"><a href="#hasdaily">has_daily</a></h5>
+<p><em>Default:</em> <code>false</code></p>
+<p>&#x5E03;&#x5C14;&#x503C;&#x663E;&#x793A;&#x5546;&#x54C1;&#x662F;&#x5426;&#x5177;&#x6709;&#x4EE5;&#x65E5;&#x4E3A;&#x5355;&#x4F4D;&#x7684;&#x5386;&#x53F2;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4E3A;false&#xFF0C;&#x5219;Charting Library&#x5C06;&#x81EA;&#x884C;&#x6784;&#x5EFA;&#x65E5;&#x5355;&#x4F4D;&#x7684;&#x5468;&#x671F;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#xFF0C;&#x5219;&#x4F1A;&#x5411;datafeed&#x8BF7;&#x6C42;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x3002;</p>
+<h5 id="hasweeklyandmonthly"><a href="#hasweeklyandmonthly">has_weekly_and_monthly</a></h5>
+<p><em>Default:</em> <code>false</code></p>
+<p>&#x5E03;&#x5C14;&#x503C;&#x663E;&#x793A;&#x5546;&#x54C1;&#x662F;&#x5426;&#x5177;&#x6709;&#x4EE5;W&#x548C;M&#x4E3A;&#x5355;&#x4F4D;&#x7684;&#x5386;&#x53F2;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4E3A;false&#xFF0C;&#x5219;Charting Library&#x5C06;&#x901A;&#x8FC7;&#x65E5;&#x5355;&#x4F4D;&#x7684;&#x5468;&#x671F;&#x81EA;&#x884C;&#x6784;&#x5EFA;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#xFF0C;&#x5219;&#x4F1A;&#x5411;datafeed&#x8BF7;&#x6C42;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x3002;</p>
+<h5 id="hasemptybars"><a href="#hasemptybars">has_empty_bars</a></h5>
+<p><em>Default:</em> <code>false</code></p>
+<p>&#x5E03;&#x5C14;&#x503C;&#x663E;&#x793A;&#x5728;&#x7279;&#x5B9A;&#x65F6;&#x95F4;&#x6BB5;&#x5185;&#x6570;&#x636E;&#x9988;&#x9001;&#x4E2D;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x56FE;&#x8868;&#x5E93;&#x662F;&#x5426;&#x5E94;&#x5728;&#x4F1A;&#x8BDD;&#x4E2D;&#x751F;&#x6210;&#x7A7A;&#x680F;&#xFF08;&#x4E00;&#x5B57;&#x7EBF;&#xFF09;</p>
+<p>&#x5373;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x7684;&#x4EA4;&#x6613;&#x65F6;&#x6BB5;&#x4E3A;0900-1600&#xFF0C;&#x800C;&#x60A8;&#x7684;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x5728;11:00&#x548C;12:00&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x4EA4;&#x6613;&#xFF0C;&#x800C;&#x60A8;&#x7684;has_empty_bars&#x4E3A;true&#xFF0C;&#x90A3;&#x4E48;Library&#x4F1A;&#x5728;&#x6B64;&#x6BB5;&#x65F6;&#x95F4;&#x8D34;&#x4E0A;&#x7A7A;K&#x67F1;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;&#x529F;&#x80FD;&#x96C6; <code>disable_resolution_rebuild</code> &#xFF0C;&#x5219;&#x4E0D;&#x53EF;&#x4F7F;&#x7528;&#x6B64;&#x6807;&#x5FD7; <code>has_emtpy_bars</code> = <code>true</code> &#x3002;</p>
+<h5 id="forcesessionrebuild"><a href="#forcesessionrebuild">force_session_rebuild</a></h5>
+<p><em>Default:</em> <code>false</code></p>
+<p>&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x663E;&#x793A;&#x56FE;&#x4E66;&#x9986;&#x662F;&#x5426;&#x5E94;&#x4F7F;&#x7528;&#x5F53;&#x524D;&#x4EA4;&#x6613;&#x65F6;&#x6BB5;&#x8FC7;&#x6EE4;&#x67F1;&#x7EBF;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E3A; <code>false</code>, &#x4EC5;&#x5F53;&#x56FE;&#x8868;&#x5E93;&#x4ECE;&#x5176;&#x4ED6;&#x5206;&#x8FA8;&#x7387;&#x6784;&#x5EFA;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x624D;&#x4F1A;&#x8FC7;&#x6EE4;K&#x7EBF;&#x3002;&#x6216;&#x8005;&#x5C06;<code>has_empty_bars</code> &#x8BBE;&#x7F6E; <code>true</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E3A; <code>true</code>, &#x56FE;&#x8868;&#x5E93;&#x5C06;&#x4ECE;&#x60A8;&#x7684;&#x6570;&#x636E;&#x4E2D;&#x5220;&#x9664;&#x4E0D;&#x5C5E;&#x4E8E;&#x4EA4;&#x6613;&#x65F6;&#x6BB5;&#x7684;K&#x7EBF;&#x3002;</p>
+<h5 id="hasnovolume"><a href="#hasnovolume">has_no_volume</a></h5>
+<p><em>Default:</em> <code>false</code></p>
+<p>&#x5E03;&#x5C14;&#x8868;&#x793A;&#x5546;&#x54C1;&#x662F;&#x5426;&#x62E5;&#x6709;&#x6210;&#x4EA4;&#x91CF;&#x6570;&#x636E;&#x3002;</p>
+<h5 id="hasfractionalvolume--&#x5DF2;&#x8FC7;&#x65F6;11---15-&#x7528;&#x6CD5;&#x4E0E;volumeprecision&#x76F8;&#x53CD;"><a href="#hasfractionalvolume--&#x5DF2;&#x8FC7;&#x65F6;11---15-&#x7528;&#x6CD5;&#x4E0E;volumeprecision&#x76F8;&#x53CD;">has_fractional_volume</a> | &#x5DF2;&#x8FC7;&#x65F6;(1.1 - 1.5), &#x7528;&#x6CD5;&#x4E0E;volume_precision&#x76F8;&#x53CD;</h5>
+<p><em>Default:</em> <code>false</code></p>
+<p>&#x5982;&#x679C;has_fractional_volume = true&#xFF0C;&#x6210;&#x4EA4;&#x91CF;&#x6307;&#x6807;&#x503C;&#x5C06;&#x4E0D;&#x4F1A;&#x820D;&#x5165;&#x4E3A;&#x6574;&#x6570;&#x503C;&#x3002;</p>
+<h5 id="volumeprecision-0"><a href="#volumeprecision-0">volume_precision &lt;0&gt;</a></h5>
+<p><em>Default:</em> <code>0</code></p>
+<p>&#x6574;&#x6570;&#x663E;&#x793A;&#x6B64;&#x5546;&#x54C1;&#x7684;&#x6210;&#x4EA4;&#x91CF;&#x6570;&#x5B57;&#x7684;&#x5C0F;&#x6570;&#x4F4D;&#x3002;0&#x8868;&#x793A;&#x53EA;&#x663E;&#x793A;&#x6574;&#x6570;&#x3002;1&#x8868;&#x793A;&#x4FDD;&#x7559;&#x5C0F;&#x6570;&#x4F4D;&#x7684;1&#x4E2A;&#x6570;&#x5B57;&#x5B57;&#x7B26;&#xFF0C;&#x7B49;&#x7B49;&#x3002;</p>
+<h5 id="datastatus"><a href="#datastatus">data_status</a></h5>
+<p>&#x6570;&#x636E;&#x72B6;&#x6001;&#x7801;&#x3002;&#x72B6;&#x6001;&#x663E;&#x793A;&#x5728;&#x56FE;&#x8868;&#x7684;&#x53F3;&#x4E0A;&#x89D2;&#x3002;</p>
+<p><em>&#x652F;&#x6301;&#x7684;&#x503C;:</em></p>
+<ul>
+<li><code>streaming</code>(&#x5B9E;&#x65F6;)</li>
+<li><code>endofday</code>(&#x5DF2;&#x6536;&#x76D8;)</li>
+<li><code>pulsed</code>(&#x8109;&#x51B2;)</li>
+<li><code>delayed_streaming</code>(&#x5EF6;&#x8FDF;&#x6D41;&#x52A8;&#x4E2D;)</li>
+</ul>
+<h5 id="expired"><a href="#expired">expired</a></h5>
+<p><em>Default:</em> <code>false</code></p>
+<p>&#x662F;&#x5426;&#x5230;&#x671F;&#xFF0C;&#x5E03;&#x5C14;&#x503C;&#x663E;&#x793A;&#x6B64;&#x5546;&#x54C1;&#x662F;&#x5426;&#x4E3A;&#x5230;&#x671F;&#x7684;&#x671F;&#x8D27;&#x5408;&#x7EA6;&#x3002;</p>
+<h5 id="expirationdate"><a href="#expirationdate">expiration_date</a></h5>
+<p>&#x5230;&#x671F;&#x65E5;(Unix&#x65F6;&#x95F4;&#x6233;)&#x3002; &#x5982;&#x679C;<code>expired</code> = <code>true</code>&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x6B64;&#x503C;&#x3002; &#x56FE;&#x8868;&#x5E93;&#x5C06;&#x4ECE;&#x8BE5;&#x65F6;&#x95F4;&#x70B9;&#x800C;&#x4E0D;&#x662F;&#x5B9E;&#x9645;&#x65F6;&#x523B;&#x8BF7;&#x6C42;&#x8BE5;&#x5546;&#x54C1;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<h5 id="sector"><a href="#sector">sector</a></h5>
+<p>&#x677F;&#x5757;&#xFF0C;&#x5C06;&#x5728;&#x80A1;&#x7968;&#x4FE1;&#x606F;&#x4E2D;&#x663E;&#x793A;&#x3002;</p>
+<h5 id="industry"><a href="#industry">industry</a></h5>
+<p>&#x884C;&#x4E1A;&#xFF0C;&#x5C06;&#x5728;&#x80A1;&#x7968;&#x4FE1;&#x606F;&#x4E2D;&#x663E;&#x793A;&#x3002;</p>
+<h5 id="originalcurrencycode"><a href="#originalcurrencycode">original_currency_code</a></h5>
+<p>&#x4EA4;&#x6613;&#x6240;&#x7528;&#x7684;&#x8D27;&#x5E01;&#x3002;</p>
+<h5 id="currencycode"><a href="#currencycode">currency_code</a></h5>
+<p>&#x4EA4;&#x6613;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x8D27;&#x5E01;&#x6216;&#x5176;&#x4ED6;&#x8D27;&#x5E01;&#xFF08;&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;&#x8D27;&#x5E01;&#x8F6C;&#x6362;&#xFF09;&#x3002; &#x5B83;&#x663E;&#x793A;&#x5728;&#x201C;&#x4EA4;&#x6613;&#x54C1;&#x79CD;&#x4FE1;&#x606F;&#x201D;&#x5BF9;&#x8BDD;&#x6846;&#x548C;&#x4EF7;&#x683C;&#x8F74;&#x4E0A;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="UDF.html" class="navigation navigation-prev " aria-label="Previous page: 3-3、UDF">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Trading-Sessions.html" class="navigation navigation-next " aria-label="Next page: 3-5、交易时段">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3-4、Symbology","level":"3.4","depth":1,"next":{"title":"3-5、交易时段","level":"3.5","depth":1,"path":"book/Trading-Sessions.md","ref":"book/Trading-Sessions.md","articles":[]},"previous":{"title":"3-3、UDF","level":"3.3","depth":1,"path":"book/UDF.md","ref":"book/UDF.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/Symbology.md","mtime":"2021-01-02T05:50:36.167Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-27T12:29:05.136Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livere/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-head-tag/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-v3/baidu-tongji.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

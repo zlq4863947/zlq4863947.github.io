@@ -1,0 +1,599 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3、布局 · log4js-node 中文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-livere/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-01-appenders.html" />
+    
+    
+    <link rel="prev" href="api.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"zlq4863947","repo":"log4js-node-docs-cn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"log4js-node-docs-cn","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="home.md">
+            
+                <span>
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-home.html">
+            
+                <a href="01-home.html">
+            
+                    
+                    1、log4js-node 是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="api.html">
+            
+                <a href="api.html">
+            
+                    
+                    2、api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="layouts.html">
+            
+                <a href="layouts.html">
+            
+                    
+                    3、布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2、appender</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="02-01-appenders.html">
+            
+                <a href="02-01-appenders.html">
+            
+                    
+                    2-1、appenders
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-02-categoryFilter.html">
+            
+                <a href="02-02-categoryFilter.html">
+            
+                    
+                    2-2、categoryFilter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02-03-console.html">
+            
+                <a href="02-03-console.html">
+            
+                    
+                    2-3、console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02-04-dateFile.html">
+            
+                <a href="02-04-dateFile.html">
+            
+                    
+                    2-4、dateFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="v3-changes.html">
+            
+                <a href="v3-changes.html">
+            
+                    
+                    3.x 版本中的变化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3、布局</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5E03;&#x5C40;">&#x5E03;&#x5C40;</h1>
+<p>&#x5E03;&#x5C40;&#x662F;<strong>appender</strong>&#x4E2D;&#x7528;&#x6765;&#x683C;&#x5F0F;&#x5316;&#x65E5;&#x5FD7;&#x4E8B;&#x4EF6;&#x8F93;&#x51FA;&#x7684;&#x65B9;&#x6CD5;&#x96C6;&#x3002;
+&#x4ED6;&#x4EEC;&#x8BB2;&#x65E5;&#x5FD7;&#x4E8B;&#x4EF6;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>Log4js &#x7684;<strong>appender</strong>&#x5185;&#x7F6E;&#x4E86;&#x51E0;&#x4E2A;&#x5E03;&#x5C40;,&#x5E76;&#x63D0;&#x4F9B;&#x4E86;&#x5728;<strong>appender</strong>&#x5185;&#x7F6E;&#x5E03;&#x5C40;&#x4E0D;&#x9002;&#x7528;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;<strong>appender</strong>&#x5E03;&#x5C40;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x60A8;&#x4E0D;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x5E03;&#x5C40;-&#x6709;&#x4E9B;<strong>appender</strong>&#x4E0D;&#x9700;&#x8981;&#x5B9A;&#x4E49; Layouts&#xFF08;&#x4F8B;&#x5982;<a href="logFaces-UDP.md">logFaces-UDP</a>&#xFF09;: &#x6240;&#x6709;&#x4F7F;&#x7528;&#x5E03;&#x5C40;&#x7684;<strong>appender</strong>&#x90FD;&#x5C06;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5408;&#x7406;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+<h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2>
+<p>&#x5927;&#x591A;&#x6570;<strong>appender</strong>&#x914D;&#x7F6E;&#x90FD;&#x4F1A;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>layout</code>&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x901A;&#x5E38;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;<code>type</code>&#xFF0C;&#x5373;&#x4E0B;&#x9762;&#x5B9A;&#x4E49;&#x7684;&#x5E03;&#x5C40;&#x540D;&#x79F0;&#x3002;&#x6709;&#x4E9B;&#x5E03;&#x5C40;&#x9700;&#x8981;&#x989D;&#x5916;&#x7684;&#x914D;&#x7F6E;&#x9009;&#x9879;&#xFF0C;&#x8FD9;&#x4E9B;&#x9009;&#x9879;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#x3002;</p>
+<h2 id="&#x4F8B;&#x5B50;">&#x4F8B;&#x5B50;</h2>
+<pre><code class="lang-javascript">log4js.configure({
+  appenders: { out: { type: <span class="hljs-string">&quot;stdout&quot;</span>, layout: { type: <span class="hljs-string">&quot;basic&quot;</span> } } },
+  categories: { <span class="hljs-keyword">default</span>: { appenders: [<span class="hljs-string">&quot;out&quot;</span>], level: <span class="hljs-string">&quot;info&quot;</span> } }
+});
+</code></pre>
+<p>&#x6B64;&#x914D;&#x7F6E;&#x5C06;<a href="stdout.md">stdout</a>&#x7684;<strong>appender</strong>&#x9ED8;&#x8BA4;<code>coloured</code>&#x5E03;&#x5C40;&#x66FF;&#x6362;&#x4E3A;<code>basic</code>&#x5E03;&#x5C40;&#x3002;</p>
+<h1 id="&#x5185;&#x7F6E;&#x5E03;&#x5C40;">&#x5185;&#x7F6E;&#x5E03;&#x5C40;</h1>
+<h2 id="basic">Basic</h2>
+<ul>
+<li><code>type</code> - <code>basic</code></li>
+</ul>
+<p>&#x57FA;&#x672C;&#x5E03;&#x5C40;&#x5C06;&#x8F93;&#x51FA;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x7EA7;&#x522B;&#xFF0C;&#x7C7B;&#x522B;&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x65E5;&#x5FD7;&#x4E8B;&#x4EF6;&#x6570;&#x636E;&#x3002;</p>
+<h2 id="&#x4F8B;&#x5B50;">&#x4F8B;&#x5B50;</h2>
+<pre><code class="lang-javascript">log4js.configure({
+  appenders: { out: { type: <span class="hljs-string">&quot;stdout&quot;</span>, layout: { type: <span class="hljs-string">&quot;basic&quot;</span> } } },
+  categories: { <span class="hljs-keyword">default</span>: { appenders: [<span class="hljs-string">&quot;out&quot;</span>], level: <span class="hljs-string">&quot;info&quot;</span> } }
+});
+<span class="hljs-keyword">const</span> logger = log4js.getLogger(<span class="hljs-string">&quot;cheese&quot;</span>);
+logger.error(<span class="hljs-string">&quot;Cheese is too ripe!&quot;</span>);
+</code></pre>
+<p>&#x5C06;&#x8F93;&#x51FA;&#x4E3A;:</p>
+<pre><code>[2017-03-30 07:57:00.113] [ERROR] cheese - Cheese is too ripe!
+</code></pre><h2 id="coloured">Coloured</h2>
+<ul>
+<li><code>type</code> - <code>coloured</code> (&#x6216; <code>colored</code>)</li>
+</ul>
+<p>&#x6B64;&#x5E03;&#x5C40;&#x4E0E;<code>basic</code>&#x76F8;&#x540C;&#xFF0C;&#x53EA;&#x662F;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x7EA7;&#x522B;&#x548C;&#x7C7B;&#x522B;&#x5C06;&#x6839;&#x636E;&#x65E5;&#x5FD7;&#x4E8B;&#x4EF6;&#x7684;&#x7EA7;&#x522B;&#x8FDB;&#x884C;&#x7740;&#x8272;&#xFF08;&#x5982;&#x679C;&#x60A8;&#x7684;&#x7EC8;&#x7AEF;/&#x6587;&#x4EF6;&#x652F;&#x6301;&#x5B83;-&#x5982;&#x679C;&#x60A8;&#x5728;&#x8F93;&#x51FA;&#x4E2D;&#x770B;&#x5230;&#x4E00;&#x4E9B;&#x5947;&#x602A;&#x7684;&#x5B57;&#x7B26;&#x5E76;&#x4E14;&#x6CA1;&#x6709;&#x989C;&#x8272;&#xFF0C;&#x90A3;&#x4E48;&#x60A8;&#x5E94;&#x8BE5;&#x5207;&#x6362;&#x5230;<code>basic&#x5E03;&#x5C40;</code>&#xFF09;&#x3002; &#x4F7F;&#x7528;&#x7684;&#x989C;&#x8272;&#x662F;&#xFF1A;</p>
+<ul>
+<li><code>TRACE</code> - &apos;blue&apos;</li>
+<li><code>DEBUG</code> - &apos;cyan&apos;</li>
+<li><code>INFO</code> - &apos;green&apos;</li>
+<li><code>WARN</code> - &apos;yellow&apos;</li>
+<li><code>ERROR</code> - &apos;red&apos;</li>
+<li><code>FATAL</code> - &apos;magenta&apos;</li>
+</ul>
+<h2 id="message-pass-through">Message Pass-Through</h2>
+<ul>
+<li><code>type</code> - <code>messagePassThrough</code></li>
+</ul>
+<p>&#x6B64;&#x5E03;&#x5C40;&#x4EC5;&#x683C;&#x5F0F;&#x5316;&#x65E5;&#x5FD7;&#x4E8B;&#x4EF6;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x8F93;&#x51FA;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x7EA7;&#x522B;&#x6216;&#x7C7B;&#x522B;&#x3002;&#x5B83;&#x901A;&#x5E38;&#x7528;&#x5728;&#x4F7F;&#x7528;&#x7279;&#x5B9A;&#x683C;&#x5F0F;&#xFF08;&#x4F8B;&#x5982;:<a href="gelf.md">gelf</a>&#xFF09;&#x5BF9;&#x4E8B;&#x4EF6;&#x8FDB;&#x884C;&#x5E8F;&#x5217;&#x5316;&#x7684;<strong>appender</strong>&#x4E2D;&#x3002;</p>
+<h2 id="&#x4F8B;&#x5B50;">&#x4F8B;&#x5B50;</h2>
+<pre><code class="lang-javascript">log4js.configure({
+  appenders: {
+    out: { type: <span class="hljs-string">&quot;stdout&quot;</span>, layout: { type: <span class="hljs-string">&quot;messagePassThrough&quot;</span> } }
+  },
+  categories: { <span class="hljs-keyword">default</span>: { appenders: [<span class="hljs-string">&quot;out&quot;</span>], level: <span class="hljs-string">&quot;info&quot;</span> } }
+});
+<span class="hljs-keyword">const</span> logger = log4js.getLogger(<span class="hljs-string">&quot;cheese&quot;</span>);
+<span class="hljs-keyword">const</span> cheeseName = <span class="hljs-string">&quot;gouda&quot;</span>;
+logger.error(<span class="hljs-string">&quot;Cheese is too ripe! Cheese was: &quot;</span>, cheeseName);
+</code></pre>
+<p>&#x5C06;&#x8F93;&#x51FA;:</p>
+<pre><code>Cheese is too ripe! Cheese was: gouda
+</code></pre><h2 id="dummy">Dummy</h2>
+<ul>
+<li><code>type</code> - <code>dummy</code></li>
+</ul>
+<p>&#x6B64;&#x5E03;&#x5C40;&#x4EC5;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#x4E8B;&#x4EF6;&#x6570;&#x636E;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x503C;&#x3002;&#x5B83;&#x662F;&#x4E3A;<a href="logstashUDP.md">logstashUDP</a>&#x7684; appender &#x6DFB;&#x52A0;&#x7684;&#xFF0C;&#x6211;&#x4E0D;&#x786E;&#x5B9A;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x7528;&#x9014;&#x3002;</p>
+<h2 id="&#x4F8B;&#x5B50;">&#x4F8B;&#x5B50;</h2>
+<pre><code class="lang-javascript">log4js.configure({
+  appenders: { out: { type: <span class="hljs-string">&quot;stdout&quot;</span>, layout: { type: <span class="hljs-string">&quot;dummy&quot;</span> } } },
+  categories: { <span class="hljs-keyword">default</span>: { appenders: [<span class="hljs-string">&quot;out&quot;</span>], level: <span class="hljs-string">&quot;info&quot;</span> } }
+});
+<span class="hljs-keyword">const</span> logger = log4js.getLogger(<span class="hljs-string">&quot;cheese&quot;</span>);
+<span class="hljs-keyword">const</span> cheeseName = <span class="hljs-string">&quot;gouda&quot;</span>;
+logger.error(<span class="hljs-string">&quot;Cheese is too ripe! Cheese was: &quot;</span>, cheeseName);
+</code></pre>
+<p>&#x5C06;&#x8F93;&#x51FA;:</p>
+<pre><code>Cheese is too ripe! Cheese was:
+</code></pre><h2 id="&#x6A21;&#x5F0F;">&#x6A21;&#x5F0F;</h2>
+<ul>
+<li><code>type</code> - <code>pattern</code></li>
+<li><code>pattern</code> - <code>string</code> - &#x8F93;&#x51FA;&#x683C;&#x5F0F;&#x7684;&#x8BF4;&#x660E;&#x7B26;&#xFF0C;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x6240;&#x8FF0;&#x7684;&#x5360;&#x4F4D;&#x7B26;</li>
+<li><code>tokens</code> - <code>object</code> (&#x53EF;&#x9009;) - &#x8981;&#x5728;&#x6A21;&#x5F0F;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684; tokens</li>
+</ul>
+<h2 id="&#x6A21;&#x5F0F;&#x683C;&#x5F0F;">&#x6A21;&#x5F0F;&#x683C;&#x5F0F;</h2>
+<p>&#x6A21;&#x5F0F;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#xFF0C;&#x4F46;&#x662F;&#x4ECE;<code>%</code>&#x5F00;&#x59CB;&#x7684;&#x5E8F;&#x5217;&#x5C06;&#x88AB;&#x4ECE;&#x65E5;&#x5FD7;&#x4E8B;&#x4EF6;&#x548C;&#x5176;&#x4ED6;&#x73AF;&#x5883;&#x503C;&#x4E2D;&#x53D6;&#x503C;&#x66FF;&#x6362;&#x3002;
+&#x8BF4;&#x660E;&#x7B26;&#x7684;&#x683C;&#x5F0F;&#x662F;<code>%[padding].[truncation][field]{[format]}</code>- padding &#x548C; truncation &#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x683C;&#x5F0F;&#x53EA;&#x9002;&#x7528;&#x4E8E;&#x5C11;&#x6570;&#x6807;&#x8BB0;&#xFF08;&#x7279;&#x522B;&#x662F;&#x65E5;&#x671F;&#xFF09;&#x3002;
+&#x4F8B;&#x5982;%5.10p - &#x5C06;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x5DE6;&#x79FB; 5 &#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x6700;&#x591A; 10 &#x4E2A;&#x5B57;&#x7B26;</p>
+<p>&#x5B57;&#x6BB5;&#x53EF;&#x4EE5;&#x4E3A;&#x4EE5;&#x4E0B;&#x503C;:</p>
+<ul>
+<li><code>%r</code> ToLocaleTimeString &#x683C;&#x5F0F;&#x7684;&#x65F6;&#x95F4;</li>
+<li><code>%p</code> &#x65E5;&#x5FD7;&#x7EA7;&#x522B;</li>
+<li><code>%c</code> &#x65E5;&#x5FD7;&#x7C7B;&#x522B;</li>
+<li><code>%h</code> &#x4E3B;&#x673A;&#x540D;</li>
+<li><code>%m</code> &#x65E5;&#x5FD7;&#x6570;&#x636E;</li>
+<li><code>%d</code> &#x65E5;&#x671F;, &#x683C;&#x5F0F;&#x5316; - &#x9ED8;&#x8BA4;&#x503C;&#x4E3A; <code>ISO8601</code>, &#x683C;&#x5F0F;&#x5316;&#x9009;&#x9879;: <code>ISO8601</code>&#x3001; <code>ISO8601_WITH_TZ_OFFSET</code>&#x3001;<code>ABSOLUTE</code>&#x3001;<code>DATE</code>&#x6216;&#x4EFB;&#x4F55;&#x4E0E;<a href="https://www.npmjs.com/package/date-format" target="_blank">date-format</a> &#x5E93;&#x517C;&#x5BB9;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x4F8B;&#x5982;: <code>%d{DATE}</code>&#x3001;<code>%d{yyyy/MM/dd-hh.mm.ss}</code></li>
+<li><code>%%</code> % - &#x5F53;&#x60A8;&#x60F3;&#x8981;&#x5728;&#x8F93;&#x51FA;&#x4E2D;&#x4F7F;&#x7528;&#x5B57;&#x7B26;<code>&#xFF05;</code>&#x65F6;</li>
+<li><code>%n</code> &#x6362;&#x884C;</li>
+<li><code>%z</code> &#x8FDB;&#x7A0B; ID&#xFF08;&#x6765;&#x81EA;<code>process.pid</code>&#xFF09;</li>
+<li><code>%f</code> &#x6587;&#x4EF6;&#x540D;&#x7684;&#x5B8C;&#x6574;&#x8DEF;&#x5F84;&#xFF08;&#x5728;&#x7C7B;&#x522B;&#x4E0A;&#x9700;&#x8981;<code>enableCallStack:true</code>&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;<a href="api.html">&#x914D;&#x7F6E;&#x5BF9;&#x8C61;</a>&#xFF09;</li>
+<li><code>%f{depth}</code> &#x8DEF;&#x5F84;&#x6DF1;&#x5EA6;,&#x8BA9;&#x60A8;&#x9009;&#x62E9;&#x4EC5;&#x5177;&#x6709;&#x6587;&#x4EF6;&#x540D;&#xFF08;<code>&#xFF05;f{1}</code>&#xFF09;&#x6216;&#x9009;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x76EE;&#x5F55;</li>
+<li><code>%l</code> &#x884C;&#x53F7;&#xFF08;&#x5728;&#x7C7B;&#x522B;&#x4E0A;&#x9700;&#x8981;<code>enableCallStack:true</code>&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;<a href="api.html">&#x914D;&#x7F6E;&#x5BF9;&#x8C61;</a>&#xFF09;</li>
+<li><code>%o</code> &#x5217;&#x4F4D;&#x7F6E;&#xFF08;&#x5728;&#x7C7B;&#x522B;&#x4E0A;&#x9700;&#x8981;<code>enableCallStack:true</code>&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;<a href="api.html">&#x914D;&#x7F6E;&#x5BF9;&#x8C61;</a>&#xFF09;</li>
+<li><code>%s</code> &#x8C03;&#x7528;&#x5806;&#x6808;&#xFF08;&#x5728;&#x7C7B;&#x522B;&#x4E0A;&#x9700;&#x8981;<code>enableCallStack:true</code>&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;<a href="api.html">&#x914D;&#x7F6E;&#x5BF9;&#x8C61;</a>&#xFF09;</li>
+<li><code>%x{&lt;tokenname&gt;}</code> &#x5C06;&#x52A8;&#x6001;&#x4EE4;&#x724C;&#x6DFB;&#x52A0;&#x5230;&#x60A8;&#x7684;&#x65E5;&#x5FD7;&#x4E2D;&#x3002; &#x4EE4;&#x724C;&#x662F;&#x5728; tokens &#x53C2;&#x6570;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x3002;</li>
+<li><code>%X{&lt;tokenname&gt;}</code> &#x4ECE; Logger &#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x6DFB;&#x52A0;&#x503C;&#x3002; &#x4EE4;&#x724C;&#x662F;&#x4E0A;&#x4E0B;&#x6587;&#x503C;&#x7684; key&#x3002;</li>
+<li><code>%[</code> &#x5F00;&#x59CB;&#x4E00;&#x4E2A;&#x5F69;&#x8272;&#x5757;&#xFF08;&#x989C;&#x8272;&#x5C06;&#x4ECE;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x83B7;&#x53D6;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;<code>colouredLayout</code>&#xFF09;</li>
+<li><code>%]</code> &#x7ED3;&#x675F;&#x4E00;&#x4E2A;&#x5F69;&#x8272;&#x5757;</li>
+</ul>
+<h2 id="tokens">Tokens</h2>
+<p>&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684;&#x6807;&#x8BB0;&#x53EF;&#x4EE5;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x51FD;&#x6570;&#x3002;&#x51FD;&#x6570;&#x5C06;&#x4F20;&#x9012;&#x7ED9; log &#x4E8B;&#x4EF6;&#xFF0C;&#x5E76;&#x5E94;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002; &#x4F8B;&#x5982;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x8BB0;&#xFF0C;&#x4E3A;<code>&#x7528;&#x6237;</code>&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#x4E8B;&#x4EF6;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x503C;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-javascript">log4js.configure({
+  appenders: {
+    out: {
+      type: <span class="hljs-string">&quot;stdout&quot;</span>,
+      layout: {
+        type: <span class="hljs-string">&quot;pattern&quot;</span>,
+        pattern: <span class="hljs-string">&quot;%d %p %c %x{user} %m%n&quot;</span>,
+        tokens: {
+          user: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">logEvent</span>) </span>{
+            <span class="hljs-keyword">return</span> AuthLibrary.currentUser();
+          }
+        }
+      }
+    }
+  },
+  categories: { <span class="hljs-keyword">default</span>: { appenders: [<span class="hljs-string">&quot;out&quot;</span>], level: <span class="hljs-string">&quot;info&quot;</span> } }
+});
+<span class="hljs-keyword">const</span> logger = log4js.getLogger();
+logger.info(<span class="hljs-string">&quot;doing something.&quot;</span>);
+</code></pre>
+<p>&#x5C06;&#x8F93;&#x51FA;:</p>
+<pre><code>2017-06-01 08:32:56.283 INFO default charlie doing something.
+</code></pre><p>&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Logger &#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x4EE4;&#x724C;&#xFF08;&#x6709;&#x65F6;&#x79F0;&#x4E3A;&#x5D4C;&#x5957;&#x8BCA;&#x65AD;&#x4E0A;&#x4E0B;&#x6587;&#x6216;&#x6620;&#x5C04;&#x7684;&#x8BCA;&#x65AD;&#x4E0A;&#x4E0B;&#x6587;&#xFF09;&#xFF0C;&#x5E76;&#x5728;&#x5E03;&#x5C40;&#x4E2D;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x3002;</p>
+<pre><code class="lang-javascript">log4js.configure({
+  appenders: {
+    out: {
+      type: <span class="hljs-string">&quot;stdout&quot;</span>,
+      layout: {
+        type: <span class="hljs-string">&quot;pattern&quot;</span>,
+        pattern: <span class="hljs-string">&quot;%d %p %c %X{user} %m%n&quot;</span>
+      }
+    }
+  },
+  categories: { <span class="hljs-keyword">default</span>: { appenders: [<span class="hljs-string">&quot;out&quot;</span>], level: <span class="hljs-string">&quot;info&quot;</span> } }
+});
+<span class="hljs-keyword">const</span> logger = log4js.getLogger();
+logger.addContext(<span class="hljs-string">&quot;user&quot;</span>, <span class="hljs-string">&quot;charlie&quot;</span>);
+logger.info(<span class="hljs-string">&quot;doing something.&quot;</span>);
+</code></pre>
+<p>&#x5C06;&#x8F93;&#x51FA;:</p>
+<pre><code>2017-06-01 08:32:56.283 INFO default charlie doing something.
+</code></pre><p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x5C06;&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;&#x5230; Logger &#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x4EEC;&#x4E5F;&#x5C06;&#x4F20;&#x9012;&#x7ED9; log &#x4E8B;&#x4EF6;&#x3002;</p>
+<h1 id="&#x6DFB;&#x52A0;&#x81EA;&#x5DF1;&#x7684;&#x5E03;&#x5C40;">&#x6DFB;&#x52A0;&#x81EA;&#x5DF1;&#x7684;&#x5E03;&#x5C40;</h1>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x8C03;&#x7528;<code>log4js.configure</code>&#x4E4B;&#x524D;&#x8C03;&#x7528;<code>log4js.addLayout(type, fn)</code>&#x6DFB;&#x52A0;&#x81EA;&#x5DF1;&#x7684;&#x5E03;&#x5C40;&#x3002;
+<code>type</code>&#x662F;&#x60A8;&#x8981;&#x7528;&#x6765;&#x5728;<strong>appender</strong>&#x914D;&#x7F6E;&#x4E2D;&#x5F15;&#x7528;&#x5E03;&#x5C40;&#x7684;&#x6807;&#x7B7E;&#x3002;fn &#x662F;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x5355;&#x4E2A;&#x5BF9;&#x8C61;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x5C06;&#x5305;&#x542B;&#x5E03;&#x5C40;&#x5B9E;&#x4F8B;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E03;&#x5C40;&#x51FD;&#x6570;&#x3002;&#x5E03;&#x5C40;&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x4E00;&#x4E2A; log &#x4E8B;&#x4EF6;&#x53C2;&#x6570;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x901A;&#x5E38;&#xFF0C;&#x5C3D;&#x7BA1;&#x60A8;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4EFB;&#x4F55;&#x5185;&#x5BB9;&#xFF0C;&#x53EA;&#x8981;<strong>appender</strong>&#x77E5;&#x9053;&#x5982;&#x4F55;&#x5904;&#x7406;&#x5B83;&#xFF09;&#x3002;</p>
+<h2 id="&#x81EA;&#x5B9A;&#x4E49;&#x5E03;&#x5C40;&#x793A;&#x4F8B;">&#x81EA;&#x5B9A;&#x4E49;&#x5E03;&#x5C40;&#x793A;&#x4F8B;</h2>
+<p>&#x6B64;&#x793A;&#x4F8B;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;<a href="https://github.com/log4js-node/log4js-node/blob/master/examples/custom-layout.js" target="_blank">examples/custom-layout.js</a>&#x4E2D;&#x627E;&#x5230;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> log4js = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;log4js&quot;</span>);
+
+log4js.addLayout(<span class="hljs-string">&quot;json&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">config</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">logEvent</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">JSON</span>.stringify(logEvent) + config.separator;
+  };
+});
+
+log4js.configure({
+  appenders: {
+    out: { type: <span class="hljs-string">&quot;stdout&quot;</span>, layout: { type: <span class="hljs-string">&quot;json&quot;</span>, separator: <span class="hljs-string">&quot;,&quot;</span> } }
+  },
+  categories: {
+    <span class="hljs-keyword">default</span>: { appenders: [<span class="hljs-string">&quot;out&quot;</span>], level: <span class="hljs-string">&quot;info&quot;</span> }
+  }
+});
+
+<span class="hljs-keyword">const</span> logger = log4js.getLogger(<span class="hljs-string">&quot;json-test&quot;</span>);
+logger.info(<span class="hljs-string">&quot;this is just a test&quot;</span>);
+logger.error(<span class="hljs-string">&quot;of a custom appender&quot;</span>);
+logger.warn(<span class="hljs-string">&quot;that outputs json&quot;</span>);
+log4js.shutdown(() =&gt; {});
+</code></pre>
+<p>&#x672C;&#x793A;&#x4F8B;&#x8F93;&#x51FA;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;:</p>
+<pre><code class="lang-javascript">{<span class="hljs-string">&quot;startTime&quot;</span>:<span class="hljs-string">&quot;2017-06-05T22:23:08.479Z&quot;</span>,<span class="hljs-string">&quot;categoryName&quot;</span>:<span class="hljs-string">&quot;json-test&quot;</span>,<span class="hljs-string">&quot;data&quot;</span>:[<span class="hljs-string">&quot;this is just a test&quot;</span>],<span class="hljs-string">&quot;level&quot;</span>:{<span class="hljs-string">&quot;level&quot;</span>:<span class="hljs-number">20000</span>,<span class="hljs-string">&quot;levelStr&quot;</span>:<span class="hljs-string">&quot;INFO&quot;</span>},<span class="hljs-string">&quot;context&quot;</span>:{}},
+{<span class="hljs-string">&quot;startTime&quot;</span>:<span class="hljs-string">&quot;2017-06-05T22:23:08.483Z&quot;</span>,<span class="hljs-string">&quot;categoryName&quot;</span>:<span class="hljs-string">&quot;json-test&quot;</span>,<span class="hljs-string">&quot;data&quot;</span>:[<span class="hljs-string">&quot;of a custom appender&quot;</span>],<span class="hljs-string">&quot;level&quot;</span>:{<span class="hljs-string">&quot;level&quot;</span>:<span class="hljs-number">40000</span>,<span class="hljs-string">&quot;levelStr&quot;</span>:<span class="hljs-string">&quot;ERROR&quot;</span>},<span class="hljs-string">&quot;context&quot;</span>:{}},
+{<span class="hljs-string">&quot;startTime&quot;</span>:<span class="hljs-string">&quot;2017-06-05T22:23:08.483Z&quot;</span>,<span class="hljs-string">&quot;categoryName&quot;</span>:<span class="hljs-string">&quot;json-test&quot;</span>,<span class="hljs-string">&quot;data&quot;</span>:[<span class="hljs-string">&quot;that outputs json&quot;</span>],<span class="hljs-string">&quot;level&quot;</span>:{<span class="hljs-string">&quot;level&quot;</span>:<span class="hljs-number">30000</span>,<span class="hljs-string">&quot;levelStr&quot;</span>:<span class="hljs-string">&quot;WARN&quot;</span>},<span class="hljs-string">&quot;context&quot;</span>:{}},
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="api.html" class="navigation navigation-prev " aria-label="Previous page: 2、api">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-01-appenders.html" class="navigation navigation-next " aria-label="Next page: 2-1、appenders">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3、布局","level":"1.5","depth":1,"next":{"title":"2-1、appenders","level":"2.1","depth":1,"path":"book/02-01-appenders.md","ref":"book/02-01-appenders.md","articles":[]},"previous":{"title":"2、api","level":"1.4","depth":1,"path":"book/api.md","ref":"book/api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","github","github-buttons","splitter","sitemap","donate","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/zlq4863947/log4js-node-docs-cn"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://b.aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://b.aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"log4js-node-docs-cn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"log4js-node-docs-cn","type":"fork","size":"small","count":true}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"log4js-node 中文文档","language":"zh","gitbook":"*","description":"log4js-node 中文文档"},"file":{"path":"book/layouts.md","mtime":"2019-09-21T16:55:24.910Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-22T05:13:54.483Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livere/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

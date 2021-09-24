@@ -1,0 +1,440 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1-6、中枢 · Pine脚本(TradingView)练习手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-livere/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-head-tag/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Terminology.html" />
+    
+    
+    <link rel="prev" href="Line_Seg.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"zlq4863947","repo":"pinescript-skill-manual","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"pinescript-skill-manual","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../SUMMARY.html">
+            
+                <a href="../../SUMMARY.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">1、嘉可能缠论</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1-1、简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="INCLUSION_KLINE.html">
+            
+                <a href="INCLUSION_KLINE.html">
+            
+                    
+                    1-2、K线包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="Find_Pattern.html">
+            
+                <a href="Find_Pattern.html">
+            
+                    
+                    1-3、查找分型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="Draw_Pen.html">
+            
+                <a href="Draw_Pen.html">
+            
+                    
+                    1-4、画笔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="Line_Seg.html">
+            
+                <a href="Line_Seg.html">
+            
+                    
+                    1-5、线段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6" data-path="Pivot.html">
+            
+                <a href="Pivot.html">
+            
+                    
+                    1-6、中枢
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="Terminology.html">
+            
+                <a href="Terminology.html">
+            
+                    
+                    附录-术语表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >1-6、中枢</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5609;&#x53EF;&#x80FD;&#x7F20;&#x8BBA;---&#x4E2D;&#x67A2;">&#x5609;&#x53EF;&#x80FD;&#x7F20;&#x8BBA; - &#x4E2D;&#x67A2;</h1>
+<h2 id="&#x7EC4;&#x6210;&#x7ED3;&#x6784;">&#x7EC4;&#x6210;&#x7ED3;&#x6784;</h2>
+<p><strong>&#x8FDB;&#x5165;&#x6BB5; + &#x4E2D;&#x67A2;&#x533A;&#x95F4; + &#x79BB;&#x5F00;&#x6BB5;</strong></p>
+<p>&#x4E2D;&#x67A2;&#x533A;&#x95F4;&#xFF1A; &#x7531;&#x8FDE;&#x7EED;&#x4E09;&#x4E2A;&#x6709;&#x4E92;&#x76F8;&#x91CD;&#x53E0;&#x7684;&#xFF08;&#x7B14;/&#x6BB5;&#xFF09;&#x6784;&#x6210;&#x3002;</p>
+<p><img src="../../images/jkn/pivot_01.png" alt=""></p>
+<h2 id="&#x65B9;&#x5411;&#x5224;&#x65AD;">&#x65B9;&#x5411;&#x5224;&#x65AD;</h2>
+<h3 id="&#x5411;&#x4E0A;&#x4E2D;&#x67A2;">&#x5411;&#x4E0A;&#x4E2D;&#x67A2;</h3>
+<p>&#x4E2D;&#x67A2;&#x533A;&#x95F4;&#xFF1A; &#x4E0B; + &#x4E0A; + &#x4E0B;</p>
+<h3 id="&#x5411;&#x4E0B;&#x4E2D;&#x67A2;">&#x5411;&#x4E0B;&#x4E2D;&#x67A2;</h3>
+<p>&#x4E2D;&#x67A2;&#x533A;&#x95F4;&#xFF1A; &#x4E0A; + &#x4E0B; + &#x4E0A;</p>
+<h2 id="&#x7ED3;&#x675F;&#x6761;&#x4EF6;">&#x7ED3;&#x675F;&#x6761;&#x4EF6;</h2>
+<h3 id="1&#x3001;&#x79BB;&#x5F00;&#x6BB5;&#x540E;&#xFF0C;&#x56DE;&#x8C03;&#x65F6;&#x672A;&#x8FBE;&#x5230;&#x4E2D;&#x67A2;&#x533A;&#x95F4;">1&#x3001;&#x79BB;&#x5F00;&#x6BB5;&#x540E;&#xFF0C;&#x56DE;&#x8C03;&#x65F6;&#x672A;&#x8FBE;&#x5230;&#x4E2D;&#x67A2;&#x533A;&#x95F4;</h3>
+<p><img src="../../images/jkn/pivot_02.png" alt=""></p>
+<h2 id="&#x65B0;&#x4E2D;&#x67A2;&#x7684;&#x8FDB;&#x5165;&#x6BB5;--&#x65E7;&#x4E2D;&#x67A2;&#x7684;&#x79BB;&#x5F00;&#x6BB5;">&#x65B0;&#x4E2D;&#x67A2;&#x7684;&#x8FDB;&#x5165;&#x6BB5; = &#x65E7;&#x4E2D;&#x67A2;&#x7684;&#x79BB;&#x5F00;&#x6BB5;</h2>
+<p><img src="../../images/jkn/pivot_03.png" alt=""></p>
+<h2 id="&#x4E2D;&#x67A2;&#x7C7B;&#x578B;">&#x4E2D;&#x67A2;&#x7C7B;&#x578B;</h2>
+<h3 id="1&#x3001;&#x7B14;&#x4E2D;&#x67A2;">1&#x3001;&#x7B14;&#x4E2D;&#x67A2;</h3>
+<p><img src="../../images/jkn/pivot_04.png" alt=""></p>
+<h3 id="2&#x3001;&#x7EBF;&#x6BB5;&#x4E2D;&#x67A2;">2&#x3001;&#x7EBF;&#x6BB5;&#x4E2D;&#x67A2;</h3>
+<p><img src="../../images/jkn/pivot_05.png" alt=""></p>
+<h3 id="3&#x3001;&#x6DF7;&#x5408;&#xFF08;&#x7B14;&#x7EBF;&#x6BB5;&#xFF09;&#x4E2D;&#x67A2;">3&#x3001;&#x6DF7;&#x5408;&#xFF08;&#x7B14;+&#x7EBF;&#x6BB5;&#xFF09;&#x4E2D;&#x67A2;</h3>
+<p><img src="../../images/jkn/pivot_06.png" alt=""></p>
+<h2 id="&#x4E0B;&#x4E00;&#x7AE0;">&#x4E0B;&#x4E00;&#x7AE0;</h2>
+<ul>
+<li><a href="Draw_Pen.html">1-4&#x3001;&#x753B;&#x7B14;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Line_Seg.html" class="navigation navigation-prev " aria-label="Previous page: 1-5、线段">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Terminology.html" class="navigation navigation-next " aria-label="Next page: 附录-术语表">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1-6、中枢","level":"2.6","depth":1,"next":{"title":"附录-术语表","level":"2.7","depth":1,"path":"book/chanlun_jkn/Terminology.md","ref":"book/chanlun_jkn/Terminology.md","articles":[]},"previous":{"title":"1-5、线段","level":"2.5","depth":1,"path":"book/chanlun_jkn/Line_Seg.md","ref":"book/chanlun_jkn/Line_Seg.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/pinescript-skill-manual"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"title":"","button":"赏","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","wechatText":"微信打赏","alipayText":"支付宝打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"pinescript-skill-manual","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"pinescript-skill-manual","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Pine脚本(TradingView)练习手册","language":"zh","gitbook":"*","description":"Pine脚本(TradingView)练习手册"},"file":{"path":"book/chanlun_jkn/Pivot.md","mtime":"2021-09-23T15:09:24.475Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-23T13:48:30.841Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livere/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-head-tag/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu-v3/baidu-tongji.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

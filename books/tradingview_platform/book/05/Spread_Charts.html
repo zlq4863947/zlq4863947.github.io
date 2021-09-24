@@ -1,0 +1,1469 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>05-5、Spread Charts · TradingView平台中文WIKI</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../06/1/Cyclic_Lines.html" />
+    
+    
+    <link rel="prev" href="Renko_Charts.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../SUMMARY.html">
+            
+                <a href="../../SUMMARY.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../CHANGE-LOG.html">
+            
+                <a href="../../CHANGE-LOG.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">01、插件</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../01/DecisionBar.html">
+            
+                <a href="../01/DecisionBar.html">
+            
+                    
+                    01-1、DecisionBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../01/Jurik_Research.html">
+            
+                <a href="../01/Jurik_Research.html">
+            
+                    
+                    01-2、Jurik Research
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../01/Key_Hidden_Levels.html">
+            
+                <a href="../01/Key_Hidden_Levels.html">
+            
+                    
+                    01-3、Key Hidden Levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../01/LazyBear_packages.html">
+            
+                <a href="../01/LazyBear_packages.html">
+            
+                    
+                    01-4、LazyBear packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../01/MTPredictor.html">
+            
+                <a href="../01/MTPredictor.html">
+            
+                    
+                    01-5、MTPredictor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../01/SCMR_Trends.html">
+            
+                <a href="../01/SCMR_Trends.html">
+            
+                    
+                    01-6、SCMR Trends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">02、警报</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../02/Creating_and_Managing_Alerts.html">
+            
+                <a href="../02/Creating_and_Managing_Alerts.html">
+            
+                    
+                    02-1、Creating and Managing Alerts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">03、图表方法</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../03/Add.html">
+            
+                <a href="../03/Add.html">
+            
+                    
+                    03-1、Add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../03/Add_my.html">
+            
+                <a href="../03/Add_my.html">
+            
+                    
+                    03-2、Add/my
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../03/Compare.html">
+            
+                <a href="../03/Compare.html">
+            
+                    
+                    03-3、Compare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../03/Compare_my.html">
+            
+                <a href="../03/Compare_my.html">
+            
+                    
+                    03-4、Compare/my
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../03/Events.html">
+            
+                <a href="../03/Events.html">
+            
+                    
+                    03-5、Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../03/Extended_Trading_Hours.html">
+            
+                <a href="../03/Extended_Trading_Hours.html">
+            
+                    
+                    03-6、Extended Trading Hours
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../03/Scaling_Options.html">
+            
+                <a href="../03/Scaling_Options.html">
+            
+                    
+                    03-7、Scaling Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../03/Study_Templates.html">
+            
+                <a href="../03/Study_Templates.html">
+            
+                    
+                    03-8、Study Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../03/Text_Notes.html">
+            
+                <a href="../03/Text_Notes.html">
+            
+                    
+                    03-9、Text Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">04、Chart Patterns</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../04/Broadening_Tops_and_Bottoms.html">
+            
+                <a href="../04/Broadening_Tops_and_Bottoms.html">
+            
+                    
+                    04-1、Broadening Tops and Bottoms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../04/Cup_and_Handle.html">
+            
+                <a href="../04/Cup_and_Handle.html">
+            
+                    
+                    04-2、Cup and Handle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../04/Double_Tops_and_Bottoms.html">
+            
+                <a href="../04/Double_Tops_and_Bottoms.html">
+            
+                    
+                    04-3、Double Tops and Bottoms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../04/Flag_and_Pennant.html">
+            
+                <a href="../04/Flag_and_Pennant.html">
+            
+                    
+                    04-4、Flag and Pennant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../04/Head_and_Shoulders.html">
+            
+                <a href="../04/Head_and_Shoulders.html">
+            
+                    
+                    04-5、Head and Shoulders
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">05、图表类型</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="Kagi_Charts.html">
+            
+                <a href="Kagi_Charts.html">
+            
+                    
+                    05-1、Kagi Charts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="Line_Break_Charts.html">
+            
+                <a href="Line_Break_Charts.html">
+            
+                    
+                    05-2、Line Break Charts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="Point_and_Figure_PnF_Charts.html">
+            
+                <a href="Point_and_Figure_PnF_Charts.html">
+            
+                    
+                    05-3、Pointand_Figure(PnF)_Charts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="Renko_Charts.html">
+            
+                <a href="Renko_Charts.html">
+            
+                    
+                    05-4、Renko Charts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.5" data-path="Spread_Charts.html">
+            
+                <a href="Spread_Charts.html">
+            
+                    
+                    05-5、Spread Charts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">06、绘图工具</li>
+        
+        
+    
+
+    
+        
+        <li class="header">06-1、Geometrics</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../06/1/Cyclic_Lines.html">
+            
+                <a href="../06/1/Cyclic_Lines.html">
+            
+                    
+                    01、Cyclic Lines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../06/1/Fib_Circles.html">
+            
+                <a href="../06/1/Fib_Circles.html">
+            
+                    
+                    02、Fib Circles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../06/1/Fib_Retracement.html">
+            
+                <a href="../06/1/Fib_Retracement.html">
+            
+                    
+                    03、Fib Retracement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../06/1/Fib_Speed_Resistance_Arcs.html">
+            
+                <a href="../06/1/Fib_Speed_Resistance_Arcs.html">
+            
+                    
+                    04、Fib_Speed_Resistance_Arcs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="../06/1/Fib_Speed_Resistance_Fan.html">
+            
+                <a href="../06/1/Fib_Speed_Resistance_Fan.html">
+            
+                    
+                    05、Fib Speed Resistance Fan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="../06/1/Fib_Time_Zone.html">
+            
+                <a href="../06/1/Fib_Time_Zone.html">
+            
+                    
+                    06、Fib Time Zone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="../06/1/Fib_Wedge.html">
+            
+                <a href="../06/1/Fib_Wedge.html">
+            
+                    
+                    07、Fib Wedge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="../06/1/Gann_Box.html">
+            
+                <a href="../06/1/Gann_Box.html">
+            
+                    
+                    08、Gann Box
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.9" data-path="../06/1/Gann_Fan.html">
+            
+                <a href="../06/1/Gann_Fan.html">
+            
+                    
+                    09、Gann Fan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="../06/1/Gann_Square.html">
+            
+                <a href="../06/1/Gann_Square.html">
+            
+                    
+                    10、Gann Square
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="../06/1/Inside_Pitchfork.html">
+            
+                <a href="../06/1/Inside_Pitchfork.html">
+            
+                    
+                    11、Inside Pitchfork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="../06/1/Pitchfan.html">
+            
+                <a href="../06/1/Pitchfan.html">
+            
+                    
+                    12、Pitchfan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="../06/1/Pitchfork.html">
+            
+                <a href="../06/1/Pitchfork.html">
+            
+                    
+                    13、Pitchfork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.14" data-path="../06/1/Schiff_Pitchfork.html">
+            
+                <a href="../06/1/Schiff_Pitchfork.html">
+            
+                    
+                    14、Schiff Pitchfork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.15" data-path="../06/1/Trend-Based_Fib_Extension.html">
+            
+                <a href="../06/1/Trend-Based_Fib_Extension.html">
+            
+                    
+                    15、Trend-Based Fib Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.16" data-path="../06/1/Trend-Based_Fib_Time.html">
+            
+                <a href="../06/1/Trend-Based_Fib_Time.html">
+            
+                    
+                    16、Trend-Based Fib Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">06-2、Lines and Rays</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../06/2/Arrow.html">
+            
+                <a href="../06/2/Arrow.html">
+            
+                    
+                    01、Arrow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../06/2/Extended_Line.html">
+            
+                <a href="../06/2/Extended_Line.html">
+            
+                    
+                    02、Extended Line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="../06/2/Horizontal_Line.html">
+            
+                <a href="../06/2/Horizontal_Line.html">
+            
+                    
+                    03、Horizontal Line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="../06/2/Horizontal_Ray.html">
+            
+                <a href="../06/2/Horizontal_Ray.html">
+            
+                    
+                    04、Horizontal Ray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="../06/2/Parallel_Channel.html">
+            
+                <a href="../06/2/Parallel_Channel.html">
+            
+                    
+                    05、Parallel Channel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="../06/2/Ray.html">
+            
+                <a href="../06/2/Ray.html">
+            
+                    
+                    06、Ray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="../06/2/Regression_Trend.html">
+            
+                <a href="../06/2/Regression_Trend.html">
+            
+                    
+                    07、Regression Trend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="../06/2/Trend_Line.html">
+            
+                <a href="../06/2/Trend_Line.html">
+            
+                    
+                    08、Trend Line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.9" data-path="../06/2/Vertical_Line.html">
+            
+                <a href="../06/2/Vertical_Line.html">
+            
+                    
+                    09、Vertical Line
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">06-3、Marks</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../06/3/Arrow_Marks.html">
+            
+                <a href="../06/3/Arrow_Marks.html">
+            
+                    
+                    01、Arrow Marks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="../06/3/Flag_Mark.html">
+            
+                <a href="../06/3/Flag_Mark.html">
+            
+                    
+                    02、Flag Mark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="../06/3/Price_Label.html">
+            
+                <a href="../06/3/Price_Label.html">
+            
+                    
+                    03、Price Label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="../06/3/Thumb_Up_Down_Marks.html">
+            
+                <a href="../06/3/Thumb_Up_Down_Marks.html">
+            
+                    
+                    04、Thumb Up/Down Marks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">06-4、Patterns and Waves</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../06/4/ABCD_Pattern.html">
+            
+                <a href="../06/4/ABCD_Pattern.html">
+            
+                    
+                    01、ABCD Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../06/4/Elliott_Major_Retracement.html">
+            
+                <a href="../06/4/Elliott_Major_Retracement.html">
+            
+                    
+                    02、Elliott Major Retracement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="../06/4/Elliott_Minor_Retracement.html">
+            
+                <a href="../06/4/Elliott_Minor_Retracement.html">
+            
+                    
+                    03、Elliott Minor Retracement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="../06/4/Elliott_Wave_Circle.html">
+            
+                <a href="../06/4/Elliott_Wave_Circle.html">
+            
+                    
+                    04、Elliott Wave Circle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="../06/4/Elliott_Wave_Minor.html">
+            
+                <a href="../06/4/Elliott_Wave_Minor.html">
+            
+                    
+                    05、Elliott Wave Minor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.6" data-path="../06/4/Elliott_Wave_Subminuette.html">
+            
+                <a href="../06/4/Elliott_Wave_Subminuette.html">
+            
+                    
+                    06、Elliott Wave Subminuette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.7" data-path="../06/4/Head_%26_Shoulders.html">
+            
+                <a href="../06/4/Head_%26_Shoulders.html">
+            
+                    
+                    07、Head & Shoulders
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.8" data-path="../06/4/Three_Drivers_Pattern.html">
+            
+                <a href="../06/4/Three_Drivers_Pattern.html">
+            
+                    
+                    08、Three Drivers Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.9" data-path="../06/4/Triangle_Pattern.html">
+            
+                <a href="../06/4/Triangle_Pattern.html">
+            
+                    
+                    09、Triangle Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.10" data-path="../06/4/XABCD_Pattern.html">
+            
+                <a href="../06/4/XABCD_Pattern.html">
+            
+                    
+                    10、XABCD Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.11" data-path="../06/4/Inside_Pitchfork.md">
+            
+                <span>
+            
+                    
+                    11、Inside Pitchfork
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">06-5、Positions and Forecasting</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../06/5/Bars_Pattern.html">
+            
+                <a href="../06/5/Bars_Pattern.html">
+            
+                    
+                    01、Bars Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="../06/5/Date_Range.html">
+            
+                <a href="../06/5/Date_Range.html">
+            
+                    
+                    02、Date Range
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="../06/5/Forecast.html">
+            
+                <a href="../06/5/Forecast.html">
+            
+                    
+                    03、Forecast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" data-path="../06/5/Long_Position.html">
+            
+                <a href="../06/5/Long_Position.html">
+            
+                    
+                    04、Long Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.5" data-path="../06/5/Price_Range.html">
+            
+                <a href="../06/5/Price_Range.html">
+            
+                    
+                    05、Price Range
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.6" data-path="../06/5/Projection.html">
+            
+                <a href="../06/5/Projection.html">
+            
+                    
+                    06、Projection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.7" data-path="../06/5/Short_Position.html">
+            
+                <a href="../06/5/Short_Position.html">
+            
+                    
+                    07、Short Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">06-6、Shapes</li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../06/6/Arc.html">
+            
+                <a href="../06/6/Arc.html">
+            
+                    
+                    01、Arc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.2" data-path="../06/6/Ellipse.html">
+            
+                <a href="../06/6/Ellipse.html">
+            
+                    
+                    02、Ellipse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.3" data-path="../06/6/Paint_Brush.html">
+            
+                <a href="../06/6/Paint_Brush.html">
+            
+                    
+                    03、Paint Brush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.4" data-path="../06/6/Long_Position.md">
+            
+                <span>
+            
+                    
+                    04、Long Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.5" data-path="../06/6/Price_Range.md">
+            
+                <span>
+            
+                    
+                    05、Price Range
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.6" data-path="../06/6/Projection.md">
+            
+                <span>
+            
+                    
+                    06、Projection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >05-5、Spread Charts</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="spread-charts">Spread Charts</h1>
+<h2 id="&#x76EE;&#x5F55;">&#x76EE;&#x5F55;</h2>
+<ul>
+<li><a href="#DEFINITION">1&#x3001;DEFINITION</a></li>
+<li><a href="#OPERATORS_AND_SETUP">2&#x3001;OPERATORS AND SETUP</a></li>
+<li><a href="#COMMON_SPREAD_TYPES">3&#x3001;COMMON SPREAD TYPES</a><ul>
+<li><a href="#Chart_Inversions">3.1&#x3001;Chart Inversions</a></li>
+<li><a href="#Currency_Conversions">3.2&#x3001;Currency Conversions</a></li>
+<li><a href="#Instrument_Comparisons">3.3&#x3001;Instrument Comparisons</a></li>
+<li><a href="#Exchange_Arbitrage">3.4&#x3001;Exchange Arbitrage</a></li>
+<li><a href="#Bitcoin_Arbitrage">3.5&#x3001;Bitcoin Arbitrage</a></li>
+</ul>
+</li>
+<li><a href="#PAIRS_TRADING">4&#x3001;PAIRS TRADING</a></li>
+</ul>
+<h1 id="definition">DEFINITION</h1>
+<p>The most basic definition of a spread chart is that it is a comparison between a financial instrument (such as a stock) and an additional  <a href="https://www.tradingview.com/wiki/Variable" title="Variable" target="_blank">variable</a>  (such as another financial instrument or a numerical value). Trading using spreads has been gaining in popularity because they provide a new perspective of a financial instrument&apos;s value and can also help to alleviate some risk. There are a few different ways to utilize a spread chart. Some of the more popular ones are; price inversions, currency conversions, financial instrument comparisons and pairs trading.</p>
+<h1 id="operators-and-setup">OPERATORS AND SETUP</h1>
+<p>To create your own custom spread chart in TradingView;</p>
+<ol>
+<li>Enter the first variable (symbol, number etc.) in the symbol entry window in the upper left hand corner and follow it with a space.</li>
+<li>Enter one of four operators; (-) for subtraction, (+) for addition, (*) for multiplication or (/) for division and follow it with a space.</li>
+<li>Enter the second variable (symbol, number etc.) in the symbol entry window in the upper left hand corner and press the enter key.</li>
+</ol>
+<p>For Example: Entering  <strong>AAPL / XAUUSD</strong>  will create a comparison of Apple vs. Gold by dividing Apple prices by Gold prices.</p>
+<p>Spreads for intraday charts are calculated by taking the Open, High, Low, and Close of each 1-minute bar and then recompiled into the selected interval. This approach is the only one that results in correct spread charts. We handle all necessary calculations on our servers and display the finished spread chart in your browser.</p>
+<h1 id="common-spread-types">COMMON SPREAD TYPES</h1>
+<h2 id="chart-inversions">Chart Inversions</h2>
+<p>Inverting a chart is a good way to visually chart the  <a href="https://www.tradingview.com/wiki/Correlation" title="Correlation" target="_blank">correlation</a>  between two instruments. For example, with two instruments with very low correlation, inverting one of the instruments with this method will make them viewable moving in the same direction.</p>
+<p><strong>For example an inversion on the EURUSD: 1/EURUSD</strong></p>
+<iframe src="https://www.tradingview.com/widgetembed/?frameElementId=tradingview_60def&amp;symbol=1%2FEURUSD&amp;interval=D&amp;hidetoptoolbar=1&amp;hidesidetoolbar=1&amp;symboledit=1&amp;saveimage=0&amp;toolbarbg=000000&amp;studies=&amp;hideideas=1&amp;theme=White&amp;style=1&amp;timezone=Etc%2FUTC&amp;hidevolume=1&amp;padding=0&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en&amp;utm_source=www.tradingview.com&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=1%2FEURUSD" frameborder="0" width="750" height="500"></iframe>
+
+<h2 id="currency-conversions">Currency Conversions</h2>
+<p>Multiplying or dividing an instrument by a currency pair will allow you to view the price of the instrument in a different currency.</p>
+<p><strong>For Example Best Buy shown in Euros: BBY/EURUSD</strong></p>
+<iframe src="https://www.tradingview.com/widgetembed/?frameElementId=tradingview_9d4c1&amp;symbol=BBY%2FEURUSD&amp;interval=D&amp;hidetoptoolbar=1&amp;hidesidetoolbar=1&amp;symboledit=1&amp;saveimage=0&amp;toolbarbg=000000&amp;studies=&amp;hideideas=1&amp;theme=White&amp;style=1&amp;timezone=Etc%2FUTC&amp;hidevolume=1&amp;padding=0&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en&amp;utm_source=www.tradingview.com&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=BBY%2FEURUSD" frameborder="0" width="750" height="500"></iframe>
+
+<h2 id="instrument-comparisons">Instrument Comparisons</h2>
+<p>A common way to utilize spreads is to divide one instrument by another. This will give you spread value that can be tracked like a single instrument.</p>
+<p><strong>For Example Apple vs. Gold: AAPL/XAUUSD</strong></p>
+<iframe src="https://www.tradingview.com/widgetembed/?frameElementId=tradingview_b3a17&amp;symbol=AAPL%2FXAUUSD&amp;interval=D&amp;hidetoptoolbar=1&amp;hidesidetoolbar=1&amp;symboledit=1&amp;saveimage=0&amp;toolbarbg=000000&amp;studies=&amp;hideideas=1&amp;theme=White&amp;style=1&amp;timezone=Etc%2FUTC&amp;hidevolume=1&amp;padding=0&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en&amp;utm_source=www.tradingview.com&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=AAPL%2FXAUUSD" frameborder="0" width="750" height="500"></iframe>
+
+<h2 id="exchange-arbitrage">Exchange Arbitrage</h2>
+<p>Spreads can also be used to view the difference in price between the same instrument traded on two different exchanges. You will need to subtract the symbol for one exchange from the symbol from another exchange.</p>
+<p><strong>For Example: BATS:FB-NASDAQ:FB</strong></p>
+<h2 id="bitcoin-arbitrage">Bitcoin Arbitrage</h2>
+<p>With the rise in popularity of Bitcoins, arbitrage between BTC trading in different currencies has also become a popular trading opportunity.</p>
+<p><strong>For Example: BTCUSD-BTCEUR*EURUSD</strong></p>
+<iframe src="https://www.tradingview.com/widgetembed/?frameElementId=tradingview_10f62&amp;symbol=BTCUSD-BTCEUR*EURUSD&amp;interval=D&amp;hidetoptoolbar=1&amp;hidesidetoolbar=1&amp;symboledit=1&amp;saveimage=0&amp;toolbarbg=000000&amp;studies=&amp;hideideas=1&amp;theme=White&amp;style=1&amp;timezone=Etc%2FUTC&amp;hidevolume=1&amp;padding=0&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en&amp;utm_source=www.tradingview.com&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=BTCUSD-BTCEUR*EURUSD" frameborder="0" width="750" height="500"></iframe>
+
+<h1 id="pairs-trading">PAIRS TRADING</h1>
+<p>Pairs trading involves trading two separate instruments simultaneously in order to execute a single trade. Pairs trading is a popular way to alleviate some of the risk of trading. The idea is that you find two highly correlated symbols (or two very lowly correlated symbols) and enter a position in both symbols. If the pair is highly  <a href="https://www.tradingview.com/wiki/Correlation" title="Correlation" target="_blank">correlated</a>, they should move in the same direction. Typically, an opportunity presents itself when the pair ratio breaks through a threshold that is a certain number of standard deviations away from their average standard deviation. You would then, go long in the symbol that is under-performing and short in the symbol that is over-performing. When the pair moves back towards its average deviation, you would then close out both positions. Many technical analysts use the Bollinger Bands indicator to spot pairs trading opportunities. In example below, Bollinger Bands are set to be 2.2 Standard Deviations away from the average.</p>
+<iframe src="https://www.tradingview.com/embed/ApPXIxnV/" frameborder="0" width="750" height="500"></iframe>
+
+<p><strong>It is important to note a number things in regards to pairs trading.</strong></p>
+<p><strong>1.</strong>  A pairs trade is designed to be market neutral. This means that because of the positions that you take in two separate instruments, the direction of the market will not effect the position. The trade is designed to profit from the relationship between the two instruments, not the direction of the market itself.</p>
+<p><strong>2.</strong>Correlation moves along a scale of -1 to 1 with 1 meaning the instruments are perfectly correlated. Keep in mind that pairs trades can also work with pairs that are extremely negatively correlated (close to -1). When setting up a pairs trade with negatively correlated instruments, you would want to enter the positions when the two contracts are closer together than usual with the anticipation that they will move apart in opposite directions. In this case, you would enter positions in the same direction for both instead of going long in one and short in the other.</p>
+<p><strong>3.</strong>Another important piece of the puzzle is position size. The whole idea is to be market neutral. Therefore, you would not simply enter the same number of shares or contracts for each instrument. You would want to create the same actual dollar value in both positions. If you strictly use an equal number of shares on both sides and the dollar value of the two instruments are wildly different, then the side with the higher dollar value will have way too much weight in the trade.</p>
+<p><strong>You will notice in the below example, that simply using the same number of shares for both instruments will result in an extremely unbalanced trade in terms of dollar value.</strong></p>
+<p><a href="https://www.tradingview.com/wiki/File:Trade_Size_1.PNG" target="_blank"><img src="https://wiki-pics.tradingview.com/tv/public/2/24/Trade_Size_1.PNG" alt="Trade Size 1.PNG"></a></p>
+<p><strong>The number of shares should be modified in order to get the dollar values as close of possible. It will rarely (if ever) be exact but getting as close as possible is important.</strong></p>
+<p><a href="https://www.tradingview.com/wiki/File:Trade_Size_2.PNG" target="_blank"><img src="https://wiki-pics.tradingview.com/tv/public/0/08/Trade_Size_2.PNG" alt="Trade Size 2.PNG"></a></p>
+<p><strong>4.</strong>The key to pairs trading is the correlation between the two instruments. One thing that many traders fail to realize is that the correlation between instruments is ever changing. Even during the course of a trade, their correlation can change. This is why correlation is important to always monitor when in a pairs trade. The trader should be prepared to exit any trades which have drastic changes and correlation.</p>
+<iframe src="https://www.tradingview.com/embed/DWR7M7Tk/" frameborder="0" width="750" height="500"></iframe>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Renko_Charts.html" class="navigation navigation-prev " aria-label="Previous page: 05-4、Renko Charts">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../06/1/Cyclic_Lines.html" class="navigation navigation-next " aria-label="Next page: 01、Cyclic Lines">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"05-5、Spread Charts","level":"6.5","depth":1,"next":{"title":"01、Cyclic Lines","level":"8.1","depth":1,"path":"book/06/1/Cyclic_Lines.md","ref":"book/06/1/Cyclic_Lines.md","articles":[]},"previous":{"title":"05-4、Renko Charts","level":"6.4","depth":1,"path":"book/05/Renko_Charts.md","ref":"book/05/Renko_Charts.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","github","prism","splitter","sitemap","donate","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"disqus":{"useIdentifier":false,"shortName":"aitrade-ga"},"github":{"url":"https://github.com/zlq4863947/TradingViewPlatformWikiCn"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://b.aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://b.aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView平台中文WIKI","language":"zh","gitbook":"*","description":"TradingView平台中文WIKI"},"file":{"path":"book/05/Spread_Charts.md","mtime":"2018-10-28T01:34:39.960Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-29T06:32:46.643Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

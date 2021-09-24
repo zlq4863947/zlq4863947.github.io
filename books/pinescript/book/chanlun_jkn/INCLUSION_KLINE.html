@@ -1,0 +1,484 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1-2、K线包含 · Pine脚本(TradingView)练习手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-livere/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-head-tag/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Find_Pattern.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"zlq4863947","repo":"pinescript-skill-manual","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"pinescript-skill-manual","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../SUMMARY.html">
+            
+                <a href="../../SUMMARY.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">1、嘉可能缠论</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1-1、简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="INCLUSION_KLINE.html">
+            
+                <a href="INCLUSION_KLINE.html">
+            
+                    
+                    1-2、K线包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="Find_Pattern.html">
+            
+                <a href="Find_Pattern.html">
+            
+                    
+                    1-3、查找分型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="Draw_Pen.html">
+            
+                <a href="Draw_Pen.html">
+            
+                    
+                    1-4、画笔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="Line_Seg.html">
+            
+                <a href="Line_Seg.html">
+            
+                    
+                    1-5、线段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="Pivot.html">
+            
+                <a href="Pivot.html">
+            
+                    
+                    1-6、中枢
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="Terminology.html">
+            
+                <a href="Terminology.html">
+            
+                    
+                    附录-术语表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >1-2、K线包含</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5609;&#x53EF;&#x80FD;&#x7F20;&#x8BBA;---k&#x7EBF;&#x5305;&#x542B;">&#x5609;&#x53EF;&#x80FD;&#x7F20;&#x8BBA; - K&#x7EBF;&#x5305;&#x542B;</h1>
+<h2 id="&#x539F;&#x5219;">&#x539F;&#x5219;</h2>
+<h3 id="1&#x3001;&#x6309;&#x7167;&#x533A;&#x95F4;&#x5904;&#x7406;">1&#x3001;&#x6309;&#x7167;&#x533A;&#x95F4;&#x5904;&#x7406;</h3>
+<p>&#x4E00;&#x6839;K&#x7EBF;<strong>&#x5B8C;&#x5168;</strong>&#x5904;&#x4E8E;&#x53E6;&#x4E00;&#x6839;K&#x7EBF;&#x8303;&#x56F4;&#x5185;&#x3002;</p>
+<p><img src="../../images/jkn/include_01.png" alt=""></p>
+<ul>
+<li>&#x5305;&#x542B;&#x5173;&#x7CFB;</li>
+</ul>
+<p><strong>&#x5305;&#x542B;&#x5173;&#x7CFB; = (&#x524D;K<em>&#x9AD8; &gt;= &#x73B0;K</em>&#x9AD8; and &#x524D;K<em>&#x4F4E; &lt;= &#x73B0;K</em>&#x4F4E;) or (&#x524D;K<em>&#x9AD8; &lt;= &#x73B0;K</em>&#x9AD8; and &#x524D;K<em>&#x4F4E; &gt;= &#x73B0;K</em>&#x4F4E;)</strong></p>
+<ul>
+<li>PineScript:</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x662F;&#x5426;&#x5305;&#x542B;&#x5173;&#x7CFB;</span>
+<span class="hljs-comment">// &#x8FD4;&#x56DE;: true(&#x5305;&#x542B;)/false(&#x4E0D;&#x5305;&#x542B;)</span>
+isIncludeKline(pH, pL, cH, cL) =&gt;
+    <span class="hljs-comment">// (&#x524D;K_&#x9AD8; &gt;= &#x73B0;K_&#x9AD8; and &#x524D;K_&#x4F4E; &lt;= &#x73B0;K_&#x4F4E;) or (&#x524D;K_&#x9AD8; &lt;= &#x73B0;K_&#x9AD8; and &#x524D;K_&#x4F4E; &gt;= &#x73B0;K_&#x4F4E;)</span>
+    (pH &gt;= cH and pL &lt;= cL) or (pH &lt;= cH and pL &gt;= cL)
+</code></pre>
+<h3 id="2&#x3001;&#x53EA;&#x5904;&#x7406;&#x5B58;&#x5728;&#x5305;&#x542B;&#x5173;&#x7CFB;&#x7684;&#x76F8;&#x90BB;k&#x7EBF;">2&#x3001;&#x53EA;&#x5904;&#x7406;&#x5B58;&#x5728;&#x5305;&#x542B;&#x5173;&#x7CFB;&#x7684;&#x76F8;&#x90BB;K&#x7EBF;</h3>
+<h4 id="&#x5408;&#x5E76;k&#x7EBF;">&#x5408;&#x5E76;K&#x7EBF;</h4>
+<ul>
+<li>&#x8D8B;&#x52BF;&#x5411;&#x4E0A;</li>
+</ul>
+<p><img src="../../images/jkn/include_02.png" alt=""></p>
+<p><strong>&#x65B0;K&#x7EBF;<em>&#x9AD8; = &#x6700;&#x5927;&#x503C;(&#x524D;K</em>&#x9AD8;, &#x73B0;K_&#x9AD8;)</strong></p>
+<p><strong>&#x65B0;K&#x7EBF;<em>&#x4F4E; = &#x6700;&#x5927;&#x503C;(&#x524D;K</em>&#x4F4E;, &#x73B0;K_&#x4F4E;)</strong></p>
+<ul>
+<li>&#x8D8B;&#x52BF;&#x5411;&#x4E0B;</li>
+</ul>
+<p><img src="../../images/jkn/include_03.png" alt=""></p>
+<p><strong>&#x65B0;K&#x7EBF;<em>&#x9AD8; = &#x6700;&#x5C0F;&#x503C;(&#x524D;K</em>&#x9AD8;, &#x73B0;K_&#x9AD8;)</strong></p>
+<p><strong>&#x65B0;K&#x7EBF;<em>&#x4F4E; = &#x6700;&#x5C0F;&#x503C;(&#x524D;K</em>&#x4F4E;, &#x73B0;K_&#x4F4E;)</strong></p>
+<ul>
+<li>PineScript:</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x5224;&#x65AD;&#x8D8B;&#x52BF;&#x5411;&#x4E0A;/&#x5411;&#x4E0B;</span>
+<span class="hljs-comment">// &#x8FD4;&#x56DE;: &apos;up&apos;(&#x5411;&#x4E0A;)/&apos;down&apos;(&#x5411;&#x4E0B;)/&apos;&apos;(&#x6A2A;&#x76D8;)</span>
+getTrend(pH, pL, cH, cL) =&gt;
+    <span class="hljs-keyword">if</span> cH &gt; pH and cL &gt; pH
+        <span class="hljs-string">&apos;up&apos;</span>
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>  cH &lt; pH and cL &lt; pH
+        <span class="hljs-string">&apos;down&apos;</span>
+    <span class="hljs-keyword">else</span> 
+        <span class="hljs-string">&apos;&apos;</span>
+
+<span class="hljs-comment">// &#x5408;&#x5E76;K&#x7EBF;</span>
+<span class="hljs-comment">// &#x8FD4;&#x56DE;: [&#x65B0;K&#x7EBF;_&#x9AD8;, &#x65B0;K&#x7EBF;_&#x4F4E;]</span>
+magreKline(pH, pL, cH, cL) =&gt;
+    newkH = <span class="hljs-number">0.0</span>
+    newkL = <span class="hljs-number">0.0</span>
+    trend = getTrend(pH, pL, cH, cL)
+    <span class="hljs-comment">// &#x8D8B;&#x52BF;&#x5411;&#x4E0A;</span>
+    <span class="hljs-keyword">if</span> trend == <span class="hljs-string">&apos;up&apos;</span>
+        <span class="hljs-comment">// &#x65B0;K&#x7EBF;_&#x9AD8; = &#x6700;&#x5927;&#x503C;(&#x524D;K_&#x9AD8;, &#x73B0;K_&#x9AD8;)</span>
+        newkH := max(pH, cH)
+        <span class="hljs-comment">// &#x65B0;K&#x7EBF;_&#x4F4E; = &#x6700;&#x5927;&#x503C;(&#x524D;K_&#x4F4E;, &#x73B0;K_&#x4F4E;)</span>
+        newkL := max(pL, cL)
+    <span class="hljs-comment">// &#x8D8B;&#x52BF;&#x5411;&#x4E0A;</span>
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> trend == <span class="hljs-string">&apos;down&apos;</span>
+        <span class="hljs-comment">// &#x65B0;K&#x7EBF;_&#x9AD8; = &#x6700;&#x5C0F;&#x503C;(&#x524D;K_&#x9AD8;, &#x73B0;K_&#x9AD8;)</span>
+        newkH := min(pH, cH)
+        <span class="hljs-comment">// &#x65B0;K&#x7EBF;_&#x4F4E; = &#x6700;&#x5C0F;&#x503C;(&#x524D;K_&#x4F4E;, &#x73B0;K_&#x4F4E;)</span>
+        newkL := min(pL, cL)
+
+    [newkH, newkL]
+</code></pre>
+<h2 id="&#x4E0B;&#x4E00;&#x7AE0;">&#x4E0B;&#x4E00;&#x7AE0;</h2>
+<ul>
+<li><a href="Find_Pattern.html">1-3&#x3001;&#x67E5;&#x627E;&#x5206;&#x578B;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 1-1、简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Find_Pattern.html" class="navigation navigation-next " aria-label="Next page: 1-3、查找分型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1-2、K线包含","level":"2.2","depth":1,"next":{"title":"1-3、查找分型","level":"2.3","depth":1,"path":"book/chanlun_jkn/Find_Pattern.md","ref":"book/chanlun_jkn/Find_Pattern.md","articles":[]},"previous":{"title":"1-1、简介","level":"2.1","depth":1,"path":"book/chanlun_jkn/README.md","ref":"book/chanlun_jkn/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/pinescript-skill-manual"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"title":"","button":"赏","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","wechatText":"微信打赏","alipayText":"支付宝打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"pinescript-skill-manual","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"pinescript-skill-manual","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Pine脚本(TradingView)练习手册","language":"zh","gitbook":"*","description":"Pine脚本(TradingView)练习手册"},"file":{"path":"book/chanlun_jkn/INCLUSION_KLINE.md","mtime":"2021-09-23T17:27:37.855Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-23T13:48:30.841Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livere/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-head-tag/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu-v3/baidu-tongji.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,874 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="漫画应用,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="zlq4863947" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0">
+
+
+
+
+
+
+<meta name="description" content="序言最近吹牛说要做iOS漫画软件，所以在github上找到下面源代码： 解读源码地址：https://github.com/spicyShrimp/U17实际画面：">
+<meta name="keywords" content="漫画应用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="有妖气(仿)iOS应用源码解读(一)">
+<meta property="og:url" content="https://aitrade.ga/blog/2018/03/28/有妖气-仿-iOS应用源码解读-一/index.html">
+<meta property="og:site_name" content="zlq4863947">
+<meta property="og:description" content="序言最近吹牛说要做iOS漫画软件，所以在github上找到下面源代码： 解读源码地址：https://github.com/spicyShrimp/U17实际画面：">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://aitrade.ga/blog/2018/03/28/有妖气-仿-iOS应用源码解读-一/1.png">
+<meta property="og:image" content="https://aitrade.ga/blog/2018/03/28/有妖气-仿-iOS应用源码解读-一/2.png">
+<meta property="og:updated_time" content="2018-09-01T04:01:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="有妖气(仿)iOS应用源码解读(一)">
+<meta name="twitter:description" content="序言最近吹牛说要做iOS漫画软件，所以在github上找到下面源代码： 解读源码地址：https://github.com/spicyShrimp/U17实际画面：">
+<meta name="twitter:image" content="https://aitrade.ga/blog/2018/03/28/有妖气-仿-iOS应用源码解读-一/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://aitrade.ga/blog/2018/03/28/有妖气-仿-iOS应用源码解读-一/">
+
+
+<script data-ad-client="ca-pub-4774215405699477" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+  <title> 有妖气(仿)iOS应用源码解读(一) | zlq4863947 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta custom-logo">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">zlq4863947</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <h1 class="site-subtitle" itemprop="description"></h1>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br>
+            
+            书架
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="https://aitrade.ga/blog/2018/03/28/有妖气-仿-iOS应用源码解读-一/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="zlq4863947">
+    <meta itemprop="description" content>
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="zlq4863947">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="zlq4863947" src="/images/avatar.jpg">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                有妖气(仿)iOS应用源码解读(一)
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-28T13:24:42+09:00">
+                2018-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+ 
+        
+
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>最近吹牛说要做iOS漫画软件，所以在github上找到下面源代码：</p>
+<p>解读源码地址：<a href="https://github.com/spicyShrimp/U17" target="_blank" rel="noopener">https://github.com/spicyShrimp/U17</a><br>实际画面：<br><a id="more"></a> </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">启动图标</th>
+<th style="text-align:center">启动后显示画面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="/blog/2018/03/28/有妖气-仿-iOS应用源码解读-一/1.png" alt></td>
+<td style="text-align:center"><img src="/blog/2018/03/28/有妖气-仿-iOS应用源码解读-一/2.png" alt></td>
+</tr>
+</tbody>
+</table>
+<h2 id="开发環境"><a href="#开发環境" class="headerlink" title="开发環境"></a>开发環境</h2><ul>
+<li>Xcode ９.２</li>
+<li>Swift 4.0.3</li>
+</ul>
+<h2 id="启动应用"><a href="#启动应用" class="headerlink" title="启动应用"></a>启动应用</h2><p>作者应该是没有做splash，所以打开后会短暂白屏，</p>
+<ul>
+<li>AppDelegate.swift<br>AppDelegate为app启动的代理类，也就是程序的入口。<br>每个ios应用程序都有一个AppDelegate.swift。<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  AppDelegate.swift</span></span><br><span class="line"><span class="comment">//  U17</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by charles on 2017/9/29.</span></span><br><span class="line"><span class="comment">//  Copyright © 2017年 None. All rights reserved.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// UI工具包</span></span><br><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"><span class="comment">// @see https://blog.csdn.net/xoxo_x/article/details/76390775</span></span><br><span class="line"><span class="comment">// 网络请求的开源库</span></span><br><span class="line"><span class="keyword">import</span> Alamofire</span><br><span class="line"><span class="comment">// 键盘监听</span></span><br><span class="line"><span class="keyword">import</span> IQKeyboardManagerSwift</span><br><span class="line"></span><br><span class="line"><span class="meta">@UIApplicationMain</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">AppDelegate</span>: <span class="title">UIResponder</span>, <span class="title">UIApplicationDelegate</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> window: <span class="type">UIWindow?</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 延时加载reachability</span></span><br><span class="line">    <span class="built_in">lazy</span> <span class="keyword">var</span> reachability: <span class="type">NetworkReachabilityManager?</span> = &#123;</span><br><span class="line">        <span class="comment">// 实时监测与http://app.u17.com连接状况</span></span><br><span class="line">        <span class="keyword">return</span> <span class="type">NetworkReachabilityManager</span>(host: <span class="string">"http://app.u17.com"</span>)</span><br><span class="line">    &#125;()</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 设置为竖屏显示</span></span><br><span class="line">    <span class="keyword">var</span> orientation: <span class="type">UIInterfaceOrientationMask</span> = .portrait</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 应用加载完成时</span></span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">application</span><span class="params">(<span class="number">_</span> application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: <span class="keyword">Any</span>]?)</span></span> -&gt; <span class="type">Bool</span> &#123;</span><br><span class="line">        </span><br><span class="line">        configBase()</span><br><span class="line">        </span><br><span class="line">        window = <span class="type">UIWindow</span>(frame: <span class="type">UIScreen</span>.main.bounds)</span><br><span class="line">        window?.backgroundColor = <span class="type">UIColor</span>.white</span><br><span class="line">        window?.rootViewController = <span class="type">UTabBarController</span>()</span><br><span class="line">        window?.makeKeyAndVisible()</span><br><span class="line">        <span class="comment">//MARK: 修正齐刘海</span></span><br><span class="line"><span class="comment">//        UHairPowder.instance.spread()</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 基本配置</span></span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">configBase</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="comment">// 开启键盘监听</span></span><br><span class="line">        <span class="type">IQKeyboardManager</span>.sharedManager().enable = <span class="literal">true</span></span><br><span class="line">        <span class="comment">// 点击背景收起键盘</span></span><br><span class="line">        <span class="type">IQKeyboardManager</span>.sharedManager().shouldResignOnTouchOutside = <span class="literal">true</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 本地存储对象</span></span><br><span class="line">        <span class="keyword">let</span> defaults = <span class="type">UserDefaults</span>.standard</span><br><span class="line">        <span class="keyword">if</span> defaults.value(forKey: <span class="type">String</span>.sexTypeKey) == <span class="literal">nil</span> &#123;</span><br><span class="line">            <span class="comment">// 设置性别类型为1（1：男性,2:女性？）</span></span><br><span class="line">            defaults.<span class="keyword">set</span>(<span class="number">1</span>, forKey: <span class="type">String</span>.sexTypeKey)</span><br><span class="line">            <span class="comment">// 保存数据</span></span><br><span class="line">            defaults.synchronize()</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        reachability?.listener = &#123; status <span class="keyword">in</span></span><br><span class="line">            <span class="keyword">switch</span> status &#123;</span><br><span class="line">            <span class="comment">// 使用蜂窝数据时</span></span><br><span class="line">            <span class="keyword">case</span> .reachable(.wwan):</span><br><span class="line">                <span class="comment">// 通知显示</span></span><br><span class="line">                <span class="type">UNoticeBar</span>(config: <span class="type">UNoticeBarConfig</span>(title: <span class="string">"主人,检测到您正在使用移动数据"</span>)).show(duration: <span class="number">2</span>)</span><br><span class="line">            <span class="keyword">default</span>: <span class="keyword">break</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 开始监听</span></span><br><span class="line">        reachability?.startListening()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">application</span><span class="params">(<span class="number">_</span> application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?)</span></span> -&gt; <span class="type">UIInterfaceOrientationMask</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> orientation</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">UIApplication</span> </span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">func</span> <span class="title">changeOrientationTo</span>(<span class="title">landscapeRight</span>: <span class="title">Bool</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">guard</span> <span class="keyword">let</span> delegate = <span class="type">UIApplication</span>.shared.delegate <span class="keyword">as</span>? <span class="type">AppDelegate</span> <span class="keyword">else</span> &#123; <span class="keyword">return</span> &#125;</span><br><span class="line">        <span class="comment">// 横屏右转时</span></span><br><span class="line">        <span class="keyword">if</span> landscapeRight == <span class="literal">true</span> &#123;</span><br><span class="line">            </span><br><span class="line">            <span class="comment">// 代理的物理方向设置为右横屏</span></span><br><span class="line">            delegate.orientation = .landscapeRight</span><br><span class="line">            <span class="comment">// 为window设置支持的方向</span></span><br><span class="line">            <span class="type">UIApplication</span>.shared.supportedInterfaceOrientations(<span class="keyword">for</span>: delegate.window)</span><br><span class="line">            <span class="comment">// 设备设置为右横屏</span></span><br><span class="line">            <span class="type">UIDevice</span>.current.setValue(<span class="type">UIInterfaceOrientation</span>.landscapeRight.rawValue, forKey: <span class="string">"orientation"</span>)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            delegate.orientation = .portrait</span><br><span class="line">            <span class="type">UIApplication</span>.shared.supportedInterfaceOrientations(<span class="keyword">for</span>: delegate.window)</span><br><span class="line">            <span class="type">UIDevice</span>.current.setValue(<span class="type">UIInterfaceOrientation</span>.portrait.rawValue, forKey: <span class="string">"orientation"</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+  
+        <div class="post-tags">
+          
+            <a href="/tags/漫画应用/" rel="tag"># 漫画应用</a>
+          
+        </div>
+      
+
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>🐶 您的支持将鼓励我继续创作 🐶</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赞赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/reward/weixin.png" alt="zlq4863947 WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/reward/alipay.png" alt="zlq4863947 Alipay">
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+         
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2017/11/12/测试/" rel="next" title="测试">
+                <i class="fa fa-chevron-left"></i> 测试
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2019/08/24/5分钟通过JS代码制作QQ机器人/" rel="prev" title="5分钟通过JS代码制作QQ机器人">
+                5分钟通过JS代码制作QQ机器人 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="comments" id="comments">
+        <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTIyNC8xMTc2MA=="></div>
+      </div>
+
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="zlq4863947">
+          <p class="site-author-name" itemprop="name">zlq4863947</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              
+                <a href="https://github.com/zlq4863947" target="_blank" title="GitHub">
+              
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+              
+                <a href="tencent://message/?uin=442540141&Site=aitrade.ga&Menu=yes" title="qq">
+              
+                  
+                    <i class="fa fa-fw fa-qq"></i>
+                  
+                  qq
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.woaitqs.cc/" title="Qisen Tang" target="_blank">Qisen Tang</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://szhshp.org" title="szhshp的博客" target="_blank">szhshp的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://python.zhangwei.website" title="JuniorCoder" target="_blank">JuniorCoder</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://hippo-jessy.com" title="Hippo" target="_blank">Hippo</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.zhihu.com/people/long-qi-7-64" title="友链出租" target="_blank">友链出租</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#序言"><span class="nav-number">1.</span> <span class="nav-text">序言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发環境"><span class="nav-number">2.</span> <span class="nav-text">开发環境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动应用"><span class="nav-number">3.</span> <span class="nav-text">启动应用</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zlq4863947</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io" rel="external nofollow">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">
+    NexT.Mist
+  </a>
+   <span> | Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></span>
+</div>
+
+
+
+
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid="></script>
+      <!-- UY END -->
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+
+</body>
+</html>

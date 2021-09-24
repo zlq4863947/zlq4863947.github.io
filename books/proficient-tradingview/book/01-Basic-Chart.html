@@ -1,0 +1,424 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1-3、图表配置 · 24小时精通TradingView</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-Data-Overview.html" />
+    
+    
+    <link rel="prev" href="01-Basic-Compose.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../PROGRAM-TABLE.html">
+            
+                <a href="../PROGRAM-TABLE.html">
+            
+                    
+                    课程表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">1、基础教程</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-Introduction.html">
+            
+                <a href="01-Introduction.html">
+            
+                    
+                    1-1、初识TradingView图表库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="01-Basic-Compose.html">
+            
+                <a href="01-Basic-Compose.html">
+            
+                    
+                    1-2、图表主要组成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="01-Basic-Chart.html">
+            
+                <a href="01-Basic-Chart.html">
+            
+                    
+                    1-3、图表配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2、数据处理</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="02-Data-Overview.html">
+            
+                <a href="02-Data-Overview.html">
+            
+                    
+                    2-1、数据处理概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3、Http请求例子</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="03-Http-Example-JP.html">
+            
+                <a href="03-Http-Example-JP.html">
+            
+                    
+                    3-1、日本股票图表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="03-Http-Example-Coin.html">
+            
+                <a href="03-Http-Example-Coin.html">
+            
+                    
+                    3-2、支持多数字货币交易所的图表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1-3、图表配置</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x56FE;&#x8868;&#x914D;&#x7F6E;">&#x56FE;&#x8868;&#x914D;&#x7F6E;</h2>
+<p>&#x672C;&#x8282;&#x4E3B;&#x8981;&#x8BB2;&#x89E3;&#x56FE;&#x8868;&#x914D;&#x7F6E;&#xFF0C;&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#x5305;&#x62EC;&#x56FE;&#x8868;&#x5168;&#x5C40;&#x6837;&#x5F0F;&#x3001;&#x7ED8;&#x56FE;&#x533A;&#x3001;&#x56FE;&#x8868;&#x4E8B;&#x4EF6;&#x3001;&#x7B49;&#x76F8;&#x5173;&#x5185;&#x5BB9;&#x3002;</p>
+<h3 id="&#x4E00;&#x3001;&#x56FE;&#x8868;&#x4F7F;&#x7528;">&#x4E00;&#x3001;&#x56FE;&#x8868;&#x4F7F;&#x7528;</h3>
+<p>&#x76EE;&#x524D;&#xFF08;2018&#x5E74;5&#x6708;1&#x65E5;&#xFF09;&#xFF0C;&#x56FE;&#x8868;&#x5E93;&#x7684;&#x7248;&#x672C;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>&#x7A33;&#x5B9A;&#x7248;: v 1.12</li>
+<li>&#x4E0D;&#x7A33;&#x5B9A;&#x7248;: v 1.13</li>
+</ul>
+<h4 id="1&#x3001;&#x5F15;&#x5165;&#x5FC5;&#x987B;&#x6587;&#x4EF6;">1&#x3001;&#x5F15;&#x5165;&#x5FC5;&#x987B;&#x6587;&#x4EF6;</h4>
+<p>&#x56FE;&#x8868;&#x5E93;&#x7684;&#x4F7F;&#x7528;&#x524D;&#x9700;&#x8981;&#x5F15;&#x7528;3&#x4E2A;js&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>charting_library/charting_library.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>datafeeds/udf/dist/polyfills.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>datafeeds/udf/dist/bundle.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre><ul>
+<li>charting_library.min.js
+  &#x56FE;&#x8868;&#x5E93;&#x672C;&#x4F53;js&#x6587;&#x4EF6;&#xFF08;&#x4ECE;1.8&#x7248;&#x672C;&#xFF09;</li>
+<li>polyfills.js
+  ES5&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;ES6&#x7279;&#x6027;&#x652F;&#x6301;&#x7684;&#x6587;&#x4EF6;,&#x6BD4;&#x5982;Promise&#x7B49;&#x3002;</li>
+<li>bundle.js
+  UDF&#x7ECF;&#x8FC7;Rollup&#x6A21;&#x5757;&#x6253;&#x5305;&#x540E;&#x7684;&#x95EE;&#x9898;&#x4EF6;</li>
+</ul>
+<h4 id="2&#x3001;&#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;">2&#x3001;&#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;</h4>
+<pre class="language-"><code>TradingView.onready(function() {
+    var widget = window.tvWidget = new TradingView.widget({
+        // debug: true, // &#x53D6;&#x6D88;&#x6CE8;&#x91CA;&#x53EF;&#x4EE5;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x4E2D;&#x67E5;&#x770B;&#x7684;&#x5E93;&#x56FE;&#x8868;&#x9519;&#x8BEF;&#x548C;&#x8B66;&#x544A;
+        fullscreen: true,
+        symbol: &apos;AAPL&apos;,
+        interval: &apos;D&apos;,
+        container_id: &quot;tv_chart_container&quot;,
+        // &#x6CE8;&#x610F;&#xFF1A; URL&#x7ED3;&#x5C3E;&#x4E0D;&#x53EF;&#x4EE5;&#x6709;&#x659C;&#x7EBF;
+        datafeed: new Datafeeds.UDFCompatibleDatafeed(&quot;https://demo_feed.tradingview.com&quot;),
+        library_path: &quot;charting_library/&quot;,
+        locale: getParameterByName(&apos;lang&apos;) || &quot;en&quot;,
+        // Regression Trend-related functionality is not implemented yet, so it&apos;s hidden for a while
+        drawings_access: { type: &apos;black&apos;, tools: [ { name: &quot;Regression Trend&quot; } ] },
+        disabled_features: [&quot;use_localstorage_for_settings&quot;],
+        enabled_features: [&quot;study_templates&quot;],
+        charts_storage_url: &apos;http://saveload.tradingview.com&apos;,
+        charts_storage_api_version: &quot;1.1&quot;,
+        client_id: &apos;tradingview.com&apos;,
+        user_id: &apos;public_user_id&apos;
+    });
+});
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01-Basic-Compose.html" class="navigation navigation-prev " aria-label="Previous page: 1-2、图表主要组成">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-Data-Overview.html" class="navigation navigation-next " aria-label="Next page: 2-1、数据处理概述">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1-3、图表配置","level":"2.3","depth":1,"next":{"title":"2-1、数据处理概述","level":"3.1","depth":1,"path":"book/02-Data-Overview.md","ref":"book/02-Data-Overview.md","articles":[]},"previous":{"title":"1-2、图表主要组成","level":"2.2","depth":1,"path":"book/01-Basic-Compose.md","ref":"book/01-Basic-Compose.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","github","prism","splitter","sitemap","donate","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"disqus":{"useIdentifier":false,"shortName":"aitrade-ga"},"github":{"url":"https://gitee.com/zlq4863947/Proficient24HourTradingView.git"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://zlq4863947.gitbooks.io/tradingview/content/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://zlq4863947.gitbooks.io/tradingview/content/images/weixin.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"24小时精通TradingView","language":"zh","gitbook":"*","description":"本书为更好的让开发者系统的了解TradingView而制作"},"file":{"path":"book/01-Basic-Chart.md","mtime":"2018-05-01T09:52:41.946Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-17T01:30:30.232Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

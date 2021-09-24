@@ -1,0 +1,556 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>折线图系列 · 轻量图表(TradingView) 中文开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-livere/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="area-series.html" />
+    
+    
+    <link rel="prev" href="series-basics.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"zlq4863947","repo":"lightweight-charts-docs-cn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"lightweight-charts-docs-cn","type":"fork","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="home.html">
+            
+                <a href="home.html">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="series-basics.html">
+            
+                <a href="series-basics.html">
+            
+                    
+                    系列基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="line-series.html">
+            
+                <a href="line-series.html">
+            
+                    
+                    折线图系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="area-series.html">
+            
+                <a href="area-series.html">
+            
+                    
+                    面积图系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="bar-series.html">
+            
+                <a href="bar-series.html">
+            
+                    
+                    美国线图系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="candlestick-series.html">
+            
+                <a href="candlestick-series.html">
+            
+                    
+                    K 线图系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="histogram-series.html">
+            
+                <a href="histogram-series.html">
+            
+                    
+                    直方图系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="customization.html">
+            
+                <a href="customization.html">
+            
+                    
+                    定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="constants.html">
+            
+                <a href="constants.html">
+            
+                    
+                    常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="time.html">
+            
+                <a href="time.html">
+            
+                    
+                    时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="event.html">
+            
+                <a href="event.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="ohlc.html">
+            
+                <a href="ohlc.html">
+            
+                    
+                    OHLC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >折线图系列</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6298;&#x7EBF;&#x56FE;&#x7CFB;&#x5217;">&#x6298;&#x7EBF;&#x56FE;&#x7CFB;&#x5217;</h1>
+<p>&#x6298;&#x7EBF;&#x56FE;&#x662F;&#x4E00;&#x79CD;&#x56FE;&#x8868;&#xFF0C;&#x5B83;&#x5C06;&#x7CFB;&#x5217;&#x6570;&#x636E;&#x70B9;&#x8FDE;&#x63A5;&#x6210;&#x76F4;&#x7EBF;&#x3002;</p>
+<p>&#x7EBF;&#x7CFB;&#x5217;&#x6709;&#x4E00;&#x4E2A;&#x5341;&#x5B57;&#x51C6;&#x7EBF;&#x6807;&#x8BB0; - &#x4E00;&#x4E2A;&#x5706;&#x5F62;&#x6807;&#x8BB0;&#xFF0C;&#x5F53;&#x5149;&#x6807;&#x6CBF;&#x7740;&#x65F6;&#x95F4;&#x523B;&#x5EA6;&#x79FB;&#x52A8;&#x65F6;&#xFF0C;&#x5B83;&#x6CBF;&#x7740;&#x7CFB;&#x5217;&#x7EBF;&#x79FB;&#x52A8;&#x3002;</p>
+<p><img src="../images/line-series.png" alt="&#x6298;&#x7EBF;&#x56FE;&#x4F8B;&#x5B50;" title="&#x6298;&#x7EBF;&#x56FE;&#x4F8B;&#x5B50;"></p>
+<h2 id="&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x6298;&#x7EBF;&#x56FE;&#x7CFB;&#x5217;">&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x6298;&#x7EBF;&#x56FE;&#x7CFB;&#x5217;</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> lineSeries = chart.addLineSeries();
+
+<span class="hljs-comment">// set data</span>
+lineSeries.setData([
+  { time: <span class="hljs-string">&quot;2018-12-01&quot;</span>, value: <span class="hljs-number">32.51</span> },
+  { time: <span class="hljs-string">&quot;2018-12-02&quot;</span>, value: <span class="hljs-number">31.11</span> },
+  { time: <span class="hljs-string">&quot;2018-12-03&quot;</span>, value: <span class="hljs-number">27.02</span> },
+  { time: <span class="hljs-string">&quot;2018-12-04&quot;</span>, value: <span class="hljs-number">27.32</span> },
+  { time: <span class="hljs-string">&quot;2018-12-05&quot;</span>, value: <span class="hljs-number">25.17</span> },
+  { time: <span class="hljs-string">&quot;2018-12-06&quot;</span>, value: <span class="hljs-number">28.89</span> },
+  { time: <span class="hljs-string">&quot;2018-12-07&quot;</span>, value: <span class="hljs-number">25.46</span> },
+  { time: <span class="hljs-string">&quot;2018-12-08&quot;</span>, value: <span class="hljs-number">23.92</span> },
+  { time: <span class="hljs-string">&quot;2018-12-09&quot;</span>, value: <span class="hljs-number">22.68</span> },
+  { time: <span class="hljs-string">&quot;2018-12-10&quot;</span>, value: <span class="hljs-number">22.67</span> },
+  { time: <span class="hljs-string">&quot;2018-12-11&quot;</span>, value: <span class="hljs-number">27.57</span> },
+  { time: <span class="hljs-string">&quot;2018-12-12&quot;</span>, value: <span class="hljs-number">24.11</span> },
+  { time: <span class="hljs-string">&quot;2018-12-13&quot;</span>, value: <span class="hljs-number">30.74</span> }
+]);
+</code></pre>
+<h2 id="&#x6570;&#x636E;&#x683C;&#x5F0F;">&#x6570;&#x636E;&#x683C;&#x5F0F;</h2>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x9009;&#x9879;&#x81EA;&#x5B9A;&#x4E49;&#x6298;&#x7EBF;&#x56FE;&#x7CFB;&#x5217;:</p>
+<ul>
+<li><code>time</code> (<a href="time.html">&#x65F6;&#x95F4;</a>) - &#x65F6;&#x95F4;</li>
+<li><code>value</code> (<code>number</code>) - &#x503C;</li>
+</ul>
+<h2 id="&#x5B9A;&#x5236;">&#x5B9A;&#x5236;</h2>
+<p>&#x7EBF;&#x6761;&#x672C;&#x8EAB;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x989C;&#x8272;&#xFF0C;&#x5BBD;&#x5EA6;&#x548C;&#x6837;&#x5F0F;&#x6765;&#x5B9A;&#x5236;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x542F;&#x7528;&#x7684;&#x5341;&#x5B57;&#x51C6;&#x7EBF;&#x6807;&#x8BB0;&#x53EF;&#x4EE5;&#x88AB;&#x7981;&#x7528;&#x6216;&#x8C03;&#x6574;&#x5176;&#x534A;&#x5F84;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x9009;&#x9879;&#x81EA;&#x5B9A;&#x4E49;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>color</code></td>
+<td><code>string</code></td>
+<td><code>#2196f3</code></td>
+<td>&#x7EBF;&#x6761;&#x989C;&#x8272;</td>
+</tr>
+<tr>
+<td><code>lineStyle</code></td>
+<td><a href="constants.html#linestyle">LineStyle</a></td>
+<td><code>LineStyle.Solid</code></td>
+<td>&#x7EBF;&#x6761;&#x6837;&#x5F0F;</td>
+</tr>
+<tr>
+<td><code>lineWidth</code></td>
+<td><code>number</code></td>
+<td><code>3</code></td>
+<td>&#x7EBF;&#x5BBD;&#xFF08;&#x4EE5;&#x50CF;&#x7D20;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;</td>
+</tr>
+<tr>
+<td><code>crosshairMarkerVisible</code></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+<td>&#x5982;&#x679C;&#x4E3A;<code>true</code>&#xFF0C;&#x5219;&#x5341;&#x5B57;&#x6807;&#x8BB0;&#x663E;&#x793A;&#x5728;&#x56FE;&#x8868;&#x4E0A;</td>
+</tr>
+<tr>
+<td><code>crosshairMarkerRadius</code></td>
+<td><code>number</code></td>
+<td><code>4</code></td>
+<td>&#x5341;&#x5B57;&#x7EBF;&#x6807;&#x8BB0;&#x534A;&#x5F84;&#xFF08;&#x4EE5;&#x50CF;&#x7D20;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;</td>
+</tr>
+<tr>
+<td><code>lineType</code></td>
+<td><a href="constants.html#linetype">LineType</a></td>
+<td><code>LineType.Simple</code></td>
+<td>&#x7EBF;&#x6761;&#x7C7B;&#x578B;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x4F8B;&#x5B50;">&#x4F8B;&#x5B50;</h3>
+<ul>
+<li><p>&#x8BBE;&#x7F6E;&#x7EBF;&#x7CFB;&#x5217;&#x7684;&#x521D;&#x59CB;&#x9009;&#x9879;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> lineSeries = chart.addLineSeries({
+  color: <span class="hljs-string">&quot;#f48fb1&quot;</span>,
+  lineStyle: <span class="hljs-number">0</span>,
+  lineWidth: <span class="hljs-number">1</span>,
+  crosshairMarkerVisible: <span class="hljs-literal">true</span>,
+  crosshairMarkerRadius: <span class="hljs-number">6</span>,
+  lineType: <span class="hljs-number">1</span>
+});
+</code></pre>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x7CFB;&#x5217;&#x540E;&#x66F4;&#x6539;&#x9009;&#x9879;:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x4F8B;&#x5982;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x4EC5;&#x8986;&#x76D6;&#x7EBF;&#x5BBD;&#x548C;&#x989C;&#x8272;</span>
+lineSeries.applyOptions({
+  color: <span class="hljs-string">&quot;rgba(255, 44, 128, 1)&quot;</span>,
+  lineWidth: <span class="hljs-number">3</span>
+});
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x4E0B;&#x4E00;&#x6B65;&#x662F;&#x4EC0;&#x4E48;">&#x4E0B;&#x4E00;&#x6B65;&#x662F;&#x4EC0;&#x4E48;</h2>
+<ul>
+<li><a href="customization.html">&#x5B9A;&#x5236;</a></li>
+<li><a href="constants.html">&#x5E38;&#x91CF;</a></li>
+<li><a href="time.html">&#x65F6;&#x95F4;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="series-basics.html" class="navigation navigation-prev " aria-label="Previous page: 系列基础">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="area-series.html" class="navigation navigation-next " aria-label="Next page: 面积图系列">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"折线图系列","level":"1.4","depth":1,"next":{"title":"面积图系列","level":"1.5","depth":1,"path":"book/area-series.md","ref":"book/area-series.md","articles":[]},"previous":{"title":"系列基础","level":"1.3","depth":1,"path":"book/series-basics.md","ref":"book/series-basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","github","github-buttons","splitter","sitemap","donate","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/zlq4863947/lightweight-charts-docs-cn"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://b.aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://b.aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"lightweight-charts-docs-cn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"lightweight-charts-docs-cn","type":"fork","size":"small","count":true}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"轻量图表(TradingView) 中文开发文档","language":"zh","gitbook":"*","description":"轻量图表(TradingView) 中文开发文档"},"file":{"path":"book/line-series.md","mtime":"2019-08-01T15:53:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-04T06:30:17.720Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livere/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
