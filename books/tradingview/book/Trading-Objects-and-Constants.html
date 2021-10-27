@@ -880,6 +880,19 @@
             
         </li>
     
+        <li class="chapter " data-level="7.27" data-path="News-Api-Examples.html">
+            
+                <a href="News-Api-Examples.html">
+            
+                    
+                    新闻API示例
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -1119,6 +1132,11 @@
 <p><em>Default:</em> <code>false</code></p>
 <p>&#x4F7F;&#x7528;&#x6B64;&#x6807;&#x5FD7;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x590D;&#x9009;&#x6846;&#x4EE5;&#x7981;&#x7528;&#x786E;&#x8BA4;&#x5BF9;&#x8BDD;&#x6846;&#x663E;&#x793A;&#x3002;</p>
 </li>
+<li><p><code>supportExecutions</code></p>
+<p><em>Default:</em> <code>false</code></p>
+<p>&#x7ECF;&#x7EAA;&#x4EBA;&#x652F;&#x6301;&#x6267;&#x884C;&#x3002;
+&#x5982;&#x679C;&#x6B64;&#x6807;&#x5FD7;&#x8BBE;&#x7F6E;&#x4E3A; <code>true</code> &#xFF0C;&#x5219;&#x56FE;&#x8868;&#x5C06;&#x663E;&#x793A;&#x6267;&#x884C;&#x60C5;&#x51B5;&#x3002;</p>
+</li>
 </ul>
 <h3 id="durations-&#x5BF9;&#x8C61;&#x6570;&#x7EC4;">durations: &#x5BF9;&#x8C61;&#x6570;&#x7EC4;</h3>
 <p>&#x8BA2;&#x5355;&#x5230;&#x671F;&#x9009;&#x9879;&#x5217;&#x8868;&#x3002;&#x5B83;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;&#x5982;&#x679C;&#x60A8;&#x4E0D;&#x60F3;&#x5728;&#x8BA2;&#x5355;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x663E;&#x793A;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x8BBE;&#x7F6E;&#x5B83;&#x3002;
@@ -1207,7 +1225,20 @@
 <li><code>enabled</code>: Boolean</li>
 <li><code>action</code>: function. &#x5F53;&#x7528;&#x6237;&#x5355;&#x51FB;&#x8BE5;&#x9879;&#x76EE;&#x65F6;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5B83;&#x6709;&#x4E00;&#x4E2A;&#x53C2;&#x6570; - &#x590D;&#x9009;&#x6846;&#x7684;&#x503C;&#xFF08;&#x5982;&#x679C;&#x5B58;&#x5728;&#xFF09;&#x3002;</li>
 </ul>
-<h2 id="ordertype">OrderType</h2>
+<h2 id="orderpreviewsection">OrderPreviewSection</h2>
+<p>&#x63CF;&#x8FF0;&#x5355;&#x4E2A;&#x8BA2;&#x5355;&#x9884;&#x89C8;&#x90E8;&#x5206;&#x3002;&#x8BA2;&#x5355;&#x9884;&#x89C8;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x7531;&#x5206;&#x9694;&#x7B26;&#x5206;&#x9694;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x80FD;&#x6709;&#x6807;&#x9898;&#x3002;</p>
+<ul>
+<li><code>rows</code> - &#x8BA2;&#x5355;&#x9884;&#x89C8;&#x9879;&#x6570;&#x7EC4; <a href="#OrderPreviewSectionRow">OrderPreviewSectionRow</a>[]&#x3002;&#x6BCF;&#x4E00;&#x9879;&#x90FD;&#x662F;.section&#x8868;&#x7684;&#x4E00;&#x884C;&#x3002;</li>
+<li><code>header</code> - &#x90E8;&#x5206;&#x7684;&#x53EF;&#x9009;&#x6807;&#x9898;&#x3002;</li>
+</ul>
+<h2 id="orderpreviewsectionrow">OrderPreviewSectionRow</h2>
+<p>OrderPreviewSectionRow - &#x63CF;&#x8FF0;&#x8BA2;&#x5355;&#x9884;&#x89C8;&#x7684;section&#x8868;&#x7684;&#x5355;&#x884C;&#x3002;</p>
+<ul>
+<li><code>title</code> - &#x9879;&#x76EE;&#x7684;&#x63CF;&#x8FF0;&#x3002;</li>
+<li><code>value</code> - &#x9879;&#x76EE;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x503C;&#x3002;</li>
+<li><h2 id="ordertype">OrderType</h2>
+</li>
+</ul>
 <p>&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x8BA2;&#x5355;&#x72B6;&#x6001;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x3002;</p>
 <pre><code class="lang-javascript">OrderType.Limit = <span class="hljs-number">1</span>
 OrderType.Market = <span class="hljs-number">2</span>
@@ -1339,6 +1370,20 @@ OrderTicketFocusControl.TakeProfit = <span class="hljs-number">3</span>
 <li><code>valid</code>: false</li>
 <li><code>errorMessage</code>: string</li>
 </ul>
+<h2 id="placeorderresult">PlaceOrderResult</h2>
+<p>&#x63CF;&#x8FF0;&#x4E0B;&#x5355;&#x7ED3;&#x679C;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<ul>
+<li><code>orderId</code>: string</li>
+</ul>
+<h2 id="quantitymetainfo">QuantityMetainfo</h2>
+<p>&#x63CF;&#x8FF0;&#x6570;&#x91CF;&#x5B57;&#x6BB5;&#x7684;&#x6B65;&#x957F;&#x548C;&#x8FB9;&#x754C;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<ul>
+<li><code>min</code>: number</li>
+<li><code>max</code>: number</li>
+<li><code>step</code>: number</li>
+<li><code>uiStep?</code>: number. &#x6EDA;&#x52A8;&#x7684;&#x6B65;&#x957F;&#x3002;</li>
+<li><code>default?</code>: number. &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x6570;&#x91CF;&#x503C;&#x3002;</li>
+</ul>
 
                                 
                                 </section>
@@ -1382,7 +1427,7 @@ OrderTicketFocusControl.TakeProfit = <span class="hljs-number">3</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5-5、交易对象和常量","level":"5.5","depth":1,"next":{"title":"6、储存和载入图表","level":"6.1","depth":1,"path":"book/Saving-and-Loading-Charts.md","ref":"book/Saving-and-Loading-Charts.md","articles":[]},"previous":{"title":"5-4、账户管理器","level":"5.4","depth":1,"path":"book/Account-Manager.md","ref":"book/Account-Manager.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/Trading-Objects-and-Constants.md","mtime":"2021-06-27T10:33:52.756Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-27T12:29:05.136Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5-5、交易对象和常量","level":"5.5","depth":1,"next":{"title":"6、储存和载入图表","level":"6.1","depth":1,"path":"book/Saving-and-Loading-Charts.md","ref":"book/Saving-and-Loading-Charts.md","articles":[]},"previous":{"title":"5-4、账户管理器","level":"5.4","depth":1,"path":"book/Account-Manager.md","ref":"book/Account-Manager.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/Trading-Objects-and-Constants.md","mtime":"2021-10-27T14:54:17.506Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-27T15:37:01.063Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

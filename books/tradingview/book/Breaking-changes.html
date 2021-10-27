@@ -880,6 +880,19 @@
             
         </li>
     
+        <li class="chapter " data-level="7.27" data-path="News-Api-Examples.html">
+            
+                <a href="News-Api-Examples.html">
+            
+                    
+                    新闻API示例
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -929,7 +942,47 @@
 <p>&#x6211;&#x4EEC;&#x5C06;&#x5C3D;&#x6700;&#x5927;&#x52AA;&#x529B;&#x4F7F;&#x6BCF;&#x4E2A;&#x65B0;&#x7248;&#x672C;&#x4E0E;&#x524D;&#x4E00;&#x7248;&#x672C;&#x5B8C;&#x5168;&#x517C;&#x5BB9;&#xFF0C;&#x4F46;&#x6709;&#x65F6;&#x91CD;&#x5927;&#x7684;&#x66F4;&#x6539;&#x9700;&#x8981;&#x60A8;&#x5728;&#x5347;&#x7EA7;&#x5230;&#x65B0;&#x7248;&#x672C;&#x65F6;&#x5BF9;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x5FAE;&#x5C0F;&#x7684;&#x66F4;&#x6539;&#x3002;</p>
 <p><em>&#x6CE8;&#x610F;&#xFF1A;&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x63A7;&#x5236;&#x53F0;&#x4E2D;&#x6267;&#x884C; <code>TradingView.version()</code> &#x6765;&#x68C0;&#x67E5;&#x56FE;&#x8868;&#x5E93;&#x7248;&#x672C;&#x3002;</em></p>
 <p>&#x4EE5;&#x4E0B;&#x662F;&#x91CD;&#x5927;&#x53D8;&#x66F4;&#x5217;&#x8868;&#xFF1A;</p>
+<h2 id="version-21">Version 21</h2>
+<ul>
+<li><p>&#x529F;&#x80FD;&#x96C6;<code>show_dialog_on_snapshot_ready</code> &#x5DF2;&#x88AB;&#x5220;&#x9664;&#x3002; <a href="Widget-Methods.html#takescreenshot">takeScreenshot</a> &#x9759;&#x9ED8;&#x751F;&#x6210;&#x5FEB;&#x7167;&#xFF0C;&#x56E0;&#x6B64;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <a href="Widget-Methods.html#subscribeevent-callback">onScreenshotReady</a> &#x56DE;&#x8C03;&#x4E2D;&#x7684; URL &#x6765;&#x663E;&#x793A;&#x60A8;&#x81EA;&#x5DF1;&#x7684;&#x5BF9;&#x8BDD;&#x6846;&#x3002;</p>
+</li>
+<li><p><a href="Symbology.html">SymbolInfo</a> &#x4E2D;&#x7684;&#x5B57;&#x6BB5; <code>holidays</code> &#x5DF2;&#x91CD;&#x547D;&#x540D;&#x4E3A; <a href="Symbology.html#session_holidays"><code>session_holidays</code></a>&#x3002;</p>
+</li>
+</ul>
+<p><strong>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;</strong></p>
+<ul>
+<li><p><code>empty</code> &#x683C;&#x5F0F;&#x5316;&#x65B9;&#x6CD5;&#x5DF2;&#x88AB;&#x5220;&#x9664;&#x3002;</p>
+</li>
+<li><p>&#x6807;&#x8BB0; <code>durationForMarketOrders</code> &#x5DF2;&#x4ECE; Broker &#x914D;&#x7F6E; <code>configFlags</code> &#x5BF9;&#x8C61;&#x4E2D;&#x5220;&#x9664;&#x3002; &#x8981;&#x5BF9;&#x5E02;&#x4EF7;&#x8BA2;&#x5355;&#x4F7F;&#x7528;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#xFF0C;&#x8BF7;&#x5C06;&#x9002;&#x5F53;&#x7684;&#x8BA2;&#x5355;&#x7C7B;&#x578B;&#x6DFB;&#x52A0;&#x5230; <code>supportedOrderTypes</code> &#x6570;&#x7EC4;&#x3002;</p>
+</li>
+<li><p><code>supportReducePosition</code> &#x6807;&#x5FD7;&#x5DF2;&#x4ECE; Broker &#x914D;&#x7F6E; <code>configFlags</code> &#x5BF9;&#x8C61;&#x4E2D;&#x5220;&#x9664;&#x3002;</p>
+</li>
+<li><p>&#x5DF2;&#x6DFB;&#x52A0;<code>supportExecutions</code> &#x6807;&#x5FD7;&#x3002; &#x5982;&#x679C;&#x7ECF;&#x7EAA;&#x4EBA;&#x652F;&#x6301;&#x6267;&#x884C;&#xFF0C;&#x60A8;&#x9700;&#x8981;&#x5C06;&#x6807;&#x5FD7;&#x8BBE;&#x7F6E;&#x4E3A; <code>true</code>&#x3002;</p>
+</li>
+<li><p><a href="Account-Manager.html#sortingparameters">SortingParameters</a> &#x7684; <code>asc</code> &#x5B57;&#x6BB5;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x5DF2;&#x66F4;&#x6539;&#x4E3A; <code>true</code>&#x3002;</p>
+</li>
+<li><p><code>customFormatters</code> &#x5B57;&#x6BB5;&#x5DF2;&#x4ECE; <a href="Broker-API.html#accountManagerInfo">accountManagerInfo</a> &#x4E2D;&#x5220;&#x9664;&#x3002;</p>
+</li>
+<li><p><code>id</code>&#x3001;<code>modificationProperty</code>&#x3001;<code>fixedWidth</code>&#x3001;<code>showOnMobile</code> &#x548C;<code>showTooltipOnCell</code> &#x5B57;&#x6BB5;&#x5DF2;&#x4ECE;<a href="Account-Manager.html#Column-description">Account Manager &#x5217;&#x63CF;&#x8FF0;</a> &#x4E2D;&#x5220;&#x9664;&#x3002; <code>property</code> &#x5B57;&#x6BB5;&#x5DF2;&#x53D8;&#x4E3A;&#x5FC5;&#x586B;&#x5B57;&#x6BB5;&#xFF0C;&#x56E0;&#x6B64;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x4EE3;&#x66FF; <code>id</code>&#x3002;</p>
+</li>
+<li><p>&#x6BCF;&#x4E2A; <a href="Account-Manager.html#Table">table</a> &#x884C;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x4E32; <code>id</code> &#x5B57;&#x6BB5;&#x5DF2;&#x53D8;&#x4E3A;&#x5FC5;&#x586B;&#x5B57;&#x6BB5;&#x3002;</p>
+</li>
+<li><p><a href="Broker-API.html">Broker API</a>&#x4E2D;<code>placeOrder</code>&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7531;<code>Promise&lt;void&gt;</code>&#x6539;&#x4E3A;<a href="Trading-Objects-and-Constants.html#PlaceOrderResult">Promise\<placeorderresult\></placeorderresult\></a>&#x3002;</p>
+</li>
+<li><p><code>AccountManagerInfo</code> &#x63A5;&#x53E3;&#x4E2D;<code>contextMenuActions</code> &#x4E2D;&#x7684;<code>contextMenuEvent</code> &#x7C7B;&#x578B;&#x5DF2;&#x4ECE;<code>MouseEvent</code> &#x66F4;&#x6539;&#x4E3A;<code>MouseEvent | TouchEvent</code>&#x3002;</p>
+</li>
+<li><p><a href="Widget-Constructor.html#news_provider">Widget Constructor options</a> &#x4E2D;<code>news_provider</code> &#x5C5E;&#x6027;&#x5DF2;&#x66F4;&#x6539;&#x3002; <code>is_news_generic</code> &#x548C; <code>get_news</code> &#x5C5E;&#x6027;&#x5DF2;&#x88AB;&#x66FF;&#x6362;&#x4E3A;&#x5355;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
+</li>
+</ul>
 <h2 id="version-20">Version 20</h2>
+<ul>
+<li><p>&#x529F;&#x80FD;&#x96C6; <code>caption_buttons_text_if_possible</code> &#x5DF2;&#x88AB;&#x79FB;&#x9664;&#x5E76;&#x88AB;&#x65B0;&#x53C2;&#x6570;&#x66FF;&#x6362; <a href="Widget-Constructor.html#header_widget_buttons_mode"><code>header_widget_buttons_mode</code></a></p>
+</li>
+<li><p>&#x529F;&#x80FD;&#x96C6; <code>high_density_bars</code> &#x5DF2;&#x88AB;&#x79FB;&#x9664;&#x5E76;&#x66FF;&#x6362;&#x4E3A; <code>min_bar_spacing</code>, &#x8FD9;&#x662F; <a href="Widget-Constructor.html#time_scale"><code>time_scale</code></a> &#x7684;&#x4E00;&#x4E2A;&#x65B0;&#x53C2;&#x6570;&#x3002;</p>
+</li>
+<li><p>&#x6307;&#x6807; <code>Moving Average Modified</code> &#x5DF2;&#x88AB;&#x5220;&#x9664;&#x3002; &#x6539;&#x7528;<code>Smoothed Moving Average</code>&#x3002; &#x8BF7;&#x6CE8;&#x610F;&#xFF0C;<code>length</code> &#x8F93;&#x5165;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;</p>
+</li>
+</ul>
 <p><strong>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;</strong></p>
 <ul>
 <li><p><code>unixTimeAgo</code> &#x683C;&#x5F0F;&#x5316;&#x65B9;&#x6CD5;&#x5DF2;&#x88AB;&#x5220;&#x9664;&#x3002;</p>
@@ -1174,7 +1227,7 @@
 </ul>
 <h2 id="version-13">Version 1.3</h2>
 <ul>
-<li><p>&#x8986;&#x76D6; <code>paneProperties.gridProperties.*</code> &#x4E0D;&#x5728;&#x88AB;&#x652F;&#x6301;&#x3002;
+<li><p>&#x8986;&#x76D6; <code>paneProperties.gridProperties.*</code> &#x4E0D;&#x518D;&#x88AB;&#x652F;&#x6301;&#x3002;
 &#x8BF7;&#x4F7F;&#x7528; <code>paneProperties.vertGridProperties.*</code> &#x548C; <code>paneProperties.horzGridProperties.*</code></p>
 </li>
 <li><p>&#x8986;&#x76D6; <code>mainSeriesProperties.candleStyle.wickColor</code> &#x4E0D;&#x5728;&#x88AB;&#x652F;&#x6301;&#x3002;
@@ -1228,7 +1281,7 @@ k3NjE4NjU5NSw1NDU2NDA0NjMsLTE1NTc2NzYzNTZdfQ==
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10、版本变更点","level":"6.6","depth":1,"next":{"title":"图表的主要组成","level":"7.1","depth":1,"path":"book/Basic-Compose.md","ref":"book/Basic-Compose.md","articles":[]},"previous":{"title":"9、经常被问到的问题","level":"6.5","depth":1,"path":"book/Frequently-Asked-Questions.md","ref":"book/Frequently-Asked-Questions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/Breaking-changes.md","mtime":"2021-06-27T10:33:52.749Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-27T12:29:05.136Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10、版本变更点","level":"6.6","depth":1,"next":{"title":"图表的主要组成","level":"7.1","depth":1,"path":"book/Basic-Compose.md","ref":"book/Basic-Compose.md","articles":[]},"previous":{"title":"9、经常被问到的问题","level":"6.5","depth":1,"path":"book/Frequently-Asked-Questions.md","ref":"book/Frequently-Asked-Questions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/Breaking-changes.md","mtime":"2021-10-27T13:06:18.858Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-27T15:37:01.063Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

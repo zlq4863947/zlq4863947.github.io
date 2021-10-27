@@ -880,6 +880,19 @@
             
         </li>
     
+        <li class="chapter " data-level="7.27" data-path="News-Api-Examples.html">
+            
+                <a href="News-Api-Examples.html">
+            
+                    
+                    新闻API示例
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -982,6 +995,9 @@
 <li><a href="#save_load_adapter">save_load_adapter</a></li>
 <li><a href="#settings_adapter">settings_adapter</a></li>
 <li><a href="#compare_symbols">compare_symbols</a></li>
+<li><a href="#additional_symbol_info_fields">additional_symbol_info_fields</a></li>
+<li><a href="#header_widget_buttons_mode">header_widget_buttons_mode</a></li>
+<li><a href="#time_scale">time_scale</a></li>
 </ul>
 </li>
 <li>&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;<ul>
@@ -1265,6 +1281,39 @@ user_id: <span class="hljs-string">&apos;public_user_id&apos;</span>,
     ...
 ];
 </code></pre>
+<h3 id="additionalsymbolinfofields">additional_symbol_info_fields</h3>
+<p>&#x5305;&#x542B;&#x4E00;&#x7EC4;&#x81EA;&#x5B9A;&#x4E49;&#x4EA4;&#x6613;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x5B57;&#x6BB5;&#x7684;&#x53EF;&#x9009;&#x5B57;&#x6BB5;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B57;&#x6BB5;&#x5C06;&#x663E;&#x793A;&#x5728;&#x4EA4;&#x6613;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x3002;
+&#x6BCF;&#x4E2A;&#x9644;&#x52A0;&#x4EA4;&#x6613;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x5B57;&#x6BB5;&#x5E94;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#xFF1A;</p>
+<ul>
+<li><code>title</code> - &#x7528;&#x4F5C;&#x65B0;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x540D;&#x79F0;&#x7684;&#x5B57;&#x7B26;&#x4E32;</li>
+<li><code>propertyName</code> - &#x7528;&#x4E8E;&#x4ECE;&#x56FE;&#x8868;datafeed&#x8FD4;&#x56DE;&#x7684;&#x4EA4;&#x6613;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x4E2D;&#x67E5;&#x627E;&#x5C5E;&#x6027;&#x7684;&#x5B57;&#x7B26;&#x4E32;</li>
+</ul>
+<p>&#x6709;&#x5173;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x9605; <a href="Symbology.html#SymbolInfo-Structure">&#x5546;&#x54C1;&#x4F53;&#x7CFB;</a>&#x3002;</p>
+<pre><code class="lang-javascript">additional_symbol_info_fields: [
+    { title: <span class="hljs-string">&apos;Ticker&apos;</span>, propertyName: <span class="hljs-string">&apos;ticker&apos;</span> }
+]
+</code></pre>
+<h3 id="headerwidgetbuttonsmode">header_widget_buttons_mode</h3>
+<p>&#x7528;&#x4E8E;&#x66F4;&#x6539;&#x9876;&#x90E8;&#x5DE5;&#x5177;&#x680F;&#x4E0A;&#x6309;&#x94AE;&#x5916;&#x89C2;&#x7684;&#x9644;&#x52A0;&#x53EF;&#x9009;&#x5B57;&#x6BB5;&#x3002;
+&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;&#x662F;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;</p>
+<ul>
+<li><code>fullsize</code>: &#x9876;&#x90E8;&#x5DE5;&#x5177;&#x680F;&#x4E0A;&#x663E;&#x793A;&#x5168;&#x5C4F;&#x6309;&#x94AE;</li>
+<li><code>adaptive</code>: &#x81EA;&#x9002;&#x5E94;/&#x81EA;&#x52A8;&#x6A21;&#x5F0F;&#xFF08;&#x5982;&#x679C;&#x7A97;&#x53E3;&#x5BBD;&#x5EA6;&#x5141;&#x8BB8;&#xFF0C;&#x5219;&#x4E3A;&#x5168;&#x5C4F;&#xFF0C;&#x5C0F;&#x7A97;&#x53E3;&#x65F6;&#x663E;&#x793A;&#x56FE;&#x6807;&#xFF09;&#x3002;</li>
+<li><code>compact</code>: &#x9876;&#x90E8;&#x5DE5;&#x5177;&#x680F;&#x4E0A;&#x7684;&#x4EC5;&#x56FE;&#x6807;&#x6309;&#x94AE;&#xFF08;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#x6536;&#x85CF;&#x5939;&#xFF09;</li>
+</ul>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF08;&#x5982;&#x679C;&#x7701;&#x7565;&#x9009;&#x9879;&#xFF09;&#x6807;&#x9898;&#x5C06;&#x5904;&#x4E8E;&#x81EA;&#x9002;&#x5E94;&#x6A21;&#x5F0F;&#xFF08;&#x5982;&#x679C;&#x7A97;&#x53E3;&#x5BBD;&#x5EA6;&#x5141;&#x8BB8;&#xFF0C;&#x5219;&#x4E3A;&#x5168;&#x5C4F;&#xFF0C;&#x5C0F;&#x7A97;&#x53E3;&#x65F6;&#x663E;&#x793A;&#x56FE;&#x6807;&#xFF09;&#x3002;</p>
+<pre><code class="lang-javascript">header_widget_buttons_mode: <span class="hljs-string">&apos;fullsize&apos;</span>,
+</code></pre>
+<h3 id="timescale">time_scale</h3>
+<p>&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x6DFB;&#x52A0;&#x66F4;&#x591A;K&#x7EBF;&#x7684;&#x9644;&#x52A0;&#x53EF;&#x9009;&#x5B57;&#x6BB5;&#x3002;
+&#x76EE;&#x524D;&#x552F;&#x4E00;&#x53EF;&#x7528;&#x7684;&#x5B50;&#x9009;&#x9879;&#x662F;&#xFF1A;</p>
+<ul>
+<li><code>min_bar_spacing</code>: number - &#x5E94;&#x8BE5;&#x5927;&#x4E8E; 0&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript">time_scale: {
+    min_bar_spacing: <span class="hljs-number">10</span>,
+}
+</code></pre>
 <h2 id="&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x4E13;&#x5C5E;">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;&#x4E13;&#x5C5E;</h2>
 <h4 id="widgetbar">widgetbar</h4>
 <p><img src="../images/trading.png" alt=""> <em>&#x4EC5;&#x9002;&#x7528;&#x4E8E;<a href="Trading-Terminal.html">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;</a></em></p>
@@ -1329,52 +1378,21 @@ user_id: <span class="hljs-string">&apos;public_user_id&apos;</span>,
 </code></pre>
 <h4 id="newsprovider">news_provider</h4>
 <p><img src="../images/trading.png" alt=""> <em>&#x4EC5;&#x9002;&#x7528;&#x4E8E;<a href="Trading-Terminal.html">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;</a></em></p>
-<p>&#x6307;&#x5B9A;&#x65B0;&#x95FB;&#x63D0;&#x4F9B;&#x8005;&#x7684;&#x5BF9;&#x8C61;&#x3002; &#x5B83;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#xFF1A;</p>
-<ol>
-<li><p><code>is_news_generic</code>- &#x5982;&#x679C;&#x4E3A;<code>true</code>, &#x5219;&#x65B0;&#x95FB;&#x5C0F;&#x90E8;&#x4EF6;&#x7684;&#x6807;&#x9898;&#x5C06;&#x4E0D;&#x5305;&#x542B;&#x5546;&#x54C1;&#x540D;&#x79F0;&#xFF08;&#x4EC5;&#x5305;&#x542B;&#x201C;&#x6807;&#x9898;&#x201D;&#xFF09;&#x3002; &#x5426;&#x5219;&#x5C06;&#x6DFB;&#x52A0;<code>for SYMBOL_NAME</code>&#x3002;</p>
-</li>
-<li><p><code>get_news</code>- &#x4F7F;&#x7528;&#x6B64;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x81EA;&#x5DF1;&#x7684;&#x65B0;&#x95FB;getter&#x65B9;&#x6CD5;&#x3002; <code>symbol</code>&#x548C;<code>callback</code>&#x90FD;&#x5C06;&#x4F20;&#x9012;&#x7ED9;&#x51FD;&#x6570;&#x3002;</p>
-<p>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x4F1A;&#x4F20;&#x9012;&#x4EE5;&#x4E0B;&#x7ED3;&#x6784;&#x7684;&#x65B0;&#x95FB;&#x5BF9;&#x8C61;:</p>
+<p>&#x4F7F;&#x7528;&#x6B64;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x60A8;&#x81EA;&#x5DF1;&#x7684;&#x65B0;&#x95FB;&#x83B7;&#x53D6;&#x529F;&#x80FD;&#x3002; <code>symbol</code> &#x548C; <code>callback</code> &#x90FD;&#x5C06;&#x4F20;&#x9012;&#x7ED9;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x5E94;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x8C03;&#x7528;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x8BE5;&#x5BF9;&#x8C61;&#x5E94;&#x8BE5;&#x6709;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;<code>title</code> &#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4EE5;&#x53CA; <code>newsItems</code> &#x662F;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x7ED3;&#x6784;&#x7684;&#x65B0;&#x95FB;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF1A;</p>
 <ol>
 <li><code>title</code>(&#x5FC5;&#x987B;) - &#x65B0;&#x95FB;&#x6807;&#x9898;&#x3002;</li>
 <li><code>published</code>(&#x5FC5;&#x987B;) - &#x65B0;&#x95FB;&#x65F6;&#x95F4;&#xFF08;&#x4EE5;&#x6BEB;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#x7684;UTC&#x65F6;&#x95F4;&#xFF09;</li>
 <li><code>source</code>(&#x53EF;&#x9009;) - &#x6807;&#x9898;&#x7684;&#x65B0;&#x95FB;&#x6765;&#x6E90;&#x3002;</li>
 <li><code>shortDescription</code>(&#x53EF;&#x9009;) - &#x5C06;&#x5728;&#x6807;&#x9898;&#x4E0B;&#x663E;&#x793A;&#x7684;&#x65B0;&#x95FB;&#x9879;&#x76EE;&#x7684;&#x7B80;&#x77ED;&#x63CF;&#x8FF0;&#x3002;</li>
 <li><code>link</code>(&#x53EF;&#x9009;) - &#x65B0;&#x95FB;&#x62A5;&#x9053;&#x7684;URL</li>
-<li><code>fullDescription</code>(&#x53EF;&#x9009;) - &#x65B0;&#x95FB;&#x9879;&#x76EE;&#x7684;&#x5B8C;&#x6574;&#x63CF;&#x8FF0;&#xFF08;&#x6B63;&#x6587;&#xFF09;</li>
-</ol>
-<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x53EA;&#x6709; <code>title</code> &#x548C; <code>published</code> &#x662F;&#x5FC5;&#x987B;&#x9879;
-&#x7528;&#x4E8E;&#x6BD4;&#x8F83;&#x5DF2;&#x53D1;&#x5E03;&#x7684;&#x5185;&#x5BB9;&#x548C;&#x65B0;&#x53D1;&#x5E03;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<li><p><code>fullDescription</code>(&#x53EF;&#x9009;) - &#x65B0;&#x95FB;&#x9879;&#x76EE;&#x7684;&#x5B8C;&#x6574;&#x63CF;&#x8FF0;&#xFF08;&#x6B63;&#x6587;&#xFF09;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x53EA;&#x6709; <code>title</code> &#x548C; <code>published</code> &#x662F;&#x7528;&#x4E8E;&#x6BD4;&#x8F83;&#x5DF2;&#x53D1;&#x5E03;&#x5185;&#x5BB9;&#x548C;&#x65B0;&#x5185;&#x5BB9;&#x7684;&#x4E3B;&#x8981;&#x5C5E;&#x6027;&#x3002;</p>
 <p><strong>&#x6CE8;&#x610F;2&#xFF1A;</strong> &#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x65B0;&#x95FB;&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x5C06;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x5E26;&#x6709; <code>link</code> URL &#x7684;&#x65B0;&#x6807;&#x7B7E;&#x3002; &#x5982;&#x679C;&#x672A;&#x6307;&#x5B9A; <code>link</code>&#xFF0C;&#x5219;&#x4F1A;&#x663E;&#x793A;&#x5E26;&#x6709; <code>fullDescription</code> &#x7684;&#x5F39;&#x51FA;&#x5BF9;&#x8BDD;&#x6846;&#x3002;</p>
 <p><strong>&#x6CE8;&#x610F;3&#xFF1A;</strong> &#x5982;&#x679C; <code>news_provider</code> &#x548C; <code>rss_news_feed</code> &#x90FD;&#x53EF;&#x7528;&#xFF0C;&#x90A3;&#x4E48; <code>rss_news_feed</code> &#x5C06;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x793A;&#x4F8B;&#x53C2;&#x89C1;<a href="News-Api-Examples.html">&#x65B0;&#x95FB;API&#x793A;&#x4F8B;</a>&#x3002;</p>
 </li>
 </ol>
-<p>&#x4F8B;:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> dateOfPublication = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().valueOf();
-
-news_provider: {
-  is_news_generic: <span class="hljs-literal">true</span>,
-          get_news: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">symbol, callback</span>) </span>{
-    callback([
-      {
-        title: <span class="hljs-string">&apos;News for symbol &apos;</span> + symbol,
-        shortDescription: <span class="hljs-string">&apos;Short description of the news item&apos;</span>,
-        fullDescription: <span class="hljs-string">&apos;Full description of the news item&apos;</span>,
-        published: dateOfPublication,
-        source: <span class="hljs-string">&apos;My own source of news&apos;</span>,
-        link: <span class="hljs-string">&apos;https://www.tradingview.com/&apos;</span>
-      },
-      {
-        title: <span class="hljs-string">&apos;Another news for symbol &apos;</span> + symbol,
-        shortDescription: <span class="hljs-string">&apos;Short description of the news item&apos;</span>,
-        fullDescription: <span class="hljs-string">&apos;Full description of the news item. Long text here.&apos;</span>,
-        published: dateOfPublication,
-        source: <span class="hljs-string">&apos;My own source of news&apos;</span>,
-      }
-    ]);
-  }
-}
-</code></pre>
 <h4 id="brokerfactory">broker_factory</h4>
 <p><img src="../images/trading.png" alt=""> <em>&#x4EC5;&#x9002;&#x7528;&#x4E8E;<a href="Trading-Terminal.html">&#x4EA4;&#x6613;&#x7EC8;&#x7AEF;</a></em></p>
 <p>&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x6765;&#x4F20;&#x9012;&#x6784;&#x9020;<a href="Broker-API.html">&#x7ECF;&#x7EAA;&#x5546;API</a>&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#x3002; 
@@ -1445,7 +1463,7 @@ eyJoaXN0b3J5IjpbOTY1NzQwNzIxXX0=
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4-2、Widget 构造器","level":"4.2","depth":1,"next":{"title":"4-3、Widget 方法","level":"4.3","depth":1,"path":"book/Widget-Methods.md","ref":"book/Widget-Methods.md","articles":[]},"previous":{"title":"4-1、定制概述","level":"4.1","depth":1,"path":"book/Customization-Overview.md","ref":"book/Customization-Overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/Widget-Constructor.md","mtime":"2021-06-27T10:33:52.758Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-27T12:29:05.136Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4-2、Widget 构造器","level":"4.2","depth":1,"next":{"title":"4-3、Widget 方法","level":"4.3","depth":1,"path":"book/Widget-Methods.md","ref":"book/Widget-Methods.md","articles":[]},"previous":{"title":"4-1、定制概述","level":"4.1","depth":1,"path":"book/Customization-Overview.md","ref":"book/Customization-Overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livere","disqus","github","github-buttons","splitter","sitemap","donate","insert-head-tag","baidu-v3","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"insert-head-tag":{"tags":["<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'>","<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: 'ca-pub-4774215405699477',enable_page_level_ads: true});","<script async src='https://www.googletagmanager.com/gtag/js?id=UA-155388696-3'>","<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);console.log('gtag')}gtag('js', new Date());gtag('config', 'UA-155388696-3');"]},"disqus":{"useIdentifier":false,"shortName":"aistock-ga"},"github":{"url":"https://github.com/zlq4863947/tradingViewWikiCn"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://aitrade.ga/books/tradingview/images/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://aitrade.ga/books/tradingview/images/weixin.png","wechatText":"微信打赏"},"baidu-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://aitrade.ga"},"github-buttons":{"buttons":[{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"star","size":"small","count":true},{"user":"zlq4863947","repo":"tradingViewWikiCn","type":"fork","size":"small","count":true}]},"baidu":{"token":"7589b987dc4ef611f2f1cd192b55a257"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"livere":{"uid":"MTAyMC8zNTIyNC8xMTc2MA=="}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TradingView中文开发文档","language":"zh","gitbook":"*","description":"TradingView为优秀的交易技术分析图表库"},"file":{"path":"book/Widget-Constructor.md","mtime":"2021-10-27T15:13:01.480Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-27T15:37:01.063Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
